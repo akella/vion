@@ -1,0 +1,302 @@
+@charset "IBM866";
+/* BACKGROUND SIZE */
+/* ROTATE*/
+/* TRANSITION */
+/* line 3, ../sass/drop - копия.scss */
+.drop, .drop_sub {
+  border-radius: 5px;
+  background: #29262f;
+  border: 1px solid #000;
+  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.75), 0 1px 0 0 rgba(255, 255, 255, 0.1) inset;
+  padding: 3px;
+  position: absolute;
+  top: 60px;
+  left: 23px;
+  display: none;
+  width: 180px;
+}
+/* line 14, ../sass/drop - копия.scss */
+.drop:before, .drop_sub:before {
+  content: '';
+  position: absolute;
+  background: url('../img/icons-s55136e0e94.png') 0 -439px no-repeat;
+  width: 20px;
+  height: 21px;
+  top: -20px;
+  left: 20px;
+}
+/* line 21, ../sass/drop - копия.scss */
+.drop h3, .drop_sub h3 {
+  font-size: 13px;
+  color: #cecece;
+  font-family: Helvetica, Arial, sans-serif;
+  margin: 9px 0 9px 13px;
+  line-height: 15px;
+}
+/* line 26, ../sass/drop - копия.scss */
+.drop h3:first-child, .drop_sub h3:first-child {
+  margin-top: 5px;
+}
+
+/* line 32, ../sass/drop - копия.scss */
+.drop_center:before {
+  left: 50%;
+  margin-left: -10px;
+}
+
+/* line 38, ../sass/drop - копия.scss */
+.drop_sub {
+  top: -18px;
+  left: 184px;
+}
+/* line 41, ../sass/drop - копия.scss */
+.drop_sub:before {
+  background: url('../img/icons-s55136e0e94.png') 0 -470px no-repeat;
+  width: 22px;
+  height: 22px;
+  top: 20px;
+  left: -21px;
+}
+
+/* line 48, ../sass/drop - копия.scss */
+.drop_search {
+  width: 275px;
+  left: -1px;
+  display: block;
+}
+
+/* line 54, ../sass/drop - копия.scss */
+.drop_user-list {
+  width: 275px;
+  left: 1px;
+}
+
+/* line 59, ../sass/drop - копия.scss */
+.form-search {
+  position: relative;
+  padding: 6px 0 0;
+}
+/* line 62, ../sass/drop - копия.scss */
+.form-search .input-search {
+  background: #1f2026;
+  border-radius: 4px;
+  border: 1px solid #000;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.7) inset, 0 1px 0 0 #454754;
+  font-size: 12px;
+  height: 20px;
+  line-height: 20px;
+  padding: 3px 27px;
+  width: 219px;
+  color: #fff;
+}
+/* line 74, ../sass/drop - копия.scss */
+.form-search .btn-search {
+  background: url('../img/icons-s55136e0e94.png') 0 -271px no-repeat;
+  width: 27px;
+  height: 26px;
+  position: absolute;
+  top: 7px;
+  left: 0;
+  border: 0;
+  color: transparent;
+  font: 0/0 a;
+  cursor: pointer;
+}
+/* line 84, ../sass/drop - копия.scss */
+.form-search .cancel {
+  background: url('../img/icons-s55136e0e94.png') 0 -875px no-repeat;
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  top: 13px;
+  right: 6px;
+  opacity: .1;
+  cursor: pointer;
+}
+/* line 91, ../sass/drop - копия.scss */
+.form-search .cancel:hover {
+  opacity: .3;
+}
+
+/* line 97, ../sass/drop - копия.scss */
+.drop__list {
+  list-style: none;
+  box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.75);
+  background: #eaebf3;
+  border-radius: 4px;
+}
+/* line 102, ../sass/drop - копия.scss */
+.drop__list li {
+  font-size: 13px;
+  line-height: 28px;
+  padding: 0 10px;
+  font-weight: bold;
+  position: relative;
+  background: #eaebf3;
+  color: #2c2c37;
+}
+/* line 110, ../sass/drop - копия.scss */
+.drop__list li:first-child {
+  border-top-right-radius: 4px;
+  border-top-left-radius: 4px;
+}
+/* line 114, ../sass/drop - копия.scss */
+.drop__list li:last-child {
+  border-bottom-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+/* line 118, ../sass/drop - копия.scss */
+.drop__list li:nth-child(even) {
+  background: #f7f8fc;
+  border-top: 1px solid #cad2dc;
+  border-bottom: 1px solid #d1d2d7;
+  line-height: 26px;
+}
+/* line 124, ../sass/drop - копия.scss */
+.drop__list li a {
+  color: #2c2c37;
+  display: block;
+  text-decoration: none;
+  padding: 0 10px;
+  margin: 0 -10px;
+  height: 28px;
+}
+/* line 131, ../sass/drop - копия.scss */
+.drop__list li a:hover {
+  color: #fff;
+  text-shadow: rgba(0, 0, 0, 0.4) 0 1px 0;
+}
+/* line 134, ../sass/drop - копия.scss */
+.drop__list li a:hover .search_link {
+  color: #fff;
+}
+/* line 136, ../sass/drop - копия.scss */
+.drop__list li a .search_link {
+  color: #7a7a8c;
+  font-size: 10px;
+  position: absolute;
+  left: 142px;
+  margin-top: 1px;
+}
+/* line 144, ../sass/drop - копия.scss */
+.drop__list li:hover {
+  background: #4ea0c9;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #4ea0c9), color-stop(100%, #085aa0));
+  background-image: -webkit-linear-gradient(#4ea0c9, #085aa0);
+  background-image: -moz-linear-gradient(#4ea0c9, #085aa0);
+  background-image: -o-linear-gradient(#4ea0c9, #085aa0);
+  background-image: linear-gradient(#4ea0c9, #085aa0);
+  border-top-color: #75b5d5;
+  border-bottom-color: #010b13;
+}
+/* line 149, ../sass/drop - копия.scss */
+.drop__list li:hover .drop-arr {
+  background: url('../img/icons-s55136e0e94.png') 0 -1008px no-repeat;
+  width: 5px;
+  height: 11px;
+  margin-top: -6px;
+}
+/* line 153, ../sass/drop - копия.scss */
+.drop__list li:hover .drop_sub {
+  display: block;
+}
+/* line 156, ../sass/drop - копия.scss */
+.drop__list li .drop__list li {
+  background: #eaebf3;
+  line-height: 28px;
+  border: 0;
+}
+/* line 160, ../sass/drop - копия.scss */
+.drop__list li .drop__list li:nth-child(even) {
+  background: #f7f8fc;
+  border-top: 1px solid #cad2dc;
+  border-bottom: 1px solid #d1d2d7;
+  line-height: 26px;
+}
+/* line 166, ../sass/drop - копия.scss */
+.drop__list li .drop__list li:hover {
+  background: #4ea0c9;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #4ea0c9), color-stop(100%, #085aa0));
+  background-image: -webkit-linear-gradient(#4ea0c9, #085aa0);
+  background-image: -moz-linear-gradient(#4ea0c9, #085aa0);
+  background-image: -o-linear-gradient(#4ea0c9, #085aa0);
+  background-image: linear-gradient(#4ea0c9, #085aa0);
+  border-top-color: #75b5d5;
+  border-bottom-color: #010b13;
+}
+/* line 176, ../sass/drop - копия.scss */
+.drop__list input {
+  margin-right: 10px;
+}
+/* line 177, ../sass/drop - копия.scss */
+.drop__list .icon {
+  display: inline-block;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+/* line 182, ../sass/drop - копия.scss */
+.drop__list .drop-arr {
+  background: url('../img/icons-s55136e0e94.png') 0 -1055px no-repeat;
+  width: 5px;
+  height: 10px;
+  position: absolute;
+  right: 9px;
+  top: 50%;
+  margin-top: -5px;
+}
+
+/* line 191, ../sass/drop - копия.scss */
+.icon-history {
+  background: url('../img/icons-s55136e0e94.png') 0 -952px no-repeat;
+  width: 16px;
+  height: 16px;
+}
+
+/* line 192, ../sass/drop - копия.scss */
+.icon-pay {
+  background: url('../img/icons-s55136e0e94.png') 0 -641px no-repeat;
+  width: 16px;
+  height: 16px;
+}
+
+/* line 193, ../sass/drop - копия.scss */
+.icon-file {
+  background: url('../img/icons-s55136e0e94.png') 0 -926px no-repeat;
+  width: 16px;
+  height: 16px;
+}
+
+/* line 194, ../sass/drop - копия.scss */
+.icon-widget {
+  background: url('../img/icons-s55136e0e94.png') 0 -615px no-repeat;
+  width: 16px;
+  height: 16px;
+}
+
+/* line 195, ../sass/drop - копия.scss */
+.icon-user {
+  background: url('../img/icons-s55136e0e94.png') 0 -849px no-repeat;
+  width: 16px;
+  height: 16px;
+}
+
+/* line 196, ../sass/drop - копия.scss */
+.icon-forms {
+  background: url('../img/icons-s55136e0e94.png') 0 -1029px no-repeat;
+  width: 16px;
+  height: 16px;
+}
+
+/* line 197, ../sass/drop - копия.scss */
+.icon-device {
+  background: url('../img/icons-s55136e0e94.png') 0 -719px no-repeat;
+  width: 16px;
+  height: 16px;
+}
+
+/* line 198, ../sass/drop - копия.scss */
+.icon-card {
+  background: url('../img/icons-s55136e0e94.png') 0 -693px no-repeat;
+  width: 16px;
+  height: 16px;
+}
