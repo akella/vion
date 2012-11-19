@@ -1,3 +1,293 @@
 /* BACKGROUND SIZE */
 /* ROTATE*/
 /* TRANSITION */
+/* line 2, ../sass/win.scss */
+.win {
+  position: absolute;
+  border-radius: 6px;
+  width: 340px;
+  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.75);
+  left: 50%;
+  top: 100px;
+  margin-left: -170px;
+}
+/* line 10, ../sass/win.scss */
+.win .win__header {
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #414141), color-stop(100%, #212121));
+  background-image: -webkit-linear-gradient(#414141, #212121);
+  background-image: -moz-linear-gradient(#414141, #212121);
+  background-image: -o-linear-gradient(#414141, #212121);
+  background-image: linear-gradient(#414141, #212121);
+  border: 1px solid #000;
+  border-radius: 6px 6px 0 0;
+  box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.06) inset;
+  text-align: center;
+  line-height: 30px;
+  height: 30px;
+  position: relative;
+}
+/* line 19, ../sass/win.scss */
+.win .win__header h1 {
+  font-family: 'HelveticaNeue-B', Helvetica, Arial, sans-serif;
+  color: #cecece;
+  font-size: 13px;
+  text-shadow: rgba(0, 0, 0, 0.75) 0 1px 0;
+  padding-left: 9px;
+}
+/* line 27, ../sass/win.scss */
+.win .win__close {
+  background: url('../img/icons-sf84890c49a.png') 0 -409px no-repeat;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 6px;
+  left: 4px;
+  cursor: pointer;
+}
+/* line 34, ../sass/win.scss */
+.win .win__content {
+  background: url(../img/bg-win.png);
+  border-radius: 0 0 6px 6px;
+  border: 1px solid #000;
+  border-top: 0;
+}
+/* line 40, ../sass/win.scss */
+.win .win__box {
+  padding-top: 9px;
+}
+/* line 43, ../sass/win.scss */
+.win .win__dev {
+  width: 322px;
+  margin: 0 auto;
+  height: 0;
+  border-top: 1px solid #000100;
+  border-bottom: 1px solid #4c4b53;
+}
+/* line 50, ../sass/win.scss */
+.win .win__footer {
+  background: #222;
+  border-top: 1px solid #000;
+  border-radius: 0 0 6px 6px;
+  box-shadow: 0 1px 0 0 #414141 inset;
+  text-align: center;
+  padding: 14px 0;
+}
+
+/* line 59, ../sass/win.scss */
+.h2 {
+  color: #cecece;
+  font-size: 13px;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.75);
+  font-weight: bold;
+  margin: 7px 23px 10px;
+}
+
+/* line 66, ../sass/win.scss */
+.chat-title {
+  font-size: 18px;
+  color: #e3ad12;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.75);
+  margin: 0 23px 15px;
+}
+
+/* line 72, ../sass/win.scss */
+.h2 + .chat-title {
+  margin-top: -6px;
+}
+
+/* line 74, ../sass/win.scss */
+.user-list {
+  text-align: left;
+}
+/* line 76, ../sass/win.scss */
+.user-list .user__item {
+  overflow: hidden;
+  padding: 6px 0 0 17px;
+  background: #1c1c1c;
+  border-top: 1px solid #29262f;
+  border-bottom: 1px solid #1c1c1c;
+  height: 52px;
+}
+/* line 83, ../sass/win.scss */
+.user-list .user__item:nth-child(even) {
+  background: #252525;
+  border-top-color: #3a3a3a;
+  border-bottom-color: #0f0f0f;
+}
+/* line 87, ../sass/win.scss */
+.user-list .user__item:nth-child(even) .user__time {
+  color: #a7cc14;
+}
+/* line 89, ../sass/win.scss */
+.user-list .user__item:first-child {
+  box-shadow: 0 6px 6px -6px rgba(0, 0, 0, 0.7) inset;
+  border-top-color: #2f2f37;
+}
+/* line 94, ../sass/win.scss */
+.user-list .userpic {
+  margin: 0;
+}
+/* line 96, ../sass/win.scss */
+.user-list .userpic a {
+  padding: 0;
+}
+/* line 98, ../sass/win.scss */
+.user-list .user__name {
+  font-size: 12px;
+  color: #cecece;
+  font-weight: bold;
+  text-shadow: rgba(0, 0, 0, 0.75) 0 1px 0;
+  float: left;
+  margin: 1px 0 0 11px;
+  width: 75px;
+  padding-right: 25px;
+  line-height: 16px;
+}
+/* line 109, ../sass/win.scss */
+.user-list .user__lang {
+  font-size: 11px;
+  color: #8b8c92;
+  font-family: Helvetica, Arial, sans-serif;
+  float: left;
+  margin-left: 14px;
+  width: 60px;
+  font-weight: bold;
+}
+/* line 118, ../sass/win.scss */
+.user-list .user__time {
+  color: #eeb411;
+  font-size: 11px;
+  font-family: Helvetica, Arial, sans-serif;
+  float: left;
+  margin-left: 7px;
+  font-weight: bold;
+}
+/* line 126, ../sass/win.scss */
+.user-list .user__mic {
+  background: url('../img/icons-sf84890c49a.png') 0 -177px no-repeat;
+  width: 30px;
+  height: 30px;
+  float: right;
+  margin: 8px 8px 0 0;
+}
+
+/* line 132, ../sass/win.scss */
+.text-note {
+  background: #eaebf3;
+  box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.75);
+  color: #686a78;
+  font-size: 13px;
+  line-height: 19px;
+  font-family: 'HelveticaNeue-M', Helvetica, Arial, sans-serif;
+  margin: 0 8px 17px 17px;
+  border-radius: 5px;
+  position: relative;
+  z-index: 5;
+  padding: 11px 9px;
+}
+/* line 144, ../sass/win.scss */
+.text-note:before {
+  content: "";
+  height: 12px;
+  width: 12px;
+  background: #eaebf3;
+  position: absolute;
+  z-index: 2;
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  filter: progid:DXImageTransform.Microsoft.Matrix(M11=$m11, M12=$m12,M21=$m21, M22=$m22, sizingMethod='auto expand');
+  zoom: 1;
+  top: 19px;
+  left: -5px;
+}
+/* line 155, ../sass/win.scss */
+.text-note textarea {
+  border: 0;
+  padding: 0;
+  font-size: 13px;
+  line-height: 19px;
+  font-family: 'HelveticaNeue-M', Helvetica, Arial, sans-serif;
+  background: none;
+  width: 100%;
+  color: #686a78;
+  min-height: 57px;
+}
+
+/* line 167, ../sass/win.scss */
+.r-btn {
+  height: 40px;
+  width: 40px;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 20px;
+  cursor: pointer;
+  border: 0;
+  margin: 0 5px;
+  box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.4) inset, 0 -1px 0 0 rgba(46, 77, 0, 0.09) inset, 0 0 3px 0 rgba(0, 0, 0, 0.5);
+}
+/* line 177, ../sass/win.scss */
+.r-btn span {
+  display: inline-block;
+  position: relative;
+}
+
+/* line 182, ../sass/win.scss */
+.r-btn_up {
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #87b60d), color-stop(100%, #417204));
+  background-image: -webkit-linear-gradient(#87b60d, #417204);
+  background-image: -moz-linear-gradient(#87b60d, #417204);
+  background-image: -o-linear-gradient(#87b60d, #417204);
+  background-image: linear-gradient(#87b60d, #417204);
+}
+/* line 184, ../sass/win.scss */
+.r-btn_up span {
+  background: url('../img/icons-sf84890c49a.png') 0 -439px no-repeat;
+  width: 18px;
+  height: 19px;
+  top: 3px;
+}
+
+/* line 189, ../sass/win.scss */
+.r-btn_down {
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #d70018), color-stop(100%, #7f0211));
+  background-image: -webkit-linear-gradient(#d70018, #7f0211);
+  background-image: -moz-linear-gradient(#d70018, #7f0211);
+  background-image: -o-linear-gradient(#d70018, #7f0211);
+  background-image: linear-gradient(#d70018, #7f0211);
+}
+/* line 191, ../sass/win.scss */
+.r-btn_down span {
+  background: url('../img/icons-sf84890c49a.png') 0 -515px no-repeat;
+  width: 22px;
+  height: 10px;
+  top: -1px;
+}
+
+/* line 196, ../sass/win.scss */
+.r-btn_arr {
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #636570), color-stop(100%, #42434d));
+  background-image: -webkit-linear-gradient(#636570, #42434d);
+  background-image: -moz-linear-gradient(#636570, #42434d);
+  background-image: -o-linear-gradient(#636570, #42434d);
+  background-image: linear-gradient(#636570, #42434d);
+}
+/* line 198, ../sass/win.scss */
+.r-btn_arr span {
+  background: url('../img/icons-sf84890c49a.png') 0 -535px no-repeat;
+  width: 14px;
+  height: 15px;
+}
+
+/* line 203, ../sass/win.scss */
+.icon-audio {
+  background: url('../img/icons-sf84890c49a.png') 0 -250px no-repeat;
+  width: 19px;
+  height: 23px;
+  display: inline-block;
+  margin: 0 3px -11px -15px;
+  position: relative;
+  top: -3px;
+}

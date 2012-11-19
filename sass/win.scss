@@ -1,7 +1,209 @@
 @import "base";
 .win{
+	position: absolute;
+	border-radius:6px;
+	width:340px;
+	box-shadow:0 0 15px 0 rgba(0,0,0,0.75);
+	left:50%;
+	top:100px;
+	margin-left:-170px;
 	.win__header{
-		h1{}
+		@include background-image(linear-gradient(#414141, #212121));
+		border:1px solid #000;
+		border-radius:6px 6px 0 0;
+		box-shadow:0 1px 0 0 rgba(white,.06) inset;
+		text-align: center;
+		line-height:30px;
+		height:30px;
+		position: relative;
+		h1{
+			font-family: 'HelveticaNeue-B', Helvetica, Arial, sans-serif;
+			color:#cecece;
+			font-size:13px;
+			text-shadow:rgba(0,0,0,0.75) 0 1px 0;
+			padding-left:9px;
+		}
 	}
-	.win__close{}
+	.win__close{
+		@include sized-sprite($icons, 'bullet-red');
+		position: absolute;
+		top:6px;
+		left:4px;
+		cursor:pointer;
+	}
+	.win__content{
+		background:url(../img/bg-win.png);
+		border-radius:0 0 6px 6px;
+		border:1px solid #000;
+		border-top:0;
+	}
+	.win__box{
+		padding-top:9px;
+	}
+	.win__dev{
+		width:322px;
+		margin:0 auto;
+		height:0;
+		border-top:1px solid #000100;
+		border-bottom:1px solid #4c4b53;
+	}
+	.win__footer{
+		background: #222;
+		border-top:1px solid #000;
+		border-radius:0 0 6px 6px;
+		box-shadow:0 1px 0 0 #414141 inset;
+		text-align:center;
+		padding:14px 0;
+	}
+}
+.h2{
+	color:#cecece;
+	font-size:13px;
+	text-shadow:0 1px 0 rgba(0,0,0,0.75);
+	font-weight:bold;
+	margin: 7px 23px 10px;
+}
+.chat-title{
+	font-size:18px;
+	color:#e3ad12;
+	text-shadow:0 1px 0 rgba(0,0,0,0.75);
+	margin:0 23px 15px;
+}
+.h2 + .chat-title{margin-top:-6px;}
+
+.user-list{
+	text-align:left;
+	.user__item{
+		overflow:hidden;
+		padding:6px 0 0 17px;
+		background:#1c1c1c;
+		border-top:1px solid #29262f;
+		border-bottom:1px solid #1c1c1c;
+		height:52px;
+		&:nth-child(even){
+			background:#252525;
+			border-top-color:#3a3a3a;
+			border-bottom-color:#0f0f0f;
+			.user__time{color:#a7cc14;}
+		}
+		&:first-child{
+			box-shadow:0 6px 6px -6px rgba(0,0,0,0.7) inset;
+			border-top-color:#2f2f37;
+		}
+	}
+	.userpic{
+		margin:0;
+		a{padding:0;}
+	}
+	.user__name{
+		font-size:12px;
+		color:#cecece;
+		font-weight:bold;
+		text-shadow:rgba(0,0,0,.75) 0 1px 0;
+		float:left;
+		margin:1px 0 0 11px;
+		width:75px;
+		padding-right:25px;
+		line-height: 16px;
+	}
+	.user__lang{
+		font-size:11px;
+		color:#8b8c92;
+		font-family:Helvetica, Arial, sans-serif;
+		float:left;
+		margin-left:14px;
+		width:60px;
+		font-weight:bold;
+	}
+	.user__time{
+		color:#eeb411;
+		font-size:11px;
+		font-family:Helvetica, Arial, sans-serif;
+		float:left;
+		margin-left:7px;
+		font-weight:bold;
+	}
+	.user__mic{
+		@include sized-sprite($icons, 'icon-device-2');
+		float: right;
+		margin: 8px 8px 0 0;
+	}
+}
+.text-note{
+	background:#eaebf3;
+	box-shadow:0 0 6px 0 rgba(0,0,0,0.75);
+	color:#686a78;
+	font-size:13px;
+	line-height:19px;
+	font-family: 'HelveticaNeue-M', Helvetica, Arial, sans-serif;
+	margin:0 8px 17px 17px;
+	border-radius:5px;
+	position: relative;
+	z-index:5;
+	padding:11px 9px;
+	&:before{
+		content:"";
+		height:12px;
+		width:12px;
+		background:#eaebf3;
+		position: absolute;
+		z-index:2;
+		@include rotate(45);
+		top:19px;
+		left:-5px;
+	}
+	textarea{
+		border:0;
+		padding:0;
+		font-size:13px;
+		line-height:19px;
+		font-family: 'HelveticaNeue-M', Helvetica, Arial, sans-serif;
+		background:none;
+		width:100%;
+		color:#686a78;
+		min-height:57px;
+	}
+}
+.r-btn{
+	height:40px;
+	width:40px;
+	text-align: center;
+	line-height:40px;
+	border-radius:20px;
+	cursor:pointer;
+	border:0;
+	margin:0 5px;
+	box-shadow:0 1px 0 0 rgba(white,0.4) inset, 0 -1px 0 0 rgba(46,77,0,0.09) inset, 0 0 3px 0 rgba(0,0,0,0.5);
+	span{
+		display: inline-block;
+		position: relative;
+	}
+}
+.r-btn_up{
+	@include background-image(linear-gradient(#87b60d, #417204));
+	span{
+		@include sized-sprite($icons, 'ph-pick-up');
+		top: 3px;
+	}
+}
+.r-btn_down{
+	@include background-image(linear-gradient(#d70018, #7f0211));
+	span{
+		@include sized-sprite($icons, 'ph-hang-up');
+		top: -1px;
+	}
+}
+.r-btn_arr{
+	@include background-image(linear-gradient(#636570, #42434d));
+	span{
+		@include sized-sprite($icons, 'ph-arr');
+		
+	}
+}
+.icon-audio{
+	@include sized-sprite($icons, 'icon-device-3');
+	display: inline-block;
+	margin: 0 3px -11px -15px;
+	position: relative;
+	top: -3px;
 }

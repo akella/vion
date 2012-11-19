@@ -16,6 +16,21 @@ body{
 	background-size:cover;
 }
 
+@font-face {
+	font-family: 'HelveticaNeue-B';
+	src: url('../fonts/HelveticaNeue-Bold.eot');
+	src: local('☺'), url('../fonts/HelveticaNeue-Bold.woff') format('woff'), url('../fonts/HelveticaNeue-Bold.ttf') format('truetype'), url('/..fonts/HelveticaNeue-Bold.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'HelveticaNeue-M';
+	src: url('../fonts/HelveticaNeueCyr-Medium.eot');
+	src: local('☺'), url('../fonts/HelveticaNeueCyr-Medium.woff') format('woff'), url('../fonts/HelveticaNeueCyr-Medium.ttf') format('truetype'), url('../fonts/HelveticaNeueCyr-Medium.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
 /*resets*/
 a img,fieldset{border:none;}
 a{
@@ -33,6 +48,8 @@ button,input[type=submit]::-moz-focus-inner { padding: 0; border: 0 }
 	box-shadow:0 1px 0 0 #4f4f5b inset, 0 0 6px 5px rgba(0, 0, 0, 0.45);
 	height:60px;
 	min-width:1280px;
+	position: relative;
+	z-index:10;
 	.h-box{
 		border-right:1px solid #2e2b32;
 		box-shadow:1px 0 0 0 rgba(white,.1);
@@ -261,55 +278,14 @@ button,input[type=submit]::-moz-focus-inner { padding: 0; border: 0 }
 	}
 }
 
-.user-list{
-	text-align:left;
-	.user__item{
-		overflow:hidden;
-		padding:6px 0 0 7px;
-		background:#1c1c1c;
-		border-top:1px solid #29262f;
-		border-bottom:1px solid #1c1c1c;
-		height:52px;
-		&:nth-child(even){
-			background:#252525;
-			border-top-color:#3a3a3a;
-			border-bottom-color:#0f0f0f;
-			.user__time{color:#a7cc14;}
-		}
 
-	}
-	.userpic{
-		margin:0;
-		a{padding:0;}
-	}
-	.user__name{
-		font-size:12px;
-		color:#cecece;
-		font-weight:bold;
-		text-shadow:rgba(0,0,0,.75) 0 1px 0;
-		float:left;
-		margin-left:11px;
-		width:75px;
-		padding-right:25px;
-	}
-	.user__lang{
-		font-size:11px;
-		color:#8b8c92;
-		font-family:Helvetica, Arial, sans-serif;
-		float:left;
-		margin-left:14px;
-		width:60px;
-		font-weight:bold;
-	}
-	.user__time{
-		color:#eeb411;
-		font-size:11px;
-		font-family:Helvetica, Arial, sans-serif;
-		float:left;
-		margin-left:7px;
-		font-weight:bold;
-	}
-}
 .drop .user-list{
 	margin:7px -3px;
+	.user__item{
+		padding-left:7px;
+		&:first-child{
+			box-shadow:none;
+			border-top-color:#29262f;
+		}
+	}
 }
