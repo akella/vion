@@ -130,13 +130,13 @@
 						</a>
 						<div class="drop drop_user-list">
 							<div class="user-list">
-								<div class="user__item">
+								<div class="user-item">
 									<div class="userpic"><a href="#"><img src="img/userpic-01.jpg" alt=""></a></div>
 									<div class="user__name">Thom Gruhler</div>
 									<div class="user__lang">English</div>
 									<div class="user__time">05:35</div>
 								</div>
-								<div class="user__item">
+								<div class="user-item">
 									<div class="userpic"><a href="#"><img src="img/userpic-02.jpg" alt=""></a></div>
 									<div class="user__name">Paul Cruickshank</div>
 									<div class="user__lang">English</div>
@@ -200,6 +200,24 @@
 		</div>
 	</header>
 
+	<div class="sidebar">
+		<div style="height:41px;">Calls</div>
+		<div class="form-search">
+			<form action="#">
+				<input type="text" class="input-search">
+				<input type="submit" value="Найти" class="btn-search">
+				<div class="cancel"></div>
+			</form>
+		</div>
+		<div class="tabs">
+			<ul class="tabs__nav">
+				<li><a href="#">Queue</a></li>
+				<li><a href="#">Active <span class="mark-count">6</span> </a></li>
+				<li><a href="#">Operators</a></li>
+			</ul>
+		</div>
+	</div>
+
 	<div class="win" style="top:165px; margin-left:-220px; z-index:20;">
 		<div class="win__header">
 			<h1>Incomming call</h1>
@@ -213,21 +231,21 @@
 			<div class="win__dev"></div>
 			<h2 class="h2">Also in the room:</h2>
 			<div class="user-list">
-				<div class="user__item">
+				<div class="user-item">
 					<div class="userpic"><a href="#"></a></div>
 					<div class="user__name">Paul Cruickshank</div>
 					<div class="user__mic"></div>
 				</div>
-				<div class="user__item">
+				<div class="user-item">
 					<div class="userpic"><a href="#"><img alt="" src="img/userpic-02.jpg"></a></div>
 					<div class="user__name">Paul Cruickshank</div>
 					<div class="user__mic"></div>					
 				</div>
 			</div>
-			<div class="win__box">
-				<h2 class="h2" style="margin-top:10px;">Room subject:</h2>
+			<div class="win__text-box">
+				<h2 class="h2">Room subject:</h2>
 				<div class="text-note">
-					Challenge to the policy immed problem for the new Energy and Climate Change to the policy immed problem for the new Energy
+					<textarea>Challenge to the policy immed problem for the new Energy and Climate Change to the policy immed problem for the new Energy</textarea>
 				</div>
 			</div>
 			<div class="win__footer">
@@ -248,23 +266,20 @@
 				<h2 class="h2"><i class="icon-audio"></i> Audio chat with:</h2>
 			</div>
 			<div class="win__dev"></div>
-			<h2 class="h2">Also in the room:</h2>
-			<div class="user-list">
-				<div class="user__item">
-					<div class="userpic"><a href="#"></a></div>
-					<div class="user__name">Paul Cruickshank</div>
-					<div class="user__mic"></div>
+			<div class="user-item user-item_big">
+				<div class="userpic"><a href="#"><img alt="" src="img/userpic-01.jpg"></a></div>
+				<div class="user__name">Paul Cruickshank</div>
+				<div class="user__block">
+					<div class="user__lang">English</div>
+					<div class="user__time">05:35</div>
 				</div>
-				<div class="user__item">
-					<div class="userpic"><a href="#"><img alt="" src="img/userpic-02.jpg"></a></div>
-					<div class="user__name">Paul Cruickshank</div>
-					<div class="user__mic"></div>					
+				<div class="user__add">
+					<div class="user__link"><a href="#">microsoft.com</a></div>
+					<div class="user__link"><a href="#">pall.cruickshank@microsoft.com</a></div>
 				</div>
 			</div>
-			<div class="win__box">
-				<div class="text-note">
-					Challenge to the policy immed problem for the new Energy and Climate Change to the policy immed problem for the new Energy
-				</div>
+			<div class="text-note">
+				<textarea>Challenge to the policy immed problem for the new Energy and Climate Change to the policy immed problem for the new Energy</textarea>
 			</div>
 			<div class="win__footer">
 				<button class="r-btn r-btn_up"><span></span></button>

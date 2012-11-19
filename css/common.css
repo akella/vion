@@ -56,7 +56,7 @@ a:hover {
 }
 
 /* line 40, ../sass/common.scss */
-button, input[type=submit]::-moz-focus-inner {
+button, textarea, input[type=submit]::-moz-focus-inner {
   padding: 0;
   border: 0;
 }
@@ -422,6 +422,26 @@ button, input[type=submit]::-moz-focus-inner {
 }
 
 /* line 263, ../sass/common.scss */
+.mark-count {
+  display: inline-block;
+  color: #eccdcd;
+  font-size: 11px;
+  font-weight: bold;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #e00d0d), color-stop(100%, #b10606));
+  background-image: -webkit-linear-gradient(#e00d0d, #b10606);
+  background-image: -moz-linear-gradient(#e00d0d, #b10606);
+  background-image: -o-linear-gradient(#e00d0d, #b10606);
+  background-image: linear-gradient(#e00d0d, #b10606);
+  height: 15px;
+  line-height: 15px;
+  width: 14px;
+  text-align: center;
+  box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.3) inset, 0 1px 2px rgba(0, 0, 0, 0.5);
+  border-radius: 3px;
+  margin-left: 5px;
+}
+
+/* line 278, ../sass/common.scss */
 .userpic {
   border: 1px solid #000;
   border-radius: 3px;
@@ -437,7 +457,7 @@ button, input[type=submit]::-moz-focus-inner {
   background-image: -o-linear-gradient(rgba(255, 255, 255, 0.3) 0%, rgba(249, 252, 254, 0) 5%, rgba(125, 185, 232, 0) 100%);
   background-image: linear-gradient(rgba(255, 255, 255, 0.3) 0%, rgba(249, 252, 254, 0) 5%, rgba(125, 185, 232, 0) 100%);
 }
-/* line 273, ../sass/common.scss */
+/* line 288, ../sass/common.scss */
 .userpic a {
   border: 1px solid #030303;
   display: block;
@@ -447,16 +467,16 @@ button, input[type=submit]::-moz-focus-inner {
   background-color: #292a32;
 }
 
-/* line 282, ../sass/common.scss */
+/* line 297, ../sass/common.scss */
 .drop .user-list {
   margin: 7px -3px;
 }
-/* line 284, ../sass/common.scss */
-.drop .user-list .user__item {
+/* line 299, ../sass/common.scss */
+.drop .user-list .user-item {
   padding-left: 7px;
 }
-/* line 286, ../sass/common.scss */
-.drop .user-list .user__item:first-child {
+/* line 301, ../sass/common.scss */
+.drop .user-list .user-item:first-child {
   box-shadow: none;
   border-top-color: #29262f;
 }

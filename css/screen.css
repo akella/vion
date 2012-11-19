@@ -56,7 +56,7 @@ a:hover {
 }
 
 /* line 40, ../sass/common.scss */
-button, input[type=submit]::-moz-focus-inner {
+button, textarea, input[type=submit]::-moz-focus-inner {
   padding: 0;
   border: 0;
 }
@@ -422,6 +422,26 @@ button, input[type=submit]::-moz-focus-inner {
 }
 
 /* line 263, ../sass/common.scss */
+.mark-count {
+  display: inline-block;
+  color: #eccdcd;
+  font-size: 11px;
+  font-weight: bold;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #e00d0d), color-stop(100%, #b10606));
+  background-image: -webkit-linear-gradient(#e00d0d, #b10606);
+  background-image: -moz-linear-gradient(#e00d0d, #b10606);
+  background-image: -o-linear-gradient(#e00d0d, #b10606);
+  background-image: linear-gradient(#e00d0d, #b10606);
+  height: 15px;
+  line-height: 15px;
+  width: 14px;
+  text-align: center;
+  box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.3) inset, 0 1px 2px rgba(0, 0, 0, 0.5);
+  border-radius: 3px;
+  margin-left: 5px;
+}
+
+/* line 278, ../sass/common.scss */
 .userpic {
   border: 1px solid #000;
   border-radius: 3px;
@@ -437,7 +457,7 @@ button, input[type=submit]::-moz-focus-inner {
   background-image: -o-linear-gradient(rgba(255, 255, 255, 0.3) 0%, rgba(249, 252, 254, 0) 5%, rgba(125, 185, 232, 0) 100%);
   background-image: linear-gradient(rgba(255, 255, 255, 0.3) 0%, rgba(249, 252, 254, 0) 5%, rgba(125, 185, 232, 0) 100%);
 }
-/* line 273, ../sass/common.scss */
+/* line 288, ../sass/common.scss */
 .userpic a {
   border: 1px solid #030303;
   display: block;
@@ -447,16 +467,16 @@ button, input[type=submit]::-moz-focus-inner {
   background-color: #292a32;
 }
 
-/* line 282, ../sass/common.scss */
+/* line 297, ../sass/common.scss */
 .drop .user-list {
   margin: 7px -3px;
 }
-/* line 284, ../sass/common.scss */
-.drop .user-list .user__item {
+/* line 299, ../sass/common.scss */
+.drop .user-list .user-item {
   padding-left: 7px;
 }
-/* line 286, ../sass/common.scss */
-.drop .user-list .user__item:first-child {
+/* line 301, ../sass/common.scss */
+.drop .user-list .user-item:first-child {
   box-shadow: none;
   border-top-color: #29262f;
 }
@@ -844,6 +864,10 @@ button, input[type=submit]::-moz-focus-inner {
   padding-top: 9px;
 }
 /* line 43, ../sass/win.scss */
+.win .win__text-box {
+  padding: 13px 0 5px;
+}
+/* line 46, ../sass/win.scss */
 .win .win__dev {
   width: 322px;
   margin: 0 auto;
@@ -851,7 +875,7 @@ button, input[type=submit]::-moz-focus-inner {
   border-top: 1px solid #000100;
   border-bottom: 1px solid #4c4b53;
 }
-/* line 50, ../sass/win.scss */
+/* line 53, ../sass/win.scss */
 .win .win__footer {
   background: #222;
   border-top: 1px solid #000;
@@ -861,7 +885,7 @@ button, input[type=submit]::-moz-focus-inner {
   padding: 14px 0;
 }
 
-/* line 59, ../sass/win.scss */
+/* line 62, ../sass/win.scss */
 .h2 {
   color: #cecece;
   font-size: 13px;
@@ -870,7 +894,7 @@ button, input[type=submit]::-moz-focus-inner {
   margin: 7px 23px 10px;
 }
 
-/* line 66, ../sass/win.scss */
+/* line 69, ../sass/win.scss */
 .chat-title {
   font-size: 18px;
   color: #e3ad12;
@@ -878,17 +902,18 @@ button, input[type=submit]::-moz-focus-inner {
   margin: 0 23px 15px;
 }
 
-/* line 72, ../sass/win.scss */
+/* line 75, ../sass/win.scss */
 .h2 + .chat-title {
   margin-top: -6px;
 }
 
-/* line 74, ../sass/win.scss */
+/* line 77, ../sass/win.scss */
 .user-list {
   text-align: left;
 }
-/* line 76, ../sass/win.scss */
-.user-list .user__item {
+
+/* line 78, ../sass/win.scss */
+.user-item {
   overflow: hidden;
   padding: 6px 0 0 17px;
   background: #1c1c1c;
@@ -896,31 +921,31 @@ button, input[type=submit]::-moz-focus-inner {
   border-bottom: 1px solid #1c1c1c;
   height: 52px;
 }
-/* line 83, ../sass/win.scss */
-.user-list .user__item:nth-child(even) {
+/* line 85, ../sass/win.scss */
+.user-item:nth-child(even) {
   background: #252525;
   border-top-color: #3a3a3a;
   border-bottom-color: #0f0f0f;
 }
-/* line 87, ../sass/win.scss */
-.user-list .user__item:nth-child(even) .user__time {
+/* line 89, ../sass/win.scss */
+.user-item:nth-child(even) .user__time {
   color: #a7cc14;
 }
-/* line 89, ../sass/win.scss */
-.user-list .user__item:first-child {
+/* line 91, ../sass/win.scss */
+.user-item:first-child {
   box-shadow: 0 6px 6px -6px rgba(0, 0, 0, 0.7) inset;
   border-top-color: #2f2f37;
 }
-/* line 94, ../sass/win.scss */
-.user-list .userpic {
+/* line 95, ../sass/win.scss */
+.user-item .userpic {
   margin: 0;
 }
-/* line 96, ../sass/win.scss */
-.user-list .userpic a {
+/* line 97, ../sass/win.scss */
+.user-item .userpic a {
   padding: 0;
 }
-/* line 98, ../sass/win.scss */
-.user-list .user__name {
+/* line 99, ../sass/win.scss */
+.user-item .user__name {
   font-size: 12px;
   color: #cecece;
   font-weight: bold;
@@ -931,8 +956,8 @@ button, input[type=submit]::-moz-focus-inner {
   padding-right: 25px;
   line-height: 16px;
 }
-/* line 109, ../sass/win.scss */
-.user-list .user__lang {
+/* line 110, ../sass/win.scss */
+.user-item .user__lang {
   font-size: 11px;
   color: #8b8c92;
   font-family: Helvetica, Arial, sans-serif;
@@ -941,8 +966,8 @@ button, input[type=submit]::-moz-focus-inner {
   width: 60px;
   font-weight: bold;
 }
-/* line 118, ../sass/win.scss */
-.user-list .user__time {
+/* line 119, ../sass/win.scss */
+.user-item .user__time {
   color: #eeb411;
   font-size: 11px;
   font-family: Helvetica, Arial, sans-serif;
@@ -950,16 +975,77 @@ button, input[type=submit]::-moz-focus-inner {
   margin-left: 7px;
   font-weight: bold;
 }
-/* line 126, ../sass/win.scss */
-.user-list .user__mic {
+/* line 127, ../sass/win.scss */
+.user-item .user__mic {
   background: url('../img/icons-sf84890c49a.png') 0 -177px no-repeat;
   width: 30px;
   height: 30px;
   float: right;
   margin: 8px 8px 0 0;
 }
-
 /* line 132, ../sass/win.scss */
+.user-item .user__block {
+  float: left;
+}
+/* line 134, ../sass/win.scss */
+.user-item .user__block * {
+  float: none;
+  margin-left: 0;
+  margin-right: 0;
+}
+/* line 140, ../sass/win.scss */
+.user-item .user__link {
+  color: #3686b8;
+  font-size: 11px;
+  font-weight: bold;
+}
+/* line 144, ../sass/win.scss */
+.user-item .user__link a {
+  text-decoration: none;
+  color: #3686b8;
+}
+/* line 147, ../sass/win.scss */
+.user-item .user__link a:hover {
+  text-decoration: underline;
+}
+
+/* line 151, ../sass/win.scss */
+.user-item_big {
+  padding: 9px 11px 0 9px;
+  border: 0;
+  background: none;
+  box-shadow: none;
+  height: auto;
+  margin-bottom: 10px;
+}
+/* line 158, ../sass/win.scss */
+.user-item_big .user__name {
+  font-size: 18px;
+  line-height: 22px;
+  margin: 3px 0 0 9px;
+}
+/* line 163, ../sass/win.scss */
+.user-item_big .user__block {
+  float: right;
+  text-align: right;
+  line-height: 18px;
+}
+/* line 167, ../sass/win.scss */
+.user-item_big .user__block * {
+  margin-bottom: 3px;
+}
+/* line 169, ../sass/win.scss */
+.user-item_big .user__add {
+  width: 261px;
+  clear: both;
+  padding: 14px 0 0 57px;
+}
+/* line 174, ../sass/win.scss */
+.user-item_big .user__link {
+  margin: 0 0 7px;
+}
+
+/* line 176, ../sass/win.scss */
 .text-note {
   background: #eaebf3;
   box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.75);
@@ -967,20 +1053,19 @@ button, input[type=submit]::-moz-focus-inner {
   font-size: 13px;
   line-height: 19px;
   font-family: 'HelveticaNeue-M', Helvetica, Arial, sans-serif;
-  margin: 0 8px 17px 17px;
+  margin: 0 8px 11px 17px;
   border-radius: 5px;
   position: relative;
-  z-index: 5;
   padding: 11px 9px;
+  min-height: 57px;
 }
-/* line 144, ../sass/win.scss */
-.text-note:before {
+/* line 188, ../sass/win.scss */
+.text-note:after {
   content: "";
   height: 12px;
   width: 12px;
   background: #eaebf3;
   position: absolute;
-  z-index: 2;
   -moz-transform: rotate(45deg);
   -o-transform: rotate(45deg);
   -webkit-transform: rotate(45deg);
@@ -990,8 +1075,9 @@ button, input[type=submit]::-moz-focus-inner {
   zoom: 1;
   top: 19px;
   left: -5px;
+  box-shadow: -3px 3px 3px 0px rgba(0, 0, 0, 0.35);
 }
-/* line 155, ../sass/win.scss */
+/* line 199, ../sass/win.scss */
 .text-note textarea {
   border: 0;
   padding: 0;
@@ -1002,9 +1088,11 @@ button, input[type=submit]::-moz-focus-inner {
   width: 100%;
   color: #686a78;
   min-height: 57px;
+  display: block;
+  resize: vertical;
 }
 
-/* line 167, ../sass/win.scss */
+/* line 213, ../sass/win.scss */
 .r-btn {
   height: 40px;
   width: 40px;
@@ -1016,13 +1104,17 @@ button, input[type=submit]::-moz-focus-inner {
   margin: 0 5px;
   box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.4) inset, 0 -1px 0 0 rgba(46, 77, 0, 0.09) inset, 0 0 3px 0 rgba(0, 0, 0, 0.5);
 }
-/* line 177, ../sass/win.scss */
+/* line 223, ../sass/win.scss */
 .r-btn span {
   display: inline-block;
   position: relative;
 }
+/* line 227, ../sass/win.scss */
+.r-btn:hover {
+  box-shadow: 0 -1px 0 0 rgba(255, 255, 255, 0.4) inset, 0 1px 0 0 rgba(46, 77, 0, 0.09) inset, 0 0 3px 0 rgba(0, 0, 0, 0.5);
+}
 
-/* line 182, ../sass/win.scss */
+/* line 231, ../sass/win.scss */
 .r-btn_up {
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #87b60d), color-stop(100%, #417204));
   background-image: -webkit-linear-gradient(#87b60d, #417204);
@@ -1030,15 +1122,23 @@ button, input[type=submit]::-moz-focus-inner {
   background-image: -o-linear-gradient(#87b60d, #417204);
   background-image: linear-gradient(#87b60d, #417204);
 }
-/* line 184, ../sass/win.scss */
+/* line 233, ../sass/win.scss */
 .r-btn_up span {
   background: url('../img/icons-sf84890c49a.png') 0 -439px no-repeat;
   width: 18px;
   height: 19px;
   top: 3px;
 }
+/* line 237, ../sass/win.scss */
+.r-btn_up:hover {
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #417204), color-stop(100%, #87b60d));
+  background-image: -webkit-linear-gradient(#417204, #87b60d);
+  background-image: -moz-linear-gradient(#417204, #87b60d);
+  background-image: -o-linear-gradient(#417204, #87b60d);
+  background-image: linear-gradient(#417204, #87b60d);
+}
 
-/* line 189, ../sass/win.scss */
+/* line 239, ../sass/win.scss */
 .r-btn_down {
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #d70018), color-stop(100%, #7f0211));
   background-image: -webkit-linear-gradient(#d70018, #7f0211);
@@ -1046,15 +1146,23 @@ button, input[type=submit]::-moz-focus-inner {
   background-image: -o-linear-gradient(#d70018, #7f0211);
   background-image: linear-gradient(#d70018, #7f0211);
 }
-/* line 191, ../sass/win.scss */
+/* line 241, ../sass/win.scss */
 .r-btn_down span {
   background: url('../img/icons-sf84890c49a.png') 0 -515px no-repeat;
   width: 22px;
   height: 10px;
   top: -1px;
 }
+/* line 245, ../sass/win.scss */
+.r-btn_down:hover {
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #7f0211), color-stop(100%, #d70018));
+  background-image: -webkit-linear-gradient(#7f0211, #d70018);
+  background-image: -moz-linear-gradient(#7f0211, #d70018);
+  background-image: -o-linear-gradient(#7f0211, #d70018);
+  background-image: linear-gradient(#7f0211, #d70018);
+}
 
-/* line 196, ../sass/win.scss */
+/* line 247, ../sass/win.scss */
 .r-btn_arr {
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #636570), color-stop(100%, #42434d));
   background-image: -webkit-linear-gradient(#636570, #42434d);
@@ -1062,14 +1170,22 @@ button, input[type=submit]::-moz-focus-inner {
   background-image: -o-linear-gradient(#636570, #42434d);
   background-image: linear-gradient(#636570, #42434d);
 }
-/* line 198, ../sass/win.scss */
+/* line 249, ../sass/win.scss */
 .r-btn_arr span {
   background: url('../img/icons-sf84890c49a.png') 0 -535px no-repeat;
   width: 14px;
   height: 15px;
 }
+/* line 250, ../sass/win.scss */
+.r-btn_arr:hover {
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #42434d), color-stop(100%, #636570));
+  background-image: -webkit-linear-gradient(#42434d, #636570);
+  background-image: -moz-linear-gradient(#42434d, #636570);
+  background-image: -o-linear-gradient(#42434d, #636570);
+  background-image: linear-gradient(#42434d, #636570);
+}
 
-/* line 203, ../sass/win.scss */
+/* line 252, ../sass/win.scss */
 .icon-audio {
   background: url('../img/icons-sf84890c49a.png') 0 -250px no-repeat;
   width: 19px;
@@ -1078,6 +1194,22 @@ button, input[type=submit]::-moz-focus-inner {
   margin: 0 3px -11px -15px;
   position: relative;
   top: -3px;
+}
+
+/* line 260, ../sass/win.scss */
+.sidebar {
+  background: url(../img/bg-win.png);
+  width: 330px;
+  border-right: 5px solid #413d46;
+  padding-top: 13px;
+}
+/* line 265, ../sass/win.scss */
+.sidebar .form-search {
+  margin: 0 25px;
+}
+/* line 267, ../sass/win.scss */
+.sidebar .form-search .input-search {
+  width: 225px;
 }
 
 /* line 2, ../sass/ie.scss */
