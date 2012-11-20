@@ -185,11 +185,6 @@ button,textarea,input[type=submit]::-moz-focus-inner { padding: 0; border: 0 }
 				border:0;
 				box-shadow:none;
 			}		
-			.icon-chat{@include sized-sprite($icons, 'icon-chat');}
-			.icon-eye{@include sized-sprite($icons, 'icon-eye');}
-			.icon-mike{@include sized-sprite($icons, 'icon-mike');}
-			.icon-phone{@include sized-sprite($icons, 'icon-phone');}
-			.icon-pencil{@include sized-sprite($icons, 'icon-pencil');}
 			.icon-graph{
 				@include sized-sprite($icons, 'icon-graph');
 				display: block;
@@ -259,7 +254,11 @@ button,textarea,input[type=submit]::-moz-focus-inner { padding: 0; border: 0 }
 		.nav-arr{margin-top:16px;}
 	}
 }
-
+.icon-chat{@include sized-sprite($icons, 'icon-chat');}
+.icon-eye{@include sized-sprite($icons, 'icon-eye');}
+.icon-mike{@include sized-sprite($icons, 'icon-mike');}
+.icon-phone{@include sized-sprite($icons, 'icon-phone');}
+.icon-pencil{@include sized-sprite($icons, 'icon-pencil');}
 .mark-count{
 	display: inline-block;
 	color:#eccdcd;
@@ -268,13 +267,19 @@ button,textarea,input[type=submit]::-moz-focus-inner { padding: 0; border: 0 }
 	@include background-image(linear-gradient(#e00d0d, #b10606));
 	height:15px;
 	line-height:15px;
-	width:14px;
+	padding:0 4px;
 	text-align:center;
 	box-shadow:0 1px 0 0 rgba(white,.3) inset, 0 1px 2px rgba(0,0,0,.5);
 	border-radius:3px;
 	margin-left:5px;
+	font-family: Arial,sans-serif;
+	text-decoration: none;
 }
-
+.mark-count_dark{
+	background:#1f2026;
+	color:#949798;
+	box-shadow:none;
+}
 .userpic{
 	border:1px solid #000;
 	border-radius:3px;

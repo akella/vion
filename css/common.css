@@ -108,7 +108,7 @@ button, textarea, input[type=submit]::-moz-focus-inner {
 }
 /* line 75, ../sass/common.scss */
 .header .h-box_form .input-plus {
-  background: url('../img/icons-sf84890c49a.png') 0 -1125px no-repeat;
+  background: url('../img/icons-s667b622982.png') 0 -1233px no-repeat;
   width: 28px;
   height: 20px;
   border-right: 1px solid #544f5c;
@@ -128,13 +128,13 @@ button, textarea, input[type=submit]::-moz-focus-inner {
 }
 /* line 89, ../sass/common.scss */
 .header .logo-block:hover .logo {
-  background: url('../img/icons-sf84890c49a.png') 0 -217px no-repeat;
+  background: url('../img/icons-s667b622982.png') 0 -325px no-repeat;
   width: 48px;
   height: 23px;
 }
 /* line 92, ../sass/common.scss */
 .header .logo {
-  background: url('../img/icons-sf84890c49a.png') 0 -97px no-repeat;
+  background: url('../img/icons-s667b622982.png') 0 -97px no-repeat;
   width: 48px;
   height: 23px;
   display: block;
@@ -163,7 +163,7 @@ button, textarea, input[type=submit]::-moz-focus-inner {
 }
 /* line 110, ../sass/common.scss */
 .header .nav-item:hover .nav-arr {
-  background: url('../img/icons-sf84890c49a.png') 0 -312px no-repeat;
+  background: url('../img/icons-s667b622982.png') 0 -420px no-repeat;
   width: 22px;
   height: 22px;
   top: 8px;
@@ -171,7 +171,7 @@ button, textarea, input[type=submit]::-moz-focus-inner {
 }
 /* line 117, ../sass/common.scss */
 .header .nav-arr {
-  background: url('../img/icons-sf84890c49a.png') 0 -380px no-repeat;
+  background: url('../img/icons-s667b622982.png') 0 -488px no-repeat;
   width: 18px;
   height: 19px;
   display: inline-block;
@@ -213,37 +213,37 @@ button, textarea, input[type=submit]::-moz-focus-inner {
 }
 /* line 142, ../sass/common.scss */
 .header .nav li:hover .icon-chat {
-  background: url('../img/icons-sf84890c49a.png') 0 -736px no-repeat;
+  background: url('../img/icons-s667b622982.png') 0 -844px no-repeat;
   width: 16px;
   height: 16px;
 }
 /* line 143, ../sass/common.scss */
 .header .nav li:hover .icon-eye {
-  background: url('../img/icons-sf84890c49a.png') 0 -814px no-repeat;
+  background: url('../img/icons-s667b622982.png') 0 -922px no-repeat;
   width: 16px;
   height: 16px;
 }
 /* line 144, ../sass/common.scss */
 .header .nav li:hover .icon-mike {
-  background: url('../img/icons-sf84890c49a.png') 0 -918px no-repeat;
+  background: url('../img/icons-s667b622982.png') 0 -1026px no-repeat;
   width: 16px;
   height: 16px;
 }
 /* line 145, ../sass/common.scss */
 .header .nav li:hover .icon-phone {
-  background: url('../img/icons-sf84890c49a.png') 0 -560px no-repeat;
+  background: url('../img/icons-s667b622982.png') 0 -668px no-repeat;
   width: 16px;
   height: 16px;
 }
 /* line 146, ../sass/common.scss */
 .header .nav li:hover .icon-pencil {
-  background: url('../img/icons-sf84890c49a.png') 0 -970px no-repeat;
+  background: url('../img/icons-s667b622982.png') 0 -1078px no-repeat;
   width: 16px;
   height: 16px;
 }
 /* line 147, ../sass/common.scss */
 .header .nav li:hover .icon-graph {
-  background: url('../img/icons-sf84890c49a.png') 0 0 no-repeat;
+  background: url('../img/icons-s667b622982.png') 0 0 no-repeat;
   width: 40px;
   height: 40px;
   margin: 1px 0 0 9px;
@@ -297,64 +297,34 @@ button, textarea, input[type=submit]::-moz-focus-inner {
   box-shadow: none;
 }
 /* line 188, ../sass/common.scss */
-.header .nav li .icon-chat {
-  background: url('../img/icons-sf84890c49a.png') 0 -710px no-repeat;
-  width: 16px;
-  height: 16px;
-}
-/* line 189, ../sass/common.scss */
-.header .nav li .icon-eye {
-  background: url('../img/icons-sf84890c49a.png') 0 -892px no-repeat;
-  width: 16px;
-  height: 16px;
-}
-/* line 190, ../sass/common.scss */
-.header .nav li .icon-mike {
-  background: url('../img/icons-sf84890c49a.png') 0 -944px no-repeat;
-  width: 16px;
-  height: 16px;
-}
-/* line 191, ../sass/common.scss */
-.header .nav li .icon-phone {
-  background: url('../img/icons-sf84890c49a.png') 0 -649px no-repeat;
-  width: 16px;
-  height: 16px;
-}
-/* line 192, ../sass/common.scss */
-.header .nav li .icon-pencil {
-  background: url('../img/icons-sf84890c49a.png') 0 -1047px no-repeat;
-  width: 16px;
-  height: 16px;
-}
-/* line 193, ../sass/common.scss */
 .header .nav li .icon-graph {
-  background: url('../img/icons-sf84890c49a.png') 0 -130px no-repeat;
+  background: url('../img/icons-s667b622982.png') 0 -130px no-repeat;
   width: 36px;
   height: 37px;
   display: block;
   margin: 1px 0 0 11px;
 }
-/* line 200, ../sass/common.scss */
+/* line 195, ../sass/common.scss */
 .header .icon-win {
-  background: url('../img/icons-sf84890c49a.png') 0 -50px no-repeat;
+  background: url('../img/icons-s667b622982.png') 0 -50px no-repeat;
   width: 36px;
   height: 37px;
   margin: 12px 10px 0 11px;
 }
-/* line 204, ../sass/common.scss */
+/* line 199, ../sass/common.scss */
 .header .icon-medal {
-  background: url('../img/icons-sf84890c49a.png') 0 -675px no-repeat;
+  background: url('../img/icons-s667b622982.png') 0 -783px no-repeat;
   width: 14px;
   height: 25px;
   float: left;
   margin: 17px 0 18px 12px;
 }
-/* line 209, ../sass/common.scss */
+/* line 204, ../sass/common.scss */
 .header .inf-medal {
   margin: 0 10px 0 33px;
   text-align: center;
 }
-/* line 212, ../sass/common.scss */
+/* line 207, ../sass/common.scss */
 .header .inf-medal strong {
   font-size: 18px;
   color: #f2ba06;
@@ -362,7 +332,7 @@ button, textarea, input[type=submit]::-moz-focus-inner {
   width: 26px;
   margin: 8px 0 0;
 }
-/* line 219, ../sass/common.scss */
+/* line 214, ../sass/common.scss */
 .header .inf-medal span {
   color: #656167;
   font-size: 11px;
@@ -372,33 +342,33 @@ button, textarea, input[type=submit]::-moz-focus-inner {
   border-top: 1px solid #45404a;
   padding: 8px 0 0;
 }
-/* line 229, ../sass/common.scss */
+/* line 224, ../sass/common.scss */
 .header .h-box_time {
   font-size: 24px;
   color: #b2b2bf;
   padding: 0 11px 0 12px;
   line-height: 60px;
 }
-/* line 234, ../sass/common.scss */
+/* line 229, ../sass/common.scss */
 .header .h-box_time .nav-arr {
   top: 2px;
   margin: 0;
 }
-/* line 239, ../sass/common.scss */
+/* line 234, ../sass/common.scss */
 .header .h-box_time:hover .nav-arr {
-  background: url('../img/icons-sf84890c49a.png') 0 -312px no-repeat;
+  background: url('../img/icons-s667b622982.png') 0 -420px no-repeat;
   width: 22px;
   height: 22px;
   top: 5px;
   margin: 0 -3px 0 -1px;
 }
-/* line 244, ../sass/common.scss */
+/* line 239, ../sass/common.scss */
 .header .h-box_time:hover .drop {
   display: block;
 }
-/* line 247, ../sass/common.scss */
+/* line 242, ../sass/common.scss */
 .header .icon-pause {
-  background: url('../img/icons-sf84890c49a.png') 0 -283px no-repeat;
+  background: url('../img/icons-s667b622982.png') 0 -391px no-repeat;
   width: 18px;
   height: 19px;
   display: inline-block;
@@ -407,21 +377,56 @@ button, textarea, input[type=submit]::-moz-focus-inner {
   cursor: pointer;
   top: 2px;
 }
-/* line 255, ../sass/common.scss */
+/* line 250, ../sass/common.scss */
 .header .userpic {
   margin: 7px 2px 0 12px;
 }
-/* line 256, ../sass/common.scss */
+/* line 251, ../sass/common.scss */
 .header .h-box_user {
   border: 0;
   box-shadow: none;
 }
-/* line 259, ../sass/common.scss */
+/* line 254, ../sass/common.scss */
 .header .h-box_user .nav-arr {
   margin-top: 16px;
 }
 
-/* line 263, ../sass/common.scss */
+/* line 257, ../sass/common.scss */
+.icon-chat {
+  background: url('../img/icons-s667b622982.png') 0 -818px no-repeat;
+  width: 16px;
+  height: 16px;
+}
+
+/* line 258, ../sass/common.scss */
+.icon-eye {
+  background: url('../img/icons-s667b622982.png') 0 -1000px no-repeat;
+  width: 16px;
+  height: 16px;
+}
+
+/* line 259, ../sass/common.scss */
+.icon-mike {
+  background: url('../img/icons-s667b622982.png') 0 -1052px no-repeat;
+  width: 16px;
+  height: 16px;
+}
+
+/* line 260, ../sass/common.scss */
+.icon-phone {
+  background: url('../img/icons-s667b622982.png') 0 -757px no-repeat;
+  width: 16px;
+  height: 16px;
+}
+
+/* line 261, ../sass/common.scss */
+.icon-pencil {
+  background: url('../img/icons-s667b622982.png') 0 -1155px no-repeat;
+  width: 16px;
+  height: 16px;
+}
+
+/* line 262, ../sass/common.scss */
 .mark-count {
   display: inline-block;
   color: #eccdcd;
@@ -434,14 +439,23 @@ button, textarea, input[type=submit]::-moz-focus-inner {
   background-image: linear-gradient(#e00d0d, #b10606);
   height: 15px;
   line-height: 15px;
-  width: 14px;
+  padding: 0 4px;
   text-align: center;
   box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.3) inset, 0 1px 2px rgba(0, 0, 0, 0.5);
   border-radius: 3px;
   margin-left: 5px;
+  font-family: Arial,sans-serif;
+  text-decoration: none;
 }
 
 /* line 278, ../sass/common.scss */
+.mark-count_dark {
+  background: #1f2026;
+  color: #949798;
+  box-shadow: none;
+}
+
+/* line 283, ../sass/common.scss */
 .userpic {
   border: 1px solid #000;
   border-radius: 3px;
@@ -457,25 +471,25 @@ button, textarea, input[type=submit]::-moz-focus-inner {
   background-image: -o-linear-gradient(rgba(255, 255, 255, 0.3) 0%, rgba(249, 252, 254, 0) 5%, rgba(125, 185, 232, 0) 100%);
   background-image: linear-gradient(rgba(255, 255, 255, 0.3) 0%, rgba(249, 252, 254, 0) 5%, rgba(125, 185, 232, 0) 100%);
 }
-/* line 288, ../sass/common.scss */
+/* line 293, ../sass/common.scss */
 .userpic a {
   border: 1px solid #030303;
   display: block;
-  background: url('../img/icons-sf84890c49a.png') 0 -468px no-repeat;
+  background: url('../img/icons-s667b622982.png') 0 -576px no-repeat;
   width: 37px;
   height: 37px;
   background-color: #292a32;
 }
 
-/* line 297, ../sass/common.scss */
+/* line 302, ../sass/common.scss */
 .drop .user-list {
   margin: 7px -3px;
 }
-/* line 299, ../sass/common.scss */
+/* line 304, ../sass/common.scss */
 .drop .user-list .user-item {
   padding-left: 7px;
 }
-/* line 301, ../sass/common.scss */
+/* line 306, ../sass/common.scss */
 .drop .user-list .user-item:first-child {
   box-shadow: none;
   border-top-color: #29262f;
