@@ -8,6 +8,7 @@
 	top:100px;
 	margin-left:-170px;
 	.win__header{
+		background:#414141;
 		@include background-image(linear-gradient(#414141, #212121));
 		border:1px solid #000;
 		border-radius:6px 6px 0 0;
@@ -82,11 +83,11 @@
 	border-top:1px solid #29262f;
 	border-bottom:1px solid #1c1c1c;
 	height:52px;
+	position: relative;
 	&:nth-child(even){
 		background:#252525;
 		border-top-color:#3a3a3a;
 		border-bottom-color:#0f0f0f;
-		.user__time{color:#a7cc14;}
 	}
 	&:first-child{
 		box-shadow:0 6px 6px -6px rgba(0,0,0,0.7) inset;
@@ -102,10 +103,12 @@
 		font-weight:bold;
 		text-shadow:rgba(0,0,0,.75) 0 1px 0;
 		float:left;
-		margin:1px 0 0 11px;
-		width:75px;
-		padding-right:25px;
+		margin:1px 10px 0 11px;
+		width:90px;
 		line-height: 16px;
+		span{
+			display: block;
+		}
 	}
 	.user__lang{
 		font-size:11px;
@@ -124,6 +127,8 @@
 		margin-left:7px;
 		font-weight:bold;
 	}
+	.user__time_gr{color:#a7cc14;}
+	.user__time_rd{color:#e10030;}
 	.user__mic{
 		@include sized-sprite($icons, 'icon-device-2');
 		float: right;
@@ -147,7 +152,44 @@
 			&:hover{text-decoration: underline;}
 		}
 	}
+	.user__phone-pic{
+		@include sized-sprite($icons, 'icon-phone-2');
+		float: left;
+		margin-right:3px;
+	}
+	.user__mic-pic{
+		@include sized-sprite($icons, 'icon-device-4');
+		float: left;
+		margin-right:3px;
+	}
 }
+
+.call-box{
+	background:rgba(0,0,0,.44);
+	position: absolute;
+	top:0;
+	left:0;
+	height:48px;
+	width: 287px;
+	padding: 10px 19px 0 24px;
+	.call-box_btn{
+		float: right;
+	}
+	.r-btn_inf{
+		float: left;
+	}
+
+}
+
+.user-item_blur{
+	*{color:transparent  !important;}
+	.user__name{text-shadow:0 0 5px #cecece !important;}
+	.user__lang{text-shadow:0 0 5px #8b8c92 !important;}
+	.user__time{text-shadow:0 0 5px #eeb411 !important;}
+	.user__time_gr{text-shadow:0 0 5px #a7cc14 !important;}
+	.user__time_rd{text-shadow:0 0 5px #e10030 !important;}
+}
+
 .user-item_big{
 	padding: 9px 11px 0 9px;
 	border:0;
@@ -179,6 +221,7 @@
 	line-height:27px;
 	border:1px solid #000;
 	border-width:1px 0;
+	background:#424242;
 	@include background-image(linear-gradient(#424242, #212121));
 	box-shadow:0 1px 0 0 #505050 inset;
 	box-shadow:0 0 3px 0 rgba(0,0,0,.09);
@@ -195,6 +238,7 @@
 		width:97px;
 	}
 	.user__lang{
+		background:#4c4c4c;
 		@include background-image(linear-gradient(#4c4c4c, #2c2c2c));
 		box-shadow:0 1px 0 0 #595959 inset, 1px 0 0 0 rgba(0,0,0,0.2), -1px 0 0 0 rgba(0,0,0,0.2);
    		width: 93px;
@@ -267,25 +311,46 @@
 	}
 }
 .r-btn_up{
+	background:#87b60d;
 	@include background-image(linear-gradient(#87b60d, #417204));
 	span{
 		@include sized-sprite($icons, 'ph-pick-up');
 		top: 3px;
 	}
-	&:hover{@include background-image(linear-gradient(#417204, #87b60d));}
+	&:hover{
+		background:#417204;
+		@include background-image(linear-gradient(#417204, #87b60d));
+	}
 }
 .r-btn_down{
+	background:#d70018;
 	@include background-image(linear-gradient(#d70018, #7f0211));
 	span{
 		@include sized-sprite($icons, 'ph-hang-up');
 		top: -1px;
 	}
-	&:hover{@include background-image(linear-gradient(#7f0211, #d70018));}
+	&:hover{
+		background:#7f0211;
+		@include background-image(linear-gradient(#7f0211, #d70018));
+	}
 }
 .r-btn_arr{
+	background:#636570;
 	@include background-image(linear-gradient(#636570, #42434d));
 	span{@include sized-sprite($icons, 'ph-arr');}
-	&:hover{@include background-image(linear-gradient(#42434d, #636570));}
+	&:hover{
+		background:#42434d;
+		@include background-image(linear-gradient(#42434d, #636570));
+	}
+}
+.r-btn_inf{
+	background:#4c9ec8;
+	@include background-image(linear-gradient(#4c9ec8, #0d5fa3));
+	span{@include sized-sprite($icons, 'ph-inf');}
+	&:hover{
+		background:#0d5fa3;
+		@include background-image(linear-gradient(#0d5fa3, #4c9ec8));
+	}
 }
 .icon-audio{
 	@include sized-sprite($icons, 'icon-device-3');
@@ -299,15 +364,36 @@
 	background:url(../img/bg-win.png);
 	width:330px;
 	border-right:5px solid #413d46;
-	padding-top:13px;
+	height:100%;
+	position: absolute;
+	top:0;
+	left:0;
+	overflow: hidden;
 	.form-search{
-		margin:0 25px 7px;
+		margin:0 25px 8px;
 		.input-search{width:225px;}
 	}
 	.user-item{
 		padding-left:25px;
 		.user__name{
-			padding-right:37px;
+			width:102px;
+		}
+	}
+	.sidebar__arr{
+		position: absolute;
+		background:#413d46;
+		border-radius:50%;
+		box-shadow:1px 0 0 rgba(white,.2) inset, 0 0 4px 0 rgba(0,0,0,.3);
+		right:-24px;
+		top:50%;
+		margin-top:-26px;
+		height:48px;
+		width:48px;
+		cursor:pointer;
+		i{
+			@include sized-sprite($icons, 'arr-05');
+			display: block;
+			margin: 17px 0 0 10px;
 		}
 	}
 }
@@ -315,7 +401,7 @@
 	overflow: hidden;
 	.tabs__nav{
 		padding-left:25px;
-		height:46px;
+		height:45px;
 		li{
 			float: left;
 			margin-right:5px;
@@ -343,7 +429,7 @@
 			box-shadow:0 2px 2px 0 rgba(0,0,0,.25) inset;
 			@include background-image(linear-gradient(rgba(0,0,0,.25), rgba(0,0,0,.07)));
 			border-radius:3px 3px 0 0;
-			height:45px;
+			height:44px;
 			position: relative;
 			&:hover{@include background-image(linear-gradient(rgba(0,0,0,.25), rgba(0,0,0,.07)));}
 			a{
@@ -386,6 +472,7 @@
 	.tabs__contant{
 		@include background-image(linear-gradient(rgba(0,0,0,.07), transparent 25%, transparent));
 		padding-top:15px;
+		display: none;
 	}
 }
 .nav-sm{
@@ -421,6 +508,7 @@
 		line-height:38px;
 		text-decoration: none;
 		&:hover{
+			background:#202127;
 			@include background-image(linear-gradient(#202127, #393b44));
 			.icon-chat{@include sized-sprite($icons, 'icon-chat_active');}
 			.icon-eye{@include sized-sprite($icons, 'icon-eye_active');}
@@ -439,4 +527,52 @@
 	.mark-count{
 		margin: 0 -6px 0 3px;
 	}
+}
+
+.control{
+	padding:73px 0 0;
+	.control__block{
+		
+	}
+	.control__title{
+		height:40px;
+		line-height:40px;
+		padding:0 24px 0 25px;
+		text-shadow:1px 0 0 rgba(0,0,0,.57);
+		font-family: 'HelveticaNeue-M', Helvetica, Arial, sans-serif;
+		font-size:16px;
+		box-shadow:0 1px 2px 0 rgba(0,0,0,.15), 0 1px 0 0 rgba(white,.15) inset, 0 -1px 0 0 rgba(0,0,0,.45) inset;
+		background:#6e726a;
+		@include background-image(linear-gradient(#6e726a, #3f413c));
+		color:#b3b2b9;
+		overflow: hidden;
+		.btn-arr-up, .btn-close{
+			float: right;
+			margin:10px 0 0 4px;
+		}
+	}
+	.control__title_violet{
+		background:#6b2bb3;
+		@include background-image(linear-gradient(#6b2bb3, #301565));
+		color:#d5d3dd;
+	}
+	.control__title_orange{
+		background:#c3693f;
+		@include background-image(linear-gradient(#c3693f, #822b24));
+		color:#bbb1b8;
+	}
+	.control__inf{
+		padding:1px 0 13px;
+		display: none;
+	}
+}
+.btn-close{
+	@include sized-sprite($icons, 'close');
+	display: block;
+	cursor:pointer;
+}
+.btn-arr-up{
+	@include sized-sprite($icons, 'arr-03');
+	display: block;
+	cursor:pointer;
 }

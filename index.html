@@ -9,9 +9,15 @@
 <body>
 <!-- BEGIN  out-->
 <div class="out">
+	<!-- BEGIN .header -->
 	<header class="header">
+		<!-- BEGIN .in -->
 		<div class="in">
+
+			<!-- BEGIN .h-box -->
 			<div class="h-box">
+				
+				<!-- BEGIN .logo-block -->
 				<div class="logo-block">
 					<a class="logo" href="#"></a>
 					<div class="drop">
@@ -29,6 +35,9 @@
 						</ul>
 					</div>
 				</div>
+				<!-- END .logo-block -->
+
+				<!-- BEGIB .nav-item -->
 				<div class="nav-item">
 					<a href="#" class="nav-item__text">Active<i class="nav-arr"></i></a>
 					<div class="drop">
@@ -61,6 +70,9 @@
 						</ul>
 					</div>
 				</div>
+				<!-- END .nav-item -->
+
+				<!-- BEGIB .nav-item -->
 				<div class="nav-item">
 					<a href="#" class="nav-item__text nav-item__text_yellow">Tools<i class="nav-arr"></i></a>
 					<div class="drop">
@@ -83,7 +95,12 @@
 						</ul>
 					</div>
 				</div>
+				<!-- END .nav-item -->
+
 			</div>
+			<!-- END .h-box -->
+
+			<!-- BEGIN .h-box -->
 			<div class="h-box h-box_form">
 				<form action="#">
 					<input type="text" class="input" placeholder="Go to this address">
@@ -114,6 +131,9 @@
 					</ul>
 				</div>
 			</div>
+			<!-- END .h-box -->
+
+			<!-- BEGIN .h-box -->
 			<div class="h-box">
 				<ul class="nav">
 					<li>
@@ -132,15 +152,15 @@
 							<div class="user-list">
 								<div class="user-item">
 									<div class="userpic"><a href="#"><img src="img/userpic-01.jpg" alt=""></a></div>
-									<div class="user__name">Thom Gruhler</div>
+									<div class="user__name"><span>Thom</span><span>Gruhler</span></div>
 									<div class="user__lang">English</div>
 									<div class="user__time">05:35</div>
 								</div>
 								<div class="user-item">
 									<div class="userpic"><a href="#"><img src="img/userpic-02.jpg" alt=""></a></div>
-									<div class="user__name">Paul Cruickshank</div>
+									<div class="user__name"><span>Paul</span><span>Cruickshank</span></div>
 									<div class="user__lang">English</div>
-									<div class="user__time">01:35</div>
+									<div class="user__time user__time_gr">01:35</div>
 								</div>
 							</div>
 						</div>
@@ -171,9 +191,15 @@
 					</li>
 				</ul>
 			</div>
+			<!-- END .h-box -->
+
+			<!-- BEGIN .h-box -->
 			<div class="h-box">
 				<div class="icon-win"></div>
 			</div>
+			<!-- END .h-box -->
+
+			<!-- BEGIN .h-box -->
 			<div class="h-box h-box_madal">
 				<div class="icon-medal"></div>
 				<div class="inf-medal">
@@ -181,6 +207,9 @@
 					<span>20</span>
 				</div>
 			</div>
+			<!-- END .h-box -->
+
+			<!-- BEGIN .h-box -->
 			<div class="h-box h-box_time">
 				<strong>15:27</strong>
 				<div class="icon-pause"></div>
@@ -193,122 +222,173 @@
 					</ul>
 				</div>
 			</div>
+			<!-- END .h-box -->
+
+			<!-- BEGIN .h-box -->
 			<div class="h-box h-box_user">
 				<div class="userpic"><a href="#"></a></div>
 				<i class="nav-arr"></i>
 			</div>
+			<!-- END .h-box -->
 		</div>
+		<!-- END .in -->
+
 	</header>
+	<!-- END .header -->
 
 	<!-- BEGIN .sidebar -->
 	<div class="sidebar">
+		<div class="sidebar__arr"><i></i></div>
+		<!-- BEGIN .control -->
 		<div class="control">
+			<!-- BEGIN .control__block -->
 			<div class="control__block">
-				<div class="control__title">Calls</div>
-				<div class="control__inf">
+				<div class="control__title control__title_violet">
+					Calls
+					<div class="btn-arr-up"></div>
+					<div class="btn-close"></div>
+				</div>
+
+				<!-- BEGIN .control__inf -->
+				<div class="control__inf"  style="display:block;">
 					
+					<!-- BEGIN .form-search -->
+					<div class="form-search">
+						<form action="#">
+							<input type="text" class="input-search">
+							<input type="submit" value="Найти" class="btn-search">
+							<div class="cancel"></div>
+						</form>
+					</div>
+					<!-- END .form-search -->
+
+					<!-- BEGIN .tabs -->
+					<div class="tabs">
+
+						<!-- BEGIN .tabs__nav -->
+						<ul class="tabs__nav tabs__nav_w">
+							<li class="active"><a href="#">Queue</a></li>
+							<li><a href="#">Active <span class="mark-count">6</span> </a></li>
+							<li><a href="#">Operators</a></li>
+						</ul>
+						<!-- END .tabs__nav -->
+
+						<!-- BEGIN .tabs__contant -->
+						<div class="tabs__contant" style="display:block;">
+
+							<!-- BEGIN .nav-sm -->
+							<ul class="nav-sm">
+								<li><a href="#"><i class="icon-chat"></i></a></li>
+								<li><a href="#"><i class="icon-eye"></i></a></li>
+								<li><a href="#"><i class="icon-mike"></i></a></li>
+								<li>
+									<a href="#">
+										<i class="icon-phone"></i>
+										<span class="mark-count mark-count_dark">57</span>
+									</a>
+								</li>
+								<li><a href="#"><i class="icon-pencil"></i></a></li>
+							</ul>
+							<!-- END .nav-sm -->
+
+							<!-- BEGIN User-list -->
+							<div>
+								<ul class="user-list-header">
+									<li class="user__name">Name</li>
+									<li class="user__lang">Language <i class="sort-arr"></i></li>
+									<li class="user__time">Time</li>
+								</ul>
+								<div class="user-list">
+									<div class="user-item">
+										<div class="userpic"><a href="#"><img src="img/userpic-01.jpg" alt=""></a></div>
+										<div class="user__name"><span>Thom</span><span>Gruhler</span></div>
+										<div class="user__lang">English</div>
+										<div class="user__time">05:35</div>
+									</div>
+									<div class="user-item">
+										<div class="userpic"><a href="#"><img src="img/userpic-02.jpg" alt=""></a></div>
+										<div class="user__name"><span>Paul</span><span>Cruickshank</span></div>
+										<div class="user__lang">English</div>
+										<div class="user__time user__time_gr">01:35</div>
+									</div>
+									<div class="user-item">
+										<div class="user__phone-pic"></div>
+										<div class="user__name"><span>Irene</span><span>Chapple</span></div>
+										<div class="user__lang">English</div>
+										<div class="user__time user__time_rd">10:25</div>
+									</div>
+									<div class="user-item user-item_blur">
+										<div class="user__phone-pic"></div>
+										<div class="user__name"><span>Paul</span><span>Smith</span></div>
+										<div class="user__lang">English</div>
+										<div class="user__time">01:35</div>
+										<div class="call-box">
+											<button class="r-btn r-btn_inf"><span></span></button>
+											<div class="call-box_btn">
+												<button class="r-btn r-btn_up"><span></span></button>
+												<button class="r-btn r-btn_down"><span></span></button>
+												<button class="r-btn r-btn_arr"><span></span></button>
+											</div>
+										</div>
+									</div>
+									<div class="user-item">
+										<div class="user__mic-pic"></div>
+										<div class="user__name"><span>Paul</span><span>Smith</span></div>
+										<div class="user__lang">English</div>
+										<div class="user__time">04:24</div>
+									</div>
+								</div>
+							</div>
+							<!-- END User-list -->
+
+						</div>
+						<!-- END .tabs__contant -->
+
+						<!-- BEGIN .tabs__contant -->
+						<div class="tabs__contant"></div>
+						<!-- END .tabs__contant -->
+
+						<!-- BEGIN .tabs__contant -->
+						<div class="tabs__contant"></div>
+						<!-- END .tabs__contant -->
+
+					</div>
+					<!-- END .tabs -->
 
 				</div>
+				<!-- END .control__inf -->
 			</div>
+			<!-- END .control__block -->
+
+			<!-- BEGIN .control__block -->
 			<div class="control__block">
-				<div class="control__title">Payments</div>
+				<div class="control__title control__title_orange">Payments</div>
+
+				<!-- BEGIN .control__inf -->
 				<div class="control__inf"></div>
+				<!-- END .control__inf -->
+
 			</div>
+			<!-- END .control__block -->
+
+			<!-- BEGIN .control__block -->
 			<div class="control__block">
 				<div class="control__title">History</div>
+
+				<!-- BEGIN .control__inf -->
 				<div class="control__inf"></div>
+				<!-- END .control__inf -->
+
 			</div>
+			<!-- END .control__block -->
+
 		</div>
+		<!-- END .control -->
 
-		
-
-
-
-
-
-
-
-
-
-		<div class="form-search">
-			<form action="#">
-				<input type="text" class="input-search">
-				<input type="submit" value="Найти" class="btn-search">
-				<div class="cancel"></div>
-			</form>
-		</div>
-		<div class="tabs">
-			<ul class="tabs__nav tabs__nav_w">
-				<li class="active"><a href="#">Queue</a></li>
-				<li><a href="#">Active <span class="mark-count">6</span> </a></li>
-				<li><a href="#">Operators</a></li>
-			</ul>
-			<div class="tabs__contant">
-				<ul class="nav-sm">
-					<li>
-						<a href="#"><i class="icon-chat"></i></a>
-					</li>
-					<li>
-						<a href="#"><i class="icon-eye"></i></a>
-					</li>
-					<li>
-						<a href="#"><i class="icon-mike"></i></a>
-					</li>
-					<li>
-						<a href="#">
-							<i class="icon-phone"></i>
-							<span class="mark-count mark-count_dark">57</span>
-						</a>
-					</li>
-					<li>
-						<a href="#"><i class="icon-pencil"></i></a>
-					</li>
-				</ul>
-				<div>
-					<ul class="user-list-header">
-						<li class="user__name">Name</li>
-						<li class="user__lang">Language <i class="sort-arr"></i></li>
-						<li class="user__time">Time</li>
-					</ul>
-					<div class="user-list">
-						<div class="user-item">
-							<div class="userpic"><a href="#"><img src="img/userpic-01.jpg" alt=""></a></div>
-							<div class="user__name">Thom Gruhler</div>
-							<div class="user__lang">English</div>
-							<div class="user__time">05:35</div>
-						</div>
-						<div class="user-item">
-							<div class="userpic"><a href="#"><img src="img/userpic-02.jpg" alt=""></a></div>
-							<div class="user__name">Paul Cruickshank</div>
-							<div class="user__lang">English</div>
-							<div class="user__time">01:35</div>
-						</div>
-						<div class="user-item">
-							<div class="userpic"><a href="#"><img src="img/userpic-02.jpg" alt=""></a></div>
-							<div class="user__name">Irene Chapple</div>
-							<div class="user__lang">English</div>
-							<div class="user__time">10:25</div>
-						</div>
-						<div class="user-item">
-							<div class="userpic"><a href="#"><img src="img/userpic-02.jpg" alt=""></a></div>
-							<div class="user__name">Paul Smith</div>
-							<div class="user__lang">English</div>
-							<div class="user__time">01:35</div>
-						</div>
-						<div class="user-item">
-							<div class="userpic"><a href="#"><img src="img/userpic-02.jpg" alt=""></a></div>
-							<div class="user__name">Paul Smith</div>
-							<div class="user__lang">English</div>
-							<div class="user__time">04:24</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="tabs__contant"></div>
-			<div class="tabs__contant"></div>
-		</div>
 	</div>
+	<!-- END .sidebar -->
 
+	<!-- BEGIN .win -->
 	<div class="win" style="top:165px; margin-left:-220px; z-index:20;">
 		<div class="win__header">
 			<h1>Incomming call</h1>
@@ -324,12 +404,12 @@
 			<div class="user-list">
 				<div class="user-item">
 					<div class="userpic"><a href="#"></a></div>
-					<div class="user__name">Paul Cruickshank</div>
+					<div class="user__name"><span>Paul</span><span>Cruickshank</span></div>
 					<div class="user__mic"></div>
 				</div>
 				<div class="user-item">
 					<div class="userpic"><a href="#"><img alt="" src="img/userpic-02.jpg"></a></div>
-					<div class="user__name">Paul Cruickshank</div>
+					<div class="user__name"><span>Paul</span><span>Cruickshank</span></div>
 					<div class="user__mic"></div>					
 				</div>
 			</div>
@@ -346,7 +426,9 @@
 			</div>
 		</div>
 	</div>
+	<!-- END .win -->
 
+	<!-- BEGIN .win -->
 	<div class="win" style="top:249px; margin-left:198px;">
 		<div class="win__header">
 			<h1>Information</h1>
@@ -359,7 +441,7 @@
 			<div class="win__dev"></div>
 			<div class="user-item user-item_big">
 				<div class="userpic"><a href="#"><img alt="" src="img/userpic-01.jpg"></a></div>
-				<div class="user__name">Paul Cruickshank</div>
+				<div class="user__name"><span>Paul</span><span>Cruickshank</span></div>
 				<div class="user__block">
 					<div class="user__lang">English</div>
 					<div class="user__time">05:35</div>
@@ -379,6 +461,7 @@
 			</div>
 		</div>
 	</div>
+	<!-- END .win -->
 
 </div>
 <!-- END out-->
