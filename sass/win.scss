@@ -59,6 +59,14 @@
 		text-align:center;
 		padding:14px 0;
 	}
+	.win__footer-tr{
+		padding:14px 10px;
+		overflow: hidden;
+		.btn{
+			float:right;
+			margin-left:16px;
+		}
+	}
 }
 .h2{
 	color:#cecece;
@@ -162,6 +170,10 @@
 		float: left;
 		margin-right:3px;
 	}
+	.user__radio{
+		float: left;
+		margin: 15px 19px 0 4px;
+	}
 }
 
 .call-box{
@@ -250,6 +262,23 @@
 		margin-left: 7px;
 	}
 }
+
+
+.user-name-lang{
+	.user-list-header{
+		.user__name{
+			padding-left: 116px;
+			width: 119px;
+		}
+	}
+	.user-item{
+		.user__lang{
+			margin-left: 54px;
+		}
+	}
+}
+
+
 .sort-arr{
 	@include sized-sprite($icons, 'arr-04');
 	display: inline-block;
@@ -370,7 +399,7 @@
 	left:0;
 	overflow: hidden;
 	.form-search{
-		margin:0 25px 8px;
+		margin:0 25px;
 		.input-search{width:225px;}
 	}
 	.user-item{
@@ -390,17 +419,25 @@
 		height:48px;
 		width:48px;
 		cursor:pointer;
+		z-index: 10;
 		i{
 			@include sized-sprite($icons, 'arr-05');
 			display: block;
 			margin: 17px 0 0 10px;
 		}
 	}
+	.tabs{
+		.tabs__nav{
+			padding-left:25px;
+		}
+		.tabs__contant{padding-top:15px;}
+	}
 }
 .tabs{
+	padding-top:8px;
 	overflow: hidden;
 	.tabs__nav{
-		padding-left:25px;
+		padding-left:9px;
 		height:45px;
 		li{
 			float: left;
@@ -471,7 +508,7 @@
 	}
 	.tabs__contant{
 		@include background-image(linear-gradient(rgba(0,0,0,.07), transparent 25%, transparent));
-		padding-top:15px;
+		padding-top:8px;
 		display: none;
 	}
 }
