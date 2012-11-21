@@ -96,6 +96,12 @@
 		font-weight:bold;
 		font-size:11px;
 	}
+	.user__radio_a{
+		position: absolute;
+		left:34px;
+		top:63px;
+		margin:0;
+	}
 }
 
 
@@ -129,8 +135,8 @@
 .user-item_big{
 	padding: 9px 11px 0 9px;
 	border:0;
-	background:none;
-	box-shadow:none;
+	background:none !important;
+	box-shadow:none !important;
 	height:auto;
 	margin-bottom: 10px;
 	.user__name{
@@ -150,8 +156,11 @@
 		padding:14px 0 0 57px;
 	}
 	.user__link{margin: 0 0 7px;}
+	.h2{margin:0 0 8px;}
 }
-
+.user-item_pd{
+	padding: 7px 11px 0 17px;
+}
 
 .user-list-header{
 	height:27px;

@@ -886,6 +886,21 @@ button, textarea, input[type=submit]::-moz-focus-inner {
 /* ROTATE*/
 /* TRANSITION */
 /* line 2, ../sass/win.scss */
+.win-bg {
+  background-image: -webkit-gradient(radial, 660px 660px, 0, 660px 660px, 150, color-stop(50%, rgba(0, 0, 0, 0.7)), color-stop(150%, rgba(0, 0, 0, 0.95)));
+  background-image: -webkit-radial-gradient(660px 660px, rgba(0, 0, 0, 0.7) 50%, rgba(0, 0, 0, 0.95) 150%);
+  background-image: -moz-radial-gradient(660px 660px, rgba(0, 0, 0, 0.7) 50%, rgba(0, 0, 0, 0.95) 150%);
+  background-image: -o-radial-gradient(660px 660px, rgba(0, 0, 0, 0.7) 50%, rgba(0, 0, 0, 0.95) 150%);
+  background-image: radial-gradient(660px 660px, rgba(0, 0, 0, 0.7) 50%, rgba(0, 0, 0, 0.95) 150%);
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+}
+
+/* line 11, ../sass/win.scss */
 .win {
   position: absolute;
   border-radius: 6px;
@@ -894,8 +909,9 @@ button, textarea, input[type=submit]::-moz-focus-inner {
   left: 50%;
   top: 100px;
   margin-left: -170px;
+  z-index: 15;
 }
-/* line 10, ../sass/win.scss */
+/* line 20, ../sass/win.scss */
 .win .win__header {
   background: #414141;
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #414141), color-stop(100%, #212121));
@@ -911,7 +927,7 @@ button, textarea, input[type=submit]::-moz-focus-inner {
   height: 30px;
   position: relative;
 }
-/* line 20, ../sass/win.scss */
+/* line 30, ../sass/win.scss */
 .win .win__header h1 {
   font-family: 'HelveticaNeue-B', Helvetica, Arial, sans-serif;
   color: #cecece;
@@ -919,7 +935,7 @@ button, textarea, input[type=submit]::-moz-focus-inner {
   text-shadow: rgba(0, 0, 0, 0.75) 0 1px 0;
   padding-left: 9px;
 }
-/* line 28, ../sass/win.scss */
+/* line 38, ../sass/win.scss */
 .win .win__close {
   background: url('../img/icons-s439b97ce99.png') 0 -575px no-repeat;
   width: 20px;
@@ -929,22 +945,23 @@ button, textarea, input[type=submit]::-moz-focus-inner {
   left: 4px;
   cursor: pointer;
 }
-/* line 35, ../sass/win.scss */
+/* line 45, ../sass/win.scss */
 .win .win__content {
   background: url(../img/bg-win.png);
   border-radius: 0 0 6px 6px;
   border: 1px solid #000;
   border-top: 0;
+  padding-top: 1px;
 }
-/* line 41, ../sass/win.scss */
+/* line 52, ../sass/win.scss */
 .win .win__box {
   padding-top: 9px;
 }
-/* line 44, ../sass/win.scss */
+/* line 55, ../sass/win.scss */
 .win .win__text-box {
-  padding: 13px 0 5px;
+  margin-top: 13px;
 }
-/* line 47, ../sass/win.scss */
+/* line 58, ../sass/win.scss */
 .win .win__dev {
   width: 322px;
   margin: 0 auto;
@@ -952,7 +969,7 @@ button, textarea, input[type=submit]::-moz-focus-inner {
   border-top: 1px solid #000100;
   border-bottom: 1px solid #4c4b53;
 }
-/* line 54, ../sass/win.scss */
+/* line 65, ../sass/win.scss */
 .win .win__footer {
   background: #222;
   border-top: 1px solid #000;
@@ -961,27 +978,27 @@ button, textarea, input[type=submit]::-moz-focus-inner {
   text-align: center;
   padding: 14px 0;
 }
-/* line 62, ../sass/win.scss */
+/* line 73, ../sass/win.scss */
 .win .win__footer-tr {
   padding: 14px 10px;
   overflow: hidden;
 }
-/* line 65, ../sass/win.scss */
+/* line 76, ../sass/win.scss */
 .win .win__footer-tr .btn {
   float: right;
   margin-left: 16px;
 }
 
-/* line 71, ../sass/win.scss */
+/* line 82, ../sass/win.scss */
 .h2 {
   color: #cecece;
   font-size: 13px;
   text-shadow: 0 1px 0 rgba(0, 0, 0, 0.75);
   font-weight: bold;
-  margin: 7px 23px 10px;
+  margin: 6px 23px 10px;
 }
 
-/* line 78, ../sass/win.scss */
+/* line 89, ../sass/win.scss */
 .chat-title {
   font-size: 18px;
   color: #e3ad12;
@@ -989,12 +1006,12 @@ button, textarea, input[type=submit]::-moz-focus-inner {
   margin: 0 23px 15px;
 }
 
-/* line 84, ../sass/win.scss */
+/* line 95, ../sass/win.scss */
 .h2 + .chat-title {
   margin-top: -6px;
 }
 
-/* line 87, ../sass/win.scss */
+/* line 98, ../sass/win.scss */
 .text-note {
   background: #eaebf3;
   box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.75);
@@ -1008,7 +1025,7 @@ button, textarea, input[type=submit]::-moz-focus-inner {
   padding: 11px 9px;
   min-height: 57px;
 }
-/* line 99, ../sass/win.scss */
+/* line 110, ../sass/win.scss */
 .text-note:after {
   content: "";
   height: 12px;
@@ -1026,7 +1043,7 @@ button, textarea, input[type=submit]::-moz-focus-inner {
   left: -5px;
   box-shadow: -3px 3px 3px 0px rgba(0, 0, 0, 0.35);
 }
-/* line 110, ../sass/win.scss */
+/* line 121, ../sass/win.scss */
 .text-note textarea {
   border: 0;
   padding: 0;
@@ -1041,7 +1058,7 @@ button, textarea, input[type=submit]::-moz-focus-inner {
   resize: vertical;
 }
 
-/* line 126, ../sass/win.scss */
+/* line 137, ../sass/win.scss */
 .r-btn {
   height: 40px;
   width: 40px;
@@ -1053,17 +1070,17 @@ button, textarea, input[type=submit]::-moz-focus-inner {
   margin: 0 5px;
   box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.4) inset, 0 -1px 0 0 rgba(46, 77, 0, 0.09) inset, 0 0 3px 0 rgba(0, 0, 0, 0.5);
 }
-/* line 136, ../sass/win.scss */
+/* line 147, ../sass/win.scss */
 .r-btn span {
   display: inline-block;
   position: relative;
 }
-/* line 140, ../sass/win.scss */
+/* line 151, ../sass/win.scss */
 .r-btn:hover {
   box-shadow: 0 -1px 0 0 rgba(255, 255, 255, 0.4) inset, 0 1px 0 0 rgba(46, 77, 0, 0.09) inset, 0 0 3px 0 rgba(0, 0, 0, 0.5);
 }
 
-/* line 145, ../sass/win.scss */
+/* line 156, ../sass/win.scss */
 .r-btn_l {
   height: 34px;
   width: 34px;
@@ -1071,7 +1088,7 @@ button, textarea, input[type=submit]::-moz-focus-inner {
   margin: 0 2px;
 }
 
-/* line 151, ../sass/win.scss */
+/* line 162, ../sass/win.scss */
 .r-btn_up, .r-btn_plus {
   background: #87b60d;
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #87b60d), color-stop(100%, #417204));
@@ -1080,14 +1097,14 @@ button, textarea, input[type=submit]::-moz-focus-inner {
   background-image: -o-linear-gradient(#87b60d, #417204);
   background-image: linear-gradient(#87b60d, #417204);
 }
-/* line 154, ../sass/win.scss */
+/* line 165, ../sass/win.scss */
 .r-btn_up span, .r-btn_plus span {
   background: url('../img/icons-s439b97ce99.png') 0 -605px no-repeat;
   width: 18px;
   height: 19px;
   top: 3px;
 }
-/* line 158, ../sass/win.scss */
+/* line 169, ../sass/win.scss */
 .r-btn_up:hover, .r-btn_plus:hover {
   background: #417204;
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #417204), color-stop(100%, #87b60d));
@@ -1097,7 +1114,7 @@ button, textarea, input[type=submit]::-moz-focus-inner {
   background-image: linear-gradient(#417204, #87b60d);
 }
 
-/* line 163, ../sass/win.scss */
+/* line 174, ../sass/win.scss */
 .r-btn_plus span {
   background: url('../img/icons-s439b97ce99.png') 0 -1187px no-repeat;
   width: 13px;
@@ -1105,7 +1122,7 @@ button, textarea, input[type=submit]::-moz-focus-inner {
   top: 1px;
 }
 
-/* line 167, ../sass/win.scss */
+/* line 178, ../sass/win.scss */
 .r-btn_down, .r-btn_cansel {
   background: #d70018;
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #d70018), color-stop(100%, #7f0211));
@@ -1114,14 +1131,14 @@ button, textarea, input[type=submit]::-moz-focus-inner {
   background-image: -o-linear-gradient(#d70018, #7f0211);
   background-image: linear-gradient(#d70018, #7f0211);
 }
-/* line 170, ../sass/win.scss */
+/* line 181, ../sass/win.scss */
 .r-btn_down span, .r-btn_cansel span {
   background: url('../img/icons-s439b97ce99.png') 0 -681px no-repeat;
   width: 22px;
   height: 10px;
   top: -1px;
 }
-/* line 174, ../sass/win.scss */
+/* line 185, ../sass/win.scss */
 .r-btn_down:hover, .r-btn_cansel:hover {
   background: #7f0211;
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #7f0211), color-stop(100%, #d70018));
@@ -1131,7 +1148,7 @@ button, textarea, input[type=submit]::-moz-focus-inner {
   background-image: linear-gradient(#7f0211, #d70018);
 }
 
-/* line 179, ../sass/win.scss */
+/* line 190, ../sass/win.scss */
 .r-btn_cansel span {
   background: url('../img/icons-s439b97ce99.png') 0 -981px no-repeat;
   width: 13px;
@@ -1139,7 +1156,7 @@ button, textarea, input[type=submit]::-moz-focus-inner {
   top: 1px;
 }
 
-/* line 183, ../sass/win.scss */
+/* line 194, ../sass/win.scss */
 .r-btn_arr {
   background: #636570;
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #636570), color-stop(100%, #42434d));
@@ -1148,13 +1165,13 @@ button, textarea, input[type=submit]::-moz-focus-inner {
   background-image: -o-linear-gradient(#636570, #42434d);
   background-image: linear-gradient(#636570, #42434d);
 }
-/* line 186, ../sass/win.scss */
+/* line 197, ../sass/win.scss */
 .r-btn_arr span {
   background: url('../img/icons-s439b97ce99.png') 0 -701px no-repeat;
   width: 14px;
   height: 15px;
 }
-/* line 187, ../sass/win.scss */
+/* line 198, ../sass/win.scss */
 .r-btn_arr:hover {
   background: #42434d;
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #42434d), color-stop(100%, #636570));
@@ -1164,7 +1181,7 @@ button, textarea, input[type=submit]::-moz-focus-inner {
   background-image: linear-gradient(#42434d, #636570);
 }
 
-/* line 192, ../sass/win.scss */
+/* line 203, ../sass/win.scss */
 .r-btn_inf {
   background: #4c9ec8;
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #4c9ec8), color-stop(100%, #0d5fa3));
@@ -1173,13 +1190,13 @@ button, textarea, input[type=submit]::-moz-focus-inner {
   background-image: -o-linear-gradient(#4c9ec8, #0d5fa3);
   background-image: linear-gradient(#4c9ec8, #0d5fa3);
 }
-/* line 195, ../sass/win.scss */
+/* line 206, ../sass/win.scss */
 .r-btn_inf span {
   background: url('../img/icons-s439b97ce99.png') 0 -752px no-repeat;
   width: 7px;
   height: 17px;
 }
-/* line 196, ../sass/win.scss */
+/* line 207, ../sass/win.scss */
 .r-btn_inf:hover {
   background: #0d5fa3;
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #0d5fa3), color-stop(100%, #4c9ec8));
@@ -1189,7 +1206,7 @@ button, textarea, input[type=submit]::-moz-focus-inner {
   background-image: linear-gradient(#0d5fa3, #4c9ec8);
 }
 
-/* line 202, ../sass/win.scss */
+/* line 213, ../sass/win.scss */
 .icon-audio {
   background: url('../img/icons-s439b97ce99.png') 0 -358px no-repeat;
   width: 19px;
@@ -1198,23 +1215,23 @@ button, textarea, input[type=submit]::-moz-focus-inner {
   position: relative;
 }
 
-/* line 208, ../sass/win.scss */
+/* line 219, ../sass/win.scss */
 .h2 .icon-audio {
   top: -3px;
   margin: 0 3px -11px -15px;
 }
 
-/* line 214, ../sass/win.scss */
+/* line 225, ../sass/win.scss */
 .tabs {
   padding-top: 8px;
   overflow: hidden;
 }
-/* line 217, ../sass/win.scss */
+/* line 228, ../sass/win.scss */
 .tabs .tabs__nav {
   padding-left: 9px;
   height: 45px;
 }
-/* line 220, ../sass/win.scss */
+/* line 231, ../sass/win.scss */
 .tabs .tabs__nav li {
   float: left;
   margin-right: 5px;
@@ -1231,7 +1248,7 @@ button, textarea, input[type=submit]::-moz-focus-inner {
   line-height: 40px;
   list-style: none;
 }
-/* line 231, ../sass/win.scss */
+/* line 242, ../sass/win.scss */
 .tabs .tabs__nav li:hover {
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, rgba(0, 0, 0, 0.1)), color-stop(100%, rgba(255, 255, 255, 0.1)));
   background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.1), rgba(255, 255, 255, 0.1));
@@ -1239,7 +1256,7 @@ button, textarea, input[type=submit]::-moz-focus-inner {
   background-image: -o-linear-gradient(rgba(0, 0, 0, 0.1), rgba(255, 255, 255, 0.1));
   background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(255, 255, 255, 0.1));
 }
-/* line 235, ../sass/win.scss */
+/* line 246, ../sass/win.scss */
 .tabs .tabs__nav a {
   display: block;
   color: #aeacb6;
@@ -1247,7 +1264,7 @@ button, textarea, input[type=submit]::-moz-focus-inner {
   width: 90px;
   text-align: center;
 }
-/* line 242, ../sass/win.scss */
+/* line 253, ../sass/win.scss */
 .tabs .tabs__nav .active {
   border: 1px solid rgba(255, 255, 255, 0.13);
   border-bottom: 0;
@@ -1261,7 +1278,7 @@ button, textarea, input[type=submit]::-moz-focus-inner {
   height: 44px;
   position: relative;
 }
-/* line 250, ../sass/win.scss */
+/* line 261, ../sass/win.scss */
 .tabs .tabs__nav .active:hover {
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, rgba(0, 0, 0, 0.25)), color-stop(100%, rgba(0, 0, 0, 0.07)));
   background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.07));
@@ -1269,13 +1286,13 @@ button, textarea, input[type=submit]::-moz-focus-inner {
   background-image: -o-linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.07));
   background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.07));
 }
-/* line 251, ../sass/win.scss */
+/* line 262, ../sass/win.scss */
 .tabs .tabs__nav .active a {
   width: 88px;
   color: #f2ba06;
   height: 45px;
 }
-/* line 256, ../sass/win.scss */
+/* line 267, ../sass/win.scss */
 .tabs .tabs__nav .active:before, .tabs .tabs__nav .active:after {
   content: "";
   position: absolute;
@@ -1285,28 +1302,28 @@ button, textarea, input[type=submit]::-moz-focus-inner {
   border-top: 1px solid rgba(255, 255, 255, 0.13);
   height: 0;
 }
-/* line 265, ../sass/win.scss */
+/* line 276, ../sass/win.scss */
 .tabs .tabs__nav .active:before {
   left: 100%;
 }
-/* line 268, ../sass/win.scss */
+/* line 279, ../sass/win.scss */
 .tabs .tabs__nav .active:after {
   right: 100%;
 }
-/* line 272, ../sass/win.scss */
+/* line 283, ../sass/win.scss */
 .tabs .tabs__nav .mark-count {
   margin-right: -10px;
   position: relative;
 }
-/* line 278, ../sass/win.scss */
+/* line 289, ../sass/win.scss */
 .tabs .tabs__nav_b a {
   width: 105px;
 }
-/* line 281, ../sass/win.scss */
+/* line 292, ../sass/win.scss */
 .tabs .tabs__nav_b .active a {
   width: 103px;
 }
-/* line 283, ../sass/win.scss */
+/* line 294, ../sass/win.scss */
 .tabs .tabs__contant {
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, rgba(0, 0, 0, 0.07)), color-stop(25%, transparent), color-stop(100%, transparent));
   background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.07), transparent 25%, transparent);
@@ -1317,7 +1334,7 @@ button, textarea, input[type=submit]::-moz-focus-inner {
   display: none;
 }
 
-/* line 291, ../sass/win.scss */
+/* line 302, ../sass/win.scss */
 .room .room__header {
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #544169), color-stop(100%, #403255));
   background-image: -webkit-linear-gradient(#544169, #403255);
@@ -1330,14 +1347,14 @@ button, textarea, input[type=submit]::-moz-focus-inner {
   min-height: 56px;
   border-top: 1px solid #1e1725;
 }
-/* line 299, ../sass/win.scss */
+/* line 310, ../sass/win.scss */
 .room .room__title {
   float: left;
   display: table;
   width: 190px;
   height: 56px;
 }
-/* line 304, ../sass/win.scss */
+/* line 315, ../sass/win.scss */
 .room .room__title h2 {
   font-size: 16px;
   color: #b2b2bf;
@@ -1346,19 +1363,19 @@ button, textarea, input[type=submit]::-moz-focus-inner {
   display: table-cell;
   vertical-align: middle;
 }
-/* line 311, ../sass/win.scss */
+/* line 322, ../sass/win.scss */
 .room .room__title h2 .mark-count {
   font-weight: normal;
   padding: 0 5px;
   position: relative;
   top: -2px;
 }
-/* line 319, ../sass/win.scss */
+/* line 330, ../sass/win.scss */
 .room .room__btns {
   padding: 10px 0 0;
   float: right;
 }
-/* line 323, ../sass/win.scss */
+/* line 334, ../sass/win.scss */
 .room .room__meta {
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #403255), color-stop(100%, #362a4b));
   background-image: -webkit-linear-gradient(#403255, #362a4b);
@@ -1369,12 +1386,12 @@ button, textarea, input[type=submit]::-moz-focus-inner {
   box-shadow: 0 -5px 4px -4px rgba(0, 0, 0, 0.8) inset;
   margin-bottom: 7px;
 }
-/* line 328, ../sass/win.scss */
+/* line 339, ../sass/win.scss */
 .room .room__meta ul {
   padding: 4px 8px 1px 13px;
   height: 24px;
 }
-/* line 332, ../sass/win.scss */
+/* line 343, ../sass/win.scss */
 .room .room__meta li {
   list-style-type: none;
   color: #66537b;
@@ -1383,22 +1400,22 @@ button, textarea, input[type=submit]::-moz-focus-inner {
   margin-left: 30px;
   font-weight: bold;
 }
-/* line 339, ../sass/win.scss */
+/* line 350, ../sass/win.scss */
 .room .room__meta li:last-child {
   float: right;
 }
-/* line 342, ../sass/win.scss */
+/* line 353, ../sass/win.scss */
 .room .room__meta li:first-child {
   margin-left: 0;
 }
-/* line 346, ../sass/win.scss */
+/* line 357, ../sass/win.scss */
 .room .room__meta span {
   font-size: 16px;
   color: #b1b1be;
   vertical-align: baseline;
   min-width: 41px;
 }
-/* line 352, ../sass/win.scss */
+/* line 363, ../sass/win.scss */
 .room .room__meta .icon-audio {
   margin: 1px 0 0 3px;
   top: -3px;
@@ -1543,8 +1560,15 @@ button, textarea, input[type=submit]::-moz-focus-inner {
   font-weight: bold;
   font-size: 11px;
 }
+/* line 99, ../sass/user-list.scss */
+.user-item .user__radio_a {
+  position: absolute;
+  left: 34px;
+  top: 63px;
+  margin: 0;
+}
 
-/* line 102, ../sass/user-list.scss */
+/* line 108, ../sass/user-list.scss */
 .call-box {
   background: rgba(0, 0, 0, 0.44);
   position: absolute;
@@ -1554,77 +1578,86 @@ button, textarea, input[type=submit]::-moz-focus-inner {
   width: 287px;
   padding: 10px 19px 0 24px;
 }
-/* line 110, ../sass/user-list.scss */
+/* line 116, ../sass/user-list.scss */
 .call-box .call-box_btn {
   float: right;
 }
-/* line 113, ../sass/user-list.scss */
+/* line 119, ../sass/user-list.scss */
 .call-box .r-btn_inf {
   float: left;
 }
 
-/* line 121, ../sass/user-list.scss */
+/* line 127, ../sass/user-list.scss */
 .user-item_blur * {
   color: transparent  !important;
 }
-/* line 122, ../sass/user-list.scss */
+/* line 128, ../sass/user-list.scss */
 .user-item_blur .user__name {
   text-shadow: 0 0 5px #cecece !important;
 }
-/* line 123, ../sass/user-list.scss */
+/* line 129, ../sass/user-list.scss */
 .user-item_blur .user__lang {
   text-shadow: 0 0 5px #8b8c92 !important;
 }
-/* line 124, ../sass/user-list.scss */
+/* line 130, ../sass/user-list.scss */
 .user-item_blur .user__time {
   text-shadow: 0 0 5px #eeb411 !important;
 }
-/* line 125, ../sass/user-list.scss */
+/* line 131, ../sass/user-list.scss */
 .user-item_blur .user__time_gr {
   text-shadow: 0 0 5px #a7cc14 !important;
 }
-/* line 126, ../sass/user-list.scss */
+/* line 132, ../sass/user-list.scss */
 .user-item_blur .user__time_rd {
   text-shadow: 0 0 5px #e10030 !important;
 }
 
-/* line 129, ../sass/user-list.scss */
+/* line 135, ../sass/user-list.scss */
 .user-item_big {
   padding: 9px 11px 0 9px;
   border: 0;
-  background: none;
-  box-shadow: none;
+  background: none !important;
+  box-shadow: none !important;
   height: auto;
   margin-bottom: 10px;
 }
-/* line 136, ../sass/user-list.scss */
+/* line 142, ../sass/user-list.scss */
 .user-item_big .user__name {
   font-size: 18px;
   line-height: 22px;
   margin: 3px 0 0 9px;
 }
-/* line 141, ../sass/user-list.scss */
+/* line 147, ../sass/user-list.scss */
 .user-item_big .user__block {
   float: right;
   text-align: right;
   margin: 0;
 }
-/* line 145, ../sass/user-list.scss */
+/* line 151, ../sass/user-list.scss */
 .user-item_big .user__block * {
   margin-bottom: 3px;
 }
-/* line 147, ../sass/user-list.scss */
+/* line 153, ../sass/user-list.scss */
 .user-item_big .user__add {
   width: 261px;
   clear: both;
   padding: 14px 0 0 57px;
 }
-/* line 152, ../sass/user-list.scss */
+/* line 158, ../sass/user-list.scss */
 .user-item_big .user__link {
   margin: 0 0 7px;
 }
+/* line 159, ../sass/user-list.scss */
+.user-item_big .h2 {
+  margin: 0 0 8px;
+}
 
-/* line 156, ../sass/user-list.scss */
+/* line 161, ../sass/user-list.scss */
+.user-item_pd {
+  padding: 7px 11px 0 17px;
+}
+
+/* line 165, ../sass/user-list.scss */
 .user-list-header {
   height: 27px;
   line-height: 27px;
@@ -1640,7 +1673,7 @@ button, textarea, input[type=submit]::-moz-focus-inner {
   box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.09);
   position: relative;
 }
-/* line 166, ../sass/user-list.scss */
+/* line 175, ../sass/user-list.scss */
 .user-list-header li {
   float: left;
   list-style: none;
@@ -1648,12 +1681,12 @@ button, textarea, input[type=submit]::-moz-focus-inner {
   font-weight: bold;
   font-size: 11px;
 }
-/* line 173, ../sass/user-list.scss */
+/* line 182, ../sass/user-list.scss */
 .user-list-header .user__name {
   padding-left: 81px;
   width: 97px;
 }
-/* line 177, ../sass/user-list.scss */
+/* line 186, ../sass/user-list.scss */
 .user-list-header .user__lang {
   background: #4c4c4c;
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #4c4c4c), color-stop(100%, #2c2c2c));
@@ -1666,26 +1699,26 @@ button, textarea, input[type=submit]::-moz-focus-inner {
   text-align: center;
   cursor: pointer;
 }
-/* line 184, ../sass/user-list.scss */
+/* line 193, ../sass/user-list.scss */
 .user-list-header .user__lang .sort-arr {
   margin: 0 -11px 0 3px;
 }
-/* line 186, ../sass/user-list.scss */
+/* line 195, ../sass/user-list.scss */
 .user-list-header .user__time {
   margin-left: 7px;
 }
 
-/* line 194, ../sass/user-list.scss */
+/* line 203, ../sass/user-list.scss */
 .user-name-lang .user-list-header .user__name {
   padding-left: 116px;
   width: 119px;
 }
-/* line 200, ../sass/user-list.scss */
+/* line 209, ../sass/user-list.scss */
 .user-name-lang .user-item .user__lang {
   margin-left: 54px;
 }
 
-/* line 207, ../sass/user-list.scss */
+/* line 216, ../sass/user-list.scss */
 .sort-arr {
   background: url('../img/icons-s439b97ce99.png') 0 -1288px no-repeat;
   width: 8px;
