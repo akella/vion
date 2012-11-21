@@ -164,7 +164,7 @@ button, textarea, input[type=submit]::-moz-focus-inner {
 }
 /* line 103, ../sass/common.scss */
 .header .h-box_form .input-plus {
-  background: url('../img/icons-s1af3d0ddaa.png') 0 -1358px no-repeat;
+  background: url('../img/icons-s439b97ce99.png') 0 -1406px no-repeat;
   width: 28px;
   height: 20px;
   border-right: 1px solid #544f5c;
@@ -184,13 +184,13 @@ button, textarea, input[type=submit]::-moz-focus-inner {
 }
 /* line 117, ../sass/common.scss */
 .header .logo-block:hover .logo {
-  background: url('../img/icons-s1af3d0ddaa.png') 0 -325px no-repeat;
+  background: url('../img/icons-s439b97ce99.png') 0 -325px no-repeat;
   width: 48px;
   height: 23px;
 }
 /* line 120, ../sass/common.scss */
 .header .logo {
-  background: url('../img/icons-s1af3d0ddaa.png') 0 -97px no-repeat;
+  background: url('../img/icons-s439b97ce99.png') 0 -97px no-repeat;
   width: 48px;
   height: 23px;
   display: block;
@@ -219,7 +219,7 @@ button, textarea, input[type=submit]::-moz-focus-inner {
 }
 /* line 138, ../sass/common.scss */
 .header .nav-item:hover .nav-arr {
-  background: url('../img/icons-s1af3d0ddaa.png') 0 -420px no-repeat;
+  background: url('../img/icons-s439b97ce99.png') 0 -420px no-repeat;
   width: 22px;
   height: 22px;
   top: 8px;
@@ -227,7 +227,7 @@ button, textarea, input[type=submit]::-moz-focus-inner {
 }
 /* line 145, ../sass/common.scss */
 .header .nav-arr {
-  background: url('../img/icons-s1af3d0ddaa.png') 0 -517px no-repeat;
+  background: url('../img/icons-s439b97ce99.png') 0 -517px no-repeat;
   width: 18px;
   height: 19px;
   display: inline-block;
@@ -269,37 +269,37 @@ button, textarea, input[type=submit]::-moz-focus-inner {
 }
 /* line 170, ../sass/common.scss */
 .header .nav li:hover .icon-chat {
-  background: url('../img/icons-s1af3d0ddaa.png') 0 -929px no-repeat;
+  background: url('../img/icons-s439b97ce99.png') 0 -929px no-repeat;
   width: 16px;
   height: 16px;
 }
 /* line 171, ../sass/common.scss */
 .header .nav li:hover .icon-eye {
-  background: url('../img/icons-s1af3d0ddaa.png') 0 -1007px no-repeat;
+  background: url('../img/icons-s439b97ce99.png') 0 -1031px no-repeat;
   width: 16px;
   height: 16px;
 }
 /* line 172, ../sass/common.scss */
 .header .nav li:hover .icon-mike {
-  background: url('../img/icons-s1af3d0ddaa.png') 0 -1111px no-repeat;
+  background: url('../img/icons-s439b97ce99.png') 0 -1135px no-repeat;
   width: 16px;
   height: 16px;
 }
 /* line 173, ../sass/common.scss */
 .header .nav li:hover .icon-phone {
-  background: url('../img/icons-s1af3d0ddaa.png') 0 -726px no-repeat;
+  background: url('../img/icons-s439b97ce99.png') 0 -726px no-repeat;
   width: 16px;
   height: 16px;
 }
 /* line 174, ../sass/common.scss */
 .header .nav li:hover .icon-pencil {
-  background: url('../img/icons-s1af3d0ddaa.png') 0 -1163px no-repeat;
+  background: url('../img/icons-s439b97ce99.png') 0 -1211px no-repeat;
   width: 16px;
   height: 16px;
 }
 /* line 175, ../sass/common.scss */
 .header .nav li:hover .icon-graph {
-  background: url('../img/icons-s1af3d0ddaa.png') 0 0 no-repeat;
+  background: url('../img/icons-s439b97ce99.png') 0 0 no-repeat;
   width: 40px;
   height: 40px;
   margin: 1px 0 0 9px;
@@ -354,7 +354,7 @@ button, textarea, input[type=submit]::-moz-focus-inner {
 }
 /* line 216, ../sass/common.scss */
 .header .nav li .icon-graph {
-  background: url('../img/icons-s1af3d0ddaa.png') 0 -130px no-repeat;
+  background: url('../img/icons-s439b97ce99.png') 0 -130px no-repeat;
   width: 36px;
   height: 37px;
   display: block;
@@ -362,14 +362,14 @@ button, textarea, input[type=submit]::-moz-focus-inner {
 }
 /* line 223, ../sass/common.scss */
 .header .icon-win {
-  background: url('../img/icons-s1af3d0ddaa.png') 0 -50px no-repeat;
+  background: url('../img/icons-s439b97ce99.png') 0 -50px no-repeat;
   width: 36px;
   height: 37px;
   margin: 12px 10px 0 11px;
 }
 /* line 227, ../sass/common.scss */
 .header .icon-medal {
-  background: url('../img/icons-s1af3d0ddaa.png') 0 -868px no-repeat;
+  background: url('../img/icons-s439b97ce99.png') 0 -868px no-repeat;
   width: 14px;
   height: 25px;
   float: left;
@@ -412,7 +412,7 @@ button, textarea, input[type=submit]::-moz-focus-inner {
 }
 /* line 262, ../sass/common.scss */
 .header .h-box_time:hover .nav-arr {
-  background: url('../img/icons-s1af3d0ddaa.png') 0 -420px no-repeat;
+  background: url('../img/icons-s439b97ce99.png') 0 -420px no-repeat;
   width: 22px;
   height: 22px;
   top: 5px;
@@ -424,7 +424,7 @@ button, textarea, input[type=submit]::-moz-focus-inner {
 }
 /* line 270, ../sass/common.scss */
 .header .icon-pause {
-  background: url('../img/icons-s1af3d0ddaa.png') 0 -391px no-repeat;
+  background: url('../img/icons-s439b97ce99.png') 0 -391px no-repeat;
   width: 18px;
   height: 19px;
   display: inline-block;
@@ -449,35 +449,35 @@ button, textarea, input[type=submit]::-moz-focus-inner {
 
 /* line 285, ../sass/common.scss */
 .icon-chat {
-  background: url('../img/icons-s1af3d0ddaa.png') 0 -903px no-repeat;
+  background: url('../img/icons-s439b97ce99.png') 0 -903px no-repeat;
   width: 16px;
   height: 16px;
 }
 
 /* line 286, ../sass/common.scss */
 .icon-eye {
-  background: url('../img/icons-s1af3d0ddaa.png') 0 -1085px no-repeat;
+  background: url('../img/icons-s439b97ce99.png') 0 -1109px no-repeat;
   width: 16px;
   height: 16px;
 }
 
 /* line 287, ../sass/common.scss */
 .icon-mike {
-  background: url('../img/icons-s1af3d0ddaa.png') 0 -1137px no-repeat;
+  background: url('../img/icons-s439b97ce99.png') 0 -1161px no-repeat;
   width: 16px;
   height: 16px;
 }
 
 /* line 288, ../sass/common.scss */
 .icon-phone {
-  background: url('../img/icons-s1af3d0ddaa.png') 0 -842px no-repeat;
+  background: url('../img/icons-s439b97ce99.png') 0 -842px no-repeat;
   width: 16px;
   height: 16px;
 }
 
 /* line 289, ../sass/common.scss */
 .icon-pencil {
-  background: url('../img/icons-s1af3d0ddaa.png') 0 -1256px no-repeat;
+  background: url('../img/icons-s439b97ce99.png') 0 -1304px no-repeat;
   width: 16px;
   height: 16px;
 }
@@ -512,6 +512,13 @@ button, textarea, input[type=submit]::-moz-focus-inner {
 }
 
 /* line 311, ../sass/common.scss */
+.mark-count_yl {
+  background: #ffcc00;
+  color: #6f3c00;
+  box-shadow: none;
+}
+
+/* line 316, ../sass/common.scss */
 .userpic {
   border: 1px solid #000;
   border-radius: 3px;
@@ -527,25 +534,25 @@ button, textarea, input[type=submit]::-moz-focus-inner {
   background-image: -o-linear-gradient(rgba(255, 255, 255, 0.3) 0%, rgba(249, 252, 254, 0) 5%, rgba(125, 185, 232, 0) 100%);
   background-image: linear-gradient(rgba(255, 255, 255, 0.3) 0%, rgba(249, 252, 254, 0) 5%, rgba(125, 185, 232, 0) 100%);
 }
-/* line 321, ../sass/common.scss */
+/* line 326, ../sass/common.scss */
 .userpic a {
   border: 1px solid #030303;
   display: block;
-  background: url('../img/icons-s1af3d0ddaa.png') 0 -634px no-repeat;
+  background: url('../img/icons-s439b97ce99.png') 0 -634px no-repeat;
   width: 37px;
   height: 37px;
   background-color: #292a32;
 }
 
-/* line 330, ../sass/common.scss */
+/* line 335, ../sass/common.scss */
 .drop .user-list {
   margin: 7px -3px;
 }
-/* line 332, ../sass/common.scss */
+/* line 337, ../sass/common.scss */
 .drop .user-list .user-item {
   padding-left: 7px;
 }
-/* line 334, ../sass/common.scss */
+/* line 339, ../sass/common.scss */
 .drop .user-list .user-item:first-child {
   box-shadow: none;
   border-top-color: #29262f;

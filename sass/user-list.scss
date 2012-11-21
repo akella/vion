@@ -1,0 +1,211 @@
+.user-list{text-align:left;}
+.user-item{
+	overflow:hidden;
+	padding:6px 0 0 17px;
+	background:#1c1c1c;
+	border-top:1px solid #29262f;
+	border-bottom:1px solid #1c1c1c;
+	min-height:52px;
+	position: relative;
+	&:nth-child(even){
+		background:#252525;
+		border-top-color:#3a3a3a;
+		border-bottom-color:#0f0f0f;
+	}
+	&:first-child{
+		box-shadow:0 6px 6px -6px rgba(0,0,0,0.7) inset;
+		border-top-color:#000;
+	}
+	.userpic{
+		margin:0;
+		a{padding:0;}
+	}
+	.user__name{
+		font-size:12px;
+		color:#cecece;
+		font-weight:bold;
+		text-shadow:rgba(0,0,0,.75) 0 1px 0;
+		float:left;
+		margin:1px 10px 0 11px;
+		width:90px;
+		line-height: 16px;
+		span{
+			display: block;
+		}
+	}
+	.user__lang{
+		font-size:11px;
+		color:#8b8c92;
+		font-family:Helvetica, Arial, sans-serif;
+		float:left;
+		margin-left:14px;
+		width:60px;
+		font-weight:bold;
+	}
+	.user__time{
+		color:#eeb411;
+		font-size:11px;
+		font-family:Helvetica, Arial, sans-serif;
+		float:left;
+		margin-left:7px;
+		font-weight:bold;
+	}
+	.user__time_gr{color:#a7cc14;}
+	.user__time_rd{color:#e10030;}
+	.user__mic{
+		@include sized-sprite($icons, 'icon-device-2');
+		float: right;
+		margin: 8px 8px 0 0;
+	}
+	.user__block{
+		float: left;
+		line-height: 18px;
+		margin: 0 0 7px 8px;
+		*{
+			float: none;
+			margin-left:0;
+			margin-right:0;
+		}
+	}
+	.user__link {
+		color:#3686b8;
+		font-size:11px;
+		font-weight:bold;
+		a{
+			text-decoration: none;	
+			color:#3686b8;
+			&:hover{text-decoration: underline;}
+		}
+	}
+	.user__phone-pic{
+		@include sized-sprite($icons, 'icon-phone-2');
+		float: left;
+		margin-right:3px;
+	}
+	.user__mic-pic{
+		@include sized-sprite($icons, 'icon-device-4');
+		float: left;
+		margin-right:3px;
+	}
+	.user__radio{
+		float: left;
+		margin: 15px 19px 0 4px;
+	}
+	.user__role, .user__rank{
+		color:#8b8c92;
+		font-weight:bold;
+		font-size:11px;
+	}
+}
+
+
+.call-box{
+	background:rgba(0,0,0,.44);
+	position: absolute;
+	top:0;
+	left:0;
+	height:48px;
+	width: 287px;
+	padding: 10px 19px 0 24px;
+	.call-box_btn{
+		float: right;
+	}
+	.r-btn_inf{
+		float: left;
+	}
+
+}
+
+
+.user-item_blur{
+	*{color:transparent  !important;}
+	.user__name{text-shadow:0 0 5px #cecece !important;}
+	.user__lang{text-shadow:0 0 5px #8b8c92 !important;}
+	.user__time{text-shadow:0 0 5px #eeb411 !important;}
+	.user__time_gr{text-shadow:0 0 5px #a7cc14 !important;}
+	.user__time_rd{text-shadow:0 0 5px #e10030 !important;}
+}
+
+.user-item_big{
+	padding: 9px 11px 0 9px;
+	border:0;
+	background:none;
+	box-shadow:none;
+	height:auto;
+	margin-bottom: 10px;
+	.user__name{
+		font-size:18px;
+		line-height: 22px;
+		margin: 3px 0 0 9px;
+	}
+	.user__block{
+		float: right;
+		text-align: right;
+		margin:0;
+		*{margin-bottom:3px;}
+	}
+	.user__add{
+		width:261px;
+		clear: both;
+		padding:14px 0 0 57px;
+	}
+	.user__link{margin: 0 0 7px;}
+}
+
+
+.user-list-header{
+	height:27px;
+	line-height:27px;
+	border:1px solid #000;
+	border-width:1px 0;
+	background:#424242;
+	@include background-image(linear-gradient(#424242, #212121));
+	box-shadow:0 1px 0 0 #505050 inset;
+	box-shadow:0 0 3px 0 rgba(0,0,0,.09);
+	position: relative;
+	li{
+		float: left;
+		list-style: none;
+		color:#919192;
+		font-weight:bold;
+		font-size:11px;
+	}
+	.user__name{
+		padding-left:81px;
+		width:97px;
+	}
+	.user__lang{
+		background:#4c4c4c;
+		@include background-image(linear-gradient(#4c4c4c, #2c2c2c));
+		box-shadow:0 1px 0 0 #595959 inset, 1px 0 0 0 rgba(0,0,0,0.2), -1px 0 0 0 rgba(0,0,0,0.2);
+   		width: 93px;
+   		text-align: center;
+   		cursor:pointer;
+   		.sort-arr{margin: 0 -11px 0 3px;}
+	}
+	.user__time{
+		margin-left: 7px;
+	}
+}
+
+
+.user-name-lang{
+	.user-list-header{
+		.user__name{
+			padding-left: 116px;
+			width: 119px;
+		}
+	}
+	.user-item{
+		.user__lang{
+			margin-left: 54px;
+		}
+	}
+}
+
+
+.sort-arr{
+	@include sized-sprite($icons, 'arr-04');
+	display: inline-block;
+	position: relative;
+}
