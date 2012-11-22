@@ -7,23 +7,12 @@ html{
 }
 @include keyframes(anim1) {
 	0% {
-		background-size:100% 100%;
 		background-position:0 0;
 	}
-	25% {
-		background-size:100% 200%;
-		background-position:0 0;
-	}
-	50% {
-		background-size:100% 200%;
-		background-position:0 50%;
-	}
-	75% {
-		background-size:100% 200%;
+	50%{
 		background-position:0 100%;
 	}
 	100%{
-		background-size:100% 100%;
 		background-position:0 0;
 	}
 }
@@ -31,13 +20,14 @@ html{
 .out{
 	width:100%;
 	height:100%;
-	background-color:#0c2c5b;
+}
+.out_1{
 	@include background-image(
-		linear-gradient(rgba(12,44,91,0) 0%,rgba(38,68,124,.13) 21%,rgba(122,162,255,.21) 45%,rgba(111,114,168,1) 51%,rgba(125,112,168,1) 57%,rgba(134,103,162,1) 65%,rgba(134,95,156,1) 70%,rgba(128,82,147,1) 80%,rgba(100,61,124,1) 100%)	
+		linear-gradient(rgba(20,41,90,1) 0%,rgba(36,60,115,1) 2%,rgba(52,77,135,1) 4%,rgba(74,93,150,1) 5%,rgba(99,109,164,1) 6%,rgba(118,114,165,1) 7%,rgba(132,112,161,1) 8%,rgba(138,102,153,1) 9%,rgba(129,83,144,1) 11%,rgba(120,75,136,1) 13%,rgba(102,61,120,1) 14%,rgba(129,83,144,1) 15%,rgba(138,102,153,1) 16%,rgba(104,110,164,1) 17%,rgba(63,87,146,1) 18%,rgba(30,54,108,1) 19%,rgba(21,41,90,1) 20%,rgba(36,60,115,1) 23%,rgba(51,76,134,1) 25%,rgba(63,87,146,1) 26%,rgba(74,93,150,1) 27%,rgba(97,106,161,1) 28%,rgba(107,110,164,1) 29%,rgba(124,114,164,1) 30%,rgba(136,110,157,1) 31%,rgba(137,98,150,1) 33%,rgba(129,86,146,1) 34%,rgba(122,76,137,1) 36%,rgba(102,61,120,1) 39%,rgba(128,86,140,1) 40%,rgba(139,98,149,1) 41%,rgba(154,127,155,1) 43%,rgba(153,137,158,1) 44%,rgba(149,137,158,1) 45%,rgba(137,124,151,1) 46%,rgba(108,102,129,1) 47%,rgba(97,93,119,1) 48%,rgba(59,58,98,1) 49%,rgba(40,43,89,1) 50%,rgba(37,43,87,1) 51%,rgba(16,27,74,1) 52%,rgba(9,22,69,1) 53%,rgba(20,29,76,1) 54%,rgba(64,64,100,1) 55%,rgba(108,102,129,1) 56%,rgba(149,137,158,1) 57%,rgba(154,127,155,1) 58%,rgba(139,98,149,1) 59%,rgba(102,61,120,1) 60%,rgba(122,76,137,1) 62%,rgba(129,86,146,1) 64%,rgba(137,98,150,1) 65%,rgba(136,110,157,1) 66%,rgba(124,114,164,1) 67%,rgba(99,109,164,1) 68%,rgba(86,102,159,1) 69%,rgba(63,87,146,1) 70%,rgba(52,77,135,1) 71%,rgba(36,60,115,1) 72%,rgba(32,51,101,0.99) 75%,rgba(69,82,131,0.99) 76%,rgba(89,100,148,0.99) 77%,rgba(110,114,157,0.99) 78%,rgba(136,127,159,0.99) 79%,rgba(135,124,146,0.99) 80%,rgba(114,110,124,0.99) 81%,rgba(71,75,99,0.99) 82%,rgba(49,58,89,0.99) 83%,rgba(19,31,74,0.99) 84%,rgba(4,20,66,0.99) 85%,rgba(26,37,78,0.99) 86%,rgba(37,46,82,0.99) 87%,rgba(60,65,95,0.99) 88%,rgba(86,87,107,0.99) 89%,rgba(103,102,116,0.99) 90%,rgba(122,115,131,0.99) 91%,rgba(136,125,149,0.98) 92%,rgba(136,126,159,0.97) 93%,rgba(124,122,160,0.97) 94%,rgba(104,111,155,0.97) 95%,rgba(101,108,153,0.96) 96%,rgba(69,82,131,0.96) 97%,rgba(54,72,123,0.95) 98%,rgba(31,51,101,0.95) 99%,rgba(20,41,90,0.94) 100%)
 		);
+	@include animation(anim1 500s linear infinite);
+	background-size:100% 1000%
 	
-	/*background: #8ea1cc url(../img/bg-body.jpg) 50% 0 no-repeat;
-	@include animation(anim1 20s linear infinite);*/
 }
 .out_2{
 	width:100%;
@@ -56,8 +46,8 @@ body{
 	    size: 12px;
 	  	}
 	line-height:1.2;
-	/*background: #8ea1cc url(../img/bg-body.jpg) 50% 0 no-repeat;
-	background-size:cover;*/
+	background: #8ea1cc url(../img/bg-body.jpg) 50% 0 no-repeat;
+	background-size:cover;
 }
 
 @font-face {
@@ -108,8 +98,48 @@ button,textarea,input[type=submit]::-moz-focus-inner { padding: 0; border: 0 }
 	width:90px;
 	text-align: center;
 }
-.btn_gray{}
-.btn_violet{}
+.btn-violet{
+	color:#cdccd3;
+	font-family: 'HelveticaNeue-B', Helvetica, Arial, sans-serif;
+	font-size:12px;
+	border:1px solid #252731;
+	box-shadow:0 1px 1px 0 rgba(white,.2) inset, 0 1px 1px 0 rgba(0,0,0,.75);
+	@include background-image(linear-gradient(#5f4c89, #402e56));
+	height:34px;
+	border-radius:17px;
+	padding:0 8px;
+	cursor:pointer;
+	.bullet_dark_activ{
+		margin: 0 2px -7px -5px;
+	}
+	&:hover{
+		@include background-image(linear-gradient(#4f4073, #352647));
+	}
+	&.active{
+		@include background-image(linear-gradient(#fecd19, #b06200));
+		color:#75470a;
+	}
+}
+.btn-violet_active{
+	
+}
+.bullet_dark_activ{
+	@include sized-sprite($icons, 'bullet-active');
+	display: inline-block;
+	position: relative;
+}
+.input{
+	background:#1f2026;
+	border-radius:4px;
+	border:1px solid #000;
+	box-shadow:0 1px 1px 0 rgba(0,0,0,.7) inset, 0 1px 0 0 #454754;
+	font-size:12px;
+	height:20px;
+	line-height:20px;
+	padding: 3px 7px;
+	width: 219px;
+	color:#fff;
+}
 .header{
 	@include background-image(linear-gradient(#4a464f, #282530));
 	box-shadow:0 1px 0 0 #4f4f5b inset, 0 0 6px 5px rgba(0, 0, 0, 0.45);
@@ -127,7 +157,7 @@ button,textarea,input[type=submit]::-moz-focus-inner { padding: 0; border: 0 }
 	.h-box_form{
 		padding:15px 15px 0 12px;
 		height:45px;
-		.input{
+		.input-text{
 			background:#66616c;
 			border:1px solid #2a2630;
 			box-shadow:0 1px 1px 0 rgba(0,0,0,.4) inset, 0 2px 1px 0 rgba(white,.05);

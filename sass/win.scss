@@ -17,7 +17,7 @@
 	top:100px;
 	margin-left:-170px;
 	z-index:15;
-	.win__header{
+	.win__title{
 		background:#414141;
 		@include background-image(linear-gradient(#414141, #212121));
 		border:1px solid #000;
@@ -210,6 +210,43 @@
 	}
 }
 
+.r-btn-gray{
+	height:35px;
+	width:35px;
+	line-height:34px;
+	margin:0 2px;
+	border:1px solid #252731;
+	text-align: center;
+	border-radius:50%;
+	cursor:pointer;
+	margin: 0 2px 0 6px;
+	box-shadow:0 1px 0 0 rgba(white,0.21) inset, 0 1px 1px 0 rgba(0,0,0,0.75);
+	@include background-image(linear-gradient(#605e64, #413d46));
+	span{
+		display: inline-block;
+		position: relative;
+		vertical-align: middle;
+	}
+	&:hover{
+		@include background-image(linear-gradient(#404040, #282828));
+	}
+	&.active{
+		@include background-image(linear-gradient(#fecd19, #b06200));
+		.btn-icon-doc{@include sized-sprite($icons, 'btn-doc_active');}
+		.btn-icon-graph{@include sized-sprite($icons, 'btn-fraph_active');}
+	}
+}
+.btn-icon-doc{
+	@include sized-sprite($icons, 'btn-doc');
+	left: 2px;
+	top: -2px;
+}
+.btn-icon-graph{
+	@include sized-sprite($icons, 'btn-fraph');
+	left: 1px;
+	top: -1px;
+}
+
 .icon-audio{
 	@include sized-sprite($icons, 'icon-device-3');
 	display: inline-block;
@@ -220,7 +257,6 @@
 	top: -3px;
 	margin: 0 3px -11px -15px;
 }
-
 
 .tabs{
 	padding-top:8px;
@@ -268,7 +304,7 @@
 				content:"";
 				position: absolute;
 				bottom:-1px;
-				width:330px;
+				width:1500px;
 				box-shadow:0 3px 3px 0 rgba(0,0,0,.32);
 				border-top:1px solid rgba(white,.13);
 				height:0;

@@ -14,31 +14,16 @@ html {
 @-moz-keyframes anim1 {
   /* line 9, ../sass/common.scss */
   0% {
-    background-size: 100% 100%;
     background-position: 0 0;
   }
 
-  /* line 13, ../sass/common.scss */
-  25% {
-    background-size: 100% 200%;
-    background-position: 0 0;
-  }
-
-  /* line 17, ../sass/common.scss */
+  /* line 12, ../sass/common.scss */
   50% {
-    background-size: 100% 200%;
-    background-position: 0 50%;
-  }
-
-  /* line 21, ../sass/common.scss */
-  75% {
-    background-size: 100% 200%;
     background-position: 0 100%;
   }
 
-  /* line 25, ../sass/common.scss */
+  /* line 15, ../sass/common.scss */
   100% {
-    background-size: 100% 100%;
     background-position: 0 0;
   }
 }
@@ -46,31 +31,16 @@ html {
 @-webkit-keyframes anim1 {
   /* line 9, ../sass/common.scss */
   0% {
-    background-size: 100% 100%;
     background-position: 0 0;
   }
 
-  /* line 13, ../sass/common.scss */
-  25% {
-    background-size: 100% 200%;
-    background-position: 0 0;
-  }
-
-  /* line 17, ../sass/common.scss */
+  /* line 12, ../sass/common.scss */
   50% {
-    background-size: 100% 200%;
-    background-position: 0 50%;
-  }
-
-  /* line 21, ../sass/common.scss */
-  75% {
-    background-size: 100% 200%;
     background-position: 0 100%;
   }
 
-  /* line 25, ../sass/common.scss */
+  /* line 15, ../sass/common.scss */
   100% {
-    background-size: 100% 100%;
     background-position: 0 0;
   }
 }
@@ -78,31 +48,16 @@ html {
 @-o-keyframes anim1 {
   /* line 9, ../sass/common.scss */
   0% {
-    background-size: 100% 100%;
     background-position: 0 0;
   }
 
-  /* line 13, ../sass/common.scss */
-  25% {
-    background-size: 100% 200%;
-    background-position: 0 0;
-  }
-
-  /* line 17, ../sass/common.scss */
+  /* line 12, ../sass/common.scss */
   50% {
-    background-size: 100% 200%;
-    background-position: 0 50%;
-  }
-
-  /* line 21, ../sass/common.scss */
-  75% {
-    background-size: 100% 200%;
     background-position: 0 100%;
   }
 
-  /* line 25, ../sass/common.scss */
+  /* line 15, ../sass/common.scss */
   100% {
-    background-size: 100% 100%;
     background-position: 0 0;
   }
 }
@@ -110,31 +65,16 @@ html {
 @-ms-keyframes anim1 {
   /* line 9, ../sass/common.scss */
   0% {
-    background-size: 100% 100%;
     background-position: 0 0;
   }
 
-  /* line 13, ../sass/common.scss */
-  25% {
-    background-size: 100% 200%;
-    background-position: 0 0;
-  }
-
-  /* line 17, ../sass/common.scss */
+  /* line 12, ../sass/common.scss */
   50% {
-    background-size: 100% 200%;
-    background-position: 0 50%;
-  }
-
-  /* line 21, ../sass/common.scss */
-  75% {
-    background-size: 100% 200%;
     background-position: 0 100%;
   }
 
-  /* line 25, ../sass/common.scss */
+  /* line 15, ../sass/common.scss */
   100% {
-    background-size: 100% 100%;
     background-position: 0 0;
   }
 }
@@ -142,50 +82,42 @@ html {
 @keyframes anim1 {
   /* line 9, ../sass/common.scss */
   0% {
-    background-size: 100% 100%;
     background-position: 0 0;
   }
 
-  /* line 13, ../sass/common.scss */
-  25% {
-    background-size: 100% 200%;
-    background-position: 0 0;
-  }
-
-  /* line 17, ../sass/common.scss */
+  /* line 12, ../sass/common.scss */
   50% {
-    background-size: 100% 200%;
-    background-position: 0 50%;
-  }
-
-  /* line 21, ../sass/common.scss */
-  75% {
-    background-size: 100% 200%;
     background-position: 0 100%;
   }
 
-  /* line 25, ../sass/common.scss */
+  /* line 15, ../sass/common.scss */
   100% {
-    background-size: 100% 100%;
     background-position: 0 0;
   }
 }
 
-/* line 31, ../sass/common.scss */
+/* line 20, ../sass/common.scss */
 .out {
   width: 100%;
   height: 100%;
-  background-color: #0c2c5b;
-  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, rgba(12, 44, 91, 0)), color-stop(21%, rgba(38, 68, 124, 0.13)), color-stop(45%, rgba(122, 162, 255, 0.21)), color-stop(51%, #6f72a8), color-stop(57%, #7d70a8), color-stop(65%, #8667a2), color-stop(70%, #865f9c), color-stop(80%, #805293), color-stop(100%, #643d7c));
-  background-image: -webkit-linear-gradient(rgba(12, 44, 91, 0) 0%, rgba(38, 68, 124, 0.13) 21%, rgba(122, 162, 255, 0.21) 45%, #6f72a8 51%, #7d70a8 57%, #8667a2 65%, #865f9c 70%, #805293 80%, #643d7c 100%);
-  background-image: -moz-linear-gradient(rgba(12, 44, 91, 0) 0%, rgba(38, 68, 124, 0.13) 21%, rgba(122, 162, 255, 0.21) 45%, #6f72a8 51%, #7d70a8 57%, #8667a2 65%, #865f9c 70%, #805293 80%, #643d7c 100%);
-  background-image: -o-linear-gradient(rgba(12, 44, 91, 0) 0%, rgba(38, 68, 124, 0.13) 21%, rgba(122, 162, 255, 0.21) 45%, #6f72a8 51%, #7d70a8 57%, #8667a2 65%, #865f9c 70%, #805293 80%, #643d7c 100%);
-  background-image: linear-gradient(rgba(12, 44, 91, 0) 0%, rgba(38, 68, 124, 0.13) 21%, rgba(122, 162, 255, 0.21) 45%, #6f72a8 51%, #7d70a8 57%, #8667a2 65%, #865f9c 70%, #805293 80%, #643d7c 100%);
-  /*background: #8ea1cc url(../img/bg-body.jpg) 50% 0 no-repeat;
-  @include animation(anim1 20s linear infinite);*/
 }
 
-/* line 42, ../sass/common.scss */
+/* line 24, ../sass/common.scss */
+.out_1 {
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #14295a), color-stop(2%, #243c73), color-stop(4%, #344d87), color-stop(5%, #4a5d96), color-stop(6%, #636da4), color-stop(7%, #7672a5), color-stop(8%, #8470a1), color-stop(9%, #8a6699), color-stop(11%, #815390), color-stop(13%, #784b88), color-stop(14%, #663d78), color-stop(15%, #815390), color-stop(16%, #8a6699), color-stop(17%, #686ea4), color-stop(18%, #3f5792), color-stop(19%, #1e366c), color-stop(20%, #15295a), color-stop(23%, #243c73), color-stop(25%, #334c86), color-stop(26%, #3f5792), color-stop(27%, #4a5d96), color-stop(28%, #616aa1), color-stop(29%, #6b6ea4), color-stop(30%, #7c72a4), color-stop(31%, #886e9d), color-stop(33%, #896296), color-stop(34%, #815692), color-stop(36%, #7a4c89), color-stop(39%, #663d78), color-stop(40%, #80568c), color-stop(41%, #8b6295), color-stop(43%, #9a7f9b), color-stop(44%, #99899e), color-stop(45%, #95899e), color-stop(46%, #897c97), color-stop(47%, #6c6681), color-stop(48%, #615d77), color-stop(49%, #3b3a62), color-stop(50%, #282b59), color-stop(51%, #252b57), color-stop(52%, #101b4a), color-stop(53%, #091645), color-stop(54%, #141d4c), color-stop(55%, #404064), color-stop(56%, #6c6681), color-stop(57%, #95899e), color-stop(58%, #9a7f9b), color-stop(59%, #8b6295), color-stop(60%, #663d78), color-stop(62%, #7a4c89), color-stop(64%, #815692), color-stop(65%, #896296), color-stop(66%, #886e9d), color-stop(67%, #7c72a4), color-stop(68%, #636da4), color-stop(69%, #56669f), color-stop(70%, #3f5792), color-stop(71%, #344d87), color-stop(72%, #243c73), color-stop(75%, rgba(32, 51, 101, 0.99)), color-stop(76%, rgba(69, 82, 131, 0.99)), color-stop(77%, rgba(89, 100, 148, 0.99)), color-stop(78%, rgba(110, 114, 157, 0.99)), color-stop(79%, rgba(136, 127, 159, 0.99)), color-stop(80%, rgba(135, 124, 146, 0.99)), color-stop(81%, rgba(114, 110, 124, 0.99)), color-stop(82%, rgba(71, 75, 99, 0.99)), color-stop(83%, rgba(49, 58, 89, 0.99)), color-stop(84%, rgba(19, 31, 74, 0.99)), color-stop(85%, rgba(4, 20, 66, 0.99)), color-stop(86%, rgba(26, 37, 78, 0.99)), color-stop(87%, rgba(37, 46, 82, 0.99)), color-stop(88%, rgba(60, 65, 95, 0.99)), color-stop(89%, rgba(86, 87, 107, 0.99)), color-stop(90%, rgba(103, 102, 116, 0.99)), color-stop(91%, rgba(122, 115, 131, 0.99)), color-stop(92%, rgba(136, 125, 149, 0.98)), color-stop(93%, rgba(136, 126, 159, 0.97)), color-stop(94%, rgba(124, 122, 160, 0.97)), color-stop(95%, rgba(104, 111, 155, 0.97)), color-stop(96%, rgba(101, 108, 153, 0.96)), color-stop(97%, rgba(69, 82, 131, 0.96)), color-stop(98%, rgba(54, 72, 123, 0.95)), color-stop(99%, rgba(31, 51, 101, 0.95)), color-stop(100%, rgba(20, 41, 90, 0.94)));
+  background-image: -webkit-linear-gradient(#14295a 0%, #243c73 2%, #344d87 4%, #4a5d96 5%, #636da4 6%, #7672a5 7%, #8470a1 8%, #8a6699 9%, #815390 11%, #784b88 13%, #663d78 14%, #815390 15%, #8a6699 16%, #686ea4 17%, #3f5792 18%, #1e366c 19%, #15295a 20%, #243c73 23%, #334c86 25%, #3f5792 26%, #4a5d96 27%, #616aa1 28%, #6b6ea4 29%, #7c72a4 30%, #886e9d 31%, #896296 33%, #815692 34%, #7a4c89 36%, #663d78 39%, #80568c 40%, #8b6295 41%, #9a7f9b 43%, #99899e 44%, #95899e 45%, #897c97 46%, #6c6681 47%, #615d77 48%, #3b3a62 49%, #282b59 50%, #252b57 51%, #101b4a 52%, #091645 53%, #141d4c 54%, #404064 55%, #6c6681 56%, #95899e 57%, #9a7f9b 58%, #8b6295 59%, #663d78 60%, #7a4c89 62%, #815692 64%, #896296 65%, #886e9d 66%, #7c72a4 67%, #636da4 68%, #56669f 69%, #3f5792 70%, #344d87 71%, #243c73 72%, rgba(32, 51, 101, 0.99) 75%, rgba(69, 82, 131, 0.99) 76%, rgba(89, 100, 148, 0.99) 77%, rgba(110, 114, 157, 0.99) 78%, rgba(136, 127, 159, 0.99) 79%, rgba(135, 124, 146, 0.99) 80%, rgba(114, 110, 124, 0.99) 81%, rgba(71, 75, 99, 0.99) 82%, rgba(49, 58, 89, 0.99) 83%, rgba(19, 31, 74, 0.99) 84%, rgba(4, 20, 66, 0.99) 85%, rgba(26, 37, 78, 0.99) 86%, rgba(37, 46, 82, 0.99) 87%, rgba(60, 65, 95, 0.99) 88%, rgba(86, 87, 107, 0.99) 89%, rgba(103, 102, 116, 0.99) 90%, rgba(122, 115, 131, 0.99) 91%, rgba(136, 125, 149, 0.98) 92%, rgba(136, 126, 159, 0.97) 93%, rgba(124, 122, 160, 0.97) 94%, rgba(104, 111, 155, 0.97) 95%, rgba(101, 108, 153, 0.96) 96%, rgba(69, 82, 131, 0.96) 97%, rgba(54, 72, 123, 0.95) 98%, rgba(31, 51, 101, 0.95) 99%, rgba(20, 41, 90, 0.94) 100%);
+  background-image: -moz-linear-gradient(#14295a 0%, #243c73 2%, #344d87 4%, #4a5d96 5%, #636da4 6%, #7672a5 7%, #8470a1 8%, #8a6699 9%, #815390 11%, #784b88 13%, #663d78 14%, #815390 15%, #8a6699 16%, #686ea4 17%, #3f5792 18%, #1e366c 19%, #15295a 20%, #243c73 23%, #334c86 25%, #3f5792 26%, #4a5d96 27%, #616aa1 28%, #6b6ea4 29%, #7c72a4 30%, #886e9d 31%, #896296 33%, #815692 34%, #7a4c89 36%, #663d78 39%, #80568c 40%, #8b6295 41%, #9a7f9b 43%, #99899e 44%, #95899e 45%, #897c97 46%, #6c6681 47%, #615d77 48%, #3b3a62 49%, #282b59 50%, #252b57 51%, #101b4a 52%, #091645 53%, #141d4c 54%, #404064 55%, #6c6681 56%, #95899e 57%, #9a7f9b 58%, #8b6295 59%, #663d78 60%, #7a4c89 62%, #815692 64%, #896296 65%, #886e9d 66%, #7c72a4 67%, #636da4 68%, #56669f 69%, #3f5792 70%, #344d87 71%, #243c73 72%, rgba(32, 51, 101, 0.99) 75%, rgba(69, 82, 131, 0.99) 76%, rgba(89, 100, 148, 0.99) 77%, rgba(110, 114, 157, 0.99) 78%, rgba(136, 127, 159, 0.99) 79%, rgba(135, 124, 146, 0.99) 80%, rgba(114, 110, 124, 0.99) 81%, rgba(71, 75, 99, 0.99) 82%, rgba(49, 58, 89, 0.99) 83%, rgba(19, 31, 74, 0.99) 84%, rgba(4, 20, 66, 0.99) 85%, rgba(26, 37, 78, 0.99) 86%, rgba(37, 46, 82, 0.99) 87%, rgba(60, 65, 95, 0.99) 88%, rgba(86, 87, 107, 0.99) 89%, rgba(103, 102, 116, 0.99) 90%, rgba(122, 115, 131, 0.99) 91%, rgba(136, 125, 149, 0.98) 92%, rgba(136, 126, 159, 0.97) 93%, rgba(124, 122, 160, 0.97) 94%, rgba(104, 111, 155, 0.97) 95%, rgba(101, 108, 153, 0.96) 96%, rgba(69, 82, 131, 0.96) 97%, rgba(54, 72, 123, 0.95) 98%, rgba(31, 51, 101, 0.95) 99%, rgba(20, 41, 90, 0.94) 100%);
+  background-image: -o-linear-gradient(#14295a 0%, #243c73 2%, #344d87 4%, #4a5d96 5%, #636da4 6%, #7672a5 7%, #8470a1 8%, #8a6699 9%, #815390 11%, #784b88 13%, #663d78 14%, #815390 15%, #8a6699 16%, #686ea4 17%, #3f5792 18%, #1e366c 19%, #15295a 20%, #243c73 23%, #334c86 25%, #3f5792 26%, #4a5d96 27%, #616aa1 28%, #6b6ea4 29%, #7c72a4 30%, #886e9d 31%, #896296 33%, #815692 34%, #7a4c89 36%, #663d78 39%, #80568c 40%, #8b6295 41%, #9a7f9b 43%, #99899e 44%, #95899e 45%, #897c97 46%, #6c6681 47%, #615d77 48%, #3b3a62 49%, #282b59 50%, #252b57 51%, #101b4a 52%, #091645 53%, #141d4c 54%, #404064 55%, #6c6681 56%, #95899e 57%, #9a7f9b 58%, #8b6295 59%, #663d78 60%, #7a4c89 62%, #815692 64%, #896296 65%, #886e9d 66%, #7c72a4 67%, #636da4 68%, #56669f 69%, #3f5792 70%, #344d87 71%, #243c73 72%, rgba(32, 51, 101, 0.99) 75%, rgba(69, 82, 131, 0.99) 76%, rgba(89, 100, 148, 0.99) 77%, rgba(110, 114, 157, 0.99) 78%, rgba(136, 127, 159, 0.99) 79%, rgba(135, 124, 146, 0.99) 80%, rgba(114, 110, 124, 0.99) 81%, rgba(71, 75, 99, 0.99) 82%, rgba(49, 58, 89, 0.99) 83%, rgba(19, 31, 74, 0.99) 84%, rgba(4, 20, 66, 0.99) 85%, rgba(26, 37, 78, 0.99) 86%, rgba(37, 46, 82, 0.99) 87%, rgba(60, 65, 95, 0.99) 88%, rgba(86, 87, 107, 0.99) 89%, rgba(103, 102, 116, 0.99) 90%, rgba(122, 115, 131, 0.99) 91%, rgba(136, 125, 149, 0.98) 92%, rgba(136, 126, 159, 0.97) 93%, rgba(124, 122, 160, 0.97) 94%, rgba(104, 111, 155, 0.97) 95%, rgba(101, 108, 153, 0.96) 96%, rgba(69, 82, 131, 0.96) 97%, rgba(54, 72, 123, 0.95) 98%, rgba(31, 51, 101, 0.95) 99%, rgba(20, 41, 90, 0.94) 100%);
+  background-image: linear-gradient(#14295a 0%, #243c73 2%, #344d87 4%, #4a5d96 5%, #636da4 6%, #7672a5 7%, #8470a1 8%, #8a6699 9%, #815390 11%, #784b88 13%, #663d78 14%, #815390 15%, #8a6699 16%, #686ea4 17%, #3f5792 18%, #1e366c 19%, #15295a 20%, #243c73 23%, #334c86 25%, #3f5792 26%, #4a5d96 27%, #616aa1 28%, #6b6ea4 29%, #7c72a4 30%, #886e9d 31%, #896296 33%, #815692 34%, #7a4c89 36%, #663d78 39%, #80568c 40%, #8b6295 41%, #9a7f9b 43%, #99899e 44%, #95899e 45%, #897c97 46%, #6c6681 47%, #615d77 48%, #3b3a62 49%, #282b59 50%, #252b57 51%, #101b4a 52%, #091645 53%, #141d4c 54%, #404064 55%, #6c6681 56%, #95899e 57%, #9a7f9b 58%, #8b6295 59%, #663d78 60%, #7a4c89 62%, #815692 64%, #896296 65%, #886e9d 66%, #7c72a4 67%, #636da4 68%, #56669f 69%, #3f5792 70%, #344d87 71%, #243c73 72%, rgba(32, 51, 101, 0.99) 75%, rgba(69, 82, 131, 0.99) 76%, rgba(89, 100, 148, 0.99) 77%, rgba(110, 114, 157, 0.99) 78%, rgba(136, 127, 159, 0.99) 79%, rgba(135, 124, 146, 0.99) 80%, rgba(114, 110, 124, 0.99) 81%, rgba(71, 75, 99, 0.99) 82%, rgba(49, 58, 89, 0.99) 83%, rgba(19, 31, 74, 0.99) 84%, rgba(4, 20, 66, 0.99) 85%, rgba(26, 37, 78, 0.99) 86%, rgba(37, 46, 82, 0.99) 87%, rgba(60, 65, 95, 0.99) 88%, rgba(86, 87, 107, 0.99) 89%, rgba(103, 102, 116, 0.99) 90%, rgba(122, 115, 131, 0.99) 91%, rgba(136, 125, 149, 0.98) 92%, rgba(136, 126, 159, 0.97) 93%, rgba(124, 122, 160, 0.97) 94%, rgba(104, 111, 155, 0.97) 95%, rgba(101, 108, 153, 0.96) 96%, rgba(69, 82, 131, 0.96) 97%, rgba(54, 72, 123, 0.95) 98%, rgba(31, 51, 101, 0.95) 99%, rgba(20, 41, 90, 0.94) 100%);
+  -webkit-animation: anim1 500s linear infinite;
+  -moz-animation: anim1 500s linear infinite;
+  -ms-animation: anim1 500s linear infinite;
+  -o-animation: anim1 500s linear infinite;
+  animation: anim1 500s linear infinite;
+  background-size: 100% 1000%;
+}
+
+/* line 32, ../sass/common.scss */
 .out_2 {
   width: 100%;
   height: 100%;
@@ -197,15 +129,15 @@ html {
   background-repeat: no-repeat;
 }
 
-/* line 51, ../sass/common.scss */
+/* line 41, ../sass/common.scss */
 body {
   height: 100%;
   font-family: Arial,sans-serif;
   font-weight: normal;
   font-size: 12px;
   line-height: 1.2;
-  /*background: #8ea1cc url(../img/bg-body.jpg) 50% 0 no-repeat;
-  background-size:cover;*/
+  background: #8ea1cc url(../img/bg-body.jpg) 50% 0 no-repeat;
+  background-size: cover;
 }
 
 @font-face {
@@ -225,33 +157,33 @@ body {
 }
 
 /*resets*/
-/* line 79, ../sass/common.scss */
+/* line 69, ../sass/common.scss */
 a img, fieldset {
   border: none;
 }
 
-/* line 80, ../sass/common.scss */
+/* line 70, ../sass/common.scss */
 a {
   color: #00919e;
 }
-/* line 82, ../sass/common.scss */
+/* line 72, ../sass/common.scss */
 a:hover {
   text-decoration: none;
 }
 
-/* line 84, ../sass/common.scss */
+/* line 74, ../sass/common.scss */
 button, textarea, input[type=submit]::-moz-focus-inner {
   padding: 0;
   border: 0;
 }
 
-/* line 86, ../sass/common.scss */
+/* line 76, ../sass/common.scss */
 .in {
   width: 1280px;
   margin: 0 auto;
 }
 
-/* line 90, ../sass/common.scss */
+/* line 80, ../sass/common.scss */
 .btn {
   font-size: 13px;
   color: #fff;
@@ -268,7 +200,7 @@ button, textarea, input[type=submit]::-moz-focus-inner {
   cursor: pointer;
   border-radius: 2px;
 }
-/* line 101, ../sass/common.scss */
+/* line 91, ../sass/common.scss */
 .btn:hover {
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #3f404b), color-stop(100%, #656671));
   background-image: -webkit-linear-gradient(#3f404b, #656671);
@@ -277,7 +209,7 @@ button, textarea, input[type=submit]::-moz-focus-inner {
   background-image: linear-gradient(#3f404b, #656671);
 }
 
-/* line 103, ../sass/common.scss */
+/* line 93, ../sass/common.scss */
 .btn_green {
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #87b70d), color-stop(100%, #487d04));
   background-image: -webkit-linear-gradient(#87b70d, #487d04);
@@ -285,7 +217,7 @@ button, textarea, input[type=submit]::-moz-focus-inner {
   background-image: -o-linear-gradient(#87b70d, #487d04);
   background-image: linear-gradient(#87b70d, #487d04);
 }
-/* line 105, ../sass/common.scss */
+/* line 95, ../sass/common.scss */
 .btn_green:hover {
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #487d04), color-stop(100%, #87b70d));
   background-image: -webkit-linear-gradient(#487d04, #87b70d);
@@ -294,13 +226,75 @@ button, textarea, input[type=submit]::-moz-focus-inner {
   background-image: linear-gradient(#487d04, #87b70d);
 }
 
-/* line 107, ../sass/common.scss */
+/* line 97, ../sass/common.scss */
 .btn_90 {
   width: 90px;
   text-align: center;
 }
 
-/* line 113, ../sass/common.scss */
+/* line 101, ../sass/common.scss */
+.btn-violet {
+  color: #cdccd3;
+  font-family: 'HelveticaNeue-B', Helvetica, Arial, sans-serif;
+  font-size: 12px;
+  border: 1px solid #252731;
+  box-shadow: 0 1px 1px 0 rgba(255, 255, 255, 0.2) inset, 0 1px 1px 0 rgba(0, 0, 0, 0.75);
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #5f4c89), color-stop(100%, #402e56));
+  background-image: -webkit-linear-gradient(#5f4c89, #402e56);
+  background-image: -moz-linear-gradient(#5f4c89, #402e56);
+  background-image: -o-linear-gradient(#5f4c89, #402e56);
+  background-image: linear-gradient(#5f4c89, #402e56);
+  height: 34px;
+  border-radius: 17px;
+  padding: 0 8px;
+  cursor: pointer;
+}
+/* line 112, ../sass/common.scss */
+.btn-violet .bullet_dark_activ {
+  margin: 0 2px -7px -5px;
+}
+/* line 115, ../sass/common.scss */
+.btn-violet:hover {
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #4f4073), color-stop(100%, #352647));
+  background-image: -webkit-linear-gradient(#4f4073, #352647);
+  background-image: -moz-linear-gradient(#4f4073, #352647);
+  background-image: -o-linear-gradient(#4f4073, #352647);
+  background-image: linear-gradient(#4f4073, #352647);
+}
+/* line 118, ../sass/common.scss */
+.btn-violet.active {
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #fecd19), color-stop(100%, #b06200));
+  background-image: -webkit-linear-gradient(#fecd19, #b06200);
+  background-image: -moz-linear-gradient(#fecd19, #b06200);
+  background-image: -o-linear-gradient(#fecd19, #b06200);
+  background-image: linear-gradient(#fecd19, #b06200);
+  color: #75470a;
+}
+
+/* line 126, ../sass/common.scss */
+.bullet_dark_activ {
+  background: url('../img/icons-s0b29cc95f0.png') 0 -605px no-repeat;
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  position: relative;
+}
+
+/* line 131, ../sass/common.scss */
+.input {
+  background: #1f2026;
+  border-radius: 4px;
+  border: 1px solid #000;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.7) inset, 0 1px 0 0 #454754;
+  font-size: 12px;
+  height: 20px;
+  line-height: 20px;
+  padding: 3px 7px;
+  width: 219px;
+  color: #fff;
+}
+
+/* line 143, ../sass/common.scss */
 .header {
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #4a464f), color-stop(100%, #282530));
   background-image: -webkit-linear-gradient(#4a464f, #282530);
@@ -313,7 +307,7 @@ button, textarea, input[type=submit]::-moz-focus-inner {
   position: relative;
   z-index: 10;
 }
-/* line 120, ../sass/common.scss */
+/* line 150, ../sass/common.scss */
 .header .h-box {
   border-right: 1px solid #2e2b32;
   box-shadow: 1px 0 0 0 rgba(255, 255, 255, 0.1);
@@ -321,13 +315,13 @@ button, textarea, input[type=submit]::-moz-focus-inner {
   height: 60px;
   position: relative;
 }
-/* line 127, ../sass/common.scss */
+/* line 157, ../sass/common.scss */
 .header .h-box_form {
   padding: 15px 15px 0 12px;
   height: 45px;
 }
-/* line 130, ../sass/common.scss */
-.header .h-box_form .input {
+/* line 160, ../sass/common.scss */
+.header .h-box_form .input-text {
   background: #66616c;
   border: 1px solid #2a2630;
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.4) inset, 0 2px 1px 0 rgba(255, 255, 255, 0.05);
@@ -339,9 +333,9 @@ button, textarea, input[type=submit]::-moz-focus-inner {
   width: 184px;
   height: 20px;
 }
-/* line 142, ../sass/common.scss */
+/* line 172, ../sass/common.scss */
 .header .h-box_form .input-plus {
-  background: url('../img/icons-s439b97ce99.png') 0 -1406px no-repeat;
+  background: url('../img/icons-s0b29cc95f0.png') 0 -1546px no-repeat;
   width: 28px;
   height: 20px;
   border-right: 1px solid #544f5c;
@@ -350,61 +344,61 @@ button, textarea, input[type=submit]::-moz-focus-inner {
   top: 21px;
   cursor: pointer;
 }
-/* line 151, ../sass/common.scss */
+/* line 181, ../sass/common.scss */
 .header .logo-block {
   float: left;
   margin: 19px 12px 0 28px;
 }
-/* line 155, ../sass/common.scss */
+/* line 185, ../sass/common.scss */
 .header .logo-block:hover .drop {
   display: block;
 }
-/* line 156, ../sass/common.scss */
+/* line 186, ../sass/common.scss */
 .header .logo-block:hover .logo {
-  background: url('../img/icons-s439b97ce99.png') 0 -325px no-repeat;
+  background: url('../img/icons-s0b29cc95f0.png') 0 -325px no-repeat;
   width: 48px;
   height: 23px;
 }
-/* line 159, ../sass/common.scss */
+/* line 189, ../sass/common.scss */
 .header .logo {
-  background: url('../img/icons-s439b97ce99.png') 0 -97px no-repeat;
+  background: url('../img/icons-s0b29cc95f0.png') 0 -97px no-repeat;
   width: 48px;
   height: 23px;
   display: block;
 }
-/* line 163, ../sass/common.scss */
+/* line 193, ../sass/common.scss */
 .header .nav-item {
   float: left;
   margin: 0 15px 0 11px;
   position: relative;
   line-height: 60px;
 }
-/* line 168, ../sass/common.scss */
+/* line 198, ../sass/common.scss */
 .header .nav-item .nav-item__text {
   color: #aeacb6;
   font-weight: bold;
   font-size: 14px;
   text-decoration: none;
 }
-/* line 174, ../sass/common.scss */
+/* line 204, ../sass/common.scss */
 .header .nav-item .nav-item__text_yellow {
   color: #f2ba06;
 }
-/* line 176, ../sass/common.scss */
+/* line 206, ../sass/common.scss */
 .header .nav-item:hover .drop {
   display: block;
 }
-/* line 177, ../sass/common.scss */
+/* line 207, ../sass/common.scss */
 .header .nav-item:hover .nav-arr {
-  background: url('../img/icons-s439b97ce99.png') 0 -420px no-repeat;
+  background: url('../img/icons-s0b29cc95f0.png') 0 -420px no-repeat;
   width: 22px;
   height: 22px;
   top: 8px;
   margin: 0 -2px 0 3px;
 }
-/* line 184, ../sass/common.scss */
+/* line 214, ../sass/common.scss */
 .header .nav-arr {
-  background: url('../img/icons-s439b97ce99.png') 0 -517px no-repeat;
+  background: url('../img/icons-s0b29cc95f0.png') 0 -517px no-repeat;
   width: 18px;
   height: 19px;
   display: inline-block;
@@ -413,7 +407,7 @@ button, textarea, input[type=submit]::-moz-focus-inner {
   margin-left: 5px;
   cursor: pointer;
 }
-/* line 192, ../sass/common.scss */
+/* line 222, ../sass/common.scss */
 .header .nav {
   list-style: none;
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #3e3a43), color-stop(100%, #1c1a24));
@@ -425,7 +419,7 @@ button, textarea, input[type=submit]::-moz-focus-inner {
   height: 60px;
   margin-left: 1px;
 }
-/* line 198, ../sass/common.scss */
+/* line 228, ../sass/common.scss */
 .header .nav li {
   float: left;
   height: 44px;
@@ -436,7 +430,7 @@ button, textarea, input[type=submit]::-moz-focus-inner {
   line-height: 15px;
   position: relative;
 }
-/* line 207, ../sass/common.scss */
+/* line 237, ../sass/common.scss */
 .header .nav li:hover {
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #302d37), color-stop(100%, #232127));
   background-image: -webkit-linear-gradient(#302d37, #232127);
@@ -444,48 +438,48 @@ button, textarea, input[type=submit]::-moz-focus-inner {
   background-image: -o-linear-gradient(#302d37, #232127);
   background-image: linear-gradient(#302d37, #232127);
 }
-/* line 209, ../sass/common.scss */
+/* line 239, ../sass/common.scss */
 .header .nav li:hover .icon-chat {
-  background: url('../img/icons-s439b97ce99.png') 0 -929px no-repeat;
+  background: url('../img/icons-s0b29cc95f0.png') 0 -1042px no-repeat;
   width: 16px;
   height: 16px;
 }
-/* line 210, ../sass/common.scss */
+/* line 240, ../sass/common.scss */
 .header .nav li:hover .icon-eye {
-  background: url('../img/icons-s439b97ce99.png') 0 -1031px no-repeat;
+  background: url('../img/icons-s0b29cc95f0.png') 0 -1144px no-repeat;
   width: 16px;
   height: 16px;
 }
-/* line 211, ../sass/common.scss */
+/* line 241, ../sass/common.scss */
 .header .nav li:hover .icon-mike {
-  background: url('../img/icons-s439b97ce99.png') 0 -1135px no-repeat;
+  background: url('../img/icons-s0b29cc95f0.png') 0 -1275px no-repeat;
   width: 16px;
   height: 16px;
 }
-/* line 212, ../sass/common.scss */
+/* line 242, ../sass/common.scss */
 .header .nav li:hover .icon-phone {
-  background: url('../img/icons-s439b97ce99.png') 0 -726px no-repeat;
+  background: url('../img/icons-s0b29cc95f0.png') 0 -839px no-repeat;
   width: 16px;
   height: 16px;
 }
-/* line 213, ../sass/common.scss */
+/* line 243, ../sass/common.scss */
 .header .nav li:hover .icon-pencil {
-  background: url('../img/icons-s439b97ce99.png') 0 -1211px no-repeat;
+  background: url('../img/icons-s0b29cc95f0.png') 0 -1351px no-repeat;
   width: 16px;
   height: 16px;
 }
-/* line 214, ../sass/common.scss */
+/* line 244, ../sass/common.scss */
 .header .nav li:hover .icon-graph {
-  background: url('../img/icons-s439b97ce99.png') 0 0 no-repeat;
+  background: url('../img/icons-s0b29cc95f0.png') 0 0 no-repeat;
   width: 40px;
   height: 40px;
   margin: 1px 0 0 9px;
 }
-/* line 218, ../sass/common.scss */
+/* line 248, ../sass/common.scss */
 .header .nav li:hover .drop {
   display: block;
 }
-/* line 220, ../sass/common.scss */
+/* line 250, ../sass/common.scss */
 .header .nav li .nav__link {
   border-left: 1px solid rgba(255, 255, 255, 0.1);
   box-shadow: -1px 0 0 0 rgba(0, 0, 0, 0.7);
@@ -494,13 +488,13 @@ button, textarea, input[type=submit]::-moz-focus-inner {
   height: 41px;
   padding-top: 3px;
 }
-/* line 227, ../sass/common.scss */
+/* line 257, ../sass/common.scss */
 .header .nav li .nav__link span {
   color: #656167;
   font-size: 11px;
   font-weight: bold;
 }
-/* line 232, ../sass/common.scss */
+/* line 262, ../sass/common.scss */
 .header .nav li .nav__link strong {
   display: inline-block;
   color: #eccdcd;
@@ -519,45 +513,45 @@ button, textarea, input[type=submit]::-moz-focus-inner {
   border-radius: 3px;
   margin-left: 5px;
 }
-/* line 246, ../sass/common.scss */
+/* line 276, ../sass/common.scss */
 .header .nav li .nav__link i {
   display: block;
   margin: 0 auto 10px;
 }
-/* line 251, ../sass/common.scss */
+/* line 281, ../sass/common.scss */
 .header .nav li:first-child .nav__link {
   border: 0;
   box-shadow: none;
 }
-/* line 255, ../sass/common.scss */
+/* line 285, ../sass/common.scss */
 .header .nav li .icon-graph {
-  background: url('../img/icons-s439b97ce99.png') 0 -130px no-repeat;
+  background: url('../img/icons-s0b29cc95f0.png') 0 -130px no-repeat;
   width: 36px;
   height: 37px;
   display: block;
   margin: 1px 0 0 11px;
 }
-/* line 262, ../sass/common.scss */
+/* line 292, ../sass/common.scss */
 .header .icon-win {
-  background: url('../img/icons-s439b97ce99.png') 0 -50px no-repeat;
+  background: url('../img/icons-s0b29cc95f0.png') 0 -50px no-repeat;
   width: 36px;
   height: 37px;
   margin: 12px 10px 0 11px;
 }
-/* line 266, ../sass/common.scss */
+/* line 296, ../sass/common.scss */
 .header .icon-medal {
-  background: url('../img/icons-s439b97ce99.png') 0 -868px no-repeat;
+  background: url('../img/icons-s0b29cc95f0.png') 0 -981px no-repeat;
   width: 14px;
   height: 25px;
   float: left;
   margin: 17px 0 18px 12px;
 }
-/* line 271, ../sass/common.scss */
+/* line 301, ../sass/common.scss */
 .header .inf-medal {
   margin: 0 10px 0 33px;
   text-align: center;
 }
-/* line 274, ../sass/common.scss */
+/* line 304, ../sass/common.scss */
 .header .inf-medal strong {
   font-size: 18px;
   color: #f2ba06;
@@ -565,7 +559,7 @@ button, textarea, input[type=submit]::-moz-focus-inner {
   width: 26px;
   margin: 8px 0 0;
 }
-/* line 281, ../sass/common.scss */
+/* line 311, ../sass/common.scss */
 .header .inf-medal span {
   color: #656167;
   font-size: 11px;
@@ -575,33 +569,33 @@ button, textarea, input[type=submit]::-moz-focus-inner {
   border-top: 1px solid #45404a;
   padding: 8px 0 0;
 }
-/* line 291, ../sass/common.scss */
+/* line 321, ../sass/common.scss */
 .header .h-box_time {
   font-size: 24px;
   color: #b2b2bf;
   padding: 0 11px 0 12px;
   line-height: 60px;
 }
-/* line 296, ../sass/common.scss */
+/* line 326, ../sass/common.scss */
 .header .h-box_time .nav-arr {
   top: 2px;
   margin: 0;
 }
-/* line 301, ../sass/common.scss */
+/* line 331, ../sass/common.scss */
 .header .h-box_time:hover .nav-arr {
-  background: url('../img/icons-s439b97ce99.png') 0 -420px no-repeat;
+  background: url('../img/icons-s0b29cc95f0.png') 0 -420px no-repeat;
   width: 22px;
   height: 22px;
   top: 5px;
   margin: 0 -3px 0 -1px;
 }
-/* line 306, ../sass/common.scss */
+/* line 336, ../sass/common.scss */
 .header .h-box_time:hover .drop {
   display: block;
 }
-/* line 309, ../sass/common.scss */
+/* line 339, ../sass/common.scss */
 .header .icon-pause {
-  background: url('../img/icons-s439b97ce99.png') 0 -391px no-repeat;
+  background: url('../img/icons-s0b29cc95f0.png') 0 -391px no-repeat;
   width: 18px;
   height: 19px;
   display: inline-block;
@@ -610,56 +604,56 @@ button, textarea, input[type=submit]::-moz-focus-inner {
   cursor: pointer;
   top: 2px;
 }
-/* line 317, ../sass/common.scss */
+/* line 347, ../sass/common.scss */
 .header .userpic {
   margin: 7px 2px 0 12px;
 }
-/* line 318, ../sass/common.scss */
+/* line 348, ../sass/common.scss */
 .header .h-box_user {
   border: 0;
   box-shadow: none;
 }
-/* line 321, ../sass/common.scss */
+/* line 351, ../sass/common.scss */
 .header .h-box_user .nav-arr {
   margin-top: 16px;
 }
 
-/* line 324, ../sass/common.scss */
+/* line 354, ../sass/common.scss */
 .icon-chat {
-  background: url('../img/icons-s439b97ce99.png') 0 -903px no-repeat;
+  background: url('../img/icons-s0b29cc95f0.png') 0 -1016px no-repeat;
   width: 16px;
   height: 16px;
 }
 
-/* line 325, ../sass/common.scss */
+/* line 355, ../sass/common.scss */
 .icon-eye {
-  background: url('../img/icons-s439b97ce99.png') 0 -1109px no-repeat;
+  background: url('../img/icons-s0b29cc95f0.png') 0 -1249px no-repeat;
   width: 16px;
   height: 16px;
 }
 
-/* line 326, ../sass/common.scss */
+/* line 356, ../sass/common.scss */
 .icon-mike {
-  background: url('../img/icons-s439b97ce99.png') 0 -1161px no-repeat;
+  background: url('../img/icons-s0b29cc95f0.png') 0 -1301px no-repeat;
   width: 16px;
   height: 16px;
 }
 
-/* line 327, ../sass/common.scss */
+/* line 357, ../sass/common.scss */
 .icon-phone {
-  background: url('../img/icons-s439b97ce99.png') 0 -842px no-repeat;
+  background: url('../img/icons-s0b29cc95f0.png') 0 -955px no-repeat;
   width: 16px;
   height: 16px;
 }
 
-/* line 328, ../sass/common.scss */
+/* line 358, ../sass/common.scss */
 .icon-pencil {
-  background: url('../img/icons-s439b97ce99.png') 0 -1304px no-repeat;
+  background: url('../img/icons-s0b29cc95f0.png') 0 -1444px no-repeat;
   width: 16px;
   height: 16px;
 }
 
-/* line 329, ../sass/common.scss */
+/* line 359, ../sass/common.scss */
 .mark-count {
   display: inline-block;
   color: #eccdcd;
@@ -681,21 +675,21 @@ button, textarea, input[type=submit]::-moz-focus-inner {
   text-decoration: none;
 }
 
-/* line 345, ../sass/common.scss */
+/* line 375, ../sass/common.scss */
 .mark-count_dark {
   background: #1f2026;
   color: #949798;
   box-shadow: none;
 }
 
-/* line 350, ../sass/common.scss */
+/* line 380, ../sass/common.scss */
 .mark-count_yl {
   background: #ffcc00;
   color: #6f3c00;
   box-shadow: none;
 }
 
-/* line 355, ../sass/common.scss */
+/* line 385, ../sass/common.scss */
 .userpic {
   border: 1px solid #000;
   border-radius: 3px;
@@ -711,25 +705,25 @@ button, textarea, input[type=submit]::-moz-focus-inner {
   background-image: -o-linear-gradient(rgba(255, 255, 255, 0.3) 0%, rgba(249, 252, 254, 0) 5%, rgba(125, 185, 232, 0) 100%);
   background-image: linear-gradient(rgba(255, 255, 255, 0.3) 0%, rgba(249, 252, 254, 0) 5%, rgba(125, 185, 232, 0) 100%);
 }
-/* line 365, ../sass/common.scss */
+/* line 395, ../sass/common.scss */
 .userpic a {
   border: 1px solid #030303;
   display: block;
-  background: url('../img/icons-s439b97ce99.png') 0 -634px no-repeat;
+  background: url('../img/icons-s0b29cc95f0.png') 0 -664px no-repeat;
   width: 37px;
   height: 37px;
   background-color: #292a32;
 }
 
-/* line 374, ../sass/common.scss */
+/* line 404, ../sass/common.scss */
 .drop .user-list {
   margin: 7px -3px;
 }
-/* line 376, ../sass/common.scss */
+/* line 406, ../sass/common.scss */
 .drop .user-list .user-item {
   padding-left: 7px;
 }
-/* line 378, ../sass/common.scss */
+/* line 408, ../sass/common.scss */
 .drop .user-list .user-item:first-child {
   box-shadow: none;
   border-top-color: #29262f;

@@ -3,8 +3,11 @@
 <!--[if gt IE 8]><!--><html lang="ru-RU"><!--<![endif]-->
 <head>
 	<meta charset="utf-8">
-	<title>Calls - 5</title>
+	<title>History - 01</title>
 	<link rel="stylesheet" media="screen" href="css/screen.css" >
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/jquery.tinyscrollbar.min.js"></script>
+	<script type="text/javascript" src="js/common.js"></script>
 </head>
 <body>
 <!-- BEGIN  out-->
@@ -20,7 +23,7 @@
 				<!-- BEGIN .logo-block -->
 				<div class="logo-block">
 					<a class="logo" href="#"></a>
-					<div class="drop" style="display:block;">
+					<div class="drop">
 						<h3>Company</h3>
 						<ul class="drop__list">
 							<li><input type="radio" id="comp-01"><label for="comp-01">Nike</label></li>
@@ -40,7 +43,7 @@
 				<!-- BEGIB .nav-item -->
 				<div class="nav-item">
 					<a href="#" class="nav-item__text">Active<i class="nav-arr"></i></a>
-					<div class="drop" style="display:block; left: -76px; top: 482px;">
+					<div class="drop">
 						<h3>Now</h3>
 						<ul class="drop__list">
 							<li><a href="#">My rooms <i class="drop-arr"></i></a>
@@ -53,7 +56,7 @@
 							</li>
 							<li>
 								<a href="#">Calls <i class="drop-arr"></i></a>
-								<div class="drop_sub" style="display:block;">
+								<div class="drop_sub">
 									<ul class="drop__list">
 										<li><a href="#">Ingoing</a></li>
 										<li><a href="#">Outgoing</a></li>
@@ -75,7 +78,7 @@
 				<!-- BEGIB .nav-item -->
 				<div class="nav-item">
 					<a href="#" class="nav-item__text nav-item__text_yellow">Tools<i class="nav-arr"></i></a>
-					<div class="drop"  style="display:block; left: 265px; top: 432px;">
+					<div class="drop">
 						<h3>Statistic</h3>
 						<ul class="drop__list">
 							<li><a href="#"><i class="icon icon-history"></i>History</a></li>
@@ -107,7 +110,7 @@
 					<div class="input-plus"></div>
 					<i class="nav-arr"></i>
 				</form>
-				<div class="drop drop_search"  style="display:block;">
+				<div class="drop drop_search">
 					<div class="form-search">
 						<form action="#">
 							<input type="text" class="input-search" id="input-search">
@@ -148,7 +151,7 @@
 							<i class="icon-eye"></i>
 							<span>22</span>
 						</a>
-						<div class="drop drop_user-list" style="display:block;">
+						<div class="drop drop_user-list">
 							<div class="user-list">
 								<div class="user-item">
 									<div class="userpic"><a href="#"><img src="img/userpic-01.jpg" alt=""></a></div>
@@ -214,7 +217,7 @@
 				<strong>15:27</strong>
 				<div class="icon-pause"></div>
 				<i class="nav-arr"></i>
-				<div class="drop drop_center"  style="display:block; left: -8px; top: 613px;">
+				<div class="drop drop_center">
 					<ul class="drop__list">
 						<li><a href="#">Current time</a></li>
 						<li><a href="#">Online counter</a></li>
@@ -236,7 +239,107 @@
 	</header>
 	<!-- END .header -->
 
+
+	<!-- BEGIN .win -->
+	<div class="win win_big"  style="margin-left: -615px; top: 200px;">
+		<div class="win__title">
+			<h1>Window Title</h1>
+			<div class="win__close"></div>
+		</div>
+		<div class="win__content">
+			<div class="win__cols">
+				<div class="win__col3 scroll" id="scrollbar1">
+					<div class="scrollbar"><div class="track"><div class="thumb"><div class="end"></div></div></div></div>
+					
+					<!-- BEGIN .scroll__viewport -->
+					<div class="viewport"><div class="overview">
+						<!-- BEGIN .tabs -->
+						<div class="tabs">
+
+							<!-- BEGIN .win__header -->
+							<div class="win__header">
+
+								<div class="form-date">
+									<form action="#">
+										<input type="text" class="input">
+									</form>
+								</div>
+
+								<!-- BEGIN .form-search -->
+								<div class="form-search form-search_sm">
+									<form action="#">
+										<input type="text" class="input-search" id="input-search2">
+										<label for="input-search2" class="icon-search"></label>
+									</form>
+								</div>
+								<!-- END .form-search -->
+
+								<!-- BEGIN .tabs__nav -->
+								<ul class="tabs__nav">
+									<li class="active"><a href="#">Queue</a></li>
+									<li><a href="#">Active</a></li>
+								</ul>
+								<!-- END .tabs__nav -->
+
+								<div class="right-block">
+									<button class="r-btn-gray"><span class="btn-icon-doc"></span></button>
+									<button class="r-btn-gray"><span class="btn-icon-graph"></span></button>
+									<div class="dev-vert"></div>
+									<button class="btn-violet"><span class="bullet_dark_activ"></span> Show filters</button>
+								</div>
+							</div>
+							<!-- END .win__header -->
+
+							<!-- BEGIN .tabs__contant -->
+							<div class="tabs__contant" style="display:block;">
+								<table class="t1">
+									<tr>
+										<th></th>
+										<th>Dates</th>
+										<th>Type</th>
+										<th>Event</th>
+										<th>id</th>
+										<th>Amount</th>
+										<th colspan="2">Units</th>
+									</tr>
+									<tr>
+										<td><strong>5:21:03</strong>(12 may12)</td>
+										<td><strong class="mark-red">SIP-телефония</strong></td>
+										<td>International outgoing call</td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+									</tr>
+								</table>
+							</div>
+							<!-- END .tabs__contant -->
+
+							<!-- BEGIN .tabs__contant -->
+							<div class="tabs__contant"></div>
+							<!-- END .tabs__contant -->
+
+						</div>
+						<!-- END .tabs -->
+					</div></div>
+					<!-- BEGIN .scroll__viewport -->
+				</div>
+				<div class="win__col1">
+					<div class="select selest_search">
+						<select name="" id="">
+							<option value=""></option>
+							<option value=""></option>
+							<option value=""></option>
+						</select>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- END .win -->
+
 </div>
 <!-- END out-->
+
 </body>
 </html>

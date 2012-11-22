@@ -3,7 +3,7 @@
 <!--[if gt IE 8]><!--><html lang="ru-RU"><!--<![endif]-->
 <head>
 	<meta charset="utf-8">
-	<title>Template</title>
+	<title>Calls - 6</title>
 	<link rel="stylesheet" media="screen" href="css/screen.css" >
 </head>
 <body>
@@ -103,15 +103,15 @@
 			<!-- BEGIN .h-box -->
 			<div class="h-box h-box_form">
 				<form action="#">
-					<input type="text" class="input" placeholder="Go to this address">
+					<input type="text" class="input-text" placeholder="Go to this address">
 					<div class="input-plus"></div>
 					<i class="nav-arr"></i>
 				</form>
 				<div class="drop drop_search">
 					<div class="form-search">
 						<form action="#">
-							<input type="text" class="input-search">
-							<input type="submit" class="btn-search" value="Найти">
+							<input type="text" class="input-search" id="input-search">
+							<label class="icon-search" for="input-search"></label>
 							<div class="cancel"></div>
 						</form>
 					</div>
@@ -239,7 +239,7 @@
 
 	<!-- BEGIN .win -->
 	<div class="win"  style="margin-left: -170px; top: 114px;">
-		<div class="win__header">
+		<div class="win__title">
 			<h1>Incoming call</h1>
 			<div class="win__close"></div>
 		</div>
