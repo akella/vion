@@ -15,7 +15,7 @@
 .drop:before, .drop_sub:before {
   content: '';
   position: absolute;
-  background: url('../img/icons-s4f57c2bd43.png') 0 -837px no-repeat;
+  background: url('../img/icons-s7b909186d2.png') 0 -919px no-repeat;
   width: 20px;
   height: 21px;
   top: -20px;
@@ -47,7 +47,7 @@
 }
 /* line 41, ../sass/drop.scss */
 .drop_sub:before {
-  background: url('../img/icons-s4f57c2bd43.png') 0 -868px no-repeat;
+  background: url('../img/icons-s7b909186d2.png') 0 -950px no-repeat;
   width: 22px;
   height: 22px;
   top: 20px;
@@ -80,25 +80,14 @@
   font-size: 12px;
   height: 20px;
   line-height: 20px;
-  padding: 3px 27px;
-  width: 219px;
+  padding: 3px 7px 3px 24px;
+  width: 242px;
   color: #fff;
 }
-/* line 73, ../sass/drop.scss */
-.form-search .icon-search {
-  background: url('../img/icons-s4f57c2bd43.png') 0 -481px no-repeat;
-  width: 27px;
-  height: 26px;
-  position: absolute;
-  top: 1px;
-  left: 0;
-  border: 0;
-  color: transparent;
-  font: 0/0 a;
-}
-/* line 82, ../sass/drop.scss */
-.form-search .cancel {
-  background: url('../img/icons-s4f57c2bd43.png') 0 -1348px no-repeat;
+
+/* line 74, ../sass/drop.scss */
+.form-search .cancel, .cancel-gray {
+  background: url('../img/icons-s7b909186d2.png') 0 -1448px no-repeat;
   width: 15px;
   height: 15px;
   position: absolute;
@@ -107,14 +96,27 @@
   opacity: .1;
   cursor: pointer;
 }
-/* line 89, ../sass/drop.scss */
-.form-search .cancel:hover {
+/* line 81, ../sass/drop.scss */
+.form-search .cancel:hover, .cancel-gray:hover {
   opacity: .3;
+}
+
+/* line 85, ../sass/drop.scss */
+.icon-search {
+  background: url('../img/icons-s7b909186d2.png') 0 -481px no-repeat;
+  width: 27px;
+  height: 26px;
+  position: absolute;
+  top: 1px;
+  left: -2px;
+  border: 0;
+  color: transparent;
+  font: 0/0 a;
 }
 
 /* line 94, ../sass/drop.scss */
 .form-search_sm .input-search {
-  width: 145px;
+  width: 168px;
 }
 
 /* line 95, ../sass/drop.scss */
@@ -190,7 +192,7 @@
 }
 /* line 147, ../sass/drop.scss */
 .drop__list li:hover .drop-arr {
-  background: url('../img/icons-s4f57c2bd43.png') 0 -1521px no-repeat;
+  background: url('../img/icons-s7b909186d2.png') 0 -1641px no-repeat;
   width: 5px;
   height: 11px;
   margin-top: -6px;
@@ -235,7 +237,7 @@
 }
 /* line 180, ../sass/drop.scss */
 .drop__list .drop-arr {
-  background: url('../img/icons-s4f57c2bd43.png') 0 -1568px no-repeat;
+  background: url('../img/icons-s7b909186d2.png') 0 -1688px no-repeat;
   width: 5px;
   height: 10px;
   position: absolute;
@@ -246,56 +248,56 @@
 
 /* line 189, ../sass/drop.scss */
 .icon-history {
-  background: url('../img/icons-s4f57c2bd43.png') 0 -1465px no-repeat;
+  background: url('../img/icons-s7b909186d2.png') 0 -1585px no-repeat;
   width: 16px;
   height: 16px;
 }
 
 /* line 190, ../sass/drop.scss */
 .icon-pay {
-  background: url('../img/icons-s4f57c2bd43.png') 0 -1063px no-repeat;
+  background: url('../img/icons-s7b909186d2.png') 0 -1145px no-repeat;
   width: 16px;
   height: 16px;
 }
 
 /* line 191, ../sass/drop.scss */
 .icon-file {
-  background: url('../img/icons-s4f57c2bd43.png') 0 -1439px no-repeat;
+  background: url('../img/icons-s7b909186d2.png') 0 -1559px no-repeat;
   width: 16px;
   height: 16px;
 }
 
 /* line 192, ../sass/drop.scss */
 .icon-widget {
-  background: url('../img/icons-s4f57c2bd43.png') 0 -1013px no-repeat;
+  background: url('../img/icons-s7b909186d2.png') 0 -1095px no-repeat;
   width: 16px;
   height: 16px;
 }
 
 /* line 193, ../sass/drop.scss */
 .icon-user {
-  background: url('../img/icons-s4f57c2bd43.png') 0 -1322px no-repeat;
+  background: url('../img/icons-s7b909186d2.png') 0 -1422px no-repeat;
   width: 16px;
   height: 16px;
 }
 
 /* line 194, ../sass/drop.scss */
 .icon-forms {
-  background: url('../img/icons-s4f57c2bd43.png') 0 -1542px no-repeat;
+  background: url('../img/icons-s7b909186d2.png') 0 -1662px no-repeat;
   width: 16px;
   height: 16px;
 }
 
 /* line 195, ../sass/drop.scss */
 .icon-device {
-  background: url('../img/icons-s4f57c2bd43.png') 0 -1168px no-repeat;
+  background: url('../img/icons-s7b909186d2.png') 0 -1268px no-repeat;
   width: 16px;
   height: 16px;
 }
 
 /* line 196, ../sass/drop.scss */
 .icon-card {
-  background: url('../img/icons-s4f57c2bd43.png') 0 -1142px no-repeat;
+  background: url('../img/icons-s7b909186d2.png') 0 -1242px no-repeat;
   width: 16px;
   height: 16px;
 }

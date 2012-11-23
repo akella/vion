@@ -66,32 +66,32 @@
 		font-size:12px;
 		height:20px;
 		line-height:20px;
-		padding: 3px 27px;
-		width: 219px;
+		padding: 3px 7px 3px 24px;
+		width: 242px;
 		color:#fff;
 	}
-	.icon-search{
-		@include sized-sprite($icons, 'btn-search');
-		position: absolute;
-		top:1px;
-		left:0;
-		border:0;
-		color:transparent;
-		font:0/0 a;
-	}
-	.cancel{
-		@include sized-sprite($icons, 'cancel');
-		position: absolute;
-		top:7px;
-		right:6px;
-		opacity:.1;
-		cursor:pointer;
-		&:hover{
-			opacity:.3;
-		}
+}
+.form-search .cancel, .cancel-gray{
+	@include sized-sprite($icons, 'cancel');
+	position: absolute;
+	top:7px;
+	right:6px;
+	opacity:.1;
+	cursor:pointer;
+	&:hover{
+		opacity:.3;
 	}
 }
-.form-search_sm .input-search{width:145px;}
+.icon-search{
+	@include sized-sprite($icons, 'btn-search');
+	position: absolute;
+	top:1px;
+	left:-2px;
+	border:0;
+	color:transparent;
+	font:0/0 a;
+}
+.form-search_sm .input-search{width:168px;}
 .drop__list{
 	list-style: none;
 	box-shadow:0 0 3px 0 rgba(0,0,0,.75);
