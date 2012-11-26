@@ -1,0 +1,426 @@
+<!doctype html>
+<!--[if lte IE 8]><html lang="ru-RU" class="lteie8"><![endif]-->
+<!--[if gt IE 8]><!--><html lang="ru-RU"><!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<title>History - 03</title>
+	<link rel="stylesheet" media="screen" href="css/screen.css" >
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/jquery.tinyscrollbar.min.js"></script>
+	<script type="text/javascript" src="js/common.js"></script>
+</head>
+<body>
+<!-- BEGIN  out-->
+<div class="out">
+	<!-- BEGIN .header -->
+	<header class="header">
+		<!-- BEGIN .in -->
+		<div class="in">
+
+			<!-- BEGIN .h-box -->
+			<div class="h-box">
+				
+				<!-- BEGIN .logo-block -->
+				<div class="logo-block">
+					<a class="logo" href="#"></a>
+					<div class="drop">
+						<h3>Company</h3>
+						<ul class="drop__list">
+							<li><input type="radio" id="comp-01"><label for="comp-01">Nike</label></li>
+							<li><input type="radio" id="comp-02"><label for="comp-02">GoPro</label></li>
+							<li><input type="radio" id="comp-03"><label for="comp-03">Facebook</label></li>
+						</ul>
+						<h3>Work shift</h3>
+						<ul class="drop__list">
+							<li><input type="radio" id="work-01"><label for="work-01">Day (7:00-18:00)</label></li>
+							<li><input type="radio" id="work-02"><label for="work-02">Night (18:00-6:00)</label></li>
+							<li><input type="radio" id="work-03"><label for="work-03">3 hours</label></li>
+						</ul>
+					</div>
+				</div>
+				<!-- END .logo-block -->
+
+				<!-- BEGIB .nav-item -->
+				<div class="nav-item">
+					<a href="#" class="nav-item__text">Active<i class="nav-arr"></i></a>
+					<div class="drop">
+						<h3>Now</h3>
+						<ul class="drop__list">
+							<li><a href="#">My rooms <i class="drop-arr"></i></a>
+								<div class="drop_sub">
+									<ul class="drop__list">
+										<li><a href="#">Ingoing</a></li>
+										<li><a href="#">Outgoing</a></li>
+									</ul>
+								</div>
+							</li>
+							<li>
+								<a href="#">Calls <i class="drop-arr"></i></a>
+								<div class="drop_sub">
+									<ul class="drop__list">
+										<li><a href="#">Ingoing</a></li>
+										<li><a href="#">Outgoing</a></li>
+									</ul>
+								</div>
+							</li>
+							<li><a href="#">Web visitors</a></li>
+						</ul>
+						<h3>Work</h3>
+						<ul class="drop__list">
+							<li><a href="#">Shift</a></li>
+							<li><a href="#">Campaigns</a></li>
+							<li><a href="#">Devices</a></li>
+						</ul>
+					</div>
+				</div>
+				<!-- END .nav-item -->
+
+				<!-- BEGIB .nav-item -->
+				<div class="nav-item">
+					<a href="#" class="nav-item__text nav-item__text_yellow">Tools<i class="nav-arr"></i></a>
+					<div class="drop">
+						<h3>Statistic</h3>
+						<ul class="drop__list">
+							<li><a href="#"><i class="icon icon-history"></i>History</a></li>
+							<li><a href="#"><i class="icon icon-pay"></i>Payments</a></li>
+							<li><a href="#"><i class="icon icon-file"></i>Files</a></li>
+						</ul>
+						<h3>Settings</h3>
+						<ul class="drop__list">
+							<li><a href="#"><i class="icon icon-widget"></i>Widget</a></li>
+							<li><a href="#"><i class="icon icon-user"></i>Users</a></li>
+							<li><a href="#"><i class="icon icon-forms"></i>Forms</a></li>
+						</ul>
+						<h3>My</h3>
+						<ul class="drop__list">
+							<li><a href="#"><i class="icon icon-device"></i>Device</a></li>
+							<li><a href="#"><i class="icon icon-card"></i>Personal card</a></li>
+						</ul>
+					</div>
+				</div>
+				<!-- END .nav-item -->
+
+			</div>
+			<!-- END .h-box -->
+
+			<!-- BEGIN .h-box -->
+			<div class="h-box h-box_form">
+				<form action="#">
+					<input type="text" class="input-text" placeholder="Go to this address">
+					<div class="input-plus"></div>
+					<i class="nav-arr"></i>
+				</form>
+				<div class="drop drop_search">
+					<div class="form-search">
+						<form action="#">
+							<input type="text" class="input-search" id="input-search">
+							<label class="icon-search" for="input-search"></label>
+							<div class="cancel"></div>
+						</form>
+					</div>
+					<h3>Top Hit</h3>
+					<ul class="drop__list">
+						<li><a href="#">Facebook <span class="search_link">www.facebook.com</span></a></li>
+					</ul>
+					<h3>History</h3>
+					<ul class="drop__list">
+						<li><a href="#">FB/Cosmius <span class="search_link">www.facebook.com/login</span></a></li>
+						<li><a href="#">MeGames <span class="search_link">www.forum.games.com</span></a></li>
+						<li><a href="#">Free Icons <span class="search_link">www.ffficons.com</span></a></li>
+					</ul>
+					<h3>Bookmarks</h3>
+					<ul class="drop__list">
+						<li><a href="#">Facebook <span class="search_link">www.facebook.com</span></a></li>
+					</ul>
+				</div>
+			</div>
+			<!-- END .h-box -->
+
+			<!-- BEGIN .h-box -->
+			<div class="h-box">
+				<ul class="nav">
+					<li>
+						<a href="#" class="nav__link">
+							<i class="icon-chat"></i>
+							<span>17</span>
+							<strong>3</strong>
+						</a>
+					</li>
+					<li>
+						<a href="#"  class="nav__link">
+							<i class="icon-eye"></i>
+							<span>22</span>
+						</a>
+						<div class="drop drop_user-list">
+							<div class="user-list">
+								<div class="user-item">
+									<div class="userpic"><a href="#"><img src="img/userpic-01.jpg" alt=""></a></div>
+									<div class="user__name"><span>Thom</span><span>Gruhler</span></div>
+									<div class="user__lang">English</div>
+									<div class="user__time">05:35</div>
+								</div>
+								<div class="user-item">
+									<div class="userpic"><a href="#"><img src="img/userpic-02.jpg" alt=""></a></div>
+									<div class="user__name"><span>Paul</span><span>Cruickshank</span></div>
+									<div class="user__lang">English</div>
+									<div class="user__time user__time_gr">01:35</div>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li>
+						<a href="#"  class="nav__link">
+							<i class="icon-mike"></i>
+							<span>6</span>
+							<strong>6</strong>
+						</a>
+					</li>
+					<li>
+						<a href="#"  class="nav__link">
+							<i class="icon-phone"></i>
+							<span>42</span>
+						</a>
+					</li>
+					<li>
+						<a href="#"  class="nav__link">
+							<i class="icon-pencil"></i>
+							<span>0</span>
+						</a>
+					</li>
+					<li>
+						<a href="#"  class="nav__link">
+							<div class="icon-graph"></div>
+						</a>
+					</li>
+				</ul>
+			</div>
+			<!-- END .h-box -->
+
+			<!-- BEGIN .h-box -->
+			<div class="h-box">
+				<div class="icon-win"></div>
+			</div>
+			<!-- END .h-box -->
+
+			<!-- BEGIN .h-box -->
+			<div class="h-box h-box_madal">
+				<div class="icon-medal"></div>
+				<div class="inf-medal">
+					<strong>7</strong>
+					<span>20</span>
+				</div>
+			</div>
+			<!-- END .h-box -->
+
+			<!-- BEGIN .h-box -->
+			<div class="h-box h-box_time">
+				<strong>15:27</strong>
+				<div class="icon-pause"></div>
+				<i class="nav-arr"></i>
+				<div class="drop drop_center">
+					<ul class="drop__list">
+						<li><a href="#">Current time</a></li>
+						<li><a href="#">Online counter</a></li>
+						<li><a href="#">From last pause</a></li>
+					</ul>
+				</div>
+			</div>
+			<!-- END .h-box -->
+
+			<!-- BEGIN .h-box -->
+			<div class="h-box h-box_user">
+				<div class="userpic"><a href="#"></a></div>
+				<i class="nav-arr"></i>
+			</div>
+			<!-- END .h-box -->
+		</div>
+		<!-- END .in -->
+
+	</header>
+	<!-- END .header -->
+
+
+	<!-- BEGIN .win -->
+	<div class="win win_big"  style="margin-left: -615px; top: 200px;">
+		<div class="win__title">
+			<h1>Window Title</h1>
+			<div class="win__close"></div>
+		</div>
+		<div class="win__content">
+			<div class="win__cols">
+				<div class="win__col3 scroll" id="scrollbar1">
+					<div class="scrollbar"><div class="track"><div class="thumb"><div class="end"></div></div></div></div>
+					
+					<!-- BEGIN .scroll__viewport -->
+					<div class="viewport"><div class="overview">
+						<!-- BEGIN .win__header -->
+						<div class="win__header">
+
+							<div class="datepicker">
+								<div class="input date-input">
+									<span class="date-input__text">02.16.2012</span>
+									<span class="date-input__dev">−</span>
+									<span class="date-input__text">04.19.2012</span>
+								</div>
+								<div class="date__btn"></div>
+								<div>
+									<div>
+										<div class="date-prev"></div>
+										<div class="date-m"></div>
+										<div class="date-y"></div>
+										<div class="date-next"></div>
+									</div>
+									<div>
+										<table class="date-table">
+											<tr>
+												<th>SUN</th>
+												<th>MON</th>
+												<th>TUE</th>
+												<th>WED</th>
+												<th>THU</th>
+												<th>FRI</th>
+												<th>SAT</th>
+											</tr>
+											<tr>
+												<td>29</td>
+												<td>30</td>
+												<td>1</td>
+												<td>2</td>
+												<td>3</td>
+												<td>4</td>
+												<td>5</td>
+											</tr>
+											<tr>
+												<td>6</td>
+												<td>7</td>
+												<td>8</td>
+												<td>9</td>
+												<td>10</td>
+												<td>11</td>
+												<td>12</td>
+											</tr>
+											<tr>
+												<td>13</td>
+												<td>14</td>
+												<td>15</td>
+												<td>16</td>
+												<td>17</td>
+												<td>18</td>
+												<td>19</td>
+											</tr>
+											<tr>
+												<td>20</td>
+												<td>21</td>
+												<td>22</td>
+												<td>23</td>
+												<td>24</td>
+												<td>25</td>
+												<td>26</td>
+											</tr>
+											<tr>
+												<td>27</td>
+												<td>28</td>
+												<td>29</td>
+												<td>30</td>
+												<td>32</td>
+												<td>1</td>
+												<td>2</td>
+											</tr>
+										</table>
+									</div>
+									<div>
+										<button class="btn">Today</button>
+										<button class="btn">Range</button>
+										<button class="btn btn_green">Ok</button>
+									</div>
+								</div>
+								<form action="#">
+									<input type="text" class="">
+								</form>
+							</div>
+
+							<div class="right-block">
+								<button class="r-btn-gray active"><span class="btn-icon-doc"></span></button>
+								<button class="r-btn-gray active"><span class="btn-icon-graph"></span></button>
+								<div class="dev-vert"></div>
+								<button class="btn-violet active"><span class="bullet_dark_activ"></span> Hide filters</button>
+							</div>
+						</div>
+						<!-- END .win__header -->
+					</div></div>
+					<!-- BEGIN .scroll__viewport -->
+				</div>
+				<div class="win__col1">
+					<div class="col1-holder">
+						<div class="select selest_search">
+							<label class="icon-search" for="select-search1"></label>
+							<div class="select__btn"><span class="select__arr"></span></div>
+							<span class="select__text">Choose filter</span>
+							<select name="" id="select-search1" class="select__sel">
+								<option value="">filter A</option>
+								<option value="">filter B</option>
+								<option value="">filter C</option>
+							</select>
+						</div>
+					</div>
+
+					<div class="filter-list">
+						<div class="filter__item">
+							<input type="radio" class="radiobtn">
+							<span>Call</span>
+							<span class="filter__arr"></span>
+							<span>Direction</span>
+							<span class="filter__arr"></span>
+							<span>Outbound</span>
+							<div class="cancel-gray"></div>
+						</div>
+					</div>
+
+					<div class="win__dev"></div>
+
+					<div class="filter-list filter-list_light">
+						<div class="filter__item filter__item_light">
+							<span class="icon-pencil_gray"></span>
+							<span>Name</span>
+							<span class="filter__arr"></span>
+							<span>Type</span>
+							<div class="cancel-gray"></div>
+						</div>
+						<div class="filter__item filter__item_light">
+							<span class="icon-pencil_blue"></span>
+							<span>Type of message</span>
+							<div class="cancel-gray"></div>
+						</div>
+						<div class="filter__item filter__item_light">
+							<span class="icon-pencil_gray"></span>
+							<span>City</span>
+							<div class="cancel-gray"></div>
+						</div>
+					</div>
+					<div class="col1-holder">
+						<div class="select select_green">
+							<div class="select__btn"><span class="select__arr"></span></div>
+							<span class="select__text">Select value</span>
+							<select name="" id="select-search1" class="select__sel">
+								<option value="">filter A</option>
+								<option value="">filter B</option>
+								<option value="">filter C</option>
+							</select>
+						</div>
+					</div>
+					
+					<div class="col1-bottom">
+						<button class="btn btn_green btn_140">Done</button>
+						<button class="btn btn_140">Cancel</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- END .win -->
+
+</div>
+<!-- END out-->
+
+</body>
+</html>
