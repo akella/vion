@@ -82,17 +82,25 @@ button,textarea,input[type=submit]::-moz-focus-inner { padding: 0; border: 0 }
 	color:#fff;
 	font-family: 'HelveticaNeue-M', Helvetica, Arial, sans-serif;
 	box-shadow:0 0 5px 0 rgba(0,0,0,0.5), 0 1px 0 0 rgba(white,.3) inset, 0 -1px 0 0 rgba(47,77,0,.09) inset;
+	background: #656671;
 	@include background-image(linear-gradient(#656671, #3f404b));
 	height:25px;
 	line-height:25px;
 	text-shadow:0 1px 0 rgba(0,0,0,.4);
 	cursor:pointer;
 	border-radius:2px;
-	&:hover{@include background-image(linear-gradient(#3f404b, #656671));}
+	&:hover{
+		background: #3f404b;
+		@include background-image(linear-gradient(#3f404b, #656671));
+	}
 }
 .btn_green{
+	background: #87b70d;
 	@include background-image(linear-gradient(#87b70d, #487d04));
-	&:hover{@include background-image(linear-gradient(#487d04, #87b70d));}
+	&:hover{
+		background: #487d04;
+		@include background-image(linear-gradient(#487d04, #87b70d));
+	}
 }
 .btn_90{
 	width:90px;
@@ -124,6 +132,7 @@ button,textarea,input[type=submit]::-moz-focus-inner { padding: 0; border: 0 }
 	font-size:12px;
 	border:1px solid #252731;
 	box-shadow:0 1px 1px 0 rgba(white,.2) inset, 0 1px 1px 0 rgba(0,0,0,.75);
+	background: #5f4c89;
 	@include background-image(linear-gradient(#5f4c89, #402e56));
 	height:34px;
 	border-radius:17px;
@@ -133,9 +142,11 @@ button,textarea,input[type=submit]::-moz-focus-inner { padding: 0; border: 0 }
 		margin: 0 2px -7px -5px;
 	}
 	&:hover{
+		background: #4f4073;
 		@include background-image(linear-gradient(#4f4073, #352647));
 	}
 	&.active, &:active{
+		background: #fecd19;
 		@include background-image(linear-gradient(#fecd19, #b06200));
 		color:#75470a;
 	}
@@ -187,6 +198,7 @@ button,textarea,input[type=submit]::-moz-focus-inner { padding: 0; border: 0 }
 	color:#fff;
 }
 .header{
+	background: #4a464f; 
 	@include background-image(linear-gradient(#4a464f, #282530));
 	box-shadow:0 1px 0 0 #4f4f5b inset, 0 0 6px 5px rgba(0, 0, 0, 0.45);
 	height:60px;
@@ -281,6 +293,7 @@ button,textarea,input[type=submit]::-moz-focus-inner { padding: 0; border: 0 }
 			line-height:15px;
 			position: relative;
 			&:hover{
+				background: #302d37;
 				@include background-image(linear-gradient(#302d37, #232127));
 				.icon-chat{@include sized-sprite($icons, 'icon-chat_active');}
 				.icon-eye{@include sized-sprite($icons, 'icon-eye_active');}
@@ -310,6 +323,7 @@ button,textarea,input[type=submit]::-moz-focus-inner { padding: 0; border: 0 }
 					color:#eccdcd;
 					font-size:11px;
 					font-weight:bold;
+					background: #e00d0d;
 					@include background-image(linear-gradient(#e00d0d, #b10606));
 					height:15px;
 					line-height:15px;
@@ -407,6 +421,7 @@ button,textarea,input[type=submit]::-moz-focus-inner { padding: 0; border: 0 }
 	color:#eccdcd;
 	font-size:11px;
 	font-weight:bold;
+	background: #e00d0d;
 	@include background-image(linear-gradient(#e00d0d, #b10606));
 	height:15px;
 	line-height:15px;

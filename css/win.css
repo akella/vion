@@ -570,6 +570,7 @@
 }
 /* line 375, ../sass/win.scss */
 .room .room__meta {
+  background: #403255;
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #403255), color-stop(100%, #362a4b));
   background-image: -webkit-linear-gradient(#403255, #362a4b);
   background-image: -moz-linear-gradient(#403255, #362a4b);
@@ -579,12 +580,12 @@
   box-shadow: 0 -5px 4px -4px rgba(0, 0, 0, 0.8) inset;
   margin-bottom: 7px;
 }
-/* line 380, ../sass/win.scss */
+/* line 381, ../sass/win.scss */
 .room .room__meta ul {
   padding: 4px 8px 1px 13px;
   height: 24px;
 }
-/* line 384, ../sass/win.scss */
+/* line 385, ../sass/win.scss */
 .room .room__meta li {
   list-style-type: none;
   color: #66537b;
@@ -593,22 +594,22 @@
   margin-left: 29px;
   font-weight: bold;
 }
-/* line 391, ../sass/win.scss */
+/* line 392, ../sass/win.scss */
 .room .room__meta li:last-child {
   float: right;
 }
-/* line 394, ../sass/win.scss */
+/* line 395, ../sass/win.scss */
 .room .room__meta li:first-child {
   margin-left: 0;
 }
-/* line 398, ../sass/win.scss */
+/* line 399, ../sass/win.scss */
 .room .room__meta span {
   font-size: 16px;
   color: #b1b1be;
   vertical-align: baseline;
   min-width: 41px;
 }
-/* line 404, ../sass/win.scss */
+/* line 405, ../sass/win.scss */
 .room .room__meta .icon-audio {
   margin: 1px 0 0 3px;
   top: -3px;
