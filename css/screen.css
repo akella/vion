@@ -3212,25 +3212,45 @@ button, textarea, input[type=submit]::-moz-focus-inner {
   float: right;
 }
 /* line 661, ../sass/win-big.scss */
-.pay__header dt {
+.pay__header dt, .pay__header .total {
   float: left;
   color: #c1c1c1;
   font-weight: bold;
   text-transform: uppercase;
   font-size: 13px;
+  padding: 16px 3px 0 0;
+  width: 87px;
+  text-align: right;
 }
-/* line 668, ../sass/win-big.scss */
+/* line 671, ../sass/win-big.scss */
+.pay__header .total {
+  width: auto;
+  margin-left: 12px;
+}
+/* line 675, ../sass/win-big.scss */
 .pay__header dd {
   float: left;
   font-size: 28px;
   font-weight: bold;
   border-right: 1px solid #ced0d3;
   box-shadow: 1px 0 0 #ebebf3;
+  padding: 11px 0 0 5px;
+  width: 100px;
+  height: 40px;
+  color: #464646;
 }
-/* line 674, ../sass/win-big.scss */
+/* line 685, ../sass/win-big.scss */
 .pay__header dd:last-child {
   border: 0;
   box-shadow: none;
+}
+/* line 690, ../sass/win-big.scss */
+.pay__header .mark-invoced {
+  color: #df5353;
+}
+/* line 693, ../sass/win-big.scss */
+.pay__header .mark-paid {
+  color: #95ae37;
 }
 
 /* line 2, ../sass/ie.scss */
