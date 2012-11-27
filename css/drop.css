@@ -6,7 +6,7 @@
   box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.75), 0 1px 0 0 rgba(255, 255, 255, 0.1) inset;
   padding: 3px;
   position: absolute;
-  top: 60px;
+  top: 100%;
   left: 23px;
   display: none;
   width: 180px;
@@ -15,7 +15,7 @@
 .drop:before, .drop_sub:before {
   content: '';
   position: absolute;
-  background: url('../img/icons-s7b909186d2.png') 0 -919px no-repeat;
+  background: url('../img/icons-sd7dbbfa0cc.png') 0 -1151px no-repeat;
   width: 20px;
   height: 21px;
   top: -20px;
@@ -47,7 +47,7 @@
 }
 /* line 41, ../sass/drop.scss */
 .drop_sub:before {
-  background: url('../img/icons-s7b909186d2.png') 0 -950px no-repeat;
+  background: url('../img/icons-sd7dbbfa0cc.png') 0 -1182px no-repeat;
   width: 22px;
   height: 22px;
   top: 20px;
@@ -87,7 +87,7 @@
 
 /* line 74, ../sass/drop.scss */
 .form-search .cancel, .cancel-gray {
-  background: url('../img/icons-s7b909186d2.png') 0 -1448px no-repeat;
+  background: url('../img/icons-sd7dbbfa0cc.png') 0 -1795px no-repeat;
   width: 15px;
   height: 15px;
   position: absolute;
@@ -103,7 +103,7 @@
 
 /* line 85, ../sass/drop.scss */
 .icon-search {
-  background: url('../img/icons-s7b909186d2.png') 0 -481px no-repeat;
+  background: url('../img/icons-sd7dbbfa0cc.png') 0 -682px no-repeat;
   width: 27px;
   height: 26px;
   position: absolute;
@@ -192,7 +192,7 @@
 }
 /* line 147, ../sass/drop.scss */
 .drop__list li:hover .drop-arr {
-  background: url('../img/icons-s7b909186d2.png') 0 -1641px no-repeat;
+  background: url('../img/icons-sd7dbbfa0cc.png') 0 -2028px no-repeat;
   width: 5px;
   height: 11px;
   margin-top: -6px;
@@ -237,7 +237,7 @@
 }
 /* line 180, ../sass/drop.scss */
 .drop__list .drop-arr {
-  background: url('../img/icons-s7b909186d2.png') 0 -1688px no-repeat;
+  background: url('../img/icons-sd7dbbfa0cc.png') 0 -2075px no-repeat;
   width: 5px;
   height: 10px;
   position: absolute;
@@ -248,56 +248,56 @@
 
 /* line 189, ../sass/drop.scss */
 .icon-history {
-  background: url('../img/icons-s7b909186d2.png') 0 -1585px no-repeat;
+  background: url('../img/icons-sd7dbbfa0cc.png') 0 -1948px no-repeat;
   width: 16px;
   height: 16px;
 }
 
 /* line 190, ../sass/drop.scss */
 .icon-pay {
-  background: url('../img/icons-s7b909186d2.png') 0 -1145px no-repeat;
+  background: url('../img/icons-sd7dbbfa0cc.png') 0 -1450px no-repeat;
   width: 16px;
   height: 16px;
 }
 
 /* line 191, ../sass/drop.scss */
 .icon-file {
-  background: url('../img/icons-s7b909186d2.png') 0 -1559px no-repeat;
+  background: url('../img/icons-sd7dbbfa0cc.png') 0 -1906px no-repeat;
   width: 16px;
   height: 16px;
 }
 
 /* line 192, ../sass/drop.scss */
 .icon-widget {
-  background: url('../img/icons-s7b909186d2.png') 0 -1095px no-repeat;
+  background: url('../img/icons-sd7dbbfa0cc.png') 0 -1400px no-repeat;
   width: 16px;
   height: 16px;
 }
 
 /* line 193, ../sass/drop.scss */
 .icon-user {
-  background: url('../img/icons-s7b909186d2.png') 0 -1422px no-repeat;
+  background: url('../img/icons-sd7dbbfa0cc.png') 0 -1769px no-repeat;
   width: 16px;
   height: 16px;
 }
 
 /* line 194, ../sass/drop.scss */
 .icon-forms {
-  background: url('../img/icons-s7b909186d2.png') 0 -1662px no-repeat;
+  background: url('../img/icons-sd7dbbfa0cc.png') 0 -2049px no-repeat;
   width: 16px;
   height: 16px;
 }
 
 /* line 195, ../sass/drop.scss */
 .icon-device {
-  background: url('../img/icons-s7b909186d2.png') 0 -1268px no-repeat;
+  background: url('../img/icons-sd7dbbfa0cc.png') 0 -1573px no-repeat;
   width: 16px;
   height: 16px;
 }
 
 /* line 196, ../sass/drop.scss */
 .icon-card {
-  background: url('../img/icons-s7b909186d2.png') 0 -1242px no-repeat;
+  background: url('../img/icons-sd7dbbfa0cc.png') 0 -1547px no-repeat;
   width: 16px;
   height: 16px;
 }
