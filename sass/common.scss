@@ -111,6 +111,13 @@ button,textarea,input[type=submit]::-moz-focus-inner { padding: 0; border: 0 }
 	width:45px;
 	text-align: center;
 }
+.btn_140_ico{
+	padding-left:20px;
+	width: 140px;
+	text-align: center;
+	height: 27px;
+	position: relative;
+}
 .btn-violet{
 	color:#cdccd3;
 	font-family: 'HelveticaNeue-B', Helvetica, Arial, sans-serif;
@@ -120,7 +127,6 @@ button,textarea,input[type=submit]::-moz-focus-inner { padding: 0; border: 0 }
 	@include background-image(linear-gradient(#5f4c89, #402e56));
 	height:34px;
 	border-radius:17px;
-	padding:0 8px;
 	cursor:pointer;
 	width:109px; 
 	.bullet_dark_activ{
@@ -134,6 +140,35 @@ button,textarea,input[type=submit]::-moz-focus-inner { padding: 0; border: 0 }
 		color:#75470a;
 	}
 }
+.btn-icon-plus{
+	@include sized-sprite($icons, 'btn-plus');
+	position: absolute;
+	left:6px;
+	top:50%;
+	margin-top:-11px; 
+}
+.btn-icon-arrt{
+	@include sized-sprite($icons, 'btn-arrt');
+	position: absolute;
+	left:6px;
+	top:50%;
+	margin-top:-11px; 
+}
+.btn-icon-arrb{
+	@include sized-sprite($icons, 'btn-arrb');
+	position: absolute;
+	left:6px;
+	top:50%;
+	margin-top:-11px; 
+}
+.btn-icon-arrt2{
+	@include sized-sprite($icons, 'btn-arrt2');
+	position: absolute;
+	left:6px;
+	top:50%;
+	margin-top:-11px; 
+}
+
 .bullet_dark_activ{
 	@include sized-sprite($icons, 'bullet-active');
 	display: inline-block;

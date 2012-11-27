@@ -3,7 +3,7 @@
 <!--[if gt IE 8]><!--><html lang="ru-RU"><!--<![endif]-->
 <head>
 	<meta charset="utf-8">
-	<title>History - 02</title>
+	<title>Payments - 01</title>
 	<link rel="stylesheet" media="screen" href="css/screen.css" >
 	<script type="text/javascript" src="js/jquery.min.js"></script>
 	<script type="text/javascript" src="js/jquery.tinyscrollbar.min.js"></script>
@@ -246,119 +246,238 @@
 			<h1>Window Title</h1>
 			<div class="win__close"></div>
 		</div>
-		<div class="win__content">
-			<!-- BEGIN .win__header -->
-			<div class="win__header">
+		<div class="win__content win__content_larger">
+			<div class="win__cols">
+				<div class="win__col3 scroll" id="scrollbar1">
+					<div class="scrollbar"><div class="track"><div class="thumb"><div class="end"></div></div></div></div>
+					
+					<!-- BEGIN .scroll__viewport -->
+					<div class="viewport"><div class="overview">
+						<!-- BEGIN .tabs -->
+						<div class="tabs">
 
-				<!--BEGIN .datepicker  -->
-				<div class="datepicker">
-					<div class="input date-input">
-						<span class="date-input__text">02.16.2012</span>
-						<span class="date-input__dev">−</span>
-						<span class="date-input__text">04.19.2012</span>
-						<button class="date__btn"><span class="icon-points"></span></button>
+							<!-- BEGIN .win__header -->
+							<div class="win__header">
+
+								<!-- BEGIN .tabs__nav -->
+								<ul class="tabs__nav">
+									<li class="active"><a href="#">Queue</a></li>
+									<li><a href="#">Active</a></li>
+								</ul>
+								<!-- END .tabs__nav -->
+
+								<!--BEGIN .datepicker  -->
+								<div class="datepicker">
+									<div class="input date-input">
+										<span class="date-input__text">02.16.2012</span>
+										<span class="date-input__dev">−</span>
+										<span class="date-input__text">04.19.2012</span>
+										<button class="date__btn"><span class="icon-points"></span></button>
+									</div>
+
+									<!--BEGIN  .datepicker__drop -->
+									<div class="datepicker__drop">
+										<div class="datepicker__header">
+											<div class="date-prev"></div>
+											<div class="date-m">June</div>
+											<div class="date-y">2012</div>
+											<div class="date-next"></div>
+										</div>
+										<table class="date-table">
+											<tr>
+												<th>SUN</th>
+												<th>MON</th>
+												<th>TUE</th>
+												<th>WED</th>
+												<th>THU</th>
+												<th>FRI</th>
+												<th>SAT</th>
+											</tr>
+											<tr>
+												<td>29</td>
+												<td>30</td>
+												<td>1</td>
+												<td>2</td>
+												<td>3</td>
+												<td>4</td>
+												<td>5</td>
+											</tr>
+											<tr>
+												<td>6</td>
+												<td>7</td>
+												<td>8</td>
+												<td>9</td>
+												<td class="chosen2">10</td>
+												<td>11</td>
+												<td>12</td>
+											</tr>
+											<tr>
+												<td>13</td>
+												<td>14</td>
+												<td class="today">15</td>
+												<td>16</td>
+												<td>17</td>
+												<td>18</td>
+												<td>19</td>
+											</tr>
+											<tr>
+												<td>20</td>
+												<td>21</td>
+												<td class="chosen">22</td>
+												<td class="chosen">23</td>
+												<td class="chosen">24</td>
+												<td>25</td>
+												<td>26</td>
+											</tr>
+											<tr>
+												<td>27</td>
+												<td>28</td>
+												<td>29</td>
+												<td>30</td>
+												<td>32</td>
+												<td>1</td>
+												<td>2</td>
+											</tr>
+										</table>
+										<div class="datepicker__footer">
+											<button class="btn btn_75">Today</button>
+											<button class="btn btn_75">Range</button>
+											<button class="btn btn_green btn_45">Ok</button>
+										</div>
+									</div>
+									<!--END  .datepicker__drop -->
+
+								</div>
+								<!--END .datepicker  -->
+
+								<!-- BEGIN .form-search -->
+								<div class="form-search form-search_sm">
+									<form action="#">
+										<input type="text" class="input-search" id="input-search2">
+										<label for="input-search2" class="icon-search"></label>
+									</form>
+								</div>
+								<!-- END .form-search -->
+
+								
+
+								<div class="right-block">
+									<button class="btn-violet">Transfers</button>
+								</div>
+							</div>
+							<!-- END .win__header -->
+
+							<!-- BEGIN .tabs__contant -->
+							<div class="tabs__contant" style="display:block;">
+								<table class="t1">
+									<tr>
+										<th class="t1__col1"><input type="radio"></th>
+										<th>Dates</th>
+										<th>Type</th>
+										<th>Event</th>
+										<th>id</th>
+										<th class="t1__sort">Amount <span class="t1__sort-arr"></span></th>
+										<th colspan="2">Units</th>
+									</tr>
+									<tr>
+										<td class="t1__col1"><input type="radio"></td>
+										<td class="t1__col2"><strong>5:21:03</strong>(12 may12)</td>
+										<td class="t1__col3"><strong class="mark-red">SIP-телефония</strong></td>
+										<td class="t1__col4">International outgoing call</td>
+										<td class="t1__col5">+38044 2151234</td>
+										<td class="t1__col6">17:50 - 17:57</td>
+										<td class="t1__col7">Minutes</td>
+										<td class="t1__col8"><button class="btn-pen"><span class="icon-pencil_dark"></span></button></td>
+									</tr>
+									<tr>
+										<td class="t1__col1" style="height:600px;"></td>
+										<td class="t1__col2"></td>
+										<td class="t1__col3"></td>
+										<td class="t1__col4"></td>
+										<td class="t1__col5"></td>
+										<td class="t1__col6"></td>
+										<td class="t1__col7"></td>
+										<td class="t1__col8"></td>
+									</tr>
+								</table>
+							</div>
+							<!-- END .tabs__contant -->
+
+							<!-- BEGIN .tabs__contant -->
+							<div class="tabs__contant"></div>
+							<!-- END .tabs__contant -->
+
+						</div>
+						<!-- END .tabs -->
+					</div></div>
+					<!-- BEGIN .scroll__viewport -->
+				</div>
+				<div class="win__col1">
+					<div class="row-btn">
+						<button class="btn btn_green btn_140_ico"> <span class="btn-icon-plus"></span> Pay bills</button>
+					<button class="btn btn_green btn_140_ico"> <span class="btn-icon-arrt2"></span> Withdraw</button>
 					</div>
 
-					<!--BEGIN  .datepicker__drop -->
-					<div class="datepicker__drop">
-						<div class="datepicker__header">
-							<div class="date-prev"></div>
-							<div class="date-m">June</div>
-							<div class="date-y">2012</div>
-							<div class="date-next"></div>
+					<div class="win__dev win__dev2"></div>
+
+					<div class="form-row">
+						<input type="text" class="input input_half" placeholder="First name">
+						<input type="text" class="input input_half" placeholder="Last name">
+					</div>
+					<div class="form-row">
+						<input type="text" class="input input_full" placeholder="Card number">
+					</div>
+
+					<div class="form-row">
+						<label for="" class="label">Expires date</label>
+						<div class="select select_small">
+							<div class="select__btn"><span class="select__arr"></span></div>
+							<span class="select__text">MM</span>
+							<select name="" class="select__sel">
+								<option value="">01</option>
+								<option value="">02</option>
+								<option value="">03</option>
+							</select>
 						</div>
-						<table class="date-table">
-							<tr>
-								<th>SUN</th>
-								<th>MON</th>
-								<th>TUE</th>
-								<th>WED</th>
-								<th>THU</th>
-								<th>FRI</th>
-								<th>SAT</th>
-							</tr>
-							<tr>
-								<td>29</td>
-								<td>30</td>
-								<td>1</td>
-								<td>2</td>
-								<td>3</td>
-								<td>4</td>
-								<td>5</td>
-							</tr>
-							<tr>
-								<td>6</td>
-								<td>7</td>
-								<td>8</td>
-								<td>9</td>
-								<td class="chosen2">10</td>
-								<td>11</td>
-								<td>12</td>
-							</tr>
-							<tr>
-								<td>13</td>
-								<td>14</td>
-								<td class="today">15</td>
-								<td>16</td>
-								<td>17</td>
-								<td>18</td>
-								<td>19</td>
-							</tr>
-							<tr>
-								<td>20</td>
-								<td>21</td>
-								<td class="chosen">22</td>
-								<td class="chosen">23</td>
-								<td class="chosen">24</td>
-								<td>25</td>
-								<td>26</td>
-							</tr>
-							<tr>
-								<td>27</td>
-								<td>28</td>
-								<td>29</td>
-								<td>30</td>
-								<td>32</td>
-								<td>1</td>
-								<td>2</td>
-							</tr>
-						</table>
-						<div class="datepicker__footer">
-							<button class="btn btn_75">Today</button>
-							<button class="btn btn_75">Range</button>
-							<button class="btn btn_green btn_45">Ok</button>
+						<div class="select select_small">
+							<div class="select__btn"><span class="select__arr"></span></div>
+							<span class="select__text">YY</span>
+							<select name="" class="select__sel">
+								<option value="">11</option>
+								<option value="">12</option>
+								<option value="">13</option>
+							</select>
 						</div>
 					</div>
-					<!--END  .datepicker__drop -->
+					<div class="form-row">
+						<input type="text" class="input input_180" placeholder="CSC">
+						<a href="#" class="help-link">What is CSC?</a>
+					</div>
+					<div class="form-row form-row_radio">
+						<input type="radio"> <label for="" class="label label_bold">Save for future use</label>
+					</div>
 
-				</div>
-				<!--END .datepicker  -->
+					<div class="win__dev win__dev2"></div>
+					<p class="form-note">
+						By using this service, I agree to <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a>
+					</p>
+					
 
-				<!-- BEGIN .form-search -->
-				<div class="form-search form-search_sm">
-					<form action="#">
-						<input type="text" class="input-search" id="input-search2">
-						<label for="input-search2" class="icon-search"></label>
-					</form>
-				</div>
-				<!-- END .form-search -->
-
-				<div class="right-block">
-					<button class="r-btn-gray"><span class="btn-icon-doc"></span></button>
-					<button class="r-btn-gray"><span class="btn-icon-graph"></span></button>
-					<div class="dev-vert"></div>
-					<button class="btn-violet"><span class="bullet_dark_activ"></span> Show filters</button>
+					
+					<div class="row-btn">
+						<button class="btn btn_140">Cancel</button>
+					</div>
 				</div>
 			</div>
-			<!-- END .win__header -->
-
-			<a href="#" class="array_left"></a>
-			<a href="#" class="array_right"></a>
-			<div class="new-doc-holder">
-				<button class="new-doc" >Create new document</button>
-			</div>
-
 		</div>
+
+
+		<div class="row-btn" style="position: absolute; top:-50px; right:0;">
+			<button class="btn btn_green btn_140_ico"> <span class="btn-icon-arrb"></span> Pay bills</button>
+			<button class="btn btn_green btn_140_ico"> <span class="btn-icon-arrt"></span> Pay bills</button>
+		</div>
+
+
 	</div>
 	<!-- END .win -->
 

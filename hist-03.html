@@ -256,6 +256,7 @@
 						<!-- BEGIN .win__header -->
 						<div class="win__header">
 
+							<!--BEGIN .datepicker  -->
 							<div class="datepicker">
 								<div class="input date-input">
 									<span class="date-input__text">02.16.2012</span>
@@ -263,8 +264,9 @@
 									<span class="date-input__text">04.19.2012</span>
 									<button class="date__btn"><span class="icon-points"></span></button>
 								</div>
-								
-								<div class="datepicker__drop">
+
+								<!--BEGIN  .datepicker__drop -->
+								<div class="datepicker__drop" style="display:block;">
 									<div class="datepicker__header">
 										<div class="date-prev"></div>
 										<div class="date-m">June</div>
@@ -333,8 +335,10 @@
 										<button class="btn btn_green btn_45">Ok</button>
 									</div>
 								</div>
+								<!--END  .datepicker__drop -->
 
-								<div class="datepicker__drop" style=" left: 303px;">
+								<!--BEGIN  .datepicker__drop -->
+								<div class="datepicker__drop" style="left: 303px; display:block;">
 									<div class="datepicker__header">
 										<div class="date-prev"></div>
 										<div class="date-m active">June</div>
@@ -369,8 +373,10 @@
 										<button class="btn btn_green btn_45">Ok</button>
 									</div>
 								</div>
+								<!--END  .datepicker__drop -->
 
 							</div>
+							<!--END .datepicker  -->
 
 							<div class="right-block">
 								<button class="r-btn-gray active"><span class="btn-icon-doc"></span></button>
@@ -384,17 +390,15 @@
 					<!-- BEGIN .scroll__viewport -->
 				</div>
 				<div class="win__col1">
-					<div class="col1-holder">
-						<div class="select selest_search">
-							<label class="icon-search" for="select-search1"></label>
-							<div class="select__btn"><span class="select__arr"></span></div>
-							<span class="select__text">Choose filter</span>
-							<select name="" id="select-search1" class="select__sel">
-								<option value="">filter A</option>
-								<option value="">filter B</option>
-								<option value="">filter C</option>
-							</select>
-						</div>
+					<div class="select selest_search">
+						<label class="icon-search" for="select-search1"></label>
+						<div class="select__btn"><span class="select__arr"></span></div>
+						<span class="select__text">Choose filter</span>
+						<select name="" id="select-search1" class="select__sel">
+							<option value="">filter A</option>
+							<option value="">filter B</option>
+							<option value="">filter C</option>
+						</select>
 					</div>
 
 					<div class="filter-list">
@@ -430,19 +434,17 @@
 							<div class="cancel-gray"></div>
 						</div>
 					</div>
-					<div class="col1-holder">
-						<div class="select select_green">
-							<div class="select__btn"><span class="select__arr"></span></div>
-							<span class="select__text">Select value</span>
-							<select name="" id="select-search1" class="select__sel">
-								<option value="">filter A</option>
-								<option value="">filter B</option>
-								<option value="">filter C</option>
-							</select>
-						</div>
+					<div class="select select_green">
+						<div class="select__btn"><span class="select__arr"></span></div>
+						<span class="select__text">Select value</span>
+						<select name="" id="select-search1" class="select__sel">
+							<option value="">filter A</option>
+							<option value="">filter B</option>
+							<option value="">filter C</option>
+						</select>
 					</div>
 					
-					<div class="col1-bottom">
+					<div class="row-btn row-btn_bottom">
 						<button class="btn btn_green btn_140">Done</button>
 						<button class="btn btn_140">Cancel</button>
 					</div>

@@ -246,6 +246,11 @@
 	left: 1px;
 	top: -1px;
 }
+.btn-icon-save{
+	@include sized-sprite($icons, 'btn-save');
+	left: 1px;
+	top: -1px;
+}
 
 .icon-audio{
 	@include sized-sprite($icons, 'icon-device-3');
