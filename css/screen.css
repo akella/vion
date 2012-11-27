@@ -3195,23 +3195,23 @@ button, textarea, input[type=submit]::-moz-focus-inner {
   text-decoration: underline;
 }
 
-/* line 649, ../sass/win-big.scss */
+/* line 648, ../sass/win-big.scss */
 .pay {
   background: #fff;
   box-shadow: 0 0 6px rgba(0, 0, 0, 0.38);
   border-radius: 5px;
 }
 
-/* line 654, ../sass/win-big.scss */
+/* line 653, ../sass/win-big.scss */
 .pay__header {
   overflow: hidden;
   border-bottom: 1px solid #d2d2d2;
 }
-/* line 657, ../sass/win-big.scss */
+/* line 656, ../sass/win-big.scss */
 .pay__header dl {
   float: right;
 }
-/* line 661, ../sass/win-big.scss */
+/* line 660, ../sass/win-big.scss */
 .pay__header dt, .pay__header .total {
   float: left;
   color: #c1c1c1;
@@ -3222,12 +3222,12 @@ button, textarea, input[type=submit]::-moz-focus-inner {
   width: 87px;
   text-align: right;
 }
-/* line 671, ../sass/win-big.scss */
+/* line 670, ../sass/win-big.scss */
 .pay__header .total {
   width: auto;
   margin-left: 12px;
 }
-/* line 675, ../sass/win-big.scss */
+/* line 674, ../sass/win-big.scss */
 .pay__header dd {
   float: left;
   font-size: 28px;
@@ -3239,16 +3239,16 @@ button, textarea, input[type=submit]::-moz-focus-inner {
   height: 40px;
   color: #464646;
 }
-/* line 685, ../sass/win-big.scss */
+/* line 684, ../sass/win-big.scss */
 .pay__header dd:last-child {
   border: 0;
   box-shadow: none;
 }
-/* line 690, ../sass/win-big.scss */
+/* line 689, ../sass/win-big.scss */
 .pay__header .mark-invoced {
   color: #df5353;
 }
-/* line 693, ../sass/win-big.scss */
+/* line 692, ../sass/win-big.scss */
 .pay__header .mark-paid {
   color: #95ae37;
 }
