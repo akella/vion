@@ -1714,7 +1714,7 @@ button, textarea, input[type=submit]::-moz-focus-inner {
   color: #66537b;
   font-size: 11px;
   float: left;
-  margin-left: 30px;
+  margin-left: 29px;
   font-weight: bold;
 }
 /* line 391, ../sass/win.scss */
