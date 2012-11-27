@@ -693,3 +693,11 @@
 		color:#95ae37;
 	}
 }
+.pay__name{
+	@include background-image(linear-gradient(#ddd, #a7a7a7));
+	height: 34px;
+	line-height:34px;
+	border-top:1px solid #eee;
+	border-bottom: 1px solid #929292;
+	padding:0 13px;  
+}

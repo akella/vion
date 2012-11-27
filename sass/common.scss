@@ -1,10 +1,15 @@
 @import "base";
 
-
+html{height:100%;}
 *{margin:0;padding:0;-webkit-text-size-adjust: none; }
-html{
-	height:100%;
+/*resets*/
+a img,fieldset{border:none;}
+a{
+	color:#00919e;
+	&:hover{text-decoration:none;}
 }
+button,textarea,input[type=submit]::-moz-focus-inner { padding: 0; border: 0 }
+
 @include keyframes(anim1) {
 	0% {
 		background-position:0 0;
@@ -64,14 +69,6 @@ body{
 	font-weight: normal;
 	font-style: normal;
 }
-
-/*resets*/
-a img,fieldset{border:none;}
-a{
-	color:#00919e;
-	&:hover{text-decoration:none;}
-}
-button,textarea,input[type=submit]::-moz-focus-inner { padding: 0; border: 0 }
 
 .in{
 	width:1280px;
