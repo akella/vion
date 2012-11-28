@@ -240,7 +240,7 @@
 }
 /* line 177, ../sass/win-big.scss */
 .select .select__arr {
-  background: url('../img/icons-sa6391b01a9.png') 0 -1806px no-repeat;
+  background: url('../img/icons-s06fdb069ef.png') 0 -1850px no-repeat;
   width: 12px;
   height: 8px;
   display: block;
@@ -326,7 +326,7 @@
 }
 /* line 235, ../sass/win-big.scss */
 .filter__item .filter__arr {
-  background: url('../img/icons-sa6391b01a9.png') 0 -2176px no-repeat;
+  background: url('../img/icons-s06fdb069ef.png') 0 -2220px no-repeat;
   width: 6px;
   height: 10px;
   display: inline-block;
@@ -354,7 +354,7 @@
 
 /* line 253, ../sass/win-big.scss */
 .array_left {
-  background: url('../img/icons-sa6391b01a9.png') 0 -465px no-repeat;
+  background: url('../img/icons-s06fdb069ef.png') 0 -465px no-repeat;
   width: 50px;
   height: 50px;
   left: 21px;
@@ -362,7 +362,7 @@
 
 /* line 257, ../sass/win-big.scss */
 .array_right {
-  background: url('../img/icons-sa6391b01a9.png') 0 -635px no-repeat;
+  background: url('../img/icons-s06fdb069ef.png') 0 -635px no-repeat;
   width: 50px;
   height: 50px;
   right: 21px;
@@ -374,7 +374,7 @@
   top: 50%;
   left: 50%;
   margin: -35px 0 0 -100px;
-  background: url('../img/icons-sa6391b01a9.png') 0 -525px no-repeat;
+  background: url('../img/icons-s06fdb069ef.png') 0 -525px no-repeat;
   width: 200px;
   height: 71px;
 }
@@ -437,7 +437,7 @@
 }
 /* line 308, ../sass/win-big.scss */
 .filter__item_light .cancel-gray {
-  background: url('../img/icons-sa6391b01a9.png') 0 -1590px no-repeat;
+  background: url('../img/icons-s06fdb069ef.png') 0 -1634px no-repeat;
   width: 15px;
   height: 15px;
   opacity: 1;
@@ -450,7 +450,7 @@
 
 /* line 315, ../sass/win-big.scss */
 .icon-pencil_gray {
-  background: url('../img/icons-sa6391b01a9.png') 0 -1516px no-repeat;
+  background: url('../img/icons-s06fdb069ef.png') 0 -1516px no-repeat;
   width: 14px;
   height: 14px;
   display: inline-block;
@@ -461,7 +461,7 @@
 
 /* line 322, ../sass/win-big.scss */
 .icon-pencil_blue {
-  background: url('../img/icons-sa6391b01a9.png') 0 -1540px no-repeat;
+  background: url('../img/icons-s06fdb069ef.png') 0 -1562px no-repeat;
   width: 14px;
   height: 14px;
   display: inline-block;
@@ -515,7 +515,7 @@
 
 /* line 360, ../sass/win-big.scss */
 .icon-points {
-  background: url('../img/icons-sa6391b01a9.png') 0 -2330px no-repeat;
+  background: url('../img/icons-s06fdb069ef.png') 0 -2374px no-repeat;
   width: 13px;
   height: 14px;
   display: inline-block;
@@ -542,7 +542,7 @@
 .datepicker__drop:before {
   content: '';
   position: absolute;
-  background: url('../img/icons-sa6391b01a9.png') 0 -1453px no-repeat;
+  background: url('../img/icons-s06fdb069ef.png') 0 -1453px no-repeat;
   width: 20px;
   height: 21px;
   top: -20px;
@@ -570,14 +570,14 @@
 }
 /* line 400, ../sass/win-big.scss */
 .datepicker__header .date-prev {
-  background: url('../img/icons-sa6391b01a9.png') 0 -2078px no-repeat;
+  background: url('../img/icons-s06fdb069ef.png') 0 -2122px no-repeat;
   width: 6px;
   height: 11px;
   left: 8px;
 }
 /* line 404, ../sass/win-big.scss */
 .datepicker__header .date-next {
-  background: url('../img/icons-sa6391b01a9.png') 0 -2033px no-repeat;
+  background: url('../img/icons-s06fdb069ef.png') 0 -2077px no-repeat;
   width: 6px;
   height: 11px;
   right: 8px;
