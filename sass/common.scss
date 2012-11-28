@@ -406,6 +406,9 @@ body{
 		border:0;
 		box-shadow:none;
 		.nav-arr{margin-top:16px;}
+		&:hover{
+			.drop{display: block;}
+		}
 	}
 }
 .icon-chat{@include sized-sprite($icons, 'icon-chat');}
