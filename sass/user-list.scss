@@ -3,8 +3,8 @@
 	overflow:hidden;
 	padding:6px 0 0 17px;
 	background:#1c1c1c;
-	border-top:1px solid #29262f;
-	border-bottom:1px solid #1c1c1c;
+	border-top:1px solid #2f2f2f;
+	border-bottom:1px solid #0d0d0d;
 	min-height:52px;
 	position: relative;
 	&:nth-child(even){
@@ -13,8 +13,8 @@
 		border-bottom-color:#0f0f0f;
 	}
 	&:first-child{
-		box-shadow:0 6px 6px -6px rgba(0,0,0,0.7) inset;
-		border-top-color:#000;
+		box-shadow:0 6px 8px -6px rgba(0,0,0,0.95) inset;
+		border-top:0;
 	}
 	.userpic{
 		margin:0;
@@ -168,7 +168,7 @@
 	border:1px solid #000;
 	border-width:1px 0;
 	background:#424242;
-	@include background-image(linear-gradient(#424242, #212121));
+	@include background-image(linear-gradient(#424242 0%, #3b3b3b 16%, #2e2e2e 36%, #262626 56%, #212121 100%));
 	box-shadow:0 1px 0 0 #505050 inset;
 	box-shadow:0 0 3px 0 rgba(0,0,0,.09);
 	position: relative;
@@ -185,7 +185,7 @@
 	}
 	.user__lang{
 		background:#4c4c4c;
-		@include background-image(linear-gradient(#4c4c4c, #2c2c2c));
+		@include background-image(linear-gradient( #4c4c4c 0%, #353535 44%, #343434 52%, #313131 56%, #2c2c2c 100%));
 		box-shadow:0 1px 0 0 #595959 inset, 1px 0 0 0 rgba(0,0,0,0.2), -1px 0 0 0 rgba(0,0,0,0.2);
    		width: 93px;
    		text-align: center;

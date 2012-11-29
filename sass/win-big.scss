@@ -387,15 +387,16 @@
 }
 .datepicker__header{
 	@include background-image(linear-gradient(#62646f, #42444e));
-	box-shadow:0 0 3px rgba(0,0,0,.5), 0 1px 0 0 rgba(255, 255, 255, 0.2) inset, 0 -1px 0 0 rgba(47, 77, 0, 0.09) inset;
+	box-shadow:0 1px 3px rgba(0,0,0,.5), 0 1px 0 0 rgba(255, 255, 255, 0.2) inset, 0 -1px 0 0 rgba(47, 77, 0, 0.09) inset;
 	position: relative;
 	border-radius:3px 3px 0 0;
-	padding:7px 0;
+	padding:6px 0 7px;
 	text-align: center;
 	.date-prev, .date-next{
 		top:50%;
 		position: absolute;
-		margin-top:-6px; 
+		margin-top:-6px;
+		cursor:pointer;
 	}
 	.date-prev{
 		@include sized-sprite($icons, 'arr-09');
@@ -421,7 +422,7 @@
 		&.active{
 			border:1px solid rgba(0,0,0,.11);
 			background: #3d3d47;
-			box-shadow:0 2px 1px rgba(0,0,0,.5) inset, 0 1px 0 rgba(white,.2); 
+			box-shadow:0 1px 1px rgba(0,0,0,.5) inset, 0 1px 0 rgba(white,.2); 
 		}
 	}
 }
@@ -458,8 +459,11 @@
 	}
 	.chosen2{
 		@include background-image(linear-gradient(#67b9e8, #1a7fb8));
-		box-shadow:0 0 4px 1px rgba(0,70,110,.43) inset;
+		box-shadow:0 0 4px 1px rgba(0,70,110,.40) inset;
 		color:#fff;
+	}
+	.inactive{
+		color:#c8c8c8;
 	}
 	tr:last-child{
 		td{
@@ -479,8 +483,10 @@
 .date-table_m{
 	td{
 		width: 69px;
-		height: 41px;  
+		height: 41px;
 	}
+	tr:first-child td{height: 42px;}
+	tr:last-child td{height: 42px;}
 }
 .datepicker__footer{
 	padding:5px 0 0;

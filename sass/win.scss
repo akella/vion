@@ -1,6 +1,7 @@
 @import "base";
 .win-bg{
-	@include background-image(radial-gradient(660px 660px, rgba(0,0,0,.7) 50%, rgba(0,0,0,.95) 150%));
+	/*@include background-image(radial-gradient(660px 660px, rgba(0,0,0,.7) 50%, rgba(0,0,0,.95) 150%));*/
+	@include background-image(radial-gradient(rgba(0,0,0,.7) 50%, rgba(0,0,0,.95) 100%));
 	position:fixed;
 	top:0;
 	bottom:0;
@@ -19,7 +20,7 @@
 	z-index:15;
 	.win__title{
 		background:#414141;
-		@include background-image(linear-gradient(#414141, #212121));
+		@include background-image(linear-gradient(#3f3f3f 0%, #2c2c2c 32%, #212121 100%));
 		border:1px solid #000;
 		border-radius:6px 6px 0 0;
 		box-shadow:0 1px 0 0 rgba(white,.06) inset;
@@ -60,7 +61,7 @@
 		margin:0 auto;
 		height:0;
 		border-top:1px solid #000100;
-		border-bottom:1px solid #4c4b53;
+		border-bottom:1px solid rgba(white,.13);
 	}
 	.win__footer{
 		background: #222;
@@ -97,7 +98,7 @@
 
 .text-note{
 	background:#eaebf3;
-	box-shadow:0 0 6px 0 rgba(0,0,0,0.75);
+	box-shadow:0 0 6px 2px rgba(0,0,0,0.75);
 	color:#686a78;
 	font-size:13px;
 	line-height:19px;
@@ -144,9 +145,13 @@
 	border:0;
 	margin:0 5px;
 	box-shadow:0 1px 0 0 rgba(white,0.4) inset, 0 -1px 0 0 rgba(46,77,0,0.09) inset, 0 0 3px 0 rgba(0,0,0,0.5);
+	position: relative;
 	span{
-		display: inline-block;
+		display:block;
 		position: relative;
+		position: absolute;
+		top:50%;
+		left:50%;
 	}
 	&:hover{
 		box-shadow:0 -1px 0 0 rgba(white,0.4) inset, 0 1px 0 0 rgba(46,77,0,0.09) inset, 0 0 3px 0 rgba(0,0,0,0.5);
@@ -158,13 +163,14 @@
 	width:34px;
 	line-height:34px;
 	margin:0 2px;
+	box-shadow:0 0 3px rgba(0,0,0,.5);
 }
 .r-btn_up, .r-btn_plus{
 	background:#87b60d;
 	@include background-image(linear-gradient(#87b60d, #417204));
 	span{
 		@include sized-sprite($icons, 'ph-pick-up');
-		top: 3px;
+		margin: -10px 0 0 -9px;
 	}
 	&:hover{
 		background:#417204;
@@ -173,14 +179,14 @@
 }
 .r-btn_plus span{
 	@include sized-sprite($icons, 'ph-plus');
-	top: 1px;
+	margin: -7px 0 0 -6px;
 }
 .r-btn_down, .r-btn_cansel{
 	background:#d70018;
 	@include background-image(linear-gradient(#d70018, #7f0211));
 	span{
 		@include sized-sprite($icons, 'ph-hang-up');
-		top: -1px;
+		margin:-5px 0 0 -11px;
 	}
 	&:hover{
 		background:#7f0211;
@@ -189,21 +195,31 @@
 }
 .r-btn_cansel span{
 	@include sized-sprite($icons, 'ph-cansel');
-	top: 1px;
+	margin: -7px 0 0 -7px;
 }
-.r-btn_arr{
+.r-btn_arr, .r-btn_arr1{
 	background:#636570;
 	@include background-image(linear-gradient(#636570, #42434d));
-	span{@include sized-sprite($icons, 'ph-arr');}
+	span{
+		@include sized-sprite($icons, 'ph-arr');
+		margin: -9px 0 0 -7px;
+		}
 	&:hover{
 		background:#42434d;
 		@include background-image(linear-gradient(#42434d, #636570));
 	}
 }
+.r-btn_arr1 span{
+	@include sized-sprite($icons, 'ph-arr1');
+	margin: -8px 0 0 -5px;
+}
 .r-btn_inf{
 	background:#4c9ec8;
 	@include background-image(linear-gradient(#4c9ec8, #0d5fa3));
-	span{@include sized-sprite($icons, 'ph-inf');}
+	span{
+			@include sized-sprite($icons, 'ph-inf');
+			margin: -9px 0 0 -3px;
+		}
 	&:hover{
 		background:#0d5fa3;
 		@include background-image(linear-gradient(#0d5fa3, #4c9ec8));
@@ -211,16 +227,16 @@
 }
 
 .r-btn-gray{
-	height:35px;
-	width:35px;
-	line-height:34px;
+	height:36px;
+	width:36px;
+	line-height:36px;
 	margin:0 2px;
 	border:1px solid #252731;
 	text-align: center;
 	border-radius:50%;
 	cursor:pointer;
 	margin: 0 2px 0 6px;
-	box-shadow:0 1px 0 0 rgba(white,0.21) inset, 0 1px 1px 0 rgba(0,0,0,0.75);
+	box-shadow:0 1px 0 0 rgba(white,0.21) inset, 0 1px 1px 0 rgba(0,0,0,.3);
 	@include background-image(linear-gradient(#605e64, #413d46));
 	span{
 		display: inline-block;
@@ -243,7 +259,6 @@
 }
 .btn-icon-graph{
 	@include sized-sprite($icons, 'btn-fraph');
-	left: 1px;
 	top: -1px;
 }
 .btn-icon-save{
@@ -310,7 +325,7 @@
 				position: absolute;
 				bottom:-1px;
 				width:1500px;
-				box-shadow:0 3px 3px 0 rgba(0,0,0,.32);
+				box-shadow:0 1px 1px 0 rgba(0,0,0,.32);
 				border-top:1px solid rgba(white,.13);
 				height:0;
 			}
@@ -362,7 +377,7 @@
 			vertical-align:middle;
 			.mark-count{
 				font-weight:normal;
-				padding: 0 5px;
+				padding: 1px 5px;
 				position: relative;
 				top: -2px;
 			}
@@ -401,6 +416,7 @@
 			color: #b1b1be;
 			vertical-align:baseline;
 			min-width:41px;
+			display: inline-block;
 		}
 		.icon-audio{
 			margin: 1px 0 0 3px;
