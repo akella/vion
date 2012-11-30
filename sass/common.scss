@@ -56,16 +56,25 @@ body{
 }
 
 @font-face {
-	font-family: 'HelveticaNeue-B';
-	src: url('../fonts/HelveticaNeue-Bold.eot');
-	src: local('☺'), url('../fonts/HelveticaNeue-Bold.woff') format('woff'), url('../fonts/HelveticaNeue-Bold.ttf') format('truetype'), url('/..fonts/HelveticaNeue-Bold.svg') format('svg');
+	font-family: 'HelveticaNeue';
+	src: url('../fonts/HelveticaNeue.eot');
+	src: local('☺'), url('../fonts/HelveticaNeue.woff') format('woff'), url('../fonts/HelveticaNeue.ttf') format('truetype'), url('../fonts/HelveticaNeue.svg') format('svg');
 	font-weight: normal;
 	font-style: normal;
 }
+
 @font-face {
 	font-family: 'HelveticaNeue-M';
-	src: url('../fonts/HelveticaNeueCyr-Medium.eot');
-	src: local('☺'), url('../fonts/HelveticaNeueCyr-Medium.woff') format('woff'), url('../fonts/HelveticaNeueCyr-Medium.ttf') format('truetype'), url('../fonts/HelveticaNeueCyr-Medium.svg') format('svg');
+	src: url('../fonts/HelveticaNeueMedium.eot');
+	src: local('☺'), url('../fonts/HelveticaNeueMedium.woff') format('woff'), url('../fonts/HelveticaNeueMedium.ttf') format('truetype'), url('../fonts/HelveticaNeueMedium.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'HelveticaNeue-B';
+	src: url('../fonts/HelveticaNeueBold.eot');
+	src: local('☺'), url('../fonts/HelveticaNeueBold.woff') format('woff'), url('../fonts/HelveticaNeueBold.ttf') format('truetype'), url('../fonts/HelveticaNeueBold.svg') format('svg');
 	font-weight: normal;
 	font-style: normal;
 }
@@ -83,7 +92,7 @@ body{
 	@include background-image(linear-gradient(#656671, #3f404b));
 	height:25px;
 	line-height:25px;
-	text-shadow:0 1px 0 rgba(0,0,0,.5);
+	text-shadow:0 -1px 0 rgba(0,0,0,.5);
 	cursor:pointer;
 	border-radius:3px;
 	border:0;
@@ -107,7 +116,8 @@ body{
 .btn_140{
 	width:140px;
 	text-align: center;
-	height: 27px; 
+	height: 28px;
+	line-height:28px; 
 }
 .btn_75{
 	width:75px;
@@ -121,7 +131,8 @@ body{
 	padding-left:20px;
 	width: 140px;
 	text-align: center;
-	height: 27px;
+	height: 28px;
+	line-height:28px;
 	position: relative;
 }
 .btn-violet{
