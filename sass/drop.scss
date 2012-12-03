@@ -172,7 +172,7 @@
 		}
 		
 	}
-	input{margin-right:10px;}
+	input, .radio{margin-right:10px;}
 	.icon{
 		display: inline-block;
 		margin-right:10px;
@@ -219,11 +219,8 @@
 		display: inline-block;
 		width: 100%; 
 		.icon-eye-big, .icon-audio-big{float: left; }
-		.select{
-			float: right;
-			width: 196px; 
-			.select__sel{width: 200px; }
-		}
+		.selectbox{float: right;}
+		.select{width: 196px;}
 	}
 	h3{
 		margin: 9px 0 9px 2px;
@@ -293,6 +290,7 @@
 
 .drop .user-list{
 	margin:7px -3px;
+	border-bottom:0;
 	.user-item{
 		padding-left:7px;
 		&:first-child{

@@ -3,9 +3,9 @@ $(document).ready(function() {
 
 	$(function() {
 
-		$('.select__sel').styler({
+		$('.select, input:radio').styler({
 			browseText: 'Обзор...',
-			zIndex: '9999'
+			zIndex: '50'
 		});
 	});
 	

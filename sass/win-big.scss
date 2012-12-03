@@ -34,7 +34,6 @@
 
 
 .win__cols{
-	overflow: hidden;
 	width:100%;
 	.win__col3{
 		float:left;
@@ -199,8 +198,8 @@
 }
 .selectbox{
 	.dropdown{
-		background: #212121;
-		width: 100%; 
+		width: 100%;
+		top:28px !important;
 		overflow: visible !important;
 		&:after{
 			width:35px;
@@ -234,6 +233,7 @@
 			border-top:1px solid #404040;
 			text-indent:7px;
 			cursor: pointer;
+			background: #212121;
 			&:hover{
 				@include background-image(linear-gradient(#4fa1ca, #05579e));
 				/*box-shadow:0 1px 0 #6fb2d4 inset, 0 -1px 0 #011424 inset, 1px 0 0 rgba(white,.1) inset, -1px 0 0 rgba(0,0,0,.3) inset;*/
@@ -252,19 +252,33 @@
 	}
 }
 .selest_search{
-	.icon-search{top:0;}
-	.select__text{padding-left:24px;}
+	position: relative;
+	.icon-search{
+		top:0;
+		z-index:100; 
+	}
+	.text{padding-left:24px;}
 }
 .select_green{
-	@include background-image(linear-gradient(#8ab90e, #4b7f05));
-	.select__text{color:#fff;}
+	.select{
+		@include background-image(linear-gradient(#8ab90e, #4b7f05));
+	}
+	.text{
+		color:#fff;
+		text-shadow:0 -1px 0 rgba(0,0,0,.75);
+		font-family: 'HelveticaNeue-B', Helvetica, Arial, sans-serif;
+	}
 }
 .select_small{
 	width: 99px;
 	display: inline-block;
-	.select__sel{
+	margin-left:1px; 
+	.select{
 		width: 99px;
+		
+
 	}
+	div.select{float: none !important;}
 }
 .filter-list{
 	margin:18px -7px 0;
@@ -609,16 +623,267 @@
 	} 
 }
 
-.pagi{
+.navi{
+	overflow: hidden;
+	float: left;
+	padding: 10px 0;
+	margin-right:-1px; 
 	a{
-
+		height: 4px;
+		width: 4px;
+		border-radius:50%;
+		background: #323443;
+		border: 1px solid #202026;
+		box-shadow:0 1px 0 0 #454754, 0 1px 0 0 rgba(0,0,0,.7) inset;
+		margin:6px 5px 0 5px;
+		float: left;
+		&:hover{
+			background: #83b30d;
+			border-color:#000;
+			box-shadow:0 1px 0 0 #454754;
+		}    
 	}
 	
-	.pagi__right
-	.pagi__left{
-		
+	.navi__right,
+	.navi__left{
+		border-color:#252731;
+		@include background-image(linear-gradient(#605e64, #413d46));
+		box-shadow:0 1px 1px 0 rgba(0,0,0,.35), 0 1px 1px 0 rgba(white,.2) inset; 
+		width: 16px;
+		height: 16px;
+		margin-top:0;
+		&:hover{
+			@include background-image(linear-gradient(#413d46, #605e64));
+			border-color:#252731;
+		}
+		i{
+			display: block;
+			margin: 3px 0 0 3px;
+		}
 	}
-	.pagi__right{
-		
+	.navi__right{
+		i{
+			@include sized-sprite($icons, 'arr-14');
+			margin: 3px 0 0 5px;
+		}
 	}
+	.navi__left{
+		i{
+			@include sized-sprite($icons, 'arr-13');
+		}
+	}
+}
+
+.progress{
+	border: 1px solid #2e2e37;
+	border-radius:4px;
+	box-shadow:0 1px 0 0 rgba(white,.18) inset, 0 1px 2px 0 rgba(0,0,0,.5);
+	@include background-image(linear-gradient(rgba(65,67,86,.58), rgba(46,47,56,.58)));
+	float: left;
+	margin: 0 0 0 3px;
+	li{
+		font-size:12px;
+		color: #cecece;
+		text-shadow:0 1px 0 rgba(0,0,0,.75);  
+		float: left;
+		list-style: none;
+		height: 40px;
+		line-height:40px;
+		font-weight:bold; 
+		padding:0 27px 0 8px;
+		position: relative;
+		&:after{
+			content:'';
+			position: absolute;
+			top:0;
+			right: 0;
+			@include sized-sprite($icons, 'progress-dev');
+		}
+		&:last-child{
+			&:after{
+				display: none;	
+			}
+			padding-right:13px; 
+		}
+	}
+	a{
+		color: #cecece;
+		text-decoration: none;
+	}
+	.progress__num{
+		height: 26px;
+		width: 26px;
+		border-radius:50%;
+		border: 1px solid #252731;
+		box-shadow:0 1px 1px rgba(white,.21) inset, 0 1px 1px rgba(0,0,0,.75);
+		background: #605e64; 
+		@include background-image(linear-gradient(#605e64, #413d46));
+		float: left;
+		vertical-align:middle;
+		text-align: center;
+		line-height:26px;
+		color:#fff;
+		font-size:14px; 
+		font-weight:bold; 
+		margin:6px 11px 0 0;
+		text-shadow:none;
+	}
+	.progress__num_done{
+		@include background-image(linear-gradient(#83b20d, #497a05));
+		color:transparent;
+		font:0/0 a;
+		position: relative;
+		&:before{
+			content:"";
+			position: absolute;
+			@include sized-sprite($icons, 'ok2');
+			top: 7px;
+			left: 7px;
+		}
+	}
+	.progress__num_next{
+		@include background-image(linear-gradient(#692ab1, #421f84));
+	}
+}
+
+.win_graph{
+	width: 501px;
+	.win__content{
+		height: 462px;
+		background: url("../img/bg-win2.png"); 
+	}
+}
+.graph__img{
+	height: 259px;
+	padding-top:1px; 
+	width: 480px;
+	margin: 7px auto 15px;
+	border-radius:4px;
+	background: #fff url(../img/grid.png);
+	box-shadow:0 0 6px 0 rgba(0,0,0,.75);
+	text-align: center;
+	position: relative;
+}
+.graph__add{
+	display: inline-block;
+	width: 100%;
+	margin-bottom:5px; 
+	.graph__num{
+		color: #cecece;
+		font-family: 'HelveticaNeue-B', Helvetica, Arial, sans-serif;
+		font-size:13px;
+		float: left;
+		margin: 6px 9px 0 10px;
+	}
+	.selectbox{
+		float: left;
+		margin-right: 11px;
+	}
+	.select{
+		width: 158px;
+	}
+	.input{
+		float: left;
+		width: 174px;
+		margin-right:12px; 
+	}
+	.input_axis{
+		width: 139px; 
+	}
+	.btn{
+		float: left;
+		position: relative;
+	}
+}
+.graph__color{
+	border:4px solid #ccccd5;
+	background: #ccccd5;
+	@include background-image(linear-gradient(#ceced7, #8e8ea0));
+	box-shadow:0 1px 4px 0 rgba(0,0,0,.6), 0 1px 1px 0 rgba(white,.38) inset;
+	float: left;
+	border-radius:50%;
+	cursor: pointer;
+	vertical-align: middle;
+	margin-right: 10px;
+	.graph__color-icon{
+		@include sized-sprite($icons, 'color');
+		display: block;
+	}
+}
+.btn_min{
+	height: 28px;
+	line-height:26px;
+	width: 45px;
+	span{
+		left:50%;
+		margin-left:-10px; 
+	} 
+}
+.legend{
+	border-spacing: 0;
+	width: 100%;
+	margin-top:2px; 
+	td{
+		background: #1c1c1c;
+		border-top:1px solid #2f2f2f;
+		border-bottom:1px solid #0a0a0a;
+		color:#cecece;
+		font-family: 'HelveticaNeue-B', Helvetica, Arial, sans-serif;
+		height:30px;
+		padding:5px 0 5px 14px;  
+		font-size:13px; 
+	}
+	tr:nth-child(even) td{
+		background: #252525;
+		border-top: 1px solid #3b3b3b;
+		border-bottom: 1px solid #0f0f0f;	
+	}
+	.cancel-gray{
+		position: static;
+	}
+	.legend__color{
+		width: 20px;
+		height: 20px;
+		@include background-image(linear-gradient(rgba(white,.4), rgba(0,0,0,.4)));
+		border-radius:50%;
+		box-shadow:0 1px 2px 0 rgba(0,0,0,.75);
+		display: inline-block;
+	}
+	.legend__col1{
+		padding-left:37px;
+		width: 20px; 
+	}
+	.legend__col2{
+		width:48px; 
+	}
+	.legend__col5{
+		width: 40px;
+	}
+}
+.garph__axis{
+	float: left;
+	margin: -2px -4px -3px 5px;
+}
+.garph__axis_x{
+	@include sized-sprite($icons, 'axis-x');
+}
+.garph__axis_y{
+	@include sized-sprite($icons, 'axis-y');
+}
+.graph__doc{
+	@include sized-sprite($icons, 'doc');
+	display: block;
+	position: absolute;
+	top:6px;
+	right:7px;
+	opacity:0.3;
+	&:hover{
+		opacity:0.4; 
+	}
+}
+
+.graph__axis{
+	@include sized-sprite($icons, 'axis');
+	display: block;
+	margin:10px 0 0 9px;
 }
