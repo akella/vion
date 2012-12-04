@@ -7,24 +7,25 @@
   background: url(../img/bg-win2.png);
   padding-top: 0;
   height: 330px;
+  position: relative;
 }
-/* line 9, ../sass/win-big.scss */
+/* line 10, ../sass/win-big.scss */
 .win_big .win__content_larger {
   height: 394px;
 }
-/* line 11, ../sass/win-big.scss */
+/* line 12, ../sass/win-big.scss */
 .win_big .win__content_larger .win__cols .win__col3, .win_big .win__content_larger .scroll .scrollbar, .win_big .win__content_larger .scroll .track, .win_big .win__content_larger .scroll .viewport {
   height: 394px;
 }
-/* line 14, ../sass/win-big.scss */
+/* line 15, ../sass/win-big.scss */
 .win_big .win__content_larger .win__cols .win__col1 {
   height: 342px;
 }
-/* line 18, ../sass/win-big.scss */
+/* line 19, ../sass/win-big.scss */
 .win_big .tabs {
   padding-top: 0;
 }
-/* line 21, ../sass/win-big.scss */
+/* line 22, ../sass/win-big.scss */
 .win_big .tabs .tabs__nav .active {
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, rgba(0, 0, 0, 0.35)), color-stop(100%, rgba(0, 0, 0, 0.17)));
   background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.17));
@@ -32,7 +33,7 @@
   background-image: -o-linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.17));
   background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.17));
 }
-/* line 25, ../sass/win-big.scss */
+/* line 26, ../sass/win-big.scss */
 .win_big .tabs .tabs__contant {
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, rgba(0, 0, 0, 0.17)), color-stop(25%, transparent), color-stop(100%, transparent));
   background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.17), transparent 25%, transparent);
@@ -41,22 +42,22 @@
   background-image: linear-gradient(rgba(0, 0, 0, 0.17), transparent 25%, transparent);
   padding: 10px 18px 0 9px;
 }
-/* line 29, ../sass/win-big.scss */
+/* line 30, ../sass/win-big.scss */
 .win_big .tabs .win__header {
   padding-right: 17px;
 }
 
-/* line 36, ../sass/win-big.scss */
+/* line 37, ../sass/win-big.scss */
 .win__cols {
   width: 100%;
 }
-/* line 38, ../sass/win-big.scss */
+/* line 39, ../sass/win-big.scss */
 .win__cols .win__col3 {
   float: left;
   width: 917px;
   height: 330px;
 }
-/* line 43, ../sass/win-big.scss */
+/* line 44, ../sass/win-big.scss */
 .win__cols .win__col1 {
   float: right;
   width: 294px;
@@ -66,33 +67,33 @@
   padding: 12px 7px 40px;
   position: relative;
 }
-/* line 51, ../sass/win-big.scss */
+/* line 52, ../sass/win-big.scss */
 .win__cols .win__col1 .win__dev {
   width: 294px;
   margin: 11px auto;
 }
-/* line 55, ../sass/win-big.scss */
+/* line 56, ../sass/win-big.scss */
 .win__cols .win__col1 .win__dev2 {
   margin: 13px auto 5px;
 }
-/* line 57, ../sass/win-big.scss */
+/* line 58, ../sass/win-big.scss */
 .win__cols .scroll .overview {
   width: 917px;
 }
-/* line 58, ../sass/win-big.scss */
+/* line 59, ../sass/win-big.scss */
 .win__cols .row-btn {
   margin: 0 -7px 10px;
   text-align: right;
 }
-/* line 61, ../sass/win-big.scss */
+/* line 62, ../sass/win-big.scss */
 .win__cols .row-btn .btn {
   margin: 0 8px;
 }
-/* line 63, ../sass/win-big.scss */
+/* line 64, ../sass/win-big.scss */
 .win__cols .row-btn .btn:nth-child(2) {
   margin-left: 1px;
 }
-/* line 66, ../sass/win-big.scss */
+/* line 67, ../sass/win-big.scss */
 .win__cols .row-btn_bottom {
   position: absolute;
   bottom: 0;
@@ -101,39 +102,39 @@
   margin: 0 0 10px;
 }
 
-/* line 76, ../sass/win-big.scss */
+/* line 77, ../sass/win-big.scss */
 .win__header {
   height: 45px;
   padding: 4px 9px 0;
 }
-/* line 79, ../sass/win-big.scss */
+/* line 80, ../sass/win-big.scss */
 .win__header .form-search {
   float: left;
   padding: 0;
   margin: 7px 15px 0 0;
 }
-/* line 84, ../sass/win-big.scss */
+/* line 85, ../sass/win-big.scss */
 .win__header .tabs__nav {
   float: left;
   padding: 0;
   margin-right: 10px;
 }
-/* line 89, ../sass/win-big.scss */
+/* line 90, ../sass/win-big.scss */
 .win__header .dev-vert {
   float: left;
 }
-/* line 90, ../sass/win-big.scss */
+/* line 91, ../sass/win-big.scss */
 .win__header .r-btn-gray {
   float: left;
 }
 
-/* line 94, ../sass/win-big.scss */
+/* line 95, ../sass/win-big.scss */
 .right-block {
   float: right;
   padding-top: 3px;
 }
 
-/* line 100, ../sass/win-big.scss */
+/* line 101, ../sass/win-big.scss */
 .dev-vert {
   border-left: 1px solid rgba(0, 0, 0, 0.3);
   border-right: 1px solid rgba(255, 255, 255, 0.1);
@@ -142,11 +143,11 @@
   margin: 0 11px;
 }
 
-/* line 108, ../sass/win-big.scss */
+/* line 109, ../sass/win-big.scss */
 .scroll {
   position: relative;
 }
-/* line 110, ../sass/win-big.scss */
+/* line 111, ../sass/win-big.scss */
 .scroll .scrollbar {
   position: absolute;
   width: 12px;
@@ -155,7 +156,7 @@
   top: 0;
   right: -2px;
 }
-/* line 118, ../sass/win-big.scss */
+/* line 119, ../sass/win-big.scss */
 .scroll .track {
   background-image: -webkit-gradient(linear, 100% 50%, 0% 50%, color-stop(0%, rgba(0, 0, 0, 0.42)), color-stop(50%, rgba(0, 0, 0, 0.2)), color-stop(100%, rgba(0, 0, 0, 0.42)));
   background-image: -webkit-linear-gradient(right, rgba(0, 0, 0, 0.42) 0%, rgba(0, 0, 0, 0.2) 50%, rgba(0, 0, 0, 0.42) 100%);
@@ -166,7 +167,7 @@
   width: 10px;
   position: relative;
 }
-/* line 125, ../sass/win-big.scss */
+/* line 126, ../sass/win-big.scss */
 .scroll .thumb {
   background-color: #5c5a60;
   height: 20px;
@@ -178,13 +179,13 @@
   border-radius: 3px;
   left: 2px;
 }
-/* line 136, ../sass/win-big.scss */
+/* line 137, ../sass/win-big.scss */
 .scroll .viewport {
   height: 330px;
   overflow: hidden;
   position: relative;
 }
-/* line 141, ../sass/win-big.scss */
+/* line 142, ../sass/win-big.scss */
 .scroll .overview {
   list-style: none;
   position: absolute;
@@ -192,12 +193,12 @@
   top: 0;
   padding-bottom: 8px;
 }
-/* line 148, ../sass/win-big.scss */
+/* line 149, ../sass/win-big.scss */
 .scroll .disable {
   display: none;
 }
 
-/* line 150, ../sass/win-big.scss */
+/* line 151, ../sass/win-big.scss */
 .noSelect {
   user-select: none;
   -o-user-select: none;
@@ -206,7 +207,7 @@
   -webkit-user-select: none;
 }
 
-/* line 152, ../sass/win-big.scss */
+/* line 153, ../sass/win-big.scss */
 .select {
   position: relative;
   background: #1f2026;
@@ -220,7 +221,7 @@
   width: 292px;
   color: #fff;
 }
-/* line 164, ../sass/win-big.scss */
+/* line 165, ../sass/win-big.scss */
 .select .trigger {
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #333333), color-stop(4%, #424242), color-stop(20%, #3b3b3b), color-stop(48%, #2a2a2a), color-stop(100%, #212121));
   background-image: -webkit-linear-gradient(#333333 0%, #424242 4%, #3b3b3b 20%, #2a2a2a 48%, #212121 100%);
@@ -237,15 +238,15 @@
   right: -1px;
   cursor: pointer;
 }
-/* line 176, ../sass/win-big.scss */
+/* line 177, ../sass/win-big.scss */
 .select .arrow {
-  background: url('../img/icons-s1c42631a5e.png') 0 -2498px no-repeat;
+  background: url('../img/icons-sf38cca2d6c.png') 0 -3082px no-repeat;
   width: 12px;
   height: 8px;
   display: block;
   margin: 11px 0 0 12px;
 }
-/* line 181, ../sass/win-big.scss */
+/* line 182, ../sass/win-big.scss */
 .select .select__sel {
   position: absolute;
   top: 0;
@@ -254,7 +255,7 @@
   opacity: 0;
   width: 292px;
 }
-/* line 189, ../sass/win-big.scss */
+/* line 190, ../sass/win-big.scss */
 .select .text {
   padding: 3px 7px;
   font-size: 13px;
@@ -265,13 +266,13 @@
   display: block;
 }
 
-/* line 200, ../sass/win-big.scss */
+/* line 201, ../sass/win-big.scss */
 .selectbox .dropdown {
   width: 100%;
   top: 28px !important;
   overflow: visible !important;
 }
-/* line 204, ../sass/win-big.scss */
+/* line 205, ../sass/win-big.scss */
 .selectbox .dropdown:after {
   width: 35px;
   height: 4px;
@@ -282,7 +283,7 @@
   border-right: 1px solid #000;
   content: "";
 }
-/* line 214, ../sass/win-big.scss */
+/* line 215, ../sass/win-big.scss */
 .selectbox .dropdown:before {
   width: 1px;
   height: 1px;
@@ -292,11 +293,11 @@
   left: 0;
   content: "";
 }
-/* line 223, ../sass/win-big.scss */
+/* line 224, ../sass/win-big.scss */
 .selectbox .dropdown ul {
   border-top: 1px solid #404040;
 }
-/* line 226, ../sass/win-big.scss */
+/* line 227, ../sass/win-big.scss */
 .selectbox .dropdown li {
   color: #cecece;
   font-family: 'HelveticaNeue', Helvetica, Arial, sans-serif;
@@ -309,7 +310,7 @@
   cursor: pointer;
   background: #212121;
 }
-/* line 237, ../sass/win-big.scss */
+/* line 238, ../sass/win-big.scss */
 .selectbox .dropdown li:hover {
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #4fa1ca), color-stop(100%, #05579e));
   background-image: -webkit-linear-gradient(#4fa1ca, #05579e);
@@ -319,34 +320,34 @@
   /*box-shadow:0 1px 0 #6fb2d4 inset, 0 -1px 0 #011424 inset, 1px 0 0 rgba(white,.1) inset, -1px 0 0 rgba(0,0,0,.3) inset;*/
   border-color: #6fb2d4 #17415d #011424 #408bbd;
 }
-/* line 242, ../sass/win-big.scss */
+/* line 243, ../sass/win-big.scss */
 .selectbox .dropdown li:first-child {
   border-top-color: #212121;
 }
-/* line 244, ../sass/win-big.scss */
+/* line 245, ../sass/win-big.scss */
 .selectbox .dropdown li:first-child:hover {
   border-top-color: #6fb2d4;
 }
-/* line 248, ../sass/win-big.scss */
+/* line 249, ../sass/win-big.scss */
 .selectbox .dropdown li:last-child {
   border-radius: 0 0 3px 3px;
 }
 
-/* line 254, ../sass/win-big.scss */
+/* line 255, ../sass/win-big.scss */
 .selest_search {
   position: relative;
 }
-/* line 256, ../sass/win-big.scss */
+/* line 257, ../sass/win-big.scss */
 .selest_search .icon-search {
   top: 0;
   z-index: 100;
 }
-/* line 260, ../sass/win-big.scss */
+/* line 261, ../sass/win-big.scss */
 .selest_search .text {
   padding-left: 24px;
 }
 
-/* line 263, ../sass/win-big.scss */
+/* line 264, ../sass/win-big.scss */
 .select_green .select {
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #8ab90e), color-stop(100%, #4b7f05));
   background-image: -webkit-linear-gradient(#8ab90e, #4b7f05);
@@ -354,34 +355,34 @@
   background-image: -o-linear-gradient(#8ab90e, #4b7f05);
   background-image: linear-gradient(#8ab90e, #4b7f05);
 }
-/* line 266, ../sass/win-big.scss */
+/* line 267, ../sass/win-big.scss */
 .select_green .text {
   color: #fff;
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.75);
   font-family: 'HelveticaNeue-B', Helvetica, Arial, sans-serif;
 }
 
-/* line 272, ../sass/win-big.scss */
+/* line 273, ../sass/win-big.scss */
 .select_small {
   width: 99px;
   display: inline-block;
   margin-left: 1px;
 }
-/* line 276, ../sass/win-big.scss */
+/* line 277, ../sass/win-big.scss */
 .select_small .select {
   width: 99px;
 }
-/* line 281, ../sass/win-big.scss */
+/* line 282, ../sass/win-big.scss */
 .select_small div.select {
   float: none !important;
 }
 
-/* line 283, ../sass/win-big.scss */
+/* line 284, ../sass/win-big.scss */
 .filter-list {
   margin: 18px -7px 0;
 }
 
-/* line 286, ../sass/win-big.scss */
+/* line 287, ../sass/win-big.scss */
 .filter__item {
   background: #1c1c1c;
   border-top: 1px solid #2f2f2f;
@@ -393,73 +394,71 @@
   position: relative;
   font-family: 'HelveticaNeue-B', Helvetica, Arial, sans-serif;
 }
-/* line 296, ../sass/win-big.scss */
+/* line 297, ../sass/win-big.scss */
 .filter__item:nth-child(even) {
   background: #222;
 }
-/* line 299, ../sass/win-big.scss */
+/* line 300, ../sass/win-big.scss */
 .filter__item .filter__radio {
   margin-top: -1px;
-  position: relative;
-  top: 3px;
   margin-right: 8px;
 }
-/* line 305, ../sass/win-big.scss */
+/* line 304, ../sass/win-big.scss */
 .filter__item .filter__arr {
-  background: url('../img/icons-s1c42631a5e.png') 0 -2967px no-repeat;
+  background: url('../img/icons-sf38cca2d6c.png') 0 -3639px no-repeat;
   width: 6px;
   height: 10px;
   display: inline-block;
   margin: 0 6px;
 }
-/* line 310, ../sass/win-big.scss */
+/* line 309, ../sass/win-big.scss */
 .filter__item .cancel-gray {
   top: 50%;
   margin-top: -7px;
   right: 12px;
 }
 
-/* line 317, ../sass/win-big.scss */
-.array_left,
-.array_right {
+/* line 316, ../sass/win-big.scss */
+.arrow_left,
+.arrow_right {
   position: absolute;
   top: 50%;
   margin-top: -19px;
 }
-/* line 321, ../sass/win-big.scss */
-.array_left:hover,
-.array_right:hover {
+/* line 320, ../sass/win-big.scss */
+.arrow_left:hover,
+.arrow_right:hover {
   opacity: 0.5;
 }
 
-/* line 323, ../sass/win-big.scss */
-.array_left {
-  background: url('../img/icons-s1c42631a5e.png') 0 -834px no-repeat;
+/* line 322, ../sass/win-big.scss */
+.arrow_left {
+  background: url('../img/icons-sf38cca2d6c.png') 0 -960px no-repeat;
   width: 50px;
   height: 50px;
   left: 21px;
 }
 
-/* line 327, ../sass/win-big.scss */
-.array_right {
-  background: url('../img/icons-s1c42631a5e.png') 0 -1004px no-repeat;
+/* line 326, ../sass/win-big.scss */
+.arrow_right {
+  background: url('../img/icons-sf38cca2d6c.png') 0 -1130px no-repeat;
   width: 50px;
   height: 50px;
   right: 21px;
 }
 
-/* line 331, ../sass/win-big.scss */
+/* line 330, ../sass/win-big.scss */
 .new-doc-holder {
   position: absolute;
   top: 50%;
   left: 50%;
   margin: -35px 0 0 -100px;
-  background: url('../img/icons-s1c42631a5e.png') 0 -894px no-repeat;
+  background: url('../img/icons-sf38cca2d6c.png') 0 -1020px no-repeat;
   width: 200px;
   height: 71px;
 }
 
-/* line 339, ../sass/win-big.scss */
+/* line 338, ../sass/win-big.scss */
 .new-doc {
   margin-top: 39px;
   color: #fff;
@@ -478,7 +477,7 @@
   height: 40px;
   cursor: pointer;
 }
-/* line 352, ../sass/win-big.scss */
+/* line 351, ../sass/win-big.scss */
 .new-doc:hover {
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #0a5ca1), color-stop(100%, #4a9cc7));
   background-image: -webkit-linear-gradient(#0a5ca1, #4a9cc7);
@@ -488,13 +487,13 @@
   box-shadow: 0 2px 2px 0 rgba(255, 255, 255, 0.12) inset, 0 -15px 15px -15px rgba(255, 255, 255, 0.3) inset, 0 2px 4px 0 rgba(0, 0, 0, 0.25);
 }
 
-/* line 358, ../sass/win-big.scss */
+/* line 357, ../sass/win-big.scss */
 .filter-list_light {
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.75);
   margin: 10px 0;
 }
 
-/* line 362, ../sass/win-big.scss */
+/* line 361, ../sass/win-big.scss */
 .filter__item_light {
   background: #f5f8fc;
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #f5f7fc), color-stop(41%, #f7f8fb), color-stop(78%, #ebeef4), color-stop(100%, #eaedf3));
@@ -507,36 +506,36 @@
   color: #2c2c37;
   padding: 9px 0 9px 10px;
 }
-/* line 369, ../sass/win-big.scss */
+/* line 368, ../sass/win-big.scss */
 .filter__item_light:nth-child(even) {
   background: #eaebf3;
   background-image: none;
 }
-/* line 373, ../sass/win-big.scss */
+/* line 372, ../sass/win-big.scss */
 .filter__item_light:first-child {
   border-radius: 5px 5px 0 0;
 }
-/* line 376, ../sass/win-big.scss */
+/* line 375, ../sass/win-big.scss */
 .filter__item_light:last-child {
   border-radius: 0 0 5px 5px;
   border-color: #bbc6d3;
 }
-/* line 380, ../sass/win-big.scss */
+/* line 379, ../sass/win-big.scss */
 .filter__item_light .cancel-gray {
-  background: url('../img/icons-s1c42631a5e.png') 0 -2256px no-repeat;
+  background: url('../img/icons-sf38cca2d6c.png') 0 -2840px no-repeat;
   width: 15px;
   height: 15px;
   opacity: 1;
   right: 8px;
 }
-/* line 383, ../sass/win-big.scss */
+/* line 382, ../sass/win-big.scss */
 .filter__item_light .cancel-gray:hover {
   opacity: 0.6;
 }
 
-/* line 387, ../sass/win-big.scss */
+/* line 386, ../sass/win-big.scss */
 .icon-pencil_gray {
-  background: url('../img/icons-s1c42631a5e.png') 0 -2138px no-repeat;
+  background: url('../img/icons-sf38cca2d6c.png') 0 -2722px no-repeat;
   width: 14px;
   height: 14px;
   display: inline-block;
@@ -545,9 +544,9 @@
   margin-right: 5px;
 }
 
-/* line 394, ../sass/win-big.scss */
+/* line 393, ../sass/win-big.scss */
 .icon-pencil_blue {
-  background: url('../img/icons-s1c42631a5e.png') 0 -2184px no-repeat;
+  background: url('../img/icons-sf38cca2d6c.png') 0 -2768px no-repeat;
   width: 14px;
   height: 14px;
   display: inline-block;
@@ -556,32 +555,32 @@
   margin-right: 5px;
 }
 
-/* line 401, ../sass/win-big.scss */
+/* line 400, ../sass/win-big.scss */
 .datepicker {
   float: left;
   margin: 7px 15px 0 0;
   position: relative;
 }
 
-/* line 406, ../sass/win-big.scss */
+/* line 405, ../sass/win-big.scss */
 .date-input {
   width: 184px;
   position: relative;
 }
-/* line 409, ../sass/win-big.scss */
+/* line 408, ../sass/win-big.scss */
 .date-input .date-input__text {
   font-family: 'HelveticaNeue-B', Helvetica, Arial, sans-serif;
   font-size: 13px;
   color: #cecece;
 }
-/* line 414, ../sass/win-big.scss */
+/* line 413, ../sass/win-big.scss */
 .date-input .date-input__dev {
   font-size: 13px;
   color: #f2ba06;
   font-family: 'HelveticaNeue-B', Helvetica, Arial, sans-serif;
 }
 
-/* line 420, ../sass/win-big.scss */
+/* line 419, ../sass/win-big.scss */
 .date__btn {
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #333333), color-stop(4%, #424242), color-stop(20%, #3b3b3b), color-stop(48%, #2a2a2a), color-stop(100%, #212121));
   background-image: -webkit-linear-gradient(#333333 0%, #424242 4%, #3b3b3b 20%, #2a2a2a 48%, #212121 100%);
@@ -599,9 +598,9 @@
   cursor: pointer;
 }
 
-/* line 432, ../sass/win-big.scss */
+/* line 431, ../sass/win-big.scss */
 .icon-points {
-  background: url('../img/icons-s1c42631a5e.png') 0 -3121px no-repeat;
+  background: url('../img/icons-sf38cca2d6c.png') 0 -3793px no-repeat;
   width: 13px;
   height: 14px;
   display: inline-block;
@@ -610,7 +609,7 @@
   top: -2px;
 }
 
-/* line 440, ../sass/win-big.scss */
+/* line 439, ../sass/win-big.scss */
 .datepicker__drop {
   border-radius: 5px;
   background: #29262f;
@@ -624,18 +623,18 @@
   width: 210px;
   display: none;
 }
-/* line 452, ../sass/win-big.scss */
+/* line 451, ../sass/win-big.scss */
 .datepicker__drop:before {
   content: '';
   position: absolute;
-  background: url('../img/icons-s1c42631a5e.png') 0 -2075px no-repeat;
+  background: url('../img/icons-sf38cca2d6c.png') 0 -2659px no-repeat;
   width: 20px;
   height: 21px;
   top: -20px;
   left: 99px;
 }
 
-/* line 460, ../sass/win-big.scss */
+/* line 459, ../sass/win-big.scss */
 .datepicker__header {
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #62646f), color-stop(100%, #42444e));
   background-image: -webkit-linear-gradient(#62646f, #42444e);
@@ -648,28 +647,28 @@
   padding: 6px 0 7px;
   text-align: center;
 }
-/* line 467, ../sass/win-big.scss */
+/* line 466, ../sass/win-big.scss */
 .datepicker__header .date-prev, .datepicker__header .date-next {
   top: 50%;
   position: absolute;
   margin-top: -6px;
   cursor: pointer;
 }
-/* line 473, ../sass/win-big.scss */
+/* line 472, ../sass/win-big.scss */
 .datepicker__header .date-prev {
-  background: url('../img/icons-s1c42631a5e.png') 0 -2843px no-repeat;
+  background: url('../img/icons-sf38cca2d6c.png') 0 -3515px no-repeat;
   width: 6px;
   height: 11px;
   left: 8px;
 }
-/* line 477, ../sass/win-big.scss */
+/* line 476, ../sass/win-big.scss */
 .datepicker__header .date-next {
-  background: url('../img/icons-s1c42631a5e.png') 0 -2798px no-repeat;
+  background: url('../img/icons-sf38cca2d6c.png') 0 -3470px no-repeat;
   width: 6px;
   height: 11px;
   right: 8px;
 }
-/* line 481, ../sass/win-big.scss */
+/* line 480, ../sass/win-big.scss */
 .datepicker__header .date-m, .datepicker__header .date-y {
   font-family: 'HelveticaNeue-B', Helvetica, Arial, sans-serif;
   color: #fff;
@@ -684,21 +683,21 @@
   margin: 0 13px;
   cursor: pointer;
 }
-/* line 494, ../sass/win-big.scss */
+/* line 493, ../sass/win-big.scss */
 .datepicker__header .date-m.active, .datepicker__header .date-y.active {
   border: 1px solid rgba(0, 0, 0, 0.11);
   background: #3d3d47;
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.5) inset, 0 1px 0 rgba(255, 255, 255, 0.2);
 }
 
-/* line 501, ../sass/win-big.scss */
+/* line 500, ../sass/win-big.scss */
 .date-table {
   border-collapse: separate;
   border-spacing: 0;
   width: 100%;
   height: 169px;
 }
-/* line 506, ../sass/win-big.scss */
+/* line 505, ../sass/win-big.scss */
 .date-table th {
   background: #e3e3e3;
   color: #646464;
@@ -707,7 +706,7 @@
   font-weight: normal;
   height: 20px;
 }
-/* line 514, ../sass/win-big.scss */
+/* line 513, ../sass/win-big.scss */
 .date-table td {
   background: #fff;
   height: 29px;
@@ -719,7 +718,7 @@
   font-family: 'HelveticaNeue-B', Helvetica, Arial, sans-serif;
   width: 29px;
 }
-/* line 525, ../sass/win-big.scss */
+/* line 524, ../sass/win-big.scss */
 .date-table .today {
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #e0e0e0), color-stop(100%, rgba(255, 255, 255, 0)));
   background-image: -webkit-linear-gradient(#e0e0e0, rgba(255, 255, 255, 0));
@@ -728,7 +727,7 @@
   background-image: linear-gradient(#e0e0e0, rgba(255, 255, 255, 0));
   color: #000;
 }
-/* line 529, ../sass/win-big.scss */
+/* line 528, ../sass/win-big.scss */
 .date-table .chosen {
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #c3db86), color-stop(100%, #a6c082));
   background-image: -webkit-linear-gradient(#c3db86, #a6c082);
@@ -736,7 +735,7 @@
   background-image: -o-linear-gradient(#c3db86, #a6c082);
   background-image: linear-gradient(#c3db86, #a6c082);
 }
-/* line 532, ../sass/win-big.scss */
+/* line 531, ../sass/win-big.scss */
 .date-table .chosen2 {
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #67b9e8), color-stop(100%, #1a7fb8));
   background-image: -webkit-linear-gradient(#67b9e8, #1a7fb8);
@@ -746,88 +745,88 @@
   box-shadow: 0 0 4px 1px rgba(0, 70, 110, 0.4) inset;
   color: #fff;
 }
-/* line 537, ../sass/win-big.scss */
+/* line 536, ../sass/win-big.scss */
 .date-table .inactive {
   color: #c8c8c8;
 }
-/* line 541, ../sass/win-big.scss */
+/* line 540, ../sass/win-big.scss */
 .date-table tr:last-child td {
   border-bottom: 0;
 }
-/* line 544, ../sass/win-big.scss */
+/* line 543, ../sass/win-big.scss */
 .date-table tr:last-child td:first-child {
   border-radius: 0 0 0 3px;
 }
-/* line 547, ../sass/win-big.scss */
+/* line 546, ../sass/win-big.scss */
 .date-table tr:last-child td:last-child {
   border-radius: 0 0 3px 0;
 }
-/* line 551, ../sass/win-big.scss */
+/* line 550, ../sass/win-big.scss */
 .date-table td:first-child {
   border-left: 0;
 }
 
-/* line 556, ../sass/win-big.scss */
+/* line 555, ../sass/win-big.scss */
 .date-table_m td {
   width: 69px;
   height: 41px;
 }
-/* line 560, ../sass/win-big.scss */
+/* line 559, ../sass/win-big.scss */
 .date-table_m tr:first-child td {
   height: 42px;
 }
-/* line 561, ../sass/win-big.scss */
+/* line 560, ../sass/win-big.scss */
 .date-table_m tr:last-child td {
   height: 42px;
 }
 
-/* line 563, ../sass/win-big.scss */
+/* line 562, ../sass/win-big.scss */
 .datepicker__footer {
   padding: 5px 0 0;
   overflow: hidden;
 }
-/* line 566, ../sass/win-big.scss */
+/* line 565, ../sass/win-big.scss */
 .datepicker__footer .btn {
   height: 28px;
   border-radius: 3px;
 }
-/* line 570, ../sass/win-big.scss */
+/* line 569, ../sass/win-big.scss */
 .datepicker__footer .btn_75 {
   margin-right: 4px;
 }
-/* line 571, ../sass/win-big.scss */
+/* line 570, ../sass/win-big.scss */
 .datepicker__footer .btn_45 {
   float: right;
 }
 
-/* line 574, ../sass/win-big.scss */
+/* line 573, ../sass/win-big.scss */
 .input_half {
   width: 129px;
   display: inline-block;
 }
 
-/* line 579, ../sass/win-big.scss */
+/* line 578, ../sass/win-big.scss */
 .input_full {
   width: 277px;
 }
 
-/* line 582, ../sass/win-big.scss */
+/* line 581, ../sass/win-big.scss */
 .input_180 {
   width: 183px;
 }
 
-/* line 585, ../sass/win-big.scss */
+/* line 584, ../sass/win-big.scss */
 .form-row {
   margin-bottom: 12px;
   line-height: 27px;
 }
 
-/* line 589, ../sass/win-big.scss */
+/* line 588, ../sass/win-big.scss */
 .form-row_radio {
   margin-top: 17px;
 }
 
-/* line 592, ../sass/win-big.scss */
+/* line 591, ../sass/win-big.scss */
 .label {
   font-size: 13px;
   color: #cecece;
@@ -836,12 +835,12 @@
   font-family: 'HelveticaNeue-M', Helvetica, Arial, sans-serif;
 }
 
-/* line 599, ../sass/win-big.scss */
+/* line 598, ../sass/win-big.scss */
 .label_bold {
   font-family: 'HelveticaNeue-B', Helvetica, Arial, sans-serif;
 }
 
-/* line 602, ../sass/win-big.scss */
+/* line 601, ../sass/win-big.scss */
 .help-link {
   font-size: 13px;
   color: #3e96cc;
@@ -849,12 +848,12 @@
   text-decoration: none;
   margin-left: 6px;
 }
-/* line 608, ../sass/win-big.scss */
+/* line 607, ../sass/win-big.scss */
 .help-link:hover {
   text-decoration: underline;
 }
 
-/* line 613, ../sass/win-big.scss */
+/* line 612, ../sass/win-big.scss */
 .form-note {
   font-family: 'HelveticaNeue-B', Helvetica, Arial, sans-serif;
   font-size: 11px;
@@ -862,24 +861,24 @@
   line-height: 1.6;
   margin-bottom: 8px;
 }
-/* line 619, ../sass/win-big.scss */
+/* line 618, ../sass/win-big.scss */
 .form-note a {
   color: #3e96cc;
   text-decoration: none;
 }
-/* line 622, ../sass/win-big.scss */
+/* line 621, ../sass/win-big.scss */
 .form-note a:hover {
   text-decoration: underline;
 }
 
-/* line 628, ../sass/win-big.scss */
+/* line 627, ../sass/win-big.scss */
 .navi {
   overflow: hidden;
   float: left;
   padding: 10px 0;
   margin-right: -1px;
 }
-/* line 633, ../sass/win-big.scss */
+/* line 632, ../sass/win-big.scss */
 .navi a {
   height: 4px;
   width: 4px;
@@ -890,13 +889,13 @@
   margin: 6px 5px 0 5px;
   float: left;
 }
-/* line 642, ../sass/win-big.scss */
+/* line 641, ../sass/win-big.scss */
 .navi a:hover {
   background: #83b30d;
   border-color: #000;
   box-shadow: 0 1px 0 0 #454754;
 }
-/* line 650, ../sass/win-big.scss */
+/* line 649, ../sass/win-big.scss */
 .navi .navi__right,
 .navi .navi__left {
   border-color: #252731;
@@ -910,7 +909,7 @@
   height: 16px;
   margin-top: 0;
 }
-/* line 657, ../sass/win-big.scss */
+/* line 656, ../sass/win-big.scss */
 .navi .navi__right:hover,
 .navi .navi__left:hover {
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #413d46), color-stop(100%, #605e64));
@@ -920,27 +919,27 @@
   background-image: linear-gradient(#413d46, #605e64);
   border-color: #252731;
 }
-/* line 661, ../sass/win-big.scss */
+/* line 660, ../sass/win-big.scss */
 .navi .navi__right i,
 .navi .navi__left i {
   display: block;
   margin: 3px 0 0 3px;
 }
-/* line 667, ../sass/win-big.scss */
+/* line 666, ../sass/win-big.scss */
 .navi .navi__right i {
-  background: url('../img/icons-s1c42631a5e.png') 0 -2162px no-repeat;
+  background: url('../img/icons-sf38cca2d6c.png') 0 -2746px no-repeat;
   width: 8px;
   height: 12px;
   margin: 3px 0 0 5px;
 }
-/* line 673, ../sass/win-big.scss */
+/* line 672, ../sass/win-big.scss */
 .navi .navi__left i {
-  background: url('../img/icons-s1c42631a5e.png') 0 -2208px no-repeat;
+  background: url('../img/icons-sf38cca2d6c.png') 0 -2792px no-repeat;
   width: 8px;
   height: 12px;
 }
 
-/* line 679, ../sass/win-big.scss */
+/* line 678, ../sass/win-big.scss */
 .progress {
   border: 1px solid #2e2e37;
   border-radius: 4px;
@@ -953,7 +952,7 @@
   float: left;
   margin: 0 0 0 3px;
 }
-/* line 686, ../sass/win-big.scss */
+/* line 685, ../sass/win-big.scss */
 .progress li {
   font-size: 12px;
   color: #cecece;
@@ -966,30 +965,30 @@
   padding: 0 27px 0 8px;
   position: relative;
 }
-/* line 697, ../sass/win-big.scss */
+/* line 696, ../sass/win-big.scss */
 .progress li:after {
   content: '';
   position: absolute;
   top: 0;
   right: 0;
-  background: url('../img/icons-s1c42631a5e.png') 0 -1695px no-repeat;
+  background: url('../img/icons-sf38cca2d6c.png') 0 -2279px no-repeat;
   width: 15px;
   height: 40px;
 }
-/* line 704, ../sass/win-big.scss */
+/* line 703, ../sass/win-big.scss */
 .progress li:last-child {
   padding-right: 13px;
 }
-/* line 705, ../sass/win-big.scss */
+/* line 704, ../sass/win-big.scss */
 .progress li:last-child:after {
   display: none;
 }
-/* line 711, ../sass/win-big.scss */
+/* line 710, ../sass/win-big.scss */
 .progress a {
   color: #cecece;
   text-decoration: none;
 }
-/* line 715, ../sass/win-big.scss */
+/* line 714, ../sass/win-big.scss */
 .progress .progress__num {
   height: 26px;
   width: 26px;
@@ -1012,7 +1011,7 @@
   margin: 6px 11px 0 0;
   text-shadow: none;
 }
-/* line 733, ../sass/win-big.scss */
+/* line 732, ../sass/win-big.scss */
 .progress .progress__num_done {
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #83b20d), color-stop(100%, #497a05));
   background-image: -webkit-linear-gradient(#83b20d, #497a05);
@@ -1023,17 +1022,17 @@
   font: 0/0 a;
   position: relative;
 }
-/* line 738, ../sass/win-big.scss */
+/* line 737, ../sass/win-big.scss */
 .progress .progress__num_done:before {
   content: "";
   position: absolute;
-  background: url('../img/icons-s1c42631a5e.png') 0 -2673px no-repeat;
+  background: url('../img/icons-sf38cca2d6c.png') 0 -3301px no-repeat;
   width: 12px;
   height: 11px;
   top: 7px;
   left: 7px;
 }
-/* line 746, ../sass/win-big.scss */
+/* line 745, ../sass/win-big.scss */
 .progress .progress__num_next {
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #692ab1), color-stop(100%, #421f84));
   background-image: -webkit-linear-gradient(#692ab1, #421f84);
@@ -1042,22 +1041,22 @@
   background-image: linear-gradient(#692ab1, #421f84);
 }
 
-/* line 751, ../sass/win-big.scss */
+/* line 750, ../sass/win-big.scss */
 .win_graph {
   width: 501px;
 }
-/* line 753, ../sass/win-big.scss */
+/* line 752, ../sass/win-big.scss */
 .win_graph .win__content {
   height: 462px;
   background: url("../img/bg-win2.png");
 }
 
-/* line 758, ../sass/win-big.scss */
+/* line 757, ../sass/win-big.scss */
 .graph__img {
   height: 259px;
   padding-top: 1px;
   width: 480px;
-  margin: 7px auto 15px;
+  margin: 7px 9px 15px;
   border-radius: 4px;
   background: white url(../img/grid.png);
   box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.75);
@@ -1065,13 +1064,13 @@
   position: relative;
 }
 
-/* line 769, ../sass/win-big.scss */
+/* line 768, ../sass/win-big.scss */
 .graph__add {
   display: inline-block;
   width: 100%;
   margin-bottom: 5px;
 }
-/* line 773, ../sass/win-big.scss */
+/* line 772, ../sass/win-big.scss */
 .graph__add .graph__num {
   color: #cecece;
   font-family: 'HelveticaNeue-B', Helvetica, Arial, sans-serif;
@@ -1079,32 +1078,32 @@
   float: left;
   margin: 6px 9px 0 10px;
 }
-/* line 780, ../sass/win-big.scss */
-.graph__add .selectbox {
+/* line 779, ../sass/win-big.scss */
+.graph__add .sel-holder {
   float: left;
   margin-right: 11px;
 }
-/* line 784, ../sass/win-big.scss */
+/* line 783, ../sass/win-big.scss */
 .graph__add .select {
   width: 158px;
 }
-/* line 787, ../sass/win-big.scss */
+/* line 786, ../sass/win-big.scss */
 .graph__add .input {
   float: left;
   width: 174px;
   margin-right: 12px;
 }
-/* line 792, ../sass/win-big.scss */
+/* line 791, ../sass/win-big.scss */
 .graph__add .input_axis {
   width: 139px;
 }
-/* line 795, ../sass/win-big.scss */
+/* line 794, ../sass/win-big.scss */
 .graph__add .btn {
   float: left;
   position: relative;
 }
 
-/* line 800, ../sass/win-big.scss */
+/* line 799, ../sass/win-big.scss */
 .graph__color {
   border: 4px solid #ccccd5;
   background: #ccccd5;
@@ -1119,34 +1118,67 @@
   cursor: pointer;
   vertical-align: middle;
   margin-right: 10px;
+  position: relative;
 }
 /* line 810, ../sass/win-big.scss */
 .graph__color .graph__color-icon {
-  background: url('../img/icons-s1c42631a5e.png') 0 -433px no-repeat;
+  background: url('../img/icons-sf38cca2d6c.png') 0 -433px no-repeat;
   width: 20px;
   height: 21px;
   display: block;
 }
-
 /* line 815, ../sass/win-big.scss */
+.graph__color:hover .graph__drop {
+  display: block;
+}
+
+/* line 818, ../sass/win-big.scss */
+.graph__drop {
+  width: 210px;
+  padding: 5px;
+  margin-top: 5px;
+  left: -101px;
+  cursor: default;
+}
+/* line 826, ../sass/win-big.scss */
+.graph__drop .graph__palette {
+  background: url(../img/colors.jpg);
+  width: 210px;
+  height: 198px;
+  margin-bottom: 9px;
+  cursor: url(../img/cursor.png), default;
+}
+/* line 833, ../sass/win-big.scss */
+.graph__drop .btn_green {
+  float: right;
+}
+
+/* line 835, ../sass/win-big.scss */
+.btn_100 {
+  width: 100px;
+  height: 28px;
+  line-height: 28px;
+}
+
+/* line 841, ../sass/win-big.scss */
 .btn_min {
   height: 28px;
   line-height: 26px;
   width: 45px;
 }
-/* line 819, ../sass/win-big.scss */
+/* line 845, ../sass/win-big.scss */
 .btn_min span {
   left: 50%;
   margin-left: -10px;
 }
 
-/* line 824, ../sass/win-big.scss */
+/* line 850, ../sass/win-big.scss */
 .legend {
   border-spacing: 0;
   width: 100%;
   margin-top: 2px;
 }
-/* line 828, ../sass/win-big.scss */
+/* line 854, ../sass/win-big.scss */
 .legend td {
   background: #1c1c1c;
   border-top: 1px solid #2f2f2f;
@@ -1157,17 +1189,17 @@
   padding: 5px 0 5px 14px;
   font-size: 13px;
 }
-/* line 838, ../sass/win-big.scss */
+/* line 864, ../sass/win-big.scss */
 .legend tr:nth-child(even) td {
   background: #252525;
   border-top: 1px solid #3b3b3b;
   border-bottom: 1px solid #0f0f0f;
 }
-/* line 843, ../sass/win-big.scss */
+/* line 869, ../sass/win-big.scss */
 .legend .cancel-gray {
   position: static;
 }
-/* line 846, ../sass/win-big.scss */
+/* line 872, ../sass/win-big.scss */
 .legend .legend__color {
   width: 20px;
   height: 20px;
@@ -1180,43 +1212,43 @@
   box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.75);
   display: inline-block;
 }
-/* line 854, ../sass/win-big.scss */
+/* line 880, ../sass/win-big.scss */
 .legend .legend__col1 {
   padding-left: 37px;
   width: 20px;
 }
-/* line 858, ../sass/win-big.scss */
+/* line 884, ../sass/win-big.scss */
 .legend .legend__col2 {
   width: 48px;
 }
-/* line 861, ../sass/win-big.scss */
+/* line 887, ../sass/win-big.scss */
 .legend .legend__col5 {
   width: 40px;
 }
 
-/* line 865, ../sass/win-big.scss */
+/* line 891, ../sass/win-big.scss */
 .garph__axis {
   float: left;
   margin: -2px -4px -3px 5px;
 }
 
-/* line 869, ../sass/win-big.scss */
+/* line 895, ../sass/win-big.scss */
 .garph__axis_x {
-  background: url('../img/icons-s1c42631a5e.png') 0 0 no-repeat;
+  background: url('../img/icons-sf38cca2d6c.png') 0 0 no-repeat;
   width: 34px;
   height: 34px;
 }
 
-/* line 872, ../sass/win-big.scss */
+/* line 898, ../sass/win-big.scss */
 .garph__axis_y {
-  background: url('../img/icons-s1c42631a5e.png') 0 -44px no-repeat;
+  background: url('../img/icons-sf38cca2d6c.png') 0 -44px no-repeat;
   width: 34px;
   height: 34px;
 }
 
-/* line 875, ../sass/win-big.scss */
+/* line 901, ../sass/win-big.scss */
 .graph__doc {
-  background: url('../img/icons-s1c42631a5e.png') 0 -1877px no-repeat;
+  background: url('../img/icons-sf38cca2d6c.png') 0 -2461px no-repeat;
   width: 34px;
   height: 34px;
   display: block;
@@ -1225,16 +1257,137 @@
   right: 7px;
   opacity: 0.3;
 }
-/* line 882, ../sass/win-big.scss */
+/* line 908, ../sass/win-big.scss */
 .graph__doc:hover {
   opacity: 0.4;
 }
 
-/* line 887, ../sass/win-big.scss */
+/* line 913, ../sass/win-big.scss */
 .graph__axis {
-  background: url('../img/icons-s1c42631a5e.png') 0 -518px no-repeat;
+  background: url('../img/icons-sf38cca2d6c.png') 0 -560px no-repeat;
   width: 462px;
   height: 240px;
   display: block;
   margin: 10px 0 0 9px;
+}
+
+/* line 918, ../sass/win-big.scss */
+.btn-drop {
+  display: inline-block;
+  position: relative;
+}
+/* line 921, ../sass/win-big.scss */
+.btn-drop:hover .drop_doc {
+  display: block;
+}
+
+/* line 923, ../sass/win-big.scss */
+.win__header .btn-drop {
+  float: left;
+}
+
+/* line 924, ../sass/win-big.scss */
+.drop_doc {
+  left: -46px;
+  width: 134px;
+}
+/* line 929, ../sass/win-big.scss */
+.drop_doc h3 {
+  margin: 6px 0 9px 5px;
+}
+
+/* line 931, ../sass/win-big.scss */
+.docs {
+  margin: 0 0 4px 3px;
+  overflow: hidden;
+}
+/* line 934, ../sass/win-big.scss */
+.docs li {
+  list-style: none;
+  float: left;
+}
+/* line 938, ../sass/win-big.scss */
+.docs a {
+  display: block;
+}
+/* line 940, ../sass/win-big.scss */
+.docs a:hover {
+  opacity: 0.8;
+}
+/* line 942, ../sass/win-big.scss */
+.docs .doc_docx {
+  background: url('../img/icons-sf38cca2d6c.png') 0 -810px no-repeat;
+  width: 32px;
+  height: 32px;
+}
+/* line 945, ../sass/win-big.scss */
+.docs .doc_pdf {
+  background: url('../img/icons-sf38cca2d6c.png') 0 -1222px no-repeat;
+  width: 32px;
+  height: 32px;
+}
+/* line 948, ../sass/win-big.scss */
+.docs .doc_xls {
+  background: url('../img/icons-sf38cca2d6c.png') 0 -518px no-repeat;
+  width: 32px;
+  height: 32px;
+}
+/* line 951, ../sass/win-big.scss */
+.docs .doc_jpeg {
+  background: url('../img/icons-sf38cca2d6c.png') 0 -852px no-repeat;
+  width: 32px;
+  height: 32px;
+}
+
+/* line 955, ../sass/win-big.scss */
+.arr-block_l, .arr-block_r {
+  position: absolute;
+  top: 0;
+  width: 59px;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 600;
+}
+
+/* line 963, ../sass/win-big.scss */
+.arr-block_l {
+  left: 0;
+}
+
+/* line 966, ../sass/win-big.scss */
+.arr-block_r {
+  right: 0;
+}
+
+/* line 969, ../sass/win-big.scss */
+.arrow_left2, .arrow_right2 {
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  margin-top: -19px;
+  border: 2px solid #fff;
+  box-shadow: 0 2px 9px rgba(0, 0, 0, 0.49);
+  cursor: pointer;
+}
+/* line 977, ../sass/win-big.scss */
+.arrow_left2:hover, .arrow_right2:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+/* line 981, ../sass/win-big.scss */
+.arrow_left2 {
+  background: url('../img/icons-sf38cca2d6c.png') 0 -3153px no-repeat;
+  width: 34px;
+  height: 34px;
+  background-color: rgba(0, 0, 0, 0.4);
+  left: 12px;
+}
+
+/* line 986, ../sass/win-big.scss */
+.arrow_right2 {
+  background: url('../img/icons-sf38cca2d6c.png') 0 -3322px no-repeat;
+  width: 34px;
+  height: 34px;
+  background-color: rgba(0, 0, 0, 0.4);
+  right: 12px;
 }

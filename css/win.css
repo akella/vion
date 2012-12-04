@@ -51,7 +51,7 @@
 }
 /* line 39, ../sass/win.scss */
 .win .win__close {
-  background: url('../img/icons-sf7e4f02b87.png') 0 -1271px no-repeat;
+  background: url('../img/icons-s5d00c97573.png') 0 -1439px no-repeat;
   width: 20px;
   height: 20px;
   position: absolute;
@@ -146,13 +146,11 @@
   width: 12px;
   background: #eaebf3;
   position: absolute;
-  -moz-transform: rotate(45deg);
-  -o-transform: rotate(45deg);
   -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
   transform: rotate(45deg);
-  filter: progid:DXImageTransform.Microsoft.Matrix(M11=$m11, M12=$m12,M21=$m21, M22=$m22, sizingMethod='auto expand');
-  zoom: 1;
   top: 19px;
   left: -5px;
   box-shadow: -3px 3px 3px 0px rgba(0, 0, 0, 0.35);
@@ -218,7 +216,7 @@
 }
 /* line 171, ../sass/win.scss */
 .r-btn_up span, .r-btn_plus span {
-  background: url('../img/icons-sf7e4f02b87.png') 0 -1331px no-repeat;
+  background: url('../img/icons-s5d00c97573.png') 0 -1559px no-repeat;
   width: 18px;
   height: 19px;
   margin: -10px 0 0 -9px;
@@ -235,7 +233,7 @@
 
 /* line 180, ../sass/win.scss */
 .r-btn_plus span {
-  background: url('../img/icons-sf7e4f02b87.png') 0 -2709px no-repeat;
+  background: url('../img/icons-s5d00c97573.png') 0 -2987px no-repeat;
   width: 13px;
   height: 14px;
   margin: -7px 0 0 -6px;
@@ -252,7 +250,7 @@
 }
 /* line 187, ../sass/win.scss */
 .r-btn_down span, .r-btn_cansel span {
-  background: url('../img/icons-sf7e4f02b87.png') 0 -1615px no-repeat;
+  background: url('../img/icons-s5d00c97573.png') 0 -1843px no-repeat;
   width: 22px;
   height: 10px;
   margin: -5px 0 0 -11px;
@@ -269,7 +267,7 @@
 
 /* line 196, ../sass/win.scss */
 .r-btn_cansel span {
-  background: url('../img/icons-sf7e4f02b87.png') 0 -2338px no-repeat;
+  background: url('../img/icons-s5d00c97573.png') 0 -2616px no-repeat;
   width: 13px;
   height: 14px;
   margin: -7px 0 0 -7px;
@@ -286,7 +284,7 @@
 }
 /* line 203, ../sass/win.scss */
 .r-btn_arr span, .r-btn_arr1 span {
-  background: url('../img/icons-sf7e4f02b87.png') 0 -1767px no-repeat;
+  background: url('../img/icons-s5d00c97573.png') 0 -2020px no-repeat;
   width: 14px;
   height: 15px;
   margin: -9px 0 0 -7px;
@@ -303,7 +301,7 @@
 
 /* line 212, ../sass/win.scss */
 .r-btn_arr1 span {
-  background: url('../img/icons-sf7e4f02b87.png') 0 -1942px no-repeat;
+  background: url('../img/icons-s5d00c97573.png') 0 -2220px no-repeat;
   width: 12px;
   height: 13px;
   margin: -8px 0 0 -5px;
@@ -320,7 +318,7 @@
 }
 /* line 219, ../sass/win.scss */
 .r-btn_inf span {
-  background: url('../img/icons-sf7e4f02b87.png') 0 -1915px no-repeat;
+  background: url('../img/icons-s5d00c97573.png') 0 -2168px no-repeat;
   width: 7px;
   height: 17px;
   margin: -9px 0 0 -3px;
@@ -377,20 +375,20 @@
 }
 /* line 251, ../sass/win.scss */
 .r-btn-gray.active .btn-icon-doc, .r-btn-gray:active .btn-icon-doc {
-  background: url('../img/icons-sf7e4f02b87.png') 0 -1407px no-repeat;
+  background: url('../img/icons-s5d00c97573.png') 0 -1635px no-repeat;
   width: 18px;
   height: 18px;
 }
 /* line 252, ../sass/win.scss */
 .r-btn-gray.active .btn-icon-graph, .r-btn-gray:active .btn-icon-graph {
-  background: url('../img/icons-sf7e4f02b87.png') 0 -1740px no-repeat;
+  background: url('../img/icons-s5d00c97573.png') 0 -1993px no-repeat;
   width: 17px;
   height: 17px;
 }
 
 /* line 255, ../sass/win.scss */
 .btn-icon-doc {
-  background: url('../img/icons-sf7e4f02b87.png') 0 -1685px no-repeat;
+  background: url('../img/icons-s5d00c97573.png') 0 -1938px no-repeat;
   width: 18px;
   height: 18px;
   left: 2px;
@@ -399,7 +397,7 @@
 
 /* line 260, ../sass/win.scss */
 .btn-icon-graph {
-  background: url('../img/icons-sf7e4f02b87.png') 0 -2406px no-repeat;
+  background: url('../img/icons-s5d00c97573.png') 0 -2684px no-repeat;
   width: 17px;
   height: 17px;
   top: -1px;
@@ -407,7 +405,7 @@
 
 /* line 264, ../sass/win.scss */
 .btn-icon-save {
-  background: url('../img/icons-sf7e4f02b87.png') 0 -2284px no-repeat;
+  background: url('../img/icons-s5d00c97573.png') 0 -2562px no-repeat;
   width: 18px;
   height: 18px;
   left: 1px;
@@ -416,7 +414,7 @@
 
 /* line 270, ../sass/win.scss */
 .icon-audio {
-  background: url('../img/icons-sf7e4f02b87.png') 0 -801px no-repeat;
+  background: url('../img/icons-s5d00c97573.png') 0 -927px no-repeat;
   width: 19px;
   height: 23px;
   display: inline-block;

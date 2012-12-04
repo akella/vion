@@ -237,19 +237,25 @@
 				<div class="drop drop_user">
 					<div class="row">
 						<span class="icon-audio-big"></span>
-						<select class="select">
-							<option value="">Built-in microphone</option>
-							<option value="">Built-in microphone1</option>
-							<option value="">Built-in microphone2</option>
-						</select>
+						<div class="sel-holder">
+							<select class="select">
+								<option value="">Built-in microphone</option>
+								<option value="">Built-in microphone1</option>
+								<option value="">Built-in microphone2</option>
+							</select>
+						</div>
+						
 					</div>
 					<div class="row">
 						<span class="icon-eye-big"></span>
-						<select class="select">
-							<option value="">Built-in camera</option>
-							<option value="">Built-in camera1</option>
-							<option value="">Built-in camera2</option>
-						</select>
+						<div class="sel-holder">
+							<select class="select">
+								<option value="">Built-in camera</option>
+								<option value="">Built-in camera1</option>
+								<option value="">Built-in camera2</option>
+							</select>
+						</div>
+						
 					</div>
 					
 					<button class="btn btn_testing">Start device testing</button>
@@ -574,11 +580,11 @@
 					<div class="win__dev win__dev2"></div>
 
 					<div class="form-row">
-						<input type="text" class="input input_half" placeholder="First name">
-						<input type="text" class="input input_half" placeholder="Last name">
+						<div class="input-holder"><input type="text" class="input input_half" placeholder="First name"></div>
+						<div class="input-holder"><input type="text" class="input input_half" placeholder="Last name"></div>
 					</div>
 					<div class="form-row">
-						<input type="text" class="input input_full" placeholder="Card number">
+						<div class="input-holder input-holder_err"><input type="text" class="input input_full" placeholder="Card number"></div>
 					</div>
 
 					<div class="form-row">
@@ -601,11 +607,11 @@
 						</div>
 					</div>
 					<div class="form-row">
-						<input type="text" class="input input_180" placeholder="CSC">
+						<div class="input-holder input-holder_ok"><input type="text" class="input input_180" placeholder="CSC"></div>
 						<a href="#" class="help-link">What is CSC?</a>
 					</div>
 					<div class="form-row form-row_radio">
-						<input type="radio"> <label for="" class="label label_bold">Save for future use</label>
+						<div class="radio_dark"><input type="radio"></div> <label for="" class="label label_bold">Save for future use</label>
 					</div>
 
 					<div class="win__dev win__dev2"></div>

@@ -1,0 +1,12 @@
+@import "compass/css3";
+
+// image replacement
+@mixin font-N{
+    font-family: 'HelveticaNeue', Helvetica, Arial, sans-serif;
+}
+@mixin font-M{
+    font-family: 'HelveticaNeue-M', Helvetica, Arial, sans-serif;
+}
+@mixin font-B{
+    font-family: 'HelveticaNeue-B', Helvetica, Arial, sans-serif;
+}

@@ -55,29 +55,24 @@ body{
 	background-size:cover;
 }
 
-@font-face {
-	font-family: 'HelveticaNeue';
-	src: url('../fonts/HelveticaNeue.eot');
-	src: local('☺'), url('../fonts/HelveticaNeue.woff') format('woff'), url('../fonts/HelveticaNeue.ttf') format('truetype'), url('../fonts/HelveticaNeue.svg') format('svg');
-	font-weight: normal;
-	font-style: normal;
-}
-
-@font-face {
-	font-family: 'HelveticaNeue-M';
-	src: url('../fonts/HelveticaNeueMedium.eot');
-	src: local('☺'), url('../fonts/HelveticaNeueMedium.woff') format('woff'), url('../fonts/HelveticaNeueMedium.ttf') format('truetype'), url('../fonts/HelveticaNeueMedium.svg') format('svg');
-	font-weight: normal;
-	font-style: normal;
-}
-
-@font-face {
-	font-family: 'HelveticaNeue-B';
-	src: url('../fonts/HelveticaNeueBold.eot');
-	src: local('☺'), url('../fonts/HelveticaNeueBold.woff') format('woff'), url('../fonts/HelveticaNeueBold.ttf') format('truetype'), url('../fonts/HelveticaNeueBold.svg') format('svg');
-	font-weight: normal;
-	font-style: normal;
-}
+@include font-face('HelveticaNeue',
+	font-files(
+		'HelveticaNeue.woff', woff,
+		'HelveticaNeue.ttf', ttf,
+		'HelveticaNeue.eot', eot)
+);
+@include font-face('HelveticaNeue-M',
+	font-files(
+		'HelveticaNeueMedium.woff', woff,
+		'HelveticaNeueMedium.ttf', ttf,
+		'HelveticaNeueMedium.eot', eot)
+);
+@include font-face('HelveticaNeue-B',
+	font-files(
+		'HelveticaNeueBold.woff', woff,
+		'HelveticaNeueBold.ttf', ttf,
+		'HelveticaNeueBold.eot', eot)
+);
 
 .in{
 	width:1280px;
@@ -86,7 +81,7 @@ body{
 .btn{
 	font-size:13px;
 	color:#fff;
-	font-family: 'HelveticaNeue-M', Helvetica, Arial, sans-serif;
+	@include font-M;
 	box-shadow:0 0 5px 0 rgba(0,0,0,0.5), 0 1px 0 0 rgba(white,.3) inset, 0 -1px 0 0 rgba(47,77,0,.09) inset;
 	background: #656671;
 	@include background-image(linear-gradient(#656671, #3f404b));
@@ -137,7 +132,7 @@ body{
 }
 .btn-violet{
 	color:#cdccd3;
-	font-family: 'HelveticaNeue-B', Helvetica, Arial, sans-serif;
+	@include font-B;
 	font-size:12px;
 	border:1px solid #252731;
 	box-shadow:0 1px 1px 0 rgba(white,.2) inset, 0 1px 1px 0 rgba(0,0,0,.75);
@@ -207,7 +202,9 @@ body{
 	padding: 3px 7px;
 	width: 219px;
 	color:#cecece;
-	font-family: 'HelveticaNeue', Helvetica, Arial, sans-serif;
+	@include font-N;
+	position: relative;
+	z-index:15; 
 }
 .header{
 	background: #4a464f; 
@@ -484,6 +481,8 @@ body{
 }
 .radio_dark{
 	display: inline-block;
+	position: relative;
+	top: 3px;
 	.radio{
 		height: 14px;
 		width: 14px;
@@ -508,5 +507,117 @@ body{
 			margin:5px 0 0 5px;
 			border:0;
 		}
+	}
+}
+
+.input-holder{
+	display: inline-block;
+	z-index:15; 
+	position: relative;
+}
+.input-holder_err, .input-holder_ok{
+	&:before{
+		box-shadow:0 1px 2px rgba(0,0,0,.75), 0 1px 0 rgba(white,.4) inset;
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		padding:4px;
+		border-radius:4px;   
+		background: #207191 url(../img/input-bg.png);
+		z-index:10; 
+		content:"";
+		top:-4px;
+		left:-4px;
+	}
+}
+.input-holder_err{
+	&:before{
+		background-color: #c75c00; 
+	}
+}
+
+.hint{
+	position: absolute;
+	width: 90px; 
+	.hint__arr{
+		position: absolute;
+	}
+	strong{
+		font-size: 16px;
+		color: #fff;
+		display: block;
+	}
+	span{
+		color: #ffd800; 
+		font-size:11px;
+		display: block;
+	}
+}
+.hint_top-left{
+	@extend .hint;
+	.hint__arr{
+		@include sized-sprite($icons, 'arc-arr-t-l');
+		top:-20px;
+		left:-55px;
+	}
+}
+.hint_top-right{
+	@extend .hint;
+	text-align: right;
+	.hint__arr{
+		@include sized-sprite($icons, 'arc-arr-t-r');
+		top:-20px;
+		right:-55px;
+	}
+}
+.hint_right-top{
+	@extend .hint;
+	text-align: right;
+	.hint__arr{
+		@include sized-sprite($icons, 'arc-arr-t-r2');
+		top:-53px;
+		right:-20px;
+	}
+}
+.hint_right-bottom{
+	@extend .hint;
+	text-align: right;
+	.hint__arr{
+		@include sized-sprite($icons, 'arc-arr-b-r');
+		bottom:-53px;
+		right:-20px;
+	}
+}
+.hint_bottom-right{
+	@extend .hint;
+	text-align: right;
+	.hint__arr{
+		@include sized-sprite($icons, 'arc-arr-b-r2');
+		top:12px;
+		right:-55px;
+	}
+}
+.hint_left-top{
+	@extend .hint;
+	.hint__arr{
+		@include sized-sprite($icons, 'arc-arr-t-l2');
+		top:-53px;
+		left:-20px;
+	}
+}
+.hint_left-bottom{
+	@extend .hint;
+	.hint__arr{
+		@include sized-sprite($icons, 'arc-arr-b-l');
+		bottom:-53px;
+		left:-20px;
+	}
+}
+.hint_bottom-left{
+	@extend .hint;
+	.hint__arr{
+		@include sized-sprite($icons, 'arc-arr-b-l2');
+		top:12px;
+		left:-55px;
 	}
 }

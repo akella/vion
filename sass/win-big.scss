@@ -5,6 +5,7 @@
 		background:url(../img/bg-win2.png);
 		padding-top:0;
 		height: 330px; 
+		position: relative;
 	}
 	.win__content_larger{
 		height: 394px;
@@ -191,7 +192,7 @@
 		font-size:13px;
 		color:#cecece;
 		text-shadow:0 -1px 0 rgba(0,0,0,.75);
-		font-family: 'HelveticaNeue', Helvetica, Arial, sans-serif;
+		@include font-N;
 		line-height:20px;
 		display: block;
 	}
@@ -225,7 +226,7 @@
 		}
 		li{
 			color:#cecece;
-			font-family: 'HelveticaNeue', Helvetica, Arial, sans-serif;
+			@include font-N;
 			font-size:13px;
 			height: 27px;
 			line-height:27px;
@@ -266,7 +267,7 @@
 	.text{
 		color:#fff;
 		text-shadow:0 -1px 0 rgba(0,0,0,.75);
-		font-family: 'HelveticaNeue-B', Helvetica, Arial, sans-serif;
+		@include font-B;
 	}
 }
 .select_small{
@@ -292,14 +293,12 @@
 	font-size:13px; 
 	color: #cecece;
 	position: relative;
-	font-family: 'HelveticaNeue-B', Helvetica, Arial, sans-serif;
+	@include font-B;
 	&:nth-child(even){
 		background:#222;
 	}
 	.filter__radio{
 		margin-top: -1px;
-		position: relative;
-		top: 3px;
 		margin-right: 8px;
 	}
 	.filter__arr{
@@ -313,19 +312,19 @@
 		right: 12px;  
 	}
 }
-.array_left,
-.array_right{
+.arrow_left,
+.arrow_right{
 	position: absolute;
 	top:50%;
 	margin-top: -19px;
 	&:hover{opacity:0.5; }
 }
-.array_left{
-	@include sized-sprite($icons, 'array-l');
+.arrow_left{
+	@include sized-sprite($icons, 'arrow-l');
 	left:21px;
 }
-.array_right{
-	@include sized-sprite($icons, 'array-r');
+.arrow_right{
+	@include sized-sprite($icons, 'arrow-r');
 	right:21px;
 }
 .new-doc-holder{
@@ -407,14 +406,14 @@
 	width: 184px;
 	position: relative;
 	.date-input__text{
-		font-family: 'HelveticaNeue-B', Helvetica, Arial, sans-serif;
+		@include font-B;
 		font-size:13px;
 		color:#cecece;
 	}
 	.date-input__dev{
 		font-size:13px;
 		color:#f2ba06;
-		font-family: 'HelveticaNeue-B', Helvetica, Arial, sans-serif;
+		@include font-B;
 	}
 }
 .date__btn{
@@ -479,7 +478,7 @@
 		right:8px;
 	}
 	.date-m,.date-y{
-		font-family: 'HelveticaNeue-B', Helvetica, Arial, sans-serif;
+		@include font-B;
 		color:#fff;
 		font-size:13px;
 		height: 18px;
@@ -506,7 +505,7 @@
 	th{
 		background: #e3e3e3;
 		color: #646464;
-		font-family: 'HelveticaNeue-B', Helvetica, Arial, sans-serif;
+		@include font-B;
 		font-size:9px;
 		font-weight:normal;
 		height: 20px; 
@@ -519,7 +518,7 @@
 		text-align: center;
 		color: #454545;
 		font-size:12px;
-		font-family: 'HelveticaNeue-B', Helvetica, Arial, sans-serif;
+		@include font-B;
 		width: 29px; 
 	}
 	.today{
@@ -594,10 +593,10 @@
 	color: #cecece;
 	margin:0 5px;
 	text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4);
-	font-family: 'HelveticaNeue-M', Helvetica, Arial, sans-serif;
+	@include font-M;
 }
 .label_bold{
-	font-family: 'HelveticaNeue-B', Helvetica, Arial, sans-serif;
+	@include font-B;
 }
 .help-link{
 	font-size:13px;
@@ -611,7 +610,7 @@
 }
 
 .form-note{
-	font-family: 'HelveticaNeue-B', Helvetica, Arial, sans-serif;
+	@include font-B;
 	font-size:11px;
 	color:#8b8c92;
 	line-height: 1.6;
@@ -759,7 +758,7 @@
 	height: 259px;
 	padding-top:1px; 
 	width: 480px;
-	margin: 7px auto 15px;
+	margin: 7px 9px 15px;
 	border-radius:4px;
 	background: #fff url(../img/grid.png);
 	box-shadow:0 0 6px 0 rgba(0,0,0,.75);
@@ -772,12 +771,12 @@
 	margin-bottom:5px; 
 	.graph__num{
 		color: #cecece;
-		font-family: 'HelveticaNeue-B', Helvetica, Arial, sans-serif;
+		@include font-B;
 		font-size:13px;
 		float: left;
 		margin: 6px 9px 0 10px;
 	}
-	.selectbox{
+	.sel-holder{
 		float: left;
 		margin-right: 11px;
 	}
@@ -807,11 +806,38 @@
 	cursor: pointer;
 	vertical-align: middle;
 	margin-right: 10px;
+	position: relative;
 	.graph__color-icon{
 		@include sized-sprite($icons, 'color');
 		display: block;
 	}
+	&:hover{
+		.graph__drop{display: block;}
+	}
 }
+.graph__drop{
+	@extend .drop;
+	@extend .drop_center;
+	width: 210px;
+	padding:5px; 
+	margin-top: 5px;
+	left:-101px;
+	cursor:default;
+	.graph__palette{
+		background: url(../img/colors.jpg);
+		width: 210px;
+		height: 198px;
+		margin-bottom: 9px;
+		cursor: url(../img/cursor.png), default;
+	}
+	.btn_green{float: right;}
+}
+.btn_100{
+	width: 100px;
+	height: 28px;
+	line-height: 28px;  
+}
+
 .btn_min{
 	height: 28px;
 	line-height:26px;
@@ -830,7 +856,7 @@
 		border-top:1px solid #2f2f2f;
 		border-bottom:1px solid #0a0a0a;
 		color:#cecece;
-		font-family: 'HelveticaNeue-B', Helvetica, Arial, sans-serif;
+		@include font-B;
 		height:30px;
 		padding:5px 0 5px 14px;  
 		font-size:13px; 
@@ -888,4 +914,77 @@
 	@include sized-sprite($icons, 'axis');
 	display: block;
 	margin:10px 0 0 9px;
+}
+.btn-drop{
+	display: inline-block;
+	position: relative;
+	&:hover .drop_doc{display: block;}
+	}
+.win__header .btn-drop{float: left;}
+.drop_doc{
+	@extend .drop;
+	@extend .drop_center;
+	left:-46px;
+	width: 134px;
+	h3{margin: 6px 0 9px 5px;}
+}
+.docs{
+	margin: 0 0 4px 3px;
+	overflow: hidden;
+	li{
+		list-style: none;
+		float: left;
+	}
+	a{
+		display: block;
+		&:hover{opacity:0.8; }
+	}
+	.doc_docx{
+		@include sized-sprite($icons, 'export_docx');
+	}
+	.doc_pdf{
+		@include sized-sprite($icons, 'export_pdf');
+	}
+	.doc_xls{
+		@include sized-sprite($icons, 'export_xls');
+	}
+	.doc_jpeg{
+		@include sized-sprite($icons, 'export_jpeg');
+	}
+}
+.arr-block_l, .arr-block_r{
+	position: absolute;
+	top:0;
+	width: 59px;
+	height: 100%;
+	background: rgba(0,0,0,.6);
+	z-index:600;    
+}
+.arr-block_l{
+	left:0;
+}
+.arr-block_r{
+	right: 0; 
+}
+.arrow_left2, .arrow_right2{
+	border-radius:50%;
+	position: absolute;
+	top:50%;
+	margin-top:-19px;
+	border:2px solid #fff;
+	box-shadow:0 2px 9px rgba(0,0,0,.49);
+	cursor:pointer;
+	&:hover{
+		background-color: rgba(0,0,0,.7);
+	}
+}
+.arrow_left2{
+	@include sized-sprite($icons, 'arrow-l2');
+	background-color: rgba(0,0,0,.4);
+	left:12px;
+}
+.arrow_right2{
+	@include sized-sprite($icons, 'arrow-r2');
+	background-color: rgba(0,0,0,.4);
+	right: 12px; 
 }
