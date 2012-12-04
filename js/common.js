@@ -3,7 +3,7 @@ $(document).ready(function() {
 
 	$(function() {
 
-		$('.select, input:radio').styler({
+		$('.select, .radio_light input:radio, .radio_dark input:radio').styler({
 			browseText: 'Обзор...',
 			zIndex: '50'
 		});

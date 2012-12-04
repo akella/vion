@@ -230,7 +230,7 @@
   border-bottom-color: #010b13;
 }
 /* line 175, ../sass/drop.scss */
-.drop__list input, .drop__list .radio {
+.drop__list input, .drop__list .radio_light {
   margin-right: 10px;
 }
 /* line 176, ../sass/drop.scss */
