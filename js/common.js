@@ -8,5 +8,12 @@ $(document).ready(function() {
 			zIndex: '50'
 		});
 	});
-	
+	$('.video-player').hover(
+		function(){
+			$('.video-player__more').fadeIn();
+			},
+		function(){
+			$('.video-player__more').fadeOut();
+			}
+	);
 });

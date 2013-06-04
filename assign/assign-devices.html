@@ -1,0 +1,439 @@
+<!doctype html>
+<!--[if lte IE 8]><html lang="ru-RU" class="lteie8"><![endif]-->
+<!--[if gt IE 8]><!--><html lang="ru-RU"><!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<title>assign-devices</title>
+	<link rel="stylesheet" media="screen" href="../css/screen.css" >
+	<script type="text/javascript" src="../js/html5.js"></script>
+	<script type="text/javascript" src="../js/jquery-1.8.3.min.js"></script>
+	<script type="text/javascript" src="../js/jquery.formstyler.min.js"></script>
+	<script type="text/javascript" src="../js/jquery.tinyscrollbar.min.js"></script>
+	<script type="text/javascript" src="../js/common.js"></script>
+</head>
+<body>
+<!-- BEGIN .win -->
+<div class="win win_mod"  style="margin-left: 5%; top: 64px; float:left;">
+	<div class="win__title">
+		<h1></h1>
+		<div class="win__close"></div>
+		<div class="win__minimize"></div>
+	</div>
+	<div class="win__content win__content_mod">
+		<div class="win__content-wrapper">
+		<h2>Представтесь пожалуйста</h2>
+		<div class="form-row form-row_mod">
+			<div class="input-holder input-holder_ok"><input type="text" class="input input_250" placeholder="Имя, Фамилия"></div>
+		</div>
+		<div class="win__dev win__dev_short"></div>
+		<p>Укажите камеру и микрофон, которыми будете пользоваься во время сеанса</p>
+		<div class="select-container">
+			<div class="row">
+				<span class="icon-audio-big icon-audio-big_mod"></span>
+				<div class="sel-holder">
+					<select class="select">
+						<option value="">Built-in microphone</option>
+						<option value="">Built-in microphone1</option>
+						<option value="">Built-in microphone2</option>
+					</select>
+				</div>
+			</div>
+			<div class="row">
+				<span class="icon-eye-big"></span>
+				<div class="sel-holder">
+					<select class="select">
+						<option value="">Built-in camera</option>
+						<option value="">Built-in camera1</option>
+						<option value="">Built-in camera2</option>
+					</select>
+				</div>		
+			</div>
+		</div>
+		<div class="icon-tabs">
+			<i class="icon-tabs__is-active"></i>
+			<i></i>
+			<i></i>
+		</div>
+	</div>	
+	</div>
+</div>
+	<!-- END .win -->
+<!-- ==========================================================	 -->
+	<!-- BEGIN .win -->
+<div class="win win_mod"  style="margin-left: 1%; top: 64px; float:left;">
+	<div class="win__title">
+		<h1></h1>
+		<div class="win__close"></div>
+		<div class="win__minimize"></div>
+	</div>
+	<div class="win__content win__content_mod">
+		<div class="win__content-wrapper">	
+			<h2>Представтесь пожалуйста</h2>
+			<div class="form-row form-row_mod">
+				<div class="input-holder"><input type="text" class="input input_250" placeholder="Никита Андреевич"></div>
+			</div>
+			<div class="win__dev win__dev_short"></div>
+			<div class="select-container">
+				<div class="row">
+					<span class="icon-audio-big icon-audio-big_mod"></span>
+					<div class="sel-holder">
+						<select class="select">
+							<option value="">Built-in microphone</option>
+							<option value="">Built-in microphone1</option>
+							<option value="">Built-in microphone2</option>
+						</select>
+					</div>
+				</div>
+				<div class="row">
+					<span class="icon-eye-big"></span>
+					<div class="sel-holder">
+						<select class="select">
+							<option value="">Built-in camera</option>
+							<option value="">Built-in camera1</option>
+							<option value="">Built-in camera2</option>
+						</select>
+					</div>		
+				</div>
+			</div>
+		</div>
+		<div class="dark-grid">
+			<div class="dark-grid__container">
+				<div class="connection-type">
+					<ul>
+						<li><a class="connection-type__video" href="#">
+							Видео
+						</a></li>
+						<li><a class="connection-type__voice" href="#">
+							Голос
+						</a></li>
+						<li><a class="connection-type__text" href="#">
+							Текст
+						</a></li>
+						<li><a class="connection-type__callback" href="#">
+							Коллбэк
+						</a></li>
+						<li><a class="connection-type__comment" href="#">
+							Отзыв
+						</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="win__content-wrapper">
+			<div class="icon-tabs">
+				<i class="icon-tabs__is-active"></i>
+				<i></i>
+				<i></i>
+			</div>
+		</div>
+	</div>	
+</div>
+	<!-- END .win -->
+<!-- ==========================================================	 -->
+	<!-- BEGIN input error -->
+<div class="form-row" style="margin-left: 1%; margin-top: 64px; float:left;">
+	<div class="input-holder input-holder_err"><input type="text" class="input input_full" placeholder="Card number"></div>
+</div>	
+	<!-- END input error -->
+<!-- ==========================================================	 -->
+	<!-- BEGIN sel-holder -->
+<div class="select-container" style="position: absolute; top: 132px; left: 38%;">
+	<div class="row">
+		<div class="sel-holder">
+			<select class="select">
+				<option value="">Built-in microphone</option>
+				<option value="">Built-in microphone1</option>
+				<option value="">Built-in microphone2</option>
+			</select>
+		</div>
+	</div>
+</div>
+	<!-- END sel-holder -->
+<!-- ==========================================================	 -->
+	<!-- BEGIN no-operation-->
+<div class="win win_mod"  style="margin-left: 1%; top: 64px; float:left;">
+	<div class="win__title">
+		<h1></h1>
+		<div class="win__close"></div>
+		<div class="win__minimize"></div>
+	</div>
+	<div class="win__content win__content_mod">
+		<div class="win__content-wrapper win__content-wrapper_mid">
+			<h2>Внимание!</h2>
+			<p>Все операторы заняты.</p> 
+			<p>Продолжить ожидание?</p>
+			<img src="../img/clock.png" alt="">		
+			<div class="win__dev win__dev_short"></div>
+			<button class="btn btn_alert_green">Продолжить</button>
+			<div class="icon-tabs">
+				<i class="icon-tabs__is-active"></i>
+				<i></i>
+				<i></i>
+			</div>
+		</div>	
+	</div>	
+</div>
+	<!-- END no-operation-->
+<!-- ==========================================================	 -->
+	<!-- BEGIN waiting -->
+<div class="win win_mod"  style="margin-left: 1%; top: 64px; float:left;">
+	<div class="win__title">
+		<h1></h1>
+		<div class="win__close"></div>
+		<div class="win__minimize"></div>
+	</div>
+	<div class="win__content win__content_alert">
+		<div class="dark-grid">
+				<div class="dark-grid__container">
+					<div class="alert-announce">
+						<img src="../img/voice-active.png" alt="">
+						<p>Ожидайте голосовое соединения с оператором</p>
+					</div>					
+				</div>
+			</div>
+		<div class="win__content-wrapper win__content-wrapper_alert">
+			<img class="connection-picture" src="../img/connecting.png" alt="">
+			<p class="connection-timer"><span class="connection-timer__min">00</span>:<span class="connection-timer__sec">47</span></p>
+			<div class="icon-tabs">
+				<i class="icon-tabs__is-active"></i>
+				<i></i>
+				<i></i>
+			</div>
+		</div>	
+	</div>	
+</div>
+	<!-- END waiting -->
+<!-- ==========================================================	 -->
+	<!-- BEGIN adv-img -->
+<div class="win win_mod"  style="position:absolute; top: 500px; left: 5%;">
+	<div class="win__title">
+		<h1></h1>
+		<div class="win__close"></div>
+		<div class="win__minimize"></div>
+	</div>
+	<div class="win__content win__content_alert">
+		<div class="dark-grid">
+				<div class="dark-grid__container">
+					<div class="alert-announce">
+						<img src="../img/voice-active.png" alt="">
+						<p>Ожидайте голосовое соединения с оператором</p>
+					</div>					
+				</div>
+			</div>
+		<div class="win__content-wrapper win__content-wrapper_alert">
+			<div class="win__media-container"><img src="../img/sushi.png" alt=""></div>
+			<article>
+				<a href="#">Fresh Sushi and Sashimi</a>
+				<p>Among their chef specialties are 
+				the Salmon Sashimi, Crab Roll, 
+				Teppanyaki Cod Fish.</p>
+				<a class="out-link" href="#">food-delivery.com</a>	
+			</article>
+			<p class="connection-timer"><span class="connection-timer__min">00</span>:<span class="connection-timer__sec">47</span></p>
+			<div class="icon-tabs">
+				<i class="icon-tabs__is-active"></i>
+				<i></i>
+				<i></i>
+			</div>
+		</div>	
+	</div>	
+</div>
+	<!-- END adv-img -->
+<!-- ==========================================================	 -->
+	<!-- BEGIN adv-text -->
+<div class="win win_mod"  style="position:absolute; top: 500px; left: 22%;">
+	<div class="win__title">
+		<h1></h1>
+		<div class="win__close"></div>
+		<div class="win__minimize"></div>
+	</div>
+	<div class="win__content win__content_alert">
+		<div class="dark-grid">
+				<div class="dark-grid__container">
+					<div class="alert-announce">
+						<img src="../img/voice-active.png" alt="">
+						<p>Ожидайте голосовое соединения с оператором</p>
+					</div>					
+				</div>
+			</div>
+		<div class="win__content-wrapper win__content-wrapper_alert">
+			<article class="win__advertize-text">
+				<a href="#">Fresh Sushi and Sashimi</a>
+				<p>Among their chef specialties are 
+				the Salmon Sashimi, Crab Roll, 
+				Teppanyaki Cod Fish.</p>
+				<a class="out-link" href="#">food-delivery.com</a>	
+			</article>
+			<img class="connection-picture connection-picture_small" src="../img/connecting-small.png" alt="">
+			<p class="connection-timer"><span class="connection-timer__min">00</span>:<span class="connection-timer__sec">47</span></p>
+			<div class="icon-tabs">
+				<i class="icon-tabs__is-active"></i>
+				<i></i>
+				<i></i>
+			</div>
+		</div>	
+	</div>	
+</div>
+	<!-- END adv-text -->
+<!-- ==========================================================	 -->
+	<!-- BEGIN adv-video -->
+<div class="win win_mod"  style="position:absolute; top: 500px; left: 39%;">
+	<div class="win__title">
+		<h1></h1>
+		<div class="win__close"></div>
+		<div class="win__minimize"></div>
+	</div>
+	<div class="win__content win__content_alert">
+		<div class="dark-grid">
+				<div class="dark-grid__container">
+					<div class="alert-announce">
+						<img src="../img/voice-active.png" alt="">
+						<p>Ожидайте голосовое соединения с оператором</p>
+					</div>					
+				</div>
+			</div>
+		<div class="win__content-wrapper win__content-wrapper_alert">
+			<div class="video-player">
+				<img src="../img/video-adv.png" alt="">
+				<div class="video-player__more">
+					<a class="video-player__full-screen" href="#"></a>
+					<a class="video-player__volume" href="#"></a>
+				</div>
+			</div>
+			<p class="connection-timer"><span class="connection-timer__min">00</span>:<span class="connection-timer__sec">47</span></p>
+			<div class="icon-tabs">
+				<i class="icon-tabs__is-active"></i>
+				<i></i>
+				<i></i>
+			</div>
+		</div>	
+	</div>	
+</div>
+	<!-- END adv-video -->
+<!-- ==========================================================	 -->
+	<!-- BEGIN answer -->
+<div class="win win_mod"  style="position:absolute; top: 500px; left: 56%;">
+	<div class="win__title">
+		<h1></h1>
+		<div class="win__close"></div>
+		<div class="win__minimize"></div>
+	</div>
+	<div class="win__content win__content_alert">
+		<div class="dark-grid">
+			<div class="dark-grid__container">
+				<div class="alert-announce">
+					<img src="../img/voice-active.png" alt="">
+					<p>Ведущий менеджер по  
+					продажам Оксана Федорова</p>
+				</div>					
+			</div>
+		</div>
+		<div class="win__content-wrapper win__content-wrapper_alert chat-begin">
+			<div class="chat-begin__answer">
+				<div class="chat-begin__logo">
+					<img src="../img/avatar.png" alt="">
+				</div>
+				<div class="chat-begin__message-in">
+					Здравствуйте, чем могу помочь? 
+				</div>
+			</div>
+			<div class="win__dev win__dev_short"></div>
+			<p class="operator__question">Вам ответили, вы готовы начать разговор?</p>
+			<div class="chat-begin__buttons">
+				<button class="btn btn_alert_gray">Отмена</button>
+				<button class="btn btn_alert_green">00:38</button>
+			</div>
+		</div>	
+	</div>	
+</div>	
+	<!-- END answer -->
+<!-- ==========================================================	 -->
+	<!-- BEGIN card -->
+<div class="win win_mod"  style="position:absolute; top: 500px; left:73%;">
+	<div class="win__title">
+		<h1></h1>
+		<div class="win__close"></div>
+		<div class="win__minimize"></div>
+	</div>
+	<div class="win__content win__content_mod">
+		<div class="win__content-wrapper">	
+			<h2>Представтесь пожалуйста</h2>
+			<div class="form-row">
+				<div class="input-holder"><span class="icon-audio-big icon-audio-big_name"></span><input type="text" class="input input_icon" placeholder="Никита Андреевич"></div>
+			</div>
+			<div class="form-row">
+				<div class="input-holder"><span class="icon-audio-big icon-audio-big_email"></span><input type="text" class="input input_icon" placeholder="E-mail"></div>
+			</div>
+			<div class="select-container select-container_mod">
+				<div class="row">
+					<span class="icon-audio-big icon-audio-big_language"></span>
+					<div class="sel-holder">
+						<select class="select">
+							<option value="">Русский</option>
+							<option value="">English</option>
+							<option value="">Українська</option>
+						</select>
+					</div>
+				</div>
+			</div>
+			<div class="win__dev win__dev_short"></div>
+			<h2>Ваш вопрос</h2>
+			<div class="row">
+				<span class="icon-audio-big icon-audio-big_text"></span>
+				<textarea class="question-input"></textarea>
+				<p>Эта информация может быть использована/
+				передана.. ляля" (ссылка на <a href="#">полиси</a>)</p>
+			</div>
+		</div>
+		<div class="chat-begin__buttons">
+				<button class="btn btn_alert_gray">Отмена</button>
+				<button class="btn btn_alert_green">00:38</button>
+			</div>
+		<div class="icon-tabs">
+			<i class="icon-tabs__is-active"></i>
+			<i></i>
+			<i></i>
+		</div>
+	</div>	
+</div>
+	<!-- END card -->
+<!-- ==========================================================	 -->
+	<!-- BEGIN adv-text -->
+<div class="win win_mod"  style="position:absolute; top: 925px; left: 5%;">
+	<div class="win__title">
+		<h1></h1>
+		<div class="win__close"></div>
+		<div class="win__minimize"></div>
+	</div>
+	<div class="win__content win__content_alert">
+		<div class="win__media-container">
+			<img src="../img/nike.png" alt="">
+		</div>
+		<div class="win__content-wrapper operator">
+			<p class="operator__question">Укажите пожалуйста, 
+			специалист какого из отделов 
+			смог бы вам помочь</p>
+			<ul class="operator__answers">
+				<li>
+					<span>1</span><a href="#">Отдел продаж</a>
+				</li>
+				<li>
+					<span>2</span><a href="#">Техническая поддержка</a>
+				</li>
+				<li>
+					<span>3</span><a href="#">Администрация</a>
+				</li>
+			</ul>
+			<div class="icon-tabs">
+				<i class="icon-tabs__is-active"></i>
+				<i></i>
+				<i></i>
+			</div>
+		</div>	
+	</div>	
+</div>
+	<!-- END adv-text -->
+
+<div class="win-bg"></div>
+</body>
+</html>

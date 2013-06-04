@@ -7,7 +7,7 @@
 		height: 330px; 
 		position: relative;
 	}
-	.win__content_larger{
+	.win__content_larger{  
 		height: 394px;
 		.win__cols .win__col3, .scroll .scrollbar, .scroll .track, .scroll .viewport{
 			height: 394px;
@@ -587,6 +587,9 @@
 }
 .form-row_radio{
 	margin-top:17px; 	
+}
+.form-row_mod{
+	margin:2px; 	
 }
 .label{
 	font-size:13px; 

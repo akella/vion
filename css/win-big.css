@@ -240,7 +240,7 @@
 }
 /* line 177, ../sass/win-big.scss */
 .select .arrow {
-  background: url('../img/icons-sf38cca2d6c.png') 0 -3082px no-repeat;
+  background: url('../img/icons-sf9f4670e2a.png') 0 -3202px no-repeat;
   width: 12px;
   height: 8px;
   display: block;
@@ -405,7 +405,7 @@
 }
 /* line 304, ../sass/win-big.scss */
 .filter__item .filter__arr {
-  background: url('../img/icons-sf38cca2d6c.png') 0 -3639px no-repeat;
+  background: url('../img/icons-sf9f4670e2a.png') 0 -3805px no-repeat;
   width: 6px;
   height: 10px;
   display: inline-block;
@@ -433,7 +433,7 @@
 
 /* line 322, ../sass/win-big.scss */
 .arrow_left {
-  background: url('../img/icons-sf38cca2d6c.png') 0 -960px no-repeat;
+  background: url('../img/icons-sf9f4670e2a.png') 0 -997px no-repeat;
   width: 50px;
   height: 50px;
   left: 21px;
@@ -441,7 +441,7 @@
 
 /* line 326, ../sass/win-big.scss */
 .arrow_right {
-  background: url('../img/icons-sf38cca2d6c.png') 0 -1130px no-repeat;
+  background: url('../img/icons-sf9f4670e2a.png') 0 -1167px no-repeat;
   width: 50px;
   height: 50px;
   right: 21px;
@@ -453,7 +453,7 @@
   top: 50%;
   left: 50%;
   margin: -35px 0 0 -100px;
-  background: url('../img/icons-sf38cca2d6c.png') 0 -1020px no-repeat;
+  background: url('../img/icons-sf9f4670e2a.png') 0 -1057px no-repeat;
   width: 200px;
   height: 71px;
 }
@@ -522,7 +522,7 @@
 }
 /* line 379, ../sass/win-big.scss */
 .filter__item_light .cancel-gray {
-  background: url('../img/icons-sf38cca2d6c.png') 0 -2840px no-repeat;
+  background: url('../img/icons-sf9f4670e2a.png') 0 -2960px no-repeat;
   width: 15px;
   height: 15px;
   opacity: 1;
@@ -535,7 +535,7 @@
 
 /* line 386, ../sass/win-big.scss */
 .icon-pencil_gray {
-  background: url('../img/icons-sf38cca2d6c.png') 0 -2722px no-repeat;
+  background: url('../img/icons-sf9f4670e2a.png') 0 -2842px no-repeat;
   width: 14px;
   height: 14px;
   display: inline-block;
@@ -546,7 +546,7 @@
 
 /* line 393, ../sass/win-big.scss */
 .icon-pencil_blue {
-  background: url('../img/icons-sf38cca2d6c.png') 0 -2768px no-repeat;
+  background: url('../img/icons-sf9f4670e2a.png') 0 -2888px no-repeat;
   width: 14px;
   height: 14px;
   display: inline-block;
@@ -600,7 +600,7 @@
 
 /* line 431, ../sass/win-big.scss */
 .icon-points {
-  background: url('../img/icons-sf38cca2d6c.png') 0 -3793px no-repeat;
+  background: url('../img/icons-sf9f4670e2a.png') 0 -3999px no-repeat;
   width: 13px;
   height: 14px;
   display: inline-block;
@@ -627,7 +627,7 @@
 .datepicker__drop:before {
   content: '';
   position: absolute;
-  background: url('../img/icons-sf38cca2d6c.png') 0 -2659px no-repeat;
+  background: url('../img/icons-sf9f4670e2a.png') 0 -2779px no-repeat;
   width: 20px;
   height: 21px;
   top: -20px;
@@ -656,14 +656,14 @@
 }
 /* line 472, ../sass/win-big.scss */
 .datepicker__header .date-prev {
-  background: url('../img/icons-sf38cca2d6c.png') 0 -3515px no-repeat;
+  background: url('../img/icons-sf9f4670e2a.png') 0 -3681px no-repeat;
   width: 6px;
   height: 11px;
   left: 8px;
 }
 /* line 476, ../sass/win-big.scss */
 .datepicker__header .date-next {
-  background: url('../img/icons-sf38cca2d6c.png') 0 -3470px no-repeat;
+  background: url('../img/icons-sf9f4670e2a.png') 0 -3636px no-repeat;
   width: 6px;
   height: 11px;
   right: 8px;
@@ -827,6 +827,11 @@
 }
 
 /* line 591, ../sass/win-big.scss */
+.form-row_mod {
+  margin: 2px;
+}
+
+/* line 594, ../sass/win-big.scss */
 .label {
   font-size: 13px;
   color: #cecece;
@@ -835,12 +840,12 @@
   font-family: 'HelveticaNeue-M', Helvetica, Arial, sans-serif;
 }
 
-/* line 598, ../sass/win-big.scss */
+/* line 601, ../sass/win-big.scss */
 .label_bold {
   font-family: 'HelveticaNeue-B', Helvetica, Arial, sans-serif;
 }
 
-/* line 601, ../sass/win-big.scss */
+/* line 604, ../sass/win-big.scss */
 .help-link {
   font-size: 13px;
   color: #3e96cc;
@@ -848,12 +853,12 @@
   text-decoration: none;
   margin-left: 6px;
 }
-/* line 607, ../sass/win-big.scss */
+/* line 610, ../sass/win-big.scss */
 .help-link:hover {
   text-decoration: underline;
 }
 
-/* line 612, ../sass/win-big.scss */
+/* line 615, ../sass/win-big.scss */
 .form-note {
   font-family: 'HelveticaNeue-B', Helvetica, Arial, sans-serif;
   font-size: 11px;
@@ -861,24 +866,24 @@
   line-height: 1.6;
   margin-bottom: 8px;
 }
-/* line 618, ../sass/win-big.scss */
+/* line 621, ../sass/win-big.scss */
 .form-note a {
   color: #3e96cc;
   text-decoration: none;
 }
-/* line 621, ../sass/win-big.scss */
+/* line 624, ../sass/win-big.scss */
 .form-note a:hover {
   text-decoration: underline;
 }
 
-/* line 627, ../sass/win-big.scss */
+/* line 630, ../sass/win-big.scss */
 .navi {
   overflow: hidden;
   float: left;
   padding: 10px 0;
   margin-right: -1px;
 }
-/* line 632, ../sass/win-big.scss */
+/* line 635, ../sass/win-big.scss */
 .navi a {
   height: 4px;
   width: 4px;
@@ -889,13 +894,13 @@
   margin: 6px 5px 0 5px;
   float: left;
 }
-/* line 641, ../sass/win-big.scss */
+/* line 644, ../sass/win-big.scss */
 .navi a:hover {
   background: #83b30d;
   border-color: #000;
   box-shadow: 0 1px 0 0 #454754;
 }
-/* line 649, ../sass/win-big.scss */
+/* line 652, ../sass/win-big.scss */
 .navi .navi__right,
 .navi .navi__left {
   border-color: #252731;
@@ -909,7 +914,7 @@
   height: 16px;
   margin-top: 0;
 }
-/* line 656, ../sass/win-big.scss */
+/* line 659, ../sass/win-big.scss */
 .navi .navi__right:hover,
 .navi .navi__left:hover {
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #413d46), color-stop(100%, #605e64));
@@ -919,27 +924,27 @@
   background-image: linear-gradient(#413d46, #605e64);
   border-color: #252731;
 }
-/* line 660, ../sass/win-big.scss */
+/* line 663, ../sass/win-big.scss */
 .navi .navi__right i,
 .navi .navi__left i {
   display: block;
   margin: 3px 0 0 3px;
 }
-/* line 666, ../sass/win-big.scss */
+/* line 669, ../sass/win-big.scss */
 .navi .navi__right i {
-  background: url('../img/icons-sf38cca2d6c.png') 0 -2746px no-repeat;
+  background: url('../img/icons-sf9f4670e2a.png') 0 -2866px no-repeat;
   width: 8px;
   height: 12px;
   margin: 3px 0 0 5px;
 }
-/* line 672, ../sass/win-big.scss */
+/* line 675, ../sass/win-big.scss */
 .navi .navi__left i {
-  background: url('../img/icons-sf38cca2d6c.png') 0 -2792px no-repeat;
+  background: url('../img/icons-sf9f4670e2a.png') 0 -2912px no-repeat;
   width: 8px;
   height: 12px;
 }
 
-/* line 678, ../sass/win-big.scss */
+/* line 681, ../sass/win-big.scss */
 .progress {
   border: 1px solid #2e2e37;
   border-radius: 4px;
@@ -952,7 +957,7 @@
   float: left;
   margin: 0 0 0 3px;
 }
-/* line 685, ../sass/win-big.scss */
+/* line 688, ../sass/win-big.scss */
 .progress li {
   font-size: 12px;
   color: #cecece;
@@ -965,30 +970,30 @@
   padding: 0 27px 0 8px;
   position: relative;
 }
-/* line 696, ../sass/win-big.scss */
+/* line 699, ../sass/win-big.scss */
 .progress li:after {
   content: '';
   position: absolute;
   top: 0;
   right: 0;
-  background: url('../img/icons-sf38cca2d6c.png') 0 -2279px no-repeat;
+  background: url('../img/icons-sf9f4670e2a.png') 0 -2316px no-repeat;
   width: 15px;
   height: 40px;
 }
-/* line 703, ../sass/win-big.scss */
+/* line 706, ../sass/win-big.scss */
 .progress li:last-child {
   padding-right: 13px;
 }
-/* line 704, ../sass/win-big.scss */
+/* line 707, ../sass/win-big.scss */
 .progress li:last-child:after {
   display: none;
 }
-/* line 710, ../sass/win-big.scss */
+/* line 713, ../sass/win-big.scss */
 .progress a {
   color: #cecece;
   text-decoration: none;
 }
-/* line 714, ../sass/win-big.scss */
+/* line 717, ../sass/win-big.scss */
 .progress .progress__num {
   height: 26px;
   width: 26px;
@@ -1011,7 +1016,7 @@
   margin: 6px 11px 0 0;
   text-shadow: none;
 }
-/* line 732, ../sass/win-big.scss */
+/* line 735, ../sass/win-big.scss */
 .progress .progress__num_done {
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #83b20d), color-stop(100%, #497a05));
   background-image: -webkit-linear-gradient(#83b20d, #497a05);
@@ -1022,17 +1027,17 @@
   font: 0/0 a;
   position: relative;
 }
-/* line 737, ../sass/win-big.scss */
+/* line 740, ../sass/win-big.scss */
 .progress .progress__num_done:before {
   content: "";
   position: absolute;
-  background: url('../img/icons-sf38cca2d6c.png') 0 -3301px no-repeat;
+  background: url('../img/icons-sf9f4670e2a.png') 0 -3467px no-repeat;
   width: 12px;
   height: 11px;
   top: 7px;
   left: 7px;
 }
-/* line 745, ../sass/win-big.scss */
+/* line 748, ../sass/win-big.scss */
 .progress .progress__num_next {
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #692ab1), color-stop(100%, #421f84));
   background-image: -webkit-linear-gradient(#692ab1, #421f84);
@@ -1041,17 +1046,17 @@
   background-image: linear-gradient(#692ab1, #421f84);
 }
 
-/* line 750, ../sass/win-big.scss */
+/* line 753, ../sass/win-big.scss */
 .win_graph {
   width: 501px;
 }
-/* line 752, ../sass/win-big.scss */
+/* line 755, ../sass/win-big.scss */
 .win_graph .win__content {
   height: 462px;
   background: url("../img/bg-win2.png");
 }
 
-/* line 757, ../sass/win-big.scss */
+/* line 760, ../sass/win-big.scss */
 .graph__img {
   height: 259px;
   padding-top: 1px;
@@ -1064,13 +1069,13 @@
   position: relative;
 }
 
-/* line 768, ../sass/win-big.scss */
+/* line 771, ../sass/win-big.scss */
 .graph__add {
   display: inline-block;
   width: 100%;
   margin-bottom: 5px;
 }
-/* line 772, ../sass/win-big.scss */
+/* line 775, ../sass/win-big.scss */
 .graph__add .graph__num {
   color: #cecece;
   font-family: 'HelveticaNeue-B', Helvetica, Arial, sans-serif;
@@ -1078,32 +1083,32 @@
   float: left;
   margin: 6px 9px 0 10px;
 }
-/* line 779, ../sass/win-big.scss */
+/* line 782, ../sass/win-big.scss */
 .graph__add .sel-holder {
   float: left;
   margin-right: 11px;
 }
-/* line 783, ../sass/win-big.scss */
+/* line 786, ../sass/win-big.scss */
 .graph__add .select {
   width: 158px;
 }
-/* line 786, ../sass/win-big.scss */
+/* line 789, ../sass/win-big.scss */
 .graph__add .input {
   float: left;
   width: 174px;
   margin-right: 12px;
 }
-/* line 791, ../sass/win-big.scss */
+/* line 794, ../sass/win-big.scss */
 .graph__add .input_axis {
   width: 139px;
 }
-/* line 794, ../sass/win-big.scss */
+/* line 797, ../sass/win-big.scss */
 .graph__add .btn {
   float: left;
   position: relative;
 }
 
-/* line 799, ../sass/win-big.scss */
+/* line 802, ../sass/win-big.scss */
 .graph__color {
   border: 4px solid #ccccd5;
   background: #ccccd5;
@@ -1120,19 +1125,19 @@
   margin-right: 10px;
   position: relative;
 }
-/* line 810, ../sass/win-big.scss */
+/* line 813, ../sass/win-big.scss */
 .graph__color .graph__color-icon {
-  background: url('../img/icons-sf38cca2d6c.png') 0 -433px no-repeat;
+  background: url('../img/icons-sf9f4670e2a.png') 0 -433px no-repeat;
   width: 20px;
   height: 21px;
   display: block;
 }
-/* line 815, ../sass/win-big.scss */
+/* line 818, ../sass/win-big.scss */
 .graph__color:hover .graph__drop {
   display: block;
 }
 
-/* line 818, ../sass/win-big.scss */
+/* line 821, ../sass/win-big.scss */
 .graph__drop {
   width: 210px;
   padding: 5px;
@@ -1140,7 +1145,7 @@
   left: -101px;
   cursor: default;
 }
-/* line 826, ../sass/win-big.scss */
+/* line 829, ../sass/win-big.scss */
 .graph__drop .graph__palette {
   background: url(../img/colors.jpg);
   width: 210px;
@@ -1148,37 +1153,37 @@
   margin-bottom: 9px;
   cursor: url(../img/cursor.png), default;
 }
-/* line 833, ../sass/win-big.scss */
+/* line 836, ../sass/win-big.scss */
 .graph__drop .btn_green {
   float: right;
 }
 
-/* line 835, ../sass/win-big.scss */
+/* line 838, ../sass/win-big.scss */
 .btn_100 {
   width: 100px;
   height: 28px;
   line-height: 28px;
 }
 
-/* line 841, ../sass/win-big.scss */
+/* line 844, ../sass/win-big.scss */
 .btn_min {
   height: 28px;
   line-height: 26px;
   width: 45px;
 }
-/* line 845, ../sass/win-big.scss */
+/* line 848, ../sass/win-big.scss */
 .btn_min span {
   left: 50%;
   margin-left: -10px;
 }
 
-/* line 850, ../sass/win-big.scss */
+/* line 853, ../sass/win-big.scss */
 .legend {
   border-spacing: 0;
   width: 100%;
   margin-top: 2px;
 }
-/* line 854, ../sass/win-big.scss */
+/* line 857, ../sass/win-big.scss */
 .legend td {
   background: #1c1c1c;
   border-top: 1px solid #2f2f2f;
@@ -1189,17 +1194,17 @@
   padding: 5px 0 5px 14px;
   font-size: 13px;
 }
-/* line 864, ../sass/win-big.scss */
+/* line 867, ../sass/win-big.scss */
 .legend tr:nth-child(even) td {
   background: #252525;
   border-top: 1px solid #3b3b3b;
   border-bottom: 1px solid #0f0f0f;
 }
-/* line 869, ../sass/win-big.scss */
+/* line 872, ../sass/win-big.scss */
 .legend .cancel-gray {
   position: static;
 }
-/* line 872, ../sass/win-big.scss */
+/* line 875, ../sass/win-big.scss */
 .legend .legend__color {
   width: 20px;
   height: 20px;
@@ -1212,43 +1217,43 @@
   box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.75);
   display: inline-block;
 }
-/* line 880, ../sass/win-big.scss */
+/* line 883, ../sass/win-big.scss */
 .legend .legend__col1 {
   padding-left: 37px;
   width: 20px;
 }
-/* line 884, ../sass/win-big.scss */
+/* line 887, ../sass/win-big.scss */
 .legend .legend__col2 {
   width: 48px;
 }
-/* line 887, ../sass/win-big.scss */
+/* line 890, ../sass/win-big.scss */
 .legend .legend__col5 {
   width: 40px;
 }
 
-/* line 891, ../sass/win-big.scss */
+/* line 894, ../sass/win-big.scss */
 .garph__axis {
   float: left;
   margin: -2px -4px -3px 5px;
 }
 
-/* line 895, ../sass/win-big.scss */
-.garph__axis_x {
-  background: url('../img/icons-sf38cca2d6c.png') 0 0 no-repeat;
-  width: 34px;
-  height: 34px;
-}
-
 /* line 898, ../sass/win-big.scss */
-.garph__axis_y {
-  background: url('../img/icons-sf38cca2d6c.png') 0 -44px no-repeat;
+.garph__axis_x {
+  background: url('../img/icons-sf9f4670e2a.png') 0 0 no-repeat;
   width: 34px;
   height: 34px;
 }
 
 /* line 901, ../sass/win-big.scss */
+.garph__axis_y {
+  background: url('../img/icons-sf9f4670e2a.png') 0 -44px no-repeat;
+  width: 34px;
+  height: 34px;
+}
+
+/* line 904, ../sass/win-big.scss */
 .graph__doc {
-  background: url('../img/icons-sf38cca2d6c.png') 0 -2461px no-repeat;
+  background: url('../img/icons-sf9f4670e2a.png') 0 -2581px no-repeat;
   width: 34px;
   height: 34px;
   display: block;
@@ -1257,89 +1262,89 @@
   right: 7px;
   opacity: 0.3;
 }
-/* line 908, ../sass/win-big.scss */
+/* line 911, ../sass/win-big.scss */
 .graph__doc:hover {
   opacity: 0.4;
 }
 
-/* line 913, ../sass/win-big.scss */
+/* line 916, ../sass/win-big.scss */
 .graph__axis {
-  background: url('../img/icons-sf38cca2d6c.png') 0 -560px no-repeat;
+  background: url('../img/icons-sf9f4670e2a.png') 0 -597px no-repeat;
   width: 462px;
   height: 240px;
   display: block;
   margin: 10px 0 0 9px;
 }
 
-/* line 918, ../sass/win-big.scss */
+/* line 921, ../sass/win-big.scss */
 .btn-drop {
   display: inline-block;
   position: relative;
 }
-/* line 921, ../sass/win-big.scss */
+/* line 924, ../sass/win-big.scss */
 .btn-drop:hover .drop_doc {
   display: block;
 }
 
-/* line 923, ../sass/win-big.scss */
+/* line 926, ../sass/win-big.scss */
 .win__header .btn-drop {
   float: left;
 }
 
-/* line 924, ../sass/win-big.scss */
+/* line 927, ../sass/win-big.scss */
 .drop_doc {
   left: -46px;
   width: 134px;
 }
-/* line 929, ../sass/win-big.scss */
+/* line 932, ../sass/win-big.scss */
 .drop_doc h3 {
   margin: 6px 0 9px 5px;
 }
 
-/* line 931, ../sass/win-big.scss */
+/* line 934, ../sass/win-big.scss */
 .docs {
   margin: 0 0 4px 3px;
   overflow: hidden;
 }
-/* line 934, ../sass/win-big.scss */
+/* line 937, ../sass/win-big.scss */
 .docs li {
   list-style: none;
   float: left;
 }
-/* line 938, ../sass/win-big.scss */
+/* line 941, ../sass/win-big.scss */
 .docs a {
   display: block;
 }
-/* line 940, ../sass/win-big.scss */
+/* line 943, ../sass/win-big.scss */
 .docs a:hover {
   opacity: 0.8;
 }
-/* line 942, ../sass/win-big.scss */
-.docs .doc_docx {
-  background: url('../img/icons-sf38cca2d6c.png') 0 -810px no-repeat;
-  width: 32px;
-  height: 32px;
-}
 /* line 945, ../sass/win-big.scss */
-.docs .doc_pdf {
-  background: url('../img/icons-sf38cca2d6c.png') 0 -1222px no-repeat;
+.docs .doc_docx {
+  background: url('../img/icons-sf9f4670e2a.png') 0 -847px no-repeat;
   width: 32px;
   height: 32px;
 }
 /* line 948, ../sass/win-big.scss */
-.docs .doc_xls {
-  background: url('../img/icons-sf38cca2d6c.png') 0 -518px no-repeat;
+.docs .doc_pdf {
+  background: url('../img/icons-sf9f4670e2a.png') 0 -1259px no-repeat;
   width: 32px;
   height: 32px;
 }
 /* line 951, ../sass/win-big.scss */
+.docs .doc_xls {
+  background: url('../img/icons-sf9f4670e2a.png') 0 -518px no-repeat;
+  width: 32px;
+  height: 32px;
+}
+/* line 954, ../sass/win-big.scss */
 .docs .doc_jpeg {
-  background: url('../img/icons-sf38cca2d6c.png') 0 -852px no-repeat;
+  background: url('../img/icons-sf9f4670e2a.png') 0 -889px no-repeat;
   width: 32px;
   height: 32px;
 }
 
-/* line 955, ../sass/win-big.scss */
+/* line 958, ../sass/win-big.scss */
 .arr-block_l, .arr-block_r {
   position: absolute;
   top: 0;
@@ -1349,17 +1354,17 @@
   z-index: 600;
 }
 
-/* line 963, ../sass/win-big.scss */
+/* line 966, ../sass/win-big.scss */
 .arr-block_l {
   left: 0;
 }
 
-/* line 966, ../sass/win-big.scss */
+/* line 969, ../sass/win-big.scss */
 .arr-block_r {
   right: 0;
 }
 
-/* line 969, ../sass/win-big.scss */
+/* line 972, ../sass/win-big.scss */
 .arrow_left2, .arrow_right2 {
   border-radius: 50%;
   position: absolute;
@@ -1369,23 +1374,23 @@
   box-shadow: 0 2px 9px rgba(0, 0, 0, 0.49);
   cursor: pointer;
 }
-/* line 977, ../sass/win-big.scss */
+/* line 980, ../sass/win-big.scss */
 .arrow_left2:hover, .arrow_right2:hover {
   background-color: rgba(0, 0, 0, 0.7);
 }
 
-/* line 981, ../sass/win-big.scss */
+/* line 984, ../sass/win-big.scss */
 .arrow_left2 {
-  background: url('../img/icons-sf38cca2d6c.png') 0 -3153px no-repeat;
+  background: url('../img/icons-sf9f4670e2a.png') 0 -3319px no-repeat;
   width: 34px;
   height: 34px;
   background-color: rgba(0, 0, 0, 0.4);
   left: 12px;
 }
 
-/* line 986, ../sass/win-big.scss */
+/* line 989, ../sass/win-big.scss */
 .arrow_right2 {
-  background: url('../img/icons-sf38cca2d6c.png') 0 -3322px no-repeat;
+  background: url('../img/icons-sf9f4670e2a.png') 0 -3488px no-repeat;
   width: 34px;
   height: 34px;
   background-color: rgba(0, 0, 0, 0.4);
