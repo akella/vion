@@ -320,3 +320,63 @@ p.operator__question{
 		width: 100%;
 	}
 }
+.testing{
+	list-style-type: none;
+	.testing__mark{
+		color: #fff;
+		span{
+			display: inline-block;
+			float: right;
+			margin-right: 29px;
+		}
+	}
+	.testing__mark_yellow{
+		color: #ffc000;
+	}
+}
+.microphone{
+	position: relative;
+	margin: 5px 0;
+	.microphone__progress-bar, .internet__progress-bar{
+		position: relative;
+		width: 244px;
+		height: 9px;
+		padding: 2px;
+		border: 1px solid #000;
+		@include border-radius(7px);
+		background-color: #1f1f25;
+		@include box-shadow(0 1px 0 #454654, inset 0 0 0 1px rgba(0,0,0,.35));
+		.microphone__sound-level, .internet__download{
+			height: 9px;
+			@include border-radius(7px);
+			background: url(../img/microphone-progress-bar.png) repeat-x;
+		}
+		.internet__download{
+			@include box-shadow(0 1px 2px rgba(0,0,0,.67), 0 0 3px rgba(0,0,0,.07));
+			@include background-image(linear-gradient(bottom, #0a5ca1 0%, #4697c3 100%));
+		}
+		.microphone__min-level, .microphone__max-level{
+			height: 26px;
+			width: 1px;
+			position: absolute;
+			@include box-shadow(0 0 3px rgba(0,0,0,.5), 0 0 2px rgba(0,0,0,.43));
+			@include background-image(linear-gradient(bottom, #7a0000 0%, #7a0000 0.24%, #f80000 100%));
+		}
+		.microphone__min-level{
+			top: -5px;
+			left: 53px;
+		}
+		.microphone__max-level{
+			top: -5px;
+			right: 53px;
+		}
+	}
+	.internet__progress-bar{
+		background: #1f1f25 url(../img/progress-bar-bg.png);
+	}
+	.microphone__done{
+		position: absolute;
+		top: 0px;
+		right: 0px;
+	}
+}

@@ -5058,6 +5058,103 @@ p.operator__question {
   width: 100%;
 }
 
+/* line 323, ../sass/_assign.scss */
+.testing {
+  list-style-type: none;
+}
+/* line 325, ../sass/_assign.scss */
+.testing .testing__mark {
+  color: #fff;
+}
+/* line 327, ../sass/_assign.scss */
+.testing .testing__mark span {
+  display: inline-block;
+  float: right;
+  margin-right: 29px;
+}
+/* line 333, ../sass/_assign.scss */
+.testing .testing__mark_yellow {
+  color: #ffc000;
+}
+
+/* line 337, ../sass/_assign.scss */
+.microphone {
+  position: relative;
+  margin: 5px 0;
+}
+/* line 340, ../sass/_assign.scss */
+.microphone .microphone__progress-bar, .microphone .internet__progress-bar {
+  position: relative;
+  width: 244px;
+  height: 9px;
+  padding: 2px;
+  border: 1px solid #000;
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  -ms-border-radius: 7px;
+  -o-border-radius: 7px;
+  border-radius: 7px;
+  background-color: #1f1f25;
+  -webkit-box-shadow: 0 1px 0 #454654, inset 0 0 0 1px rgba(0, 0, 0, 0.35);
+  -moz-box-shadow: 0 1px 0 #454654, inset 0 0 0 1px rgba(0, 0, 0, 0.35);
+  box-shadow: 0 1px 0 #454654, inset 0 0 0 1px rgba(0, 0, 0, 0.35);
+}
+/* line 349, ../sass/_assign.scss */
+.microphone .microphone__progress-bar .microphone__sound-level, .microphone .microphone__progress-bar .internet__download, .microphone .internet__progress-bar .microphone__sound-level, .microphone .internet__progress-bar .internet__download {
+  height: 9px;
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  -ms-border-radius: 7px;
+  -o-border-radius: 7px;
+  border-radius: 7px;
+  background: url(../img/microphone-progress-bar.png) repeat-x;
+}
+/* line 354, ../sass/_assign.scss */
+.microphone .microphone__progress-bar .internet__download, .microphone .internet__progress-bar .internet__download {
+  -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.67), 0 0 3px rgba(0, 0, 0, 0.07);
+  -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.67), 0 0 3px rgba(0, 0, 0, 0.07);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.67), 0 0 3px rgba(0, 0, 0, 0.07);
+  background-image: -webkit-gradient(linear, 50% 100%, 50% 0%, color-stop(0%, #0a5ca1), color-stop(100%, #4697c3));
+  background-image: -webkit-linear-gradient(bottom, #0a5ca1 0%, #4697c3 100%);
+  background-image: -moz-linear-gradient(bottom, #0a5ca1 0%, #4697c3 100%);
+  background-image: -o-linear-gradient(bottom, #0a5ca1 0%, #4697c3 100%);
+  background-image: linear-gradient(bottom, #0a5ca1 0%, #4697c3 100%);
+}
+/* line 358, ../sass/_assign.scss */
+.microphone .microphone__progress-bar .microphone__min-level, .microphone .microphone__progress-bar .microphone__max-level, .microphone .internet__progress-bar .microphone__min-level, .microphone .internet__progress-bar .microphone__max-level {
+  height: 26px;
+  width: 1px;
+  position: absolute;
+  -webkit-box-shadow: 0 0 3px rgba(0, 0, 0, 0.5), 0 0 2px rgba(0, 0, 0, 0.43);
+  -moz-box-shadow: 0 0 3px rgba(0, 0, 0, 0.5), 0 0 2px rgba(0, 0, 0, 0.43);
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.5), 0 0 2px rgba(0, 0, 0, 0.43);
+  background-image: -webkit-gradient(linear, 50% 100%, 50% 0%, color-stop(0%, #7a0000), color-stop(0.24%, #7a0000), color-stop(100%, #f80000));
+  background-image: -webkit-linear-gradient(bottom, #7a0000 0%, #7a0000 0.24%, #f80000 100%);
+  background-image: -moz-linear-gradient(bottom, #7a0000 0%, #7a0000 0.24%, #f80000 100%);
+  background-image: -o-linear-gradient(bottom, #7a0000 0%, #7a0000 0.24%, #f80000 100%);
+  background-image: linear-gradient(bottom, #7a0000 0%, #7a0000 0.24%, #f80000 100%);
+}
+/* line 365, ../sass/_assign.scss */
+.microphone .microphone__progress-bar .microphone__min-level, .microphone .internet__progress-bar .microphone__min-level {
+  top: -5px;
+  left: 53px;
+}
+/* line 369, ../sass/_assign.scss */
+.microphone .microphone__progress-bar .microphone__max-level, .microphone .internet__progress-bar .microphone__max-level {
+  top: -5px;
+  right: 53px;
+}
+/* line 374, ../sass/_assign.scss */
+.microphone .internet__progress-bar {
+  background: #1f1f25 url(../img/progress-bar-bg.png);
+}
+/* line 377, ../sass/_assign.scss */
+.microphone .microphone__done {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+}
+
 /* line 2, ../sass/_ie.scss */
 .lteie8 body {
   background: red;
