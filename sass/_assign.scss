@@ -380,3 +380,198 @@ p.operator__question{
 		right: 0px;
 	}
 }
+
+.l-growl{
+	position: relative;
+	width: 300px;
+	@include border-radius(6px);
+	@include box-shadow(0 0 15px rgba(0,0,0,.7), inset 0 1px 0 rgba(255,255,255,.06));
+	background: #242a3a;
+	@include background-image(linear-gradient(top, #414856, #262d3d));
+	.close-growl{
+		display: none;
+		position: absolute;
+		top: 50%;
+		right: -12px;
+		margin: -12px 0 0 -12px;
+		@include sized-sprite($icons, close-growl);
+	}
+	&:hover{
+		margin: -2px 0 0 -2px;
+		border: 2px solid #bcbcc3;
+		.close-growl{
+			display: block;
+		}
+	}
+}
+.growl{
+	overflow: hidden;
+	@include border-radius(6px);
+	border: 1px solid rgba(0,0,0,.9);
+	.growl__img{
+		float: left;
+		width: 86px;
+		height: 99px;
+		border-right: 1px solid #1a2232;
+		background: #1e2535;
+		@include background-image(linear-gradient(top, #333a4a, #1f2738));
+		img{
+			width: 55px;
+			height: 57px;
+			padding: 20px 15px;
+		}
+	}
+	.growl__text{
+		float: right;
+		width: 180px;
+		height: 49px;
+		padding: 25px 15px;
+		border-left: 1px solid #404959;
+		color: #cfcfd6;
+		line-height: 1.4;
+		@include font-B;
+		font-size: 13px;
+		font-weight: bold;
+		@include text-shadow(0 1px 0 rgba(0,0,0,.75));
+	}
+}
+
+// ============== button ==============
+.button{
+	position: relative;
+	display: block;
+	width: 118px;
+	padding-left: 42px;
+	line-height: 42px;
+	text-decoration: none;
+	text-transform: uppercase;
+	@include border-radius(15px);
+	font-weight: bold;
+	font-size: 15px;
+	background: #000;
+	color: #fff;
+	&:hover{
+		color: #ffce00;
+	}
+}
+.button__logo{
+	position: absolute;
+	top: 0px;
+	left: -7px;
+	width: 36px;
+	height: 36px;
+	@include border-radius(22px);
+	border: 3px solid #000;
+	background: #ffce00;
+	@include background-image(linear-gradient(top, #ffdd00, #aa5d00));
+	.button__img-1{
+		display: block;
+		margin: 7px;
+		@include sized-sprite($icons, button-1);
+	}
+	.button-loading-big{
+		display: block;
+		margin: 4px;
+		@include sized-sprite($icons, button-loading-big);
+	}
+	.button-loading-bigger{
+		display: block;
+		margin: 3px;
+		@include sized-sprite($icons, button-loading-bigger);
+	}
+	.button__img-2{
+		display: block;
+		margin: 44px 15px;
+		@include sized-sprite($icons, button-2-biggest);
+	}
+	.button__corner{
+		position: absolute;
+		left: 0px;
+		bottom: 0px;
+		@include sized-sprite($icons, button-corner);
+	}
+	.button__corner-big{
+		position: absolute;
+		left: 0px;
+		bottom: 0px;
+		@include sized-sprite($icons, button-corner-big);
+	}
+	.button__corner-bigger{
+		position: absolute;
+		left: -2px;
+		bottom: -2px;
+		@include sized-sprite($icons, button-corner-bigger);
+	}
+	.button__corner-biggest{
+		position: absolute;
+		left: 0px;
+		bottom: 0px;
+		@include sized-sprite($icons, button-corner-biggest);
+	}
+}
+.button_white{
+	background: #fff;
+	color: #000;
+	.button__logo{
+		border: 3px solid #fff;
+	}
+}
+.button_slim{
+	line-height: 30px;
+	.button__logo{
+		top: -7px;
+	}
+}
+.button_big{
+	width: 275px;
+	height: 64px;
+	padding-left: 60px;
+	font: bold 36px Arial, sans-serif;
+	line-height: 64px;
+	@include border-radius(31px);
+	.button__logo{
+		width: 58px;
+		height: 58px;
+		top: 0px;
+		left: -15px;
+		@include border-radius(31px);
+	}
+}
+.button_bigger{
+	width: 370px;
+	height: 96px;
+	padding-left: 90px;
+	font: bold 48px Arial, sans-serif;
+	line-height: 96px;
+	@include border-radius(44px);
+	.button__logo{
+		width: 86px;
+		height: 86px;
+		top: 0px;
+		left: -15px;
+		border: 5px solid #000;
+		@include border-radius(51px);
+	}
+}
+.button_biggest{
+	width: 368px;
+	padding-left: 163px;
+	@include border-radius(50px);
+	font: bold 50px Tahoma, sans-serif;
+	line-height: 142px;
+	.button__logo{
+		left: -22px;
+		height: 130px;
+		width: 130px;
+		border: 6px solid #000;
+		@include border-radius(71px);
+	}
+}
+.button_biggest-slim{
+	height: 99px;
+	line-height: 99px;
+	font-weight: normal;
+	.button__logo{
+		top: -20px;
+	}
+}
