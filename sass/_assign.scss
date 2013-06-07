@@ -358,6 +358,9 @@ p.operator__question{
 			@include box-shadow(0 1px 2px rgba(0,0,0,.67), 0 0 3px rgba(0,0,0,.07));
 			@include background-image(linear-gradient(bottom, #0a5ca1 0%, #4697c3 100%));
 		}
+		.internet__download_violet{
+			@include background-image(linear-gradient(bottom, #470d62 0%, #470d62 0.76%, #8000cb 100%));
+		}
 		.microphone__min-level, .microphone__max-level{
 			height: 26px;
 			width: 1px;
@@ -737,24 +740,24 @@ p.operator__question{
 	overflow: hidden;
 	padding-left: 36px;
 	background: url(../img/sending-file.png) 0% 0% no-repeat;
-	.sending-file__info{
-		float: left;
-		@include text-shadow(0 1px 0 rgba(0,0,0,.75));
-		@include font-N;
-		line-height: 1.5;
-		.sending-file__name{
-			color: #3d95cb;			
-			font-size: 13px;
-		}
-		.sending-file__weight{
-			color: #8b8b92;
-			font-size: 11px;
-			font-weight: bold;
-		}
-	}
-	.sending-file__buttons{
-		float: right;
-	}
+}
+.sending-file__info{
+	float: left;
+	@include text-shadow(0 1px 0 rgba(0,0,0,.75));
+	@include font-N;
+	line-height: 1.5;
+}
+.sending-file__name{
+	color: #3d95cb;			
+	font-size: 13px;
+}
+.sending-file__weight{
+	color: #8b8b92;
+	font-size: 11px;
+	font-weight: bold;
+}
+.sending-file__buttons{
+	float: right;
 }
 .btn_chat{
 	width: 84px;
@@ -808,13 +811,193 @@ p.operator__question{
 		}
 	}
 }
+.chat__incoming_pink{
+	background: #f5d3d3;
+	&:after{
+		content: "";
+		background: #f5d3d3;
+	}
+	li{
+		.message-time{
+			background: #f5d3d3;
+		}
+	} 
+}
+.chat__censored{
+	position: relative;
+	margin: 17px 0;
+	padding: 15px 12px;
+	@include border-radius(5px);
+	background: #9799a3;
+	@include box-shadow(0 0 6px rgba(0,0,0,.75));
+	&:after{
+		content: "";
+		position: absolute;
+		top: 17px;
+		right: -5px;
+		width: 10px;
+		height: 10px;
+		background: #9799a3;
+		@include rotate(45deg);
+	}
+	div{
+		width: 68px;
+		padding: 6px 9px;
+		@include border-radius(10px);
+		@include background-image(linear-gradient(bottom, #414247 0%, #212228 100%)); 
+		@include font-B;
+		font-weight: bold;
+		text-transform: uppercase;
+		color: #cdcdcd;
+	} 
+}
 .chat__loading{
 	.sending-file{
 		background: url(../img/downloading-file.png) 0% 0% no-repeat;
 	}
+	.sending-file_upload{
+		background: url(../img/uploading-file.png) 0% 0% no-repeat;
+	}
 	.download__cancel{
 		position: absolute;
 		top: 0px;
-		right: 0px;
+		right: -28px;
 	}
+}
+.chat__user-status{
+	position: relative;
+	padding-left: 20px;
+	line-height: 30px;
+	@include font-B;
+	font-weight: bold;
+	@include text-shadow(0 1px 0 rgba(0,0,0,.75));
+	color: #cdcdcd;
+	i{
+		position: absolute;
+		top: 6px;
+		left: -2px;
+		@include sized-sprite($icons, bullet-red);
+	}
+	span{
+		color: #bc262c;
+	}
+}
+.chat__user-status_online{
+	i{
+		top: 8px;
+		left: 0;
+		@include sized-sprite($icons, bullet-green);
+	}
+	span{
+		color: #83b30d;
+	}
+}
+.chat__user-status_notify{
+	i{
+		top: 8px;
+		left: 0;
+		@include sized-sprite($icons, bullet-yellow);
+	}
+	span{
+		color: #ffc000;
+	}
+}
+.chat__counter{
+	overflow: hidden;
+}
+.chat__progress-bar{
+	float: left;
+	width: 242px;
+	height: 1px;
+	margin-top: 5px;
+	padding: 1px;
+	@include border-radius(1px);
+	background-color: #131417;
+	@include box-shadow(0 1px 0 rgba(255,255,255,.06), inset 0 1px 0 rgba(0,0,0,.51));
+	.chat__counter-progress{
+		height: 1px;
+		background: #a8c85c;
+	}
+}
+.chat__counter-nunber{
+	float: left;
+	margin-left: 10px;
+	color: #8b8b92;
+	font-size: 11px;
+	font-weight: bold;
+}
+.input-message{
+	position: relative;
+	overflow: hidden;
+	margin: 5px 0;
+}
+.input-message__text{
+	overflow: hidden;
+	width: 270px;
+	@include border-radius(5px);
+	background: #eaebf3;
+	.input-message__config{
+		float: left;
+		width: 37px;
+		height: 20px;
+		margin: 10px 8px;
+		border-right: 1px solid #bdbec8;
+		a{
+			position: relative;
+		}
+		.config-message{
+			position: absolute;
+			top: 3px;
+			left: 5px;
+			@include sized-sprite($icons, config-message);
+		}
+		.arr-15{
+			position: absolute;
+			top: 7px;
+			left: 24px;
+			@include sized-sprite($icons, arr-15);
+		}
+	}
+	form{
+		float: left;
+		overflow: hidden;
+		width: 206px;
+		padding: 5px 10px 0px 0px;
+		.input-message__input{
+			width: 100%;
+			height: 100%;
+			outline: none;
+			border:none;
+			background: transparent;
+		}
+	}
+}
+.button-round{
+	position: relative;
+	display: block;
+	width: 40px;
+	height: 40px;
+	@include border-radius(20px);
+	@include box-shadow(0 0 3px rgba(0,0,0,.5), 0 0 5px rgba(0,0,0,.25));
+	@include background-image(linear-gradient(bottom, #457b03 0%, #8bb90d 100%));
+	border: none;
+	i{
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		margin: -6px 0 0 -6px;
+		@include sized-sprite($icons, arr-16);
+	}
+	&:hover{
+		@include box-shadow(0 0 3px rgba(0,0,0,.5), 0 0 5px rgba(0,0,0,.25), inset 0 20px 18px rgba(255,255,255,.32));
+		@include background-image(linear-gradient(bottom, #477b03 0%, #477b03 1%, #87b50d 100%));
+	}
+	&:active{
+		@include background-image(linear-gradient(bottom, #8bb90d 0%, #457b03 100%));
+	}
+}
+.button-round_send-message{
+	position: absolute;
+	top: 0px;
+	right: 0px;
 }
