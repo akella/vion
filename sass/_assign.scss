@@ -1,5 +1,8 @@
 @import "base";
 
+ul{
+	list-style-type: none;
+}
 .win_mod{
 	position: relative;
 	left: 0;
@@ -440,6 +443,7 @@ p.operator__question{
 .button{
 	position: relative;
 	display: block;
+	height: 42px;
 	width: 118px;
 	padding-left: 42px;
 	line-height: 42px;
@@ -454,35 +458,26 @@ p.operator__question{
 		color: #ffce00;
 	}
 }
+.button_mini{
+	padding-left: 0px;
+	width: 40px;
+	@include border-radius(15px 0 0 15px);
+}
 .button__logo{
 	position: absolute;
 	top: 0px;
 	left: -7px;
 	width: 36px;
 	height: 36px;
+	line-height: 36px;
 	@include border-radius(22px);
 	border: 3px solid #000;
 	background: #ffce00;
+	text-align: center;
 	@include background-image(linear-gradient(top, #ffdd00, #aa5d00));
-	.button__img-1{
-		display: block;
-		margin: 7px;
-		@include sized-sprite($icons, button-1);
-	}
-	.button-loading-big{
-		display: block;
-		margin: 4px;
-		@include sized-sprite($icons, button-loading-big);
-	}
-	.button-loading-bigger{
-		display: block;
-		margin: 3px;
-		@include sized-sprite($icons, button-loading-bigger);
-	}
-	.button__img-2{
-		display: block;
-		margin: 44px 15px;
-		@include sized-sprite($icons, button-2-biggest);
+	img{
+		vertical-align: middle;
+		line-height: 1;
 	}
 	.button__corner{
 		position: absolute;
@@ -517,6 +512,7 @@ p.operator__question{
 	}
 }
 .button_slim{
+	height: 30px;
 	line-height: 30px;
 	.button__logo{
 		top: -7px;
@@ -532,10 +528,16 @@ p.operator__question{
 	.button__logo{
 		width: 58px;
 		height: 58px;
+		line-height: 53px;
 		top: 0px;
 		left: -15px;
 		@include border-radius(31px);
 	}
+}
+.button_big-mini{
+	width: 60px;
+	padding-left: 0px;
+	@include border-radius(31px 0 0 31px);
 }
 .button_bigger{
 	width: 370px;
@@ -547,14 +549,21 @@ p.operator__question{
 	.button__logo{
 		width: 86px;
 		height: 86px;
+		line-height: 79px;
 		top: 0px;
 		left: -15px;
 		border: 5px solid #000;
 		@include border-radius(51px);
 	}
 }
+.button_bigger-mini{
+	width: 90px;
+	padding-left: 0px;
+	@include border-radius(50px 0 0 50px);
+}
 .button_biggest{
 	width: 368px;
+	height: 142px;
 	padding-left: 163px;
 	@include border-radius(50px);
 	font: bold 50px Tahoma, sans-serif;
@@ -562,6 +571,7 @@ p.operator__question{
 	.button__logo{
 		left: -22px;
 		height: 130px;
+		line-height: 130px;
 		width: 130px;
 		border: 6px solid #000;
 		@include border-radius(71px);
@@ -573,5 +583,238 @@ p.operator__question{
 	font-weight: normal;
 	.button__logo{
 		top: -20px;
+	}
+}
+// ===================  chat  =========================
+.win_chat{
+	width: 350px;
+	h3{
+		color: #cdcdcd;
+		font-size: 13px;
+		font-weight: bold;
+		@include text-shadow(0 1px 0 rgba(0,0,0,.75));
+	}
+}
+.win div.chat{
+	position: relative;
+	overflow: hidden;
+	padding: 0 15px;
+}
+.chat__icons{
+	position: relative;
+	.chat__text-tab, .chat__files-tab{
+		position: relative;
+		display: inline-block;
+		height: 11px;
+		width:40px;
+		padding-top: 40px;
+		margin: 0 5px;
+		@include font-B;
+		text-decoration: none;
+		text-align: center;
+		font-size: 11px;
+		color: #8b8c92;
+		background: url(../img/text.png) 0 0 no-repeat;
+		.chat__message-ind{
+			position: absolute;
+			top: 0px;
+			right: 0px;
+			width: 16px;
+			height: 16px;
+			@include border-radius(8px);
+			background: #3f3933;
+			@include box-shadow(0 0 3px rgba(0,0,0,.5), 0 0 5px rgba(0,0,0,.25));
+			@include background-image(linear-gradient(bottom, #900010 0%, #e40000 100%));
+			@include text-shadow(0 -1px 0 rgba(0,0,0,.4));
+			line-height: 16px;
+			text-align: center;
+			font-size: 10px;
+			color: #fff;
+		}
+	}
+	.chat__text-tab_is-active, .chat__files-tab_js-active{
+		background: url(../img/text-active.png) 0 0 no-repeat;
+		&:after{
+			content: "";
+			position: absolute;
+			left: 35%;
+			bottom: -23px;
+			width: 12px;
+			height: 12px;
+			border-top: 1px solid #42434c;
+			border-left: 1px solid #42434c;
+			@include rotate(45deg);
+			background: url(../img/bg-win.png);
+		}
+	}
+	.chat__files-tab{
+		background: url(../img/files.png) 0 0 no-repeat;
+	}
+	.chat__files-tab_js-active{
+		background: url(../img/files-active.png) 0 0 no-repeat;
+	}
+}
+.form-search_chat{
+	position: absolute;
+	top: 0px;
+	right: 15px;
+	width: 182px;
+	margin: 1px 0 0;
+	.input-search{
+		width: 149px;
+	}
+}
+.win .win__dev_chat{
+	margin: 14px 0;
+}
+.chat__operator{
+	overflow: hidden;
+	h3{
+		float: left;
+		width: 250px;
+		margin-left: 10px;
+	}
+}
+.chat__outcoming{
+	position: relative;
+	margin: 17px 0;
+	padding: 0 12px;
+	@include border-radius(5px);
+	background: #cce3ef;
+	@include box-shadow(0 0 6px rgba(0,0,0,.75));
+	&:before{
+		content: "";
+		position: absolute;
+		top: 17px;
+		left: -5px;
+		width: 10px;
+		height: 10px;
+		background: #cce3ef;
+		@include rotate(45deg);
+	}
+	li{
+		position: relative;
+		padding: 12px 0;
+		border-top: 1px solid #abbfc9;
+		.message-time{
+			position: absolute;
+			top: -6px;
+			right: 0px;
+			padding: 0 5px;
+			background: #cce3ef;
+			color: #7ba0b0;
+			@include font-B;
+			font-size: 11px;
+			@include text-shadow(0 1px 0 rgba(255,255,255,.65));
+		}
+		&:first-child{
+			border-top: none;
+			.message-time{
+				top: 17px;
+			}
+		}
+		p{
+			@include font-B;
+			font-size: 13px;
+			color: #456a7a;
+		}
+	}
+}
+.user{
+	margin-bottom: 12px;
+	@include font-B;
+	font-size: 12px;
+	color: #2b3a41;
+	@include text-shadow(0 1px 0 rgba(255,255,255,.65));
+	.operator-config{
+		position: relative;
+		display: inline-block;
+		top: 3px;
+		@include sized-sprite($icons, config);
+	}
+}
+.sending-file{
+	overflow: hidden;
+	padding-left: 36px;
+	background: url(../img/sending-file.png) 0% 0% no-repeat;
+	.sending-file__info{
+		float: left;
+		@include text-shadow(0 1px 0 rgba(0,0,0,.75));
+		@include font-N;
+		line-height: 1.5;
+		.sending-file__name{
+			color: #3d95cb;			
+			font-size: 13px;
+		}
+		.sending-file__weight{
+			color: #8b8b92;
+			font-size: 11px;
+			font-weight: bold;
+		}
+	}
+	.sending-file__buttons{
+		float: right;
+	}
+}
+.btn_chat{
+	width: 84px;
+	margin: 0 0 0 8px;
+}
+.chat__incoming{
+	position: relative;
+	margin: 17px 0;
+	padding: 0 12px;
+	@include border-radius(5px);
+	background: #eaebf3;
+	@include box-shadow(0 0 6px rgba(0,0,0,.75));
+	&:after{
+		content: "";
+		position: absolute;
+		top: 17px;
+		right: -5px;
+		width: 10px;
+		height: 10px;
+		background: #eaebf3;
+		@include rotate(45deg);
+	}
+	li{
+		position: relative;
+		padding: 12px 0;
+		border-top: 1px solid #c9cacf;
+		.message-time{
+			position: absolute;
+			top: -6px;
+			right: 0px;
+			padding: 0 5px;
+			background: #eaebf3;
+			color: #7ba0b0;
+			@include font-B;
+			font-size: 11px;
+			@include text-shadow(0 1px 0 rgba(255,255,255,.65));
+		}
+		.user{
+			color: #000;
+		}
+		&:first-child{
+			border-top: none;
+			.message-time{
+				top: 17px;
+			}
+		}
+		p{
+			@include font-B;
+			font-size: 13px;
+			color: #456a7a;
+		}
+	}
+}
+.chat__loading{
+	.sending-file{
+		background: url(../img/downloading-file.png) 0% 0% no-repeat;
+	}
+	.download__cancel{
+		position: absolute;
+		top: 0px;
+		right: 0px;
 	}
 }

@@ -1,0 +1,111 @@
+<!doctype html>
+<!--[if lte IE 8]><html lang="ru-RU" class="lteie8"><![endif]-->
+<!--[if gt IE 8]><!--><html lang="ru-RU"><!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<title>chat</title>
+	<link rel="stylesheet" media="screen" href="../css/screen.css" >
+	<script type="text/javascript" src="../js/html5.js"></script>
+	<script type="text/javascript" src="../js/jquery-1.8.3.min.js"></script>
+	<script type="text/javascript" src="../js/jquery.formstyler.min.js"></script>
+	<script type="text/javascript" src="../js/jquery.tinyscrollbar.min.js"></script>
+	<script type="text/javascript" src="../js/common.js"></script>
+</head>
+<body>
+<!-- ==========================================================	 -->
+	<!-- BEGIN chat-->
+<div class="win win_chat"  style="position:absolute; top: 64px; left:44%">
+	<div class="win__title">
+		<h1></h1>
+		<div class="win__close"></div>
+		<div class="win__minimize"></div>
+	</div>
+	<div class="win__content win__content_mod">
+		<div class="win__content-wrapper chat">
+			<div class="chat__icons">
+				<a class="chat__text-tab chat__text-tab_is-active" href="#">
+					Чат
+					<div class="chat__message-ind">2</div>
+				</a>
+				<a class="chat__files-tab" href="#">
+					Файлы
+				</a>
+			</div>
+			<div class="form-search form-search_chat">
+				<form action="#">
+					<input type="text" class="input-search" id="input-search2">
+					<label for="input-search2" class="icon-search"></label>
+				</form>
+			</div>		
+			<div class="win__dev win__dev_chat"></div>
+			<div class="chat__operator"> 
+				<div class="chat-begin__logo">
+					<img src="../img/avatar.png" alt="">
+				</div>
+				<h3>Добрый день, с вами общается ведущий менеджер по продажам Оксана Федорова</h3>
+			</div>
+			<div class="chat__outcoming">
+				<ul>
+					<li>
+						<div class="user">
+							Oxana Fedorova
+							<a href="#" class="operator-config"></a>
+						</div>
+						<div class="message-time">13:45</div>
+						<p>The challenge to the policy immed problem for the new Energy and Climate Change Secretary, Ed Davey.</p>
+					</li>
+					<li>
+						<div class="message-time">13:45</div>
+						<p>Policy immed problem for the new Energy and Climate Change Secretary, Ed Davey.</p>
+					</li>
+				</ul>
+			</div>
+			<div class="chat__sending">
+				<h3>Oxana Fedorova is sending you a file</h3>
+				<div class="win__dev win__dev_chat"></div>
+				<div class="sending-file">
+					<div class="sending-file__info">
+						<p class="sending-file__name">File_name.pdf</p>
+						<p class="sending-file__weight">30 MB</p>
+					</div>
+					<div class="sending-file__buttons">
+						<button class="btn btn_alert_gray btn_chat">Decline</button>
+						<button class="btn btn_alert_green btn_chat">Acept</button>
+					</div>
+				</div>
+			</div>
+			<div class="chat__incoming">
+				<ul>
+					<li>
+						<div class="user">
+							Nikita Andeevich
+						</div>
+						<div class="message-time">13:45</div>
+						<p>The challenge to the policy immed problem for the new Energy and Climate Change Secretary, Ed Davey.</p>
+					</li>
+				</ul>
+			</div>
+			<div class="chat__loading">
+				<h3>Downloading from Oxana Fedorova</h3>
+				<div class="win__dev win__dev_chat"></div>
+				<div class="sending-file">
+					<div class="sending-file__info">
+						<p class="sending-file__name">File_name.pdf</p>
+						<div class="microphone">
+							<div class="internet__progress-bar">
+								<div class="internet__download" style="width:60%;"></div>
+							</div>
+							<img class="download__cancel" src="../img/cancel.png" alt="">
+						</div>
+						<p class="sending-file__weight">30 MB</p>
+					</div>
+				</div>
+			</div>
+		</div>	
+	</div>	
+</div>
+	<!-- END chat  -->
+<!-- ==========================================================	 -->
+<div class="win-bg"></div>
+</body>
+</html>
