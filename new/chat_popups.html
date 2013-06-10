@@ -1,0 +1,188 @@
+<!doctype html>
+<!--[if lte IE 8]><html lang="ru-RU" class="lteie8"><![endif]-->
+<!--[if gt IE 8]><!--><html lang="ru-RU"><!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<title>chat pop-up </title>
+	<link rel="stylesheet" media="screen" href="../css/screen.css" >
+	<script type="text/javascript" src="../js/html5.js"></script>
+	<script type="text/javascript" src="../js/jquery-1.8.3.min.js"></script>
+	<script type="text/javascript" src="../js/jquery.formstyler.min.js"></script>
+	<script type="text/javascript" src="../js/jquery.tinyscrollbar.min.js"></script>
+	<script type="text/javascript" src="../js/common.js"></script>
+</head>
+<body>
+<!-- ==========================================================	 -->
+	<!-- BEGIN chat-->
+<div class="win win_chat"  style="position:absolute; top: 64px; left:10%">
+	<div class="win__title">
+		<h1></h1>
+		<div class="win__close"></div>
+		<div class="win__minimize"></div>
+	</div>
+	<div class="win__content win__content_mod">
+		<div class="win__content-wrapper chat">
+			<div class="chat__icons">
+				<a class="chat__text-tab" data-tab=".js-tab1" href="#">
+					Чат
+					<div class="chat__message-ind">2</div>
+				</a>
+				<a class="chat__files-tab" data-tab=".js-tab2" href="#">
+					Файлы
+				</a>
+			</div>
+			<div class="form-search form-search_chat">
+				<form action="#">
+					<input type="text" class="input-search" id="input-search2">
+					<label for="input-search2" class="icon-search"></label>
+					<a class="input-search__cancel" href="#"></a>
+				</form>
+			</div>		
+			<div class="win__dev win__dev_chat"></div>			
+		</div>
+		<div class="chat-settings">
+			<a class="chat-settings__close" href="#"><i></i></a>
+			<div class="dark-grid">
+				<div class="dark-grid__container">
+					<div class="chat-settings__ptofile">
+						<div class="chat-begin__logo">
+							<img src="../img/avatar.png" alt="">
+						</div>
+						<div class="chat-begin__name">
+							<h3>Оксана Федорова</h3>
+							<p>Ведущий менеджер по продажам</p>
+						</div>
+					</div>					
+				</div>
+			</div>
+			<ul class="chat-settings__list">
+				<li><i class="chat-settings__info"></i>More info about this user</li>
+				<li>
+					<i class="chat-settings__language"></i>
+					<div class="sel-holder chat-settings__langs">
+						<select class="select">
+							<option value="">Русский</option>
+							<option value="">English</option>
+							<option value="">Українська</option>
+						</select>
+					</div>
+				</li>
+				<li><i class="chat-settings__ban"></i>Ban this user</li>
+				<li><i class="chat-settings__filter"></i>Filter this user</li>
+				<li><i class="chat-settings__message"></i>Send a private message</li>
+			</ul>
+		</div>	
+	</div>	
+</div>
+	<!-- END chat  -->
+<!-- ==========================================================	 -->
+<div class="win win_chat"  style="position:absolute; top: 64px; left:30%">
+	<div class="win__title">
+		<h1>Настрочки чата</h1>
+		<div class="win__close"></div>
+	</div>
+	<div class="win__content">
+		<div class="chat-settings">
+			<div class="dark-grid">
+				<div class="dark-grid__container">
+					<div class="chat-settings__ptofile">
+						<div class="chat-begin__logo">
+							<img src="../img/avatar.png" alt="">
+						</div>
+						<div class="chat-begin__name">
+							<h3>Оксана Федорова</h3>
+							<p>Ведущий менеджер по продажам</p>
+						</div>
+					</div>					
+				</div>
+			</div>
+			<ul class="chat-settings__list">
+				<li><i class="chat-settings__info"></i>More info about this user</li>
+				<li>
+					<i class="chat-settings__language"></i>
+					<div class="sel-holder chat-settings__langs">
+						<select class="select">
+							<option value="">Русский</option>
+							<option value="">English</option>
+							<option value="">Українська</option>
+						</select>
+					</div>
+				</li>
+				<li><i class="chat-settings__ban"></i>Ban this user</li>
+				<li><i class="chat-settings__filter"></i>Filter this user</li>
+				<li><i class="chat-settings__message"></i>Send a private message</li>
+			</ul>
+		</div>
+		<div class="chat-begin__buttons">
+				<button class="btn btn_alert_gray btn_small">Отмена</button>
+				<button class="btn btn_alert_green btn_small">Ok</button>
+			</div>	
+	</div>	
+</div>
+	<!-- END chat  -->
+<!-- ==========================================================	 -->
+<div class="win win_chat"  style="position:absolute; top: 64px; left:50%">
+	<div class="win__title">
+		<h1>Частые ответы</h1>
+		<div class="win__close"></div>
+	</div>
+	<div class="win__content">
+		<div class="q-lib">
+			<div class="form-search">
+				<form action="#">
+					<input type="text" class="input-search" id="input-search2">
+					<label for="input-search2" class="icon-search"></label>
+					<a class="input-search__cancel" href="#"></a>
+				</form>
+			</div>
+		</div>
+		<ul class="q-lib-results">
+			<li>
+				<a href="#">Чем могу помочь?</a>
+			</li>
+			<li>
+				<a href="#">Чебуреки</a>
+			</li>
+		</ul>	
+		<div class="chat-begin__buttons">
+				<button class="btn btn_alert_gray btn_small">Отмена</button>
+				<button class="btn btn_alert_green btn_small">Ok</button>
+			</div>	
+	</div>	
+</div>
+	<!-- END chat  -->
+<!-- ==========================================================	 -->
+<div class="win win_chat"  style="position:absolute; top: 64px; left:70%">
+	<div class="win__title">
+		<h1>Настрочки чата</h1>
+		<div class="win__close"></div>
+	</div>
+	<div class="win__content">
+		<div class="chat-settings">
+			<ul class="chat-settings__list">
+				<li><i class="chat-settings__save"></i>Сохранить историю чата как файл</li>
+				<li><i class="chat-settings__print"></i>Распечатать историю чата</li>
+				<li>
+					<i class="chat-settings__language"></i>
+					<div class="sel-holder chat-settings__langs">
+						<select class="select">
+							<option value="">Русский</option>
+							<option value="">English</option>
+							<option value="">Українська</option>
+						</select>
+					</div>
+				</li>
+				<li><i class="chat-settings__delete"></i>Удалисть историю чата</li>
+				<li><i class="chat-settings__lib"></i>Библиотека “Частые ответы”</li>
+			</ul>
+		</div>
+		<div class="chat-begin__buttons">
+				<button class="btn btn_alert_gray btn_small">Отмена</button>
+				<button class="btn btn_alert_green btn_small">Ok</button>
+			</div>	
+	</div>	
+</div>
+	<!-- END chat  -->
+<div class="win-bg"></div>
+</body>
+</html>
