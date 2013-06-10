@@ -6494,6 +6494,150 @@ p.operator__question {
   background: url(../img/input-checked.png) no-repeat;
 }
 
+/* line 1285, ../sass/_assign.scss */
+.multi-filter {
+  overflow: hidden;
+  height: 26px;
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+  background: #2a2a2a;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #505050), color-stop(100%, #212121));
+  background-image: -webkit-linear-gradient(top, #505050, #212121);
+  background-image: -moz-linear-gradient(top, #505050, #212121);
+  background-image: -o-linear-gradient(top, #505050, #212121);
+  background-image: linear-gradient(top, #505050, #212121);
+  color: #919191;
+  font-family: 'HelveticaNeue-B', Helvetica, Arial, sans-serif;
+  font-size: 11px;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.75);
+}
+
+/* line 1297, ../sass/_assign.scss */
+.multi-filter__name {
+  position: relative;
+  float: left;
+  width: 93px;
+  padding-left: 15px;
+  line-height: 26px;
+  border-right: 1px solid #2b2b2b;
+  cursor: pointer;
+}
+/* line 1305, ../sass/_assign.scss */
+.multi-filter__name:after {
+  content: "";
+  position: absolute;
+  top: 11px;
+  right: 10px;
+  background: url('../img/icons-s2011206c36.png') 0 -4015px no-repeat;
+  width: 8px;
+  height: 6px;
+}
+/* line 1312, ../sass/_assign.scss */
+.multi-filter__name:hover {
+  background: #545454;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #545454), color-stop(100%, #383838));
+  background-image: -webkit-linear-gradient(top, #545454, #383838);
+  background-image: -moz-linear-gradient(top, #545454, #383838);
+  background-image: -o-linear-gradient(top, #545454, #383838);
+  background-image: linear-gradient(top, #545454, #383838);
+}
+
+/* line 1317, ../sass/_assign.scss */
+.multi-filter__select {
+  float: left;
+  text-align: center;
+  height: 26px;
+  line-height: 23px;
+  padding: 0 12px;
+}
+/* line 1323, ../sass/_assign.scss */
+.multi-filter__select span {
+  display: inline-block;
+  width: 106px;
+  height: 19px;
+  line-height: 19px;
+  vertical-align: middle;
+  -webkit-border-radius: 9px;
+  -moz-border-radius: 9px;
+  -ms-border-radius: 9px;
+  -o-border-radius: 9px;
+  border-radius: 9px;
+  cursor: pointer;
+}
+/* line 1332, ../sass/_assign.scss */
+.multi-filter__select span.is-active {
+  color: #3e96cc;
+  background-color: rgba(0, 0, 0, 0.35);
+  -webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.35), inset 0 1px 2px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.35), inset 0 1px 2px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.35), inset 0 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+/* line 1338, ../sass/_assign.scss */
+.users-to-upload {
+  overflow: hidden;
+  background: #1c1c1c;
+  color: #cdcdcd;
+  font-family: 'HelveticaNeue-B', Helvetica, Arial, sans-serif;
+  font-size: 13px;
+  font-weight: bold;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.75);
+}
+/* line 1346, ../sass/_assign.scss */
+.users-to-upload li {
+  height: 41px;
+  line-height: 41px;
+  padding: 0 15px;
+  border-top: 1px solid #2f2f2f;
+  border-bottom: 1px solid #0a0a0a;
+}
+/* line 1353, ../sass/_assign.scss */
+.users-to-upload label {
+  position: relative;
+  display: block;
+  cursor: pointer;
+}
+/* line 1357, ../sass/_assign.scss */
+.users-to-upload label input {
+  opacity: 0;
+}
+/* line 1360, ../sass/_assign.scss */
+.users-to-upload label input + span {
+  position: absolute;
+  top: 50%;
+  left: -2px;
+  width: 16px;
+  height: 16px;
+  margin-top: -8px;
+  background: url(../img/checkbox.png) no-repeat;
+}
+/* line 1369, ../sass/_assign.scss */
+.users-to-upload label input:checked + span {
+  background: url(../img/checkbox-active.png) no-repeat;
+}
+
+/* line 1375, ../sass/_assign.scss */
+.users-to-upload_mod li {
+  height: 60px;
+  line-height: 60px;
+  overflow: hidden;
+  clear: both;
+}
+/* line 1380, ../sass/_assign.scss */
+.users-to-upload_mod li .chat-begin__logo {
+  margin: 8px 0px 8px 20px;
+}
+
+/* line 1385, ../sass/_assign.scss */
+.chat-begin__buttons_right {
+  padding: 0;
+}
+/* line 1387, ../sass/_assign.scss */
+.chat-begin__buttons_right button.btn {
+  float: right;
+  margin-left: 15px;
+}
+
 /* line 2, ../sass/_ie.scss */
 .lteie8 body {
   background: red;

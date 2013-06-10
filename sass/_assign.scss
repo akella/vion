@@ -1282,3 +1282,110 @@ p.operator__question{
 		}
 	}
 }
+.multi-filter{
+	overflow: hidden;
+	height: 26px;
+	border-top: 1px solid #000;
+	border-bottom: 1px solid #000;
+	background: #2a2a2a;
+	@include background-image(linear-gradient(top, #505050, #212121));
+	color: #919191;
+	@include font-B;
+	font-size: 11px;
+	@include text-shadow(0 1px 0 rgba(0,0,0,.75));
+}
+.multi-filter__name{
+	position: relative;
+	float: left;
+	width: 93px;
+	padding-left: 15px;
+	line-height: 26px;
+	border-right: 1px solid #2b2b2b;
+	cursor: pointer;
+	&:after{
+		content: "";
+		position: absolute;
+		top: 11px;
+		right: 10px;
+		@include sized-sprite($icons, arr-04);
+	}
+	&:hover{
+		background: #545454;
+		@include background-image(linear-gradient(top, #545454, #383838));
+	}
+}
+.multi-filter__select{
+	float: left;
+	text-align: center;
+	height: 26px;
+	line-height: 23px;
+	padding: 0 12px;
+	span{
+		display: inline-block;
+		width: 106px;
+		height: 19px;
+		line-height: 19px;
+		vertical-align: middle;
+		@include border-radius(9px);
+		cursor: pointer;
+	}
+	span.is-active{
+		color: #3e96cc;
+		background-color: rgba(0,0,0,.35);
+		@include box-shadow(0 1px 0 rgba(255,255,255,.35), inset 0 1px 2px rgba(0,0,0,.5));
+	}
+}
+.users-to-upload{
+	overflow: hidden;
+	background: #1c1c1c;
+	color: #cdcdcd;
+    @include font-B;
+	font-size: 13px;
+	font-weight: bold;
+	@include text-shadow(0 1px 0 rgba(0,0,0,.75));
+	li{
+		height: 41px;
+		line-height: 41px;
+		padding: 0 15px;
+		border-top: 1px solid #2f2f2f;
+		border-bottom: 1px solid #0a0a0a;
+	}
+	label{
+		position: relative;
+		display: block;
+		cursor: pointer;
+		input{
+			opacity: 0;
+		}
+		input + span{
+			position: absolute;
+			top: 50%;
+			left: -2px;
+			width: 16px;
+			height: 16px;
+			margin-top: -8px;
+			background: url(../img/checkbox.png) no-repeat;
+		}
+		input:checked + span{
+			background: url(../img/checkbox-active.png) no-repeat;
+		}
+	}
+}
+.users-to-upload_mod{
+	li{
+		height: 60px;
+		line-height: 60px;
+		overflow: hidden;
+		clear: both;
+		.chat-begin__logo{
+			margin: 8px 0px 8px 20px;
+		}
+	}
+}
+.chat-begin__buttons_right{
+	padding: 0;
+	button.btn{
+		float: right;
+		margin-left: 15px;
+	}
+}
