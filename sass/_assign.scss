@@ -980,6 +980,7 @@ p.operator__question{
 	height: 40px;
 	@include border-radius(20px);
 	@include box-shadow(0 0 3px rgba(0,0,0,.5), 0 0 5px rgba(0,0,0,.25));
+	background: #629508;
 	@include background-image(linear-gradient(bottom, #457b03 0%, #8bb90d 100%));
 	border: none;
 	i{
@@ -991,10 +992,24 @@ p.operator__question{
 	}
 	&:hover{
 		@include box-shadow(0 0 3px rgba(0,0,0,.5), 0 0 5px rgba(0,0,0,.25), inset 0 20px 18px rgba(255,255,255,.32));
+		background: #76a90a;
 		@include background-image(linear-gradient(bottom, #477b03 0%, #477b03 1%, #87b50d 100%));
 	}
 	&:active{
+		background: #649708;
 		@include background-image(linear-gradient(bottom, #8bb90d 0%, #457b03 100%));
+	}
+}
+.button-round_red{
+	@include background-image(linear-gradient(bottom, #8a000f 0%, #d4061d 100%));
+	&:hover{
+		@include box-shadow(0 0 3px rgba(0,0,0,.5), 0 0 5px rgba(0,0,0,.25), inset 0 7px 18px rgba(255,255,255,.65));
+		@include background-image(linear-gradient(bottom, #8b000f 0%, #cd0017 100%));
+	}
+	&:active{
+		@include box-shadow(0 0 3px rgba(0,0,0,.5), 0 0 5px rgba(0,0,0,.25));
+		@include background-image(linear-gradient(bottom, #d30018 0%, #87000f 100%));
+
 	}
 }
 .button-round_send-message{
@@ -1062,7 +1077,7 @@ p.operator__question{
 			}
 			.is-sorted{
 				position: relative;
-				background: url(../img/arr-04.png) 0 0 no-repeat;
+				background: #545454 url(../img/arr-04.png) 0 0 no-repeat;
 				@include background-image(linear-gradient(top, #545454, #383838)); 
 				&:after{
 					content: "";
@@ -1147,6 +1162,7 @@ p.operator__question{
 		}
 		&:hover{
 			border-top: 1px solid #75b5d5;
+			background: #3a8cbd;
 			@include background-image(linear-gradient(top, #4ea0c9, #07599f));
 		}
 		.chat-settings__langs{
@@ -1218,6 +1234,7 @@ p.operator__question{
 			font-weight: bold;
 			&:hover{
 				border-top: 1px solid #75b5d5;
+				background: #3a8cbd;
 				@include background-image(linear-gradient(top, #4ea0c9, #07599f));
 			}
 		}
@@ -1228,4 +1245,40 @@ p.operator__question{
 	top: 6px;
 	right: 6px;
 	@include sized-sprite($icons, cancel3);
+}
+.win_rate{
+	overflow: hidden;
+	width: 350px;
+	margin-left: 0px;
+	@include border-radius(6px);
+}
+.quality-selection{
+	overflow: hidden;
+	margin: 36px 0 33px;
+	.quality-selection__item{
+		display: inline-block;
+		width: 16px;
+		margin: 0 5px;
+	}
+	label{
+		position: relative;
+		display: block;
+		width: 16px;
+		height: 17px;
+		input{
+			opacity: 0;
+		}
+		input + span{
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background: url(../img/input.png) no-repeat;
+			cursor: pointer;
+		}
+		input:checked + span{
+			background: url(../img/input-checked.png) no-repeat;
+		}
+	}
 }
