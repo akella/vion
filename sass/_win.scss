@@ -104,28 +104,6 @@
 		.connection-picture_small{
 			margin: 5px auto 0;
 		}
-		article{
-			padding: 0 16px;
-			text-align: left;
-			color: #8b8b91;
-			@include font-B;
-			font-weight: bold;
-			@include text-shadow(0 1px 0 rgba(0,0,0,.75));
-			a{
-				color: #73bad8;
-				@include font-B;
-				font-weight: bold;
-				@include text-shadow(0 1px 0 rgba(0,0,0,.75));
-			}
-			p{
-				width: 70%;
-				margin: 5px 0;
-			}
-			.out-link{
-				color: #ffc000;
-				text-decoration: none;
-			}
-		}
 		.win__advertize-text{
 			padding-left: 54px;
 			line-height: .7em;
@@ -170,6 +148,28 @@
 			float:right;
 			margin-left:16px;
 		}
+	}
+}
+.advertize{
+	padding: 0 16px;
+	text-align: left;
+	color: #8b8b91;
+	@include font-B;
+	font-weight: bold;
+	@include text-shadow(0 1px 0 rgba(0,0,0,.75));
+	a{
+		color: #73bad8;
+		@include font-B;
+		font-weight: bold;
+		@include text-shadow(0 1px 0 rgba(0,0,0,.75));
+	}
+	p{
+		width: 70%;
+		margin: 5px 0;
+	}
+	.out-link{
+		color: #ffc000;
+		text-decoration: none;
 	}
 }
 .h2{

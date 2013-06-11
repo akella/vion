@@ -37,16 +37,16 @@ ul{
 			width: 233px;
 		}
 	}
-	.icon-tabs{
-		text-align: center;
-		i{
-			margin: 0 3px;
-			@include sized-sprite($icons, icon-tab);
-			display: inline-block;
-		}
-		.icon-tabs__is-active{
-			@include sized-sprite($icons, icon-tab-active);
-		}
+}
+.icon-tabs{
+	text-align: center;
+	i{
+		margin: 0 3px;
+		@include sized-sprite($icons, icon-tab);
+		display: inline-block;
+	}
+	.icon-tabs__is-active{
+		@include sized-sprite($icons, icon-tab-active);
 	}
 }
 .dark-grid{

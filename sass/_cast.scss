@@ -1,0 +1,278 @@
+@import "base";
+
+// player
+.player{
+	position: relative;
+	width: 640px;
+	padding: 7px;
+	border: 1px solid rgba(191,191,191,.9);
+	@include border-radius(6px);
+	@include box-shadow(0 0 9px rgba(0,0,0,.34));
+	background-color: #fff;
+}
+.player__title{
+	overflow: hidden;
+	height: 20px;
+	padding-top: 4px;
+}
+.player__close{
+	float: left;
+	@include sized-sprite($icons, cast-close);
+	&:hover{
+		@include sized-sprite($icons, cast-close-hover);
+	}
+}
+.player__minimize{
+	float: left;
+	margin-left: 5px;
+	@include sized-sprite($icons, cast-mini);
+	&:hover{
+		@include sized-sprite($icons, cast-mini-hover);
+	}
+}
+.media{
+	position: relative;
+	height: 390px;
+	@include background-image(linear-gradient(#263a58, #62636d));
+	h1{
+		padding-left: 13px;
+		line-height: 44px;
+		background: rgba(0,0,0,.5);
+		@include font-B;
+		font-size: 18px;
+		font-weight: bold;
+		@include text-shadow(0 1px 0 rgba(0,0,0,.75));
+		color: #ececec;
+	}
+	.advertize_media{
+	 	position: relative;
+	 	padding: 13px 74px;
+	 	border-top: 1px solid #515f79;
+	 	background: rgba(0,0,0,.5) url(../img/adv.png) 10px 10px no-repeat;
+
+	 	p{
+	 		width: 100%;
+	 	}
+	 	.media__advertize-close{
+	 		position: absolute;
+	 		bottom: -12px;
+	 		left: 50%;
+	 		margin: -12px 0 0 -12px;
+	 		@include sized-sprite($icons, close-growl);
+	 	}
+	}
+	.cast__full-scr{
+		position: absolute;
+		top: 50%;
+		left: 43%;
+		width: 36px;
+		height: 36px;
+		background: url(../img/cast-full-scr.png) 0 0;
+		z-index: 10; 
+	}
+	.cast__size{
+		position: absolute;
+		top: 50%;
+		left: 52%;
+		width: 36px;
+		height: 36px;
+		background: url(../img/cast-size.png) 0 0;
+		z-index: 10; 
+	}
+}
+.controls{
+	position: absolute;
+	bottom: 0px;
+	left: 50%;
+	width: 268px;
+	height: 44px;
+	margin-left: -134px;
+	border: 1px solid #000;
+	text-align: center;
+	@include border-radius(2px);
+	background: rgba(27,27,27,.8);
+	@include box-shadow(inset 0 1px 2px rgba(255,255,255,.15));
+	@include background-image(linear-gradient(bottom, #1f1f22, #2c2d32));
+}
+.wrapper-controls__video, .wrapper-controls__volume,
+.wrapper-controls__playlist, .wrapper-controls__camera,
+.wrapper-controls__chat{
+	position: relative;
+	display: inline-block;
+	width: 37px;
+	height: 37px;
+}
+.controls__item{
+	position: absolute;
+	top: -4px;
+	left: 0;
+	vertical-align: middle;
+	cursor: pointer;
+	z-index: 5;
+}
+.controls__video{
+	@include sized-sprite($icons, control-video);
+	&:hover{
+		@include sized-sprite($icons, control-video-hover);
+	}
+}
+.controls__panel{
+	position: absolute;
+	left: 1px;
+	top: -167px;
+	width: 35px;
+	height: 142px;
+	padding: 4px 0px 52px;
+	background: #323232;
+	@include background-image(linear-gradient(#373737, #2a2a2a));
+	@include border-radius(16px);
+	z-index: 4;
+	span{
+		display: block;
+		width: 26px;
+		height: 22px;
+		margin: 0 auto;
+		padding-top: 5px;
+		@include border-radius(50%);
+		background: #2d2d2d;
+		border: 1px solid rgba(2,1,2,.21);
+		@include box-shadow(0 2px 4px rgba(2,1,2,.19), inset 0 2px 2px rgba(255,255,255,.12));
+		@include background-image(linear-gradient(bottom, #272727 0%, #272727 1.25%, #393939 100%));
+		color: #adadbb;
+		font-size: 14px;
+		font-weight: bold;
+		@include text-shadow(0 1px 4px rgba(0,0,0,.6));
+		cursor: pointer;
+		i{
+			display: block;
+			margin: 0px auto;
+			@include sized-sprite($icons, colors);
+		}
+	}
+	ul{
+		margin-top: 8px;
+		li{
+			height: 25px;
+			line-height: 25px;
+			border-top: 1px solid #3f3f3f;
+			border-bottom: 1px solid #1b1b1b;
+			text-align: center; 
+			color: #bdbdbd;
+			@include font-B;
+			font-size: 9px;
+			font-weight: bold;
+			text-transform: uppercase;
+			@include text-shadow(0 -1px 0 rgba(0,0,0,.4));
+			cursor: pointer;
+			&:hover{
+				border-top: 1px solid #000;
+				border-bottom: 1px solid #000;
+				background: #2c7eb5;
+				@include background-image(linear-gradient(#4d9fc9, #085aa0));
+			}
+		}
+	}
+	.volume-toggle{
+		margin-top: 8px;
+	}
+}
+.controls__volume{
+	@include sized-sprite($icons, control-volume1);
+	&:hover{
+		@include sized-sprite($icons, control-volume1-hover);
+	}
+}
+.controls__separate{
+	display: inline-block;
+	width: 1px;
+	height: 32px;
+	margin: 6px 8px;
+	border-left: 2px solid #242428;
+	border-right: 2px solid #242428;
+	background: #343438;
+}
+.controls__playlist{
+	@include sized-sprite($icons, control-playlist);
+	&:hover{
+		@include sized-sprite($icons, control-playlist-hover);
+	}
+}
+.controls__playlist.is-active{
+	@include sized-sprite($icons, control-playlist-hover);
+}
+.controls__camera{
+	@include sized-sprite($icons, control-camera);
+	&:hover{
+		@include sized-sprite($icons, control-camera-hover);
+		i{
+			display: block;
+		}
+	}
+	i{
+		display: none;
+		position: absolute;
+		top: -30px;
+		left: -28px;
+		width: 90px;
+		height: 18px;
+		line-height: 18px;
+		@include border-radius(10px);
+		background: #000;
+		text-align: center;
+		font-size: 12px;
+		font-weight: bold;
+		font-style: normal;
+		color: #fff;
+		z-index: 11;
+		&:after{
+			content: "";
+			position: absolute;
+			bottom: -4px;
+			left: 50%;
+			width: 8px;
+			height: 8px;
+			margin: -5px 0 0 -5px;
+			@include rotate(45deg);
+			background: #000;
+		}
+	}
+}
+.controls__chat{
+	@include sized-sprite($icons, control-chat);
+}
+
+// playlist
+.media-gallery{
+	position: absolute;
+	top: 62px;
+	height: 229px;
+	width: 546px;
+	padding: 18px 47px;
+	@include box-shadow(0 1px 0 rgba(255,255,255,.23), inset 0 0 6px rgba(0,0,0,.4));
+	background: url(../img/bg-win.png);
+	h2{
+		color: #cdcdcd;
+		font-family: "Myriad Pro";
+		font-size: 16px;
+		@include text-shadow(0 1px 0 rgba(0,0,0,.75));
+	}
+}
+.media-gallery__video{
+	width: 160px;
+	height: 100px;
+	background: url(../img/video1.png);
+}
+#prev{
+	position: absolute;
+	top: 36%;
+	left: 0;
+	@include sized-sprite($icons, video-prev);
+	cursor: pointer;
+}
+#next{
+	position: absolute;
+	top: 36%;
+	right: 0;
+	@include sized-sprite($icons, video-next);
+	cursor: pointer;
+}
