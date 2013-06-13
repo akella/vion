@@ -86,6 +86,14 @@
 		margin-left: -22px;
 	}
 }
+.wrapper-controls{
+	position: absolute;
+	top: 0;
+	left: 0;
+	right:0;
+	bottom: 0;
+	background: rgba(0,0,0,0.4);
+}
 .controls{
 	position: absolute;
 	bottom: 0px;
@@ -710,4 +718,41 @@
 		right: -21px;
 		@include sized-sprite($icons, smooth-up);
 	}
+}
+
+// widget
+.chat__audio{
+	height: 141px;
+	margin-bottom: 17px;
+	@include box-shadow(2px 0px 8px 3px #000);
+}
+.widget{
+	width: 656px;
+	.input-message__text form{
+		width: 497px;
+	}
+	.input-message__text{
+		width: 90%;
+	}
+}
+.form-search .input-search_widget{
+	width: 572px;
+	padding: 3px 27px 3px 24px;
+}
+.widget__video{
+	position: relative;
+	left: -7px;
+	top: -13px;
+	width: 640px;
+	height: 390px;
+	@include box-shadow(0 0 6px 1px #000);
+}
+.player_widget{
+	left: -15px;
+	top: -20px;
+	@include border-radius(6px 6px 0 0);
+	border: none;
+}
+.win .win__content_widget{
+	@include border-radius(6px);
 }

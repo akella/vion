@@ -600,7 +600,6 @@ p.operator__question{
 }
 .win div.chat{
 	position: relative;
-	overflow: hidden;
 	padding: 0 15px;
 }
 .chat__icons{
@@ -659,8 +658,8 @@ p.operator__question{
 }
 .form-search_chat{
 	position: absolute;
-	top: 0px;
-	right: 15px;
+	top: 0;
+	right: 0;
 	width: 182px;
 	margin: 1px 0 0;
 	.input-search{
@@ -908,7 +907,7 @@ p.operator__question{
 }
 .chat__progress-bar{
 	float: left;
-	width: 242px;
+	width: 85%;
 	height: 1px;
 	margin-top: 5px;
 	padding: 1px;
@@ -934,7 +933,7 @@ p.operator__question{
 }
 .input-message__text{
 	overflow: hidden;
-	width: 270px;
+	width: 85%;
 	@include border-radius(5px);
 	background: #eaebf3;
 	.input-message__config{
@@ -1213,7 +1212,8 @@ p.operator__question{
 	height: 50px;
 	padding: 0 10px;
 	.input-search{
-		width: 295px;
+		width: 275px;
+		padding: 3px 27px 3px 24px;
 	}
 }
 .q-lib-results{

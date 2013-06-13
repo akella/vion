@@ -1,0 +1,413 @@
+<!doctype html>
+<!--[if lte IE 8]><html lang="ru-RU" class="lteie8"><![endif]-->
+<!--[if gt IE 8]><!--><html lang="ru-RU"><!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<title>widget</title>
+	<link rel="stylesheet" media="screen" href="../css/screen.css" >
+	<script type="text/javascript" src="../js/html5.js"></script>
+	<script type="text/javascript" src="../js/jquery-1.8.3.min.js"></script>
+	<script type="text/javascript" src="../js/jquery.formstyler.min.js"></script>
+	<script type="text/javascript" src="../js/jquery.tinyscrollbar.min.js"></script>
+	<script type="text/javascript" src="../js/common.js"></script>
+</head>
+<body>
+<!-- ==========================================================	 -->
+	<!-- BEGIN chat-->
+<div class="win win_chat"  style="position:absolute; top: 64px; left:10%">
+	<div class="win__title">
+		<h1></h1>
+		<div class="win__close"></div>
+		<div class="win__minimize"></div>
+	</div>
+	<div class="win__content win__content_mod">
+		<div class="win__content-wrapper chat">
+			<div class="chat__audio">
+				<img src="../img/chat-audio.png" alt="">
+			</div>
+			<div class="chat__icons">
+				<a class="chat__text-tab" data-tab=".js-tab1" href="#">
+					Чат
+					<div class="chat__message-ind">2</div>
+				</a>
+				<a class="chat__files-tab" data-tab=".js-tab2" href="#">
+					Файлы
+				</a>
+				<div class="form-search form-search_chat">
+					<form action="#">
+						<input type="text" class="input-search" id="input-search2">
+						<label for="input-search2" class="icon-search"></label>
+					</form>
+				</div>
+			</div>
+					
+			<div class="win__dev win__dev_chat"></div>
+			<div class="chat__tab-items">
+				<!-- BEGIN chat text-tab -->
+					<div class="chat__text-item js-tab-cont js-tab1">
+							<div class="chat__operator"> 
+								<div class="chat-begin__logo">
+									<img src="../img/avatar.png" alt="">
+								</div>
+								<h3>Добрый день, с вами общается ведущий менеджер по продажам Оксана Федорова</h3>
+							</div>
+							<div class="chat__outcoming">
+								<ul>
+									<li>
+										<div class="user">
+											Oxana Fedorova
+											<a href="#" class="operator-config"></a>
+										</div>
+										<div class="message-time">13:45</div>
+										<p>The challenge to the policy immed problem for the new Energy and Climate Change Secretary, Ed Davey.</p>
+									</li>
+									<li>
+										<div class="message-time">13:45</div>
+										<p>Policy immed problem for the new Energy and Climate Change Secretary, Ed Davey.</p>
+									</li>
+								</ul>
+							</div>
+							<div class="chat__sending">
+								<h3>Oxana Fedorova is sending you a file</h3>
+								<div class="win__dev win__dev_chat"></div>
+								<div class="sending-file">
+									<div class="sending-file__info">
+										<p class="sending-file__name">File_name.pdf</p>
+										<p class="sending-file__weight">30 MB</p>
+									</div>
+									<div class="sending-file__buttons">
+										<button class="btn btn_alert_gray btn_chat">Decline</button>
+										<button class="btn btn_alert_green btn_chat">Acept</button>
+									</div>
+								</div>
+							</div>
+							<div class="chat__incoming">
+								<ul>
+									<li>
+										<div class="user">
+											Nikita Andeevich
+										</div>
+										<div class="message-time">13:45</div>
+										<p>The challenge to the policy immed problem for the new Energy and Climate Change Secretary, Ed Davey.</p>
+									</li>
+								</ul>
+							</div>
+							<div class="chat__loading">
+								<h3>Downloading from Oxana Fedorova</h3>
+								<div class="win__dev win__dev_chat"></div>
+								<div class="sending-file">
+									<div class="sending-file__info">
+										<p class="sending-file__name">File_name.pdf</p>
+										<div class="microphone">
+											<div class="internet__progress-bar">
+												<div class="internet__download" style="width:60%;"></div>
+											</div>
+											<img class="download__cancel" src="../img/cancel.png" alt="">
+										</div>
+										<p class="sending-file__weight">1.5 of 30 MB - 2 minutes remaining</p>
+									</div>
+								</div>
+							</div>
+							<div class="chat__loading">
+								<h3>Uploading</h3>
+								<div class="win__dev win__dev_chat"></div>
+								<div class="sending-file">
+									<div class="sending-file__info">
+										<p class="sending-file__name">File_name.pdf</p>
+										<div class="microphone">
+											<div class="internet__progress-bar">
+												<div class="internet__download internet__download_violet" style="width:40%;"></div>
+											</div>
+											<img class="download__cancel" src="../img/cancel.png" alt="">
+										</div>
+										<p class="sending-file__weight">1.5 of 30 MB - 2 minutes remaining</p>
+									</div>
+								</div>
+							</div>
+							<div class="chat__user-status">
+								<i></i>Oxana Fedorova <span>Offline</span>	
+							</div>
+							<div class="chat__user-status chat__user-status_online">
+								<i></i>Oxana Fedorova <span>Online</span>
+							</div>
+							<div class="chat__user-status chat__user-status_notify">
+								<i></i><span>Notify</span>
+							</div>
+							<p class="sending-file__weight">1.5 of 30 MB - 2 minutes remaining</p>
+							<div class="chat__incoming chat__incoming_pink">
+								<ul>
+									<li>
+										<div class="user">
+											Nikita Andeevich
+										</div>
+										<div class="message-time">13:45</div>
+										<p>Challenge to the policy immed problem</p>
+									</li>
+								</ul>
+							</div>
+							<div class="chat__censored">
+								<div>censored</div>
+							</div>
+							<div class="chat__counter">
+								<div class="chat__progress-bar">
+									<div class="chat__counter-progress" style="width: 70%;"></div>
+								</div>
+								<div class="chat__counter-nunber">170</div>
+							</div>
+							<div class="input-message">
+								<div class="input-message__text">
+									<div class="input-message__config">
+										<a href="#"><i class="config-message"></i><i class="arr-15"></i></a>
+									</div>
+									<form>
+										<textarea class="input-message__input"></textarea>
+									</form>
+								</div>
+								<button class="button-round button-round_send-message"><i></i></button>
+							</div>
+					</div>	
+				<!-- END chat text-tab -->
+				<!-- BEGIN chat files-tab -->
+					<div class="chat__files-item js-tab-cont js-tab2">
+							<div class="upload-file">
+								<button class="btn btn_alert_green">Upload</button>
+								<p>Нажмите на кнопку или перетащите файл сюда</p>
+							</div>
+							<div class="chat__loading">
+								<h3>Uploading</h3>
+								<div class="win__dev win__dev_chat"></div>
+								<div class="sending-file">
+									<div class="sending-file__info">
+										<p class="sending-file__name">File_name.pdf</p>
+										<div class="microphone">
+											<div class="internet__progress-bar">
+												<div class="internet__download internet__download_violet" style="width:40%;"></div>
+											</div>
+											<img class="download__cancel" src="../img/cancel.png" alt="">
+										</div>
+										<p class="sending-file__weight">1.5 of 30 MB - 2 minutes remaining</p>
+									</div>
+								</div>
+							</div>
+							<div class="files-history">
+								<h3>File history</h3>
+								<ul>
+									<li>
+										<div class="files-history__name">Name</div>
+										<div class="files-history__kind is-sorted">Kind</div>
+										<div class="files-history__size">Size</div>
+									</li>
+									<li>
+										<div class="files-history__name">File_name</div>
+										<div class="files-history__kind">pdf</div>
+										<div class="files-history__size">30 kb</div>
+									</li>
+									<li>
+										<div class="files-history__name">File_name</div>
+										<div class="files-history__kind">jpeg</div>
+										<div class="files-history__size">125 mb</div>
+									</li>
+									<li>
+										<div class="files-history__name">File_name</div>
+										<div class="files-history__kind">mp3</div>
+										<div class="files-history__size">45 kb</div>
+									</li>
+								</ul>
+							</div>
+					</div>
+				<!-- END chat files-tab -->
+			</div>			
+		</div>	
+	</div>	
+</div>
+	<!-- END chat  -->
+<!-- ==========================================================	 -->
+<!-- BEGIN chat-->
+<div class="win win_chat widget"  style="position:absolute; top: 64px; left:32%">
+	<div class="win__content win__content_mod win__content_widget">
+		<div class="win__content-wrapper chat">	
+			<div class="chat__tab-items">
+				<!-- BEGIN chat text-tab -->
+					<div class="chat__text-item js-tab-cont js-tab1">
+						<div class="widget__video">
+							<img src="../img/video3.png" alt="">
+						</div>
+						<div class="form-search">
+							<form action="#">
+								<input type="text" class="input-search input-search_widget" id="input-search2">
+								<label for="input-search2" class="icon-search"></label>
+								<a class="input-search__cancel" href="#"></a>
+							</form>
+						</div>
+						<div class="win__dev win__dev_chat"></div>
+						<div class="chat__outcoming">
+							<ul>
+								<li>
+									<div class="user">
+											Oxana Fedorova
+										<a href="#" class="operator-config"></a>
+									</div>
+									<div class="message-time">13:45</div>
+									<p>The challenge to the policy immed problem for the new Energy and Climate Change Secretary, Ed Davey.</p>
+								</li>
+								<li>
+									<div class="message-time">13:45</div>
+									<p>Policy immed problem for the new Energy and Climate Change Secretary, Ed Davey.</p>
+								</li>
+							</ul>
+						</div>
+						<div class="chat__incoming">
+							<ul>
+								<li>
+									<div class="user">
+										Nikita Andeevich
+									</div>
+									<div class="message-time">13:45</div>
+									<p>The challenge to the policy immed problem for the new Energy and Climate Change Secretary, Ed Davey.</p>
+								</li>
+							</ul>
+						</div>
+							<div class="chat__counter">
+								<div class="chat__progress-bar">
+									<div class="chat__counter-progress" style="width: 70%;"></div>
+								</div>
+								<div class="chat__counter-nunber">170</div>
+							</div>
+							<div class="input-message">
+								<div class="input-message__text">
+									<div class="input-message__config">
+										<a href="#"><i class="config-message"></i><i class="arr-15"></i></a>
+									</div>
+									<form>
+										<textarea class="input-message__input"></textarea>
+									</form>
+								</div>
+								<button class="button-round button-round_send-message"><i></i></button>
+							</div>
+					</div>	
+				<!-- END chat text-tab -->
+			</div>			
+		</div>	
+	</div>	
+</div>
+	<!-- END chat  -->
+<!-- ==========================================================	 -->
+<!-- BEGIN chat-->
+<div class="win win_chat widget"  style="position:absolute; top: 64px; left:70%">
+	<div class="win__content win__content_mod win__content_widget">
+		<div class="win__content-wrapper chat">	
+			<div class="chat__tab-items">
+				<!-- BEGIN chat text-tab -->
+					<div class="chat__text-item js-tab-cont js-tab1">
+						<!-- BEGIN cast-->
+<div class="player player_widget">
+	<div class="player__title">
+		<div class="player__close"></div>
+		<div class="player__minimize"></div>
+	</div>
+	<div class="media">
+		<img src="../img/video3.png" alt="">
+		<div class="wrapper-controls">
+			<div class="controls">
+			<div class="wrapper-controls__video">
+				<div class="controls__item controls__video">
+				</div>
+				<div class="controls__panel">
+					<span><i></i></span>
+					<ul>
+						<li>HD</li>
+						<li>mid</li>
+						<li>low</li>
+						<li>auto</li>
+					</ul>
+				</div>
+			</div>
+			<div class="wrapper-controls__volume">	
+				<div class="controls__item controls__volume"></div>
+				<div class="controls__panel">
+					<span>EG</span>
+					<div class="volume-toggle">
+						<img src="../img/volume.png" alt="">
+					</div>
+				</div>
+			</div>	
+				<div class="controls__separate"></div>
+			<div class="wrapper-controls__playlist">	
+				<div class="controls__item controls__playlist"></div>
+			</div>
+			<div class="wrapper-controls__camera">	
+				<div class="controls__item controls__camera">
+					<i>Add camera</i>
+				</div>
+			</div>	
+				<div class="controls__separate"></div>
+			<div class="wrapper-controls__chat">	
+				<div class="controls__item controls__chat"></div>
+			</div>	
+			</div>
+		</div>	
+	</div>
+</div>
+<!-- END cast-->
+						<div class="form-search">
+							<form action="#">
+								<input type="text" class="input-search input-search_widget" id="input-search2">
+								<label for="input-search2" class="icon-search"></label>
+								<a class="input-search__cancel" href="#"></a>
+							</form>
+						</div>
+						<div class="win__dev win__dev_chat"></div>
+						<div class="chat__outcoming">
+							<ul>
+								<li>
+									<div class="user">
+											Oxana Fedorova
+										<a href="#" class="operator-config"></a>
+									</div>
+									<div class="message-time">13:45</div>
+									<p>The challenge to the policy immed problem for the new Energy and Climate Change Secretary, Ed Davey.</p>
+								</li>
+								<li>
+									<div class="message-time">13:45</div>
+									<p>Policy immed problem for the new Energy and Climate Change Secretary, Ed Davey.</p>
+								</li>
+							</ul>
+						</div>
+						<div class="chat__incoming">
+							<ul>
+								<li>
+									<div class="user">
+										Nikita Andeevich
+									</div>
+									<div class="message-time">13:45</div>
+									<p>The challenge to the policy immed problem for the new Energy and Climate Change Secretary, Ed Davey.</p>
+								</li>
+							</ul>
+						</div>
+						<div class="chat__counter">
+							<div class="chat__progress-bar">
+								<div class="chat__counter-progress" style="width: 70%;"></div>
+							</div>
+							<div class="chat__counter-nunber">170</div>
+						</div>
+						<div class="input-message">
+							<div class="input-message__text">
+								<div class="input-message__config">
+									<a href="#"><i class="config-message"></i><i class="arr-15"></i></a>
+								</div>
+								<form>
+									<textarea class="input-message__input"></textarea>
+									</form>
+							</div>
+							<button class="button-round button-round_send-message"><i></i></button>
+						</div>
+					</div>	
+				<!-- END chat text-tab -->
+			</div>			
+		</div>	
+	</div>	
+</div>
+	<!-- END chat  -->
+<!-- ==========================================================	 -->
+</body>
+</html>
