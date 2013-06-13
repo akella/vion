@@ -617,6 +617,7 @@
 .adjustments{
 	padding: 21px 15px 9px;
 	border-bottom: 1px solid #000;
+	@include box-shadow(1px 0 1px #434549);
 }
 .adjustments__item{
 	overflow: hidden;
@@ -676,5 +677,37 @@
 		top: 0px;
 		right: -21px;
 		@include sized-sprite($icons, contrast-up);
+	}
+}
+.adjustments__saturation{
+	&:before{
+		content: "";
+		position: absolute;
+		top: 0px;
+		left: -10px;
+		@include sized-sprite($icons, saturation-down);
+	}
+	&:after{
+		content: "";
+		position: absolute;
+		top: 0px;
+		right: -21px;
+		@include sized-sprite($icons, saturation-up);
+	}
+}
+.adjustments__smooth{
+	&:before{
+		content: "";
+		position: absolute;
+		top: 0px;
+		left: -10px;
+		@include sized-sprite($icons, smooth-down);
+	}
+	&:after{
+		content: "";
+		position: absolute;
+		top: 0px;
+		right: -21px;
+		@include sized-sprite($icons, smooth-up);
 	}
 }
