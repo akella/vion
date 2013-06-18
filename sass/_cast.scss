@@ -208,6 +208,7 @@
 	min-height: 0%;
 	max-height: 100%;
 	@include background-image(linear-gradient(bottom, #406610, #83b30d));
+	cursor: pointer;
 	&:after{
 		content: "";
 		position: absolute;
@@ -479,6 +480,7 @@
 			max-width: 100%;
 			@include background-image(linear-gradient(bottom, #3b6703 0%, #77a70b 100%));
  			@include border-radius(10px);
+ 			cursor: pointer;
  			&:after{
  				content: "";
  				position: absolute;
@@ -677,6 +679,21 @@
 	width: 17px;
 	padding-left: 10px;
 	background: url(../img/eq-bg.png) 0 0 no-repeat;
+	.equalizer__base{
+		position: relative;
+		width: 3px;
+		height: 112px;
+		margin: 0 auto;
+		border: 1px solid #161616;
+		@include border-radius(10px);
+		@include box-shadow(0 0 1px 1px #2f2f2f);
+		background: #1e1e1e; 
+	}
+	.equalizer__progress{
+		@include sized-sprite($icons, volume-toggle);
+		margin-left: -6px;
+		cursor: pointer;
+	}
 }
 .equalizer__text{
 	width: 49px;
@@ -728,20 +745,34 @@
 		position: relative;
 		width: 182px;
 		margin-left: 18px;
+		.adjustments__base{
+ 			width: 170px;
+ 			height: 5px;
+ 			margin: 6px 10px 0;
+ 			@include border-radius(10px);
+ 			border: 1px solid #2f2f2f;
+			background: #1e1e1e;	
+			@include box-shadow(inset 0 1px 2px #000);	
+ 		}
+ 		.adjustments__slider{
+ 			margin-top: -5px;
+ 			@include sized-sprite($icons, volume-toggle);
+ 			cursor: pointer;
+ 		}
 	}
 }
 .adjustments__brightness{
 	&:before{
 		content: "";
 		position: absolute;
-		top: 0px;
+		top: -3px;
 		left: -10px;
 		@include sized-sprite($icons, brightness-down);
 	}
 	&:after{
 		content: "";
 		position: absolute;
-		top: 0px;
+		top: -3px;
 		right: -26px;
 		@include sized-sprite($icons, brightness-up);
 	}
@@ -750,14 +781,14 @@
 	&:before{
 		content: "";
 		position: absolute;
-		top: 0px;
+		top: -4px;
 		left: -10px;
 		@include sized-sprite($icons, contrast-down);
 	}
 	&:after{
 		content: "";
 		position: absolute;
-		top: 0px;
+		top: -4px;
 		right: -21px;
 		@include sized-sprite($icons, contrast-up);
 	}
@@ -766,14 +797,14 @@
 	&:before{
 		content: "";
 		position: absolute;
-		top: 0px;
+		top: -4px;
 		left: -10px;
 		@include sized-sprite($icons, saturation-down);
 	}
 	&:after{
 		content: "";
 		position: absolute;
-		top: 0px;
+		top: -4px;
 		right: -21px;
 		@include sized-sprite($icons, saturation-up);
 	}
@@ -782,14 +813,14 @@
 	&:before{
 		content: "";
 		position: absolute;
-		top: 0px;
+		top: -4px;
 		left: -10px;
 		@include sized-sprite($icons, smooth-down);
 	}
 	&:after{
 		content: "";
 		position: absolute;
-		top: 0px;
+		top: -4px;
 		right: -21px;
 		@include sized-sprite($icons, smooth-up);
 	}
