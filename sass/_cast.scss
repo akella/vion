@@ -186,8 +186,34 @@
 			}
 		}
 	}
-	.volume-toggle{
-		margin-top: 8px;
+}
+.volume-toggle{
+	margin-top: 8px;
+}
+.volume-toggle__base{
+	position: relative;
+	height: 114px;
+	width: 5px;
+	margin: 0 auto;
+	border: 1px solid #161616;
+	background-color: #1e1e1e;
+	@include border-radius(6px);
+	@include box-shadow(inset 0 1px 2px #000, 0 0 1px #000);
+}
+.volume-toggle__progress{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 5px;
+	min-height: 0%;
+	max-height: 100%;
+	@include background-image(linear-gradient(bottom, #406610, #83b30d));
+	&:after{
+		content: "";
+		position: absolute;
+		top: -6px;
+		left: -5px;
+		@include sized-sprite($icons, volume-toggle);
 	}
 }
 .controls__volume{
@@ -412,6 +438,55 @@
 	}
 	.video-progress__line{
 		float: left;
+	}
+	.video-progress__base{
+		position: relative;
+		width: 515px;
+		height: 8px;
+		margin-top: 4px;
+		@include border-radius(10px);
+		background: rgba(0,0,0,.26);
+		@include box-shadow(0 1px 0 rgba(255,255,255,.16), inset 0 1px 2px rgba(0,0,0,.48));
+		.video-progress__point1, .video-progress__point2, .video-progress__point3, .video-progress__point4{
+			position: absolute;
+			top: 2px;
+			left: 22.5%;
+			width: 5px;
+			height: 5px;
+			@include border-radius(50%);
+			background: #323232;
+		}
+		.video-progress__point2{
+			left: 45%;
+		}
+		.video-progress__point3{
+			left: 67.5%;
+		}
+		.video-progress__point4{
+			left: 90%;
+		}
+		.video-progress__loading{
+			height: 8px;
+			min-width: 0%;
+			max-width: 100%;
+			@include background-image(linear-gradient(bottom, rgba(58,58,58,.44) 0%, rgba(106,106,106,.44) 100%));
+			@include border-radius(10px);
+		}
+		.video-progress__progress{
+			position: absolute;
+			height: 8px;
+			min-width: 0%;
+			max-width: 100%;
+			@include background-image(linear-gradient(bottom, #3b6703 0%, #77a70b 100%));
+ 			@include border-radius(10px);
+ 			&:after{
+ 				content: "";
+ 				position: absolute;
+ 				top: -5px;
+ 				right: -5px;
+ 				@include sized-sprite($icons, video-toggle);
+ 			}
+		}
 	}
 	.video-progress__time{
 		float: right;
