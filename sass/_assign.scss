@@ -659,7 +659,7 @@ p.operator__question{
 .form-search_chat{
 	position: absolute;
 	top: 0;
-	right: 0;
+	right: 10px;
 	width: 182px;
 	margin: 1px 0 0;
 	.input-search{
@@ -982,6 +982,7 @@ p.operator__question{
 	background: #629508;
 	@include background-image(linear-gradient(bottom, #457b03 0%, #8bb90d 100%));
 	border: none;
+	cursor: pointer;
 	i{
 		position: absolute;
 		top: 50%;
