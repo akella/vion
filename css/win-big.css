@@ -240,7 +240,7 @@
 }
 /* line 177, ../sass/win-big.scss */
 .select .arrow {
-  background: url('../img/icons-s7db1100d95.png') 0 -4311px no-repeat;
+  background: url('../img/icons-s2f76f913c3.png') 0 -3331px no-repeat;
   width: 12px;
   height: 8px;
   display: block;
@@ -405,7 +405,7 @@
 }
 /* line 304, ../sass/win-big.scss */
 .filter__item .filter__arr {
-  background: url('../img/icons-s7db1100d95.png') 0 -4979px no-repeat;
+  background: url('../img/icons-s2f76f913c3.png') 0 -3964px no-repeat;
   width: 6px;
   height: 10px;
   display: inline-block;
@@ -433,7 +433,7 @@
 
 /* line 322, ../sass/win-big.scss */
 .arrow_left {
-  background: url('../img/icons-s7db1100d95.png') 0 -1775px no-repeat;
+  background: url('../img/icons-s2f76f913c3.png') 0 -1061px no-repeat;
   width: 50px;
   height: 50px;
   left: 21px;
@@ -441,7 +441,7 @@
 
 /* line 326, ../sass/win-big.scss */
 .arrow_right {
-  background: url('../img/icons-s7db1100d95.png') 0 -1945px no-repeat;
+  background: url('../img/icons-s2f76f913c3.png') 0 -1231px no-repeat;
   width: 50px;
   height: 50px;
   right: 21px;
@@ -453,7 +453,7 @@
   top: 50%;
   left: 50%;
   margin: -35px 0 0 -100px;
-  background: url('../img/icons-s7db1100d95.png') 0 -1835px no-repeat;
+  background: url('../img/icons-s2f76f913c3.png') 0 -1121px no-repeat;
   width: 200px;
   height: 71px;
 }
@@ -522,7 +522,7 @@
 }
 /* line 379, ../sass/win-big.scss */
 .filter__item_light .cancel-gray {
-  background: url('../img/icons-s7db1100d95.png') 0 -4069px no-repeat;
+  background: url('../img/icons-s2f76f913c3.png') 0 -3089px no-repeat;
   width: 15px;
   height: 15px;
   opacity: 1;
@@ -535,7 +535,7 @@
 
 /* line 386, ../sass/win-big.scss */
 .icon-pencil_gray {
-  background: url('../img/icons-s7db1100d95.png') 0 -3951px no-repeat;
+  background: url('../img/icons-s2f76f913c3.png') 0 -2971px no-repeat;
   width: 14px;
   height: 14px;
   display: inline-block;
@@ -546,7 +546,7 @@
 
 /* line 393, ../sass/win-big.scss */
 .icon-pencil_blue {
-  background: url('../img/icons-s7db1100d95.png') 0 -3997px no-repeat;
+  background: url('../img/icons-s2f76f913c3.png') 0 -3017px no-repeat;
   width: 14px;
   height: 14px;
   display: inline-block;
@@ -600,7 +600,7 @@
 
 /* line 431, ../sass/win-big.scss */
 .icon-points {
-  background: url('../img/icons-s7db1100d95.png') 0 -5173px no-repeat;
+  background: url('../img/icons-s2f76f913c3.png') 0 -4158px no-repeat;
   width: 13px;
   height: 14px;
   display: inline-block;
@@ -627,7 +627,7 @@
 .datepicker__drop:before {
   content: '';
   position: absolute;
-  background: url('../img/icons-s7db1100d95.png') 0 -3888px no-repeat;
+  background: url('../img/icons-s2f76f913c3.png') 0 -2908px no-repeat;
   width: 20px;
   height: 21px;
   top: -20px;
@@ -656,14 +656,14 @@
 }
 /* line 472, ../sass/win-big.scss */
 .datepicker__header .date-prev {
-  background: url('../img/icons-s7db1100d95.png') 0 -4840px no-repeat;
+  background: url('../img/icons-s2f76f913c3.png') 0 -3840px no-repeat;
   width: 6px;
   height: 11px;
   left: 8px;
 }
 /* line 476, ../sass/win-big.scss */
 .datepicker__header .date-next {
-  background: url('../img/icons-s7db1100d95.png') 0 -4795px no-repeat;
+  background: url('../img/icons-s2f76f913c3.png') 0 -3795px no-repeat;
   width: 6px;
   height: 11px;
   right: 8px;
@@ -932,14 +932,14 @@
 }
 /* line 669, ../sass/win-big.scss */
 .navi .navi__right i {
-  background: url('../img/icons-s7db1100d95.png') 0 -3975px no-repeat;
+  background: url('../img/icons-s2f76f913c3.png') 0 -2995px no-repeat;
   width: 8px;
   height: 12px;
   margin: 3px 0 0 5px;
 }
 /* line 675, ../sass/win-big.scss */
 .navi .navi__left i {
-  background: url('../img/icons-s7db1100d95.png') 0 -4021px no-repeat;
+  background: url('../img/icons-s2f76f913c3.png') 0 -3041px no-repeat;
   width: 8px;
   height: 12px;
 }
@@ -976,7 +976,7 @@
   position: absolute;
   top: 0;
   right: 0;
-  background: url('../img/icons-s7db1100d95.png') 0 -3300px no-repeat;
+  background: url('../img/icons-s2f76f913c3.png') 0 -2380px no-repeat;
   width: 15px;
   height: 40px;
 }
@@ -1031,7 +1031,7 @@
 .progress .progress__num_done:before {
   content: "";
   position: absolute;
-  background: url('../img/icons-s7db1100d95.png') 0 -4596px no-repeat;
+  background: url('../img/icons-s2f76f913c3.png') 0 -3596px no-repeat;
   width: 12px;
   height: 11px;
   top: 7px;
@@ -1127,7 +1127,7 @@
 }
 /* line 813, ../sass/win-big.scss */
 .graph__color .graph__color-icon {
-  background: url('../img/icons-s7db1100d95.png') 0 -1027px no-repeat;
+  background: url('../img/icons-s2f76f913c3.png') 0 -497px no-repeat;
   width: 20px;
   height: 21px;
   display: block;
@@ -1239,21 +1239,21 @@
 
 /* line 898, ../sass/win-big.scss */
 .garph__axis_x {
-  background: url('../img/icons-s7db1100d95.png') 0 -318px no-repeat;
+  background: url('../img/icons-s2f76f913c3.png') 0 -64px no-repeat;
   width: 34px;
   height: 34px;
 }
 
 /* line 901, ../sass/win-big.scss */
 .garph__axis_y {
-  background: url('../img/icons-s7db1100d95.png') 0 -362px no-repeat;
+  background: url('../img/icons-s2f76f913c3.png') 0 -108px no-repeat;
   width: 34px;
   height: 34px;
 }
 
 /* line 904, ../sass/win-big.scss */
 .graph__doc {
-  background: url('../img/icons-s7db1100d95.png') 0 -3599px no-repeat;
+  background: url('../img/icons-s2f76f913c3.png') 0 -2645px no-repeat;
   width: 34px;
   height: 34px;
   display: block;
@@ -1269,7 +1269,7 @@
 
 /* line 916, ../sass/win-big.scss */
 .graph__axis {
-  background: url('../img/icons-s7db1100d95.png') 0 -1237px no-repeat;
+  background: url('../img/icons-s2f76f913c3.png') 0 -661px no-repeat;
   width: 462px;
   height: 240px;
   display: block;
@@ -1321,25 +1321,25 @@
 }
 /* line 945, ../sass/win-big.scss */
 .docs .doc_docx {
-  background: url('../img/icons-s7db1100d95.png') 0 -1579px no-repeat;
+  background: url('../img/icons-s2f76f913c3.png') 0 -911px no-repeat;
   width: 32px;
   height: 32px;
 }
 /* line 948, ../sass/win-big.scss */
 .docs .doc_pdf {
-  background: url('../img/icons-s7db1100d95.png') 0 -2243px no-repeat;
+  background: url('../img/icons-s2f76f913c3.png') 0 -1323px no-repeat;
   width: 32px;
   height: 32px;
 }
 /* line 951, ../sass/win-big.scss */
 .docs .doc_xls {
-  background: url('../img/icons-s7db1100d95.png') 0 -1158px no-repeat;
+  background: url('../img/icons-s2f76f913c3.png') 0 -582px no-repeat;
   width: 32px;
   height: 32px;
 }
 /* line 954, ../sass/win-big.scss */
 .docs .doc_jpeg {
-  background: url('../img/icons-s7db1100d95.png') 0 -1621px no-repeat;
+  background: url('../img/icons-s2f76f913c3.png') 0 -953px no-repeat;
   width: 32px;
   height: 32px;
 }
@@ -1381,7 +1381,7 @@
 
 /* line 984, ../sass/win-big.scss */
 .arrow_left2 {
-  background: url('../img/icons-s7db1100d95.png') 0 -4448px no-repeat;
+  background: url('../img/icons-s2f76f913c3.png') 0 -3448px no-repeat;
   width: 34px;
   height: 34px;
   background-color: rgba(0, 0, 0, 0.4);
@@ -1390,7 +1390,7 @@
 
 /* line 989, ../sass/win-big.scss */
 .arrow_right2 {
-  background: url('../img/icons-s7db1100d95.png') 0 -4617px no-repeat;
+  background: url('../img/icons-s2f76f913c3.png') 0 -3617px no-repeat;
   width: 34px;
   height: 34px;
   background-color: rgba(0, 0, 0, 0.4);

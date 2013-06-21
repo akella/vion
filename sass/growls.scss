@@ -1,0 +1,58 @@
+@import "base";
+
+// growl
+
+.l-growl{
+	position: relative;
+	width: 300px;
+	@include border-radius(6px);
+	@include box-shadow(0 0 15px rgba(0,0,0,.7), inset 0 1px 0 rgba(255,255,255,.06));
+	background: #242a3a;
+	@include background-image(linear-gradient(top, #414856, #262d3d));
+	.close-growl{
+		display: none;
+		position: absolute;
+		top: 50%;
+		right: -12px;
+		margin: -12px 0 0 -12px;
+		@include sized-sprite($icons, close-growl);
+	}
+	&:hover{
+		margin: -2px 0 0 -2px;
+		border: 2px solid #bcbcc3;
+		.close-growl{
+			display: block;
+		}
+	}
+}
+.growl{
+	overflow: hidden;
+	@include border-radius(6px);
+	border: 1px solid rgba(0,0,0,.9);
+	.growl__img{
+		float: left;
+		width: 86px;
+		height: 99px;
+		border-right: 1px solid #1a2232;
+		background: #1e2535;
+		@include background-image(linear-gradient(top, #333a4a, #1f2738));
+		img{
+			width: 55px;
+			height: 57px;
+			padding: 20px 15px;
+		}
+	}
+	.growl__text{
+		float: right;
+		width: 180px;
+		height: 49px;
+		padding: 25px 15px;
+		border-left: 1px solid #404959;
+		color: #cfcfd6;
+		line-height: 1.4;
+		@include font-B;
+		font-size: 13px;
+		font-weight: bold;
+		@include text-shadow(0 1px 0 rgba(0,0,0,.75));
+	}
+}
