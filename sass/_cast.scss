@@ -17,17 +17,17 @@
 }
 .player__close{
 	float: left;
-	@include sized-sprite($icons, cast-close);
+	@include sized-sprite($video, cast-close);
 	&:hover{
-		@include sized-sprite($icons, cast-close-hover);
+		@include sized-sprite($video, cast-close-hover);
 	}
 }
 .player__minimize{
 	float: left;
 	margin-left: 5px;
-	@include sized-sprite($icons, cast-mini);
+	@include sized-sprite($video, cast-mini);
 	&:hover{
-		@include sized-sprite($icons, cast-mini-hover);
+		@include sized-sprite($video, cast-mini-hover);
 	}
 }
 .media{
@@ -58,7 +58,7 @@
 	 		bottom: -12px;
 	 		left: 50%;
 	 		margin: -12px 0 0 -12px;
-	 		@include sized-sprite($icons, close-growl);
+	 		@include sized-sprite($video, close-growl);
 	 	}
 	}
 	.cast__full-scr{
@@ -125,9 +125,9 @@
 	z-index: 5;
 }
 .controls__video{
-	@include sized-sprite($icons, control-video);
+	@include sized-sprite($video, control-video);
 	&:hover{
-		@include sized-sprite($icons, control-video-hover);
+		@include sized-sprite($video, control-video-hover);
 	}
 }
 .controls__panel{
@@ -160,7 +160,7 @@
 		i{
 			display: block;
 			margin: 0px auto;
-			@include sized-sprite($icons, colors);
+			@include sized-sprite($video, colors);
 		}
 	}
 	ul{
@@ -214,19 +214,19 @@
 		position: absolute;
 		top: -6px;
 		left: -5px;
-		@include sized-sprite($icons, volume-toggle);
+		@include sized-sprite($video, volume-toggle);
 	}
 }
 .controls__volume{
-	@include sized-sprite($icons, control-volume1);
+	@include sized-sprite($video, control-volume1);
 	&:hover{
-		@include sized-sprite($icons, control-volume1-hover);
+		@include sized-sprite($video, control-volume1-hover);
 	}
 }
 .controls__settings{
-	@include sized-sprite($icons, control-settings);
+	@include sized-sprite($video, control-settings);
 	&:hover{
-		@include sized-sprite($icons, control-settings-hover);
+		@include sized-sprite($video, control-settings-hover);
 	}
 }
 .controls__separate{
@@ -239,18 +239,18 @@
 	background: #343438;
 }
 .controls__playlist{
-	@include sized-sprite($icons, control-playlist);
+	@include sized-sprite($video, control-playlist);
 	&:hover{
-		@include sized-sprite($icons, control-playlist-hover);
+		@include sized-sprite($video, control-playlist-hover);
 	}
 }
 .controls__playlist.is-active{
-	@include sized-sprite($icons, control-playlist-hover);
+	@include sized-sprite($video, control-playlist-hover);
 }
 .controls__camera{
-	@include sized-sprite($icons, control-camera);
+	@include sized-sprite($video, control-camera);
 	&:hover{
-		@include sized-sprite($icons, control-camera-hover);
+		@include sized-sprite($video, control-camera-hover);
 		i{
 			display: block;
 		}
@@ -285,7 +285,7 @@
 	}
 }
 .controls__chat{
-	@include sized-sprite($icons, control-chat);
+	@include sized-sprite($video, control-chat);
 }
 
 // playlist
@@ -402,7 +402,7 @@
 		top: 50%;
 		left: 50%;
 		margin: -27px 0 0 -27px;
-		@include sized-sprite($icons, play);
+		@include sized-sprite($video, play);
 		cursor: pointer;
 	}
 }
@@ -410,14 +410,14 @@
 	position: absolute;
 	top: 36%;
 	left: 0;
-	@include sized-sprite($icons, video-prev);
+	@include sized-sprite($video, video-prev);
 	cursor: pointer;
 }
 #next{
 	position: absolute;
 	top: 36%;
 	right: 0;
-	@include sized-sprite($icons, video-next);
+	@include sized-sprite($video, video-next);
 	cursor: pointer;
 }
 
@@ -434,7 +434,7 @@
 		.video-play-small{
 			display: block;
 			margin: 0 auto;
-			@include sized-sprite($icons, video-play-small);
+			@include sized-sprite($video, video-play-small);
 		}
 	}
 	.video-progress__line{
@@ -486,7 +486,7 @@
  				position: absolute;
  				top: -5px;
  				right: -5px;
- 				@include sized-sprite($icons, video-toggle);
+ 				@include sized-sprite($video, video-toggle);
  			}
 		}
 	}
@@ -532,13 +532,13 @@
 	}
 }
 .cast-announce__logo{
-	@include sized-sprite($icons, logo2);
+	@include sized-sprite($video, logo2);
 }
 .cast-announce__plus{
-	@include sized-sprite($icons, plus);
+	@include sized-sprite($video, plus);
 }
 .cast-announce__break{
-	@include sized-sprite($icons, cup);
+	@include sized-sprite($video, cup);
 }
 .media__dev{
 	width: 270px;
@@ -661,13 +661,41 @@
 	}
 }
 .equalizer__toggle{
-	margin: 13px 19px 16px;
+	position: relative;
+	width: 34px;
+	height: 12px;
+	margin: 13px 0 16px 19px;
+	@include border-radius(6px);
+	background: rgba(17,17,17,.35);
+	@include box-shadow(0 1px 0 rgba(255,255,255,.35), inset 0 1px 2px rgba(0,0,0,.5));
 	cursor: pointer;
-	.eq-on{
-		display: block;
+	.equalizer__handle{
+		position: absolute;
+		top: -1px;
+		width: 14px;
+		height: 14px;
+		border: 1px solid rgba(2,1,2,.5);
+		@include border-radius(8px);
+		background-color: #000;
+		@include box-shadow(0 2px 4px rgba(2,1,2,.35), inset 0 2px 2px rgba(255,255,255,.12));
+		@include background-image(linear-gradient(bottom, #272727 0%, #272727 1.25%, #393939 100%));
+		span{
+			display: block;
+			width: 4px;
+			height: 4px;
+			margin: 5px;
+			background-color: #d90d0d;
+			@include border-radius(2px);
+			@include transition(background 0.2s ease);
+			@include transition-delay(0.1s);
+		}
 	}
-	.eq-off{
-		display: none;
+}
+.equalizer__toggle.on{
+	span{
+		background-color: #7ca129;
+		@include transition(background 0.2s ease);
+		@include transition-delay(0.1s);
 	}
 }
 .equalizer__controls{
@@ -690,7 +718,7 @@
 		background: #1e1e1e; 
 	}
 	.equalizer__progress{
-		@include sized-sprite($icons, volume-toggle);
+		@include sized-sprite($video, volume-toggle);
 		margin-left: -6px;
 		cursor: pointer;
 	}
@@ -746,6 +774,7 @@
 		width: 182px;
 		margin-left: 18px;
 		.adjustments__base{
+			position: relative;
  			width: 170px;
  			height: 5px;
  			margin: 6px 10px 0;
@@ -755,8 +784,9 @@
 			@include box-shadow(inset 0 1px 2px #000);	
  		}
  		.adjustments__slider{
- 			margin-top: -5px;
- 			@include sized-sprite($icons, volume-toggle);
+ 			position: absolute;
+ 			top: -5px;
+ 			@include sized-sprite($video, volume-toggle);
  			cursor: pointer;
  		}
 	}
@@ -767,14 +797,14 @@
 		position: absolute;
 		top: -3px;
 		left: -10px;
-		@include sized-sprite($icons, brightness-down);
+		@include sized-sprite($video, brightness-down);
 	}
 	&:after{
 		content: "";
 		position: absolute;
 		top: -3px;
 		right: -26px;
-		@include sized-sprite($icons, brightness-up);
+		@include sized-sprite($video, brightness-up);
 	}
 }
 .adjustments__contrast{
@@ -783,14 +813,14 @@
 		position: absolute;
 		top: -4px;
 		left: -10px;
-		@include sized-sprite($icons, contrast-down);
+		@include sized-sprite($video, contrast-down);
 	}
 	&:after{
 		content: "";
 		position: absolute;
 		top: -4px;
 		right: -21px;
-		@include sized-sprite($icons, contrast-up);
+		@include sized-sprite($video, contrast-up);
 	}
 }
 .adjustments__saturation{
@@ -799,14 +829,14 @@
 		position: absolute;
 		top: -4px;
 		left: -10px;
-		@include sized-sprite($icons, saturation-down);
+		@include sized-sprite($video, saturation-down);
 	}
 	&:after{
 		content: "";
 		position: absolute;
 		top: -4px;
 		right: -21px;
-		@include sized-sprite($icons, saturation-up);
+		@include sized-sprite($video, saturation-up);
 	}
 }
 .adjustments__smooth{
@@ -815,14 +845,14 @@
 		position: absolute;
 		top: -4px;
 		left: -10px;
-		@include sized-sprite($icons, smooth-down);
+		@include sized-sprite($video, smooth-down);
 	}
 	&:after{
 		content: "";
 		position: absolute;
 		top: -4px;
 		right: -21px;
-		@include sized-sprite($icons, smooth-up);
+		@include sized-sprite($video, smooth-up);
 	}
 }
 
