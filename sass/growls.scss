@@ -4,7 +4,6 @@
 
 .l-growl{
 	position: relative;
-	width: 300px;
 	@include border-radius(6px);
 	@include box-shadow(0 0 15px rgba(0,0,0,.7), inset 0 1px 0 rgba(255,255,255,.06));
 	background: #242a3a;
@@ -54,5 +53,8 @@
 		font-size: 13px;
 		font-weight: bold;
 		@include text-shadow(0 1px 0 rgba(0,0,0,.75));
+	}
+	.growl__text_loading{
+		width: 260px;
 	}
 }
