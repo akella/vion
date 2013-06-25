@@ -81,7 +81,7 @@
 	}
 	.icon-tabs{
 		position: absolute;
-		bottom: 86px;
+		bottom: 10px;
 		left: 50%;
 		margin-left: -22px;
 	}
@@ -290,6 +290,7 @@
 
 // playlist
 .media-gallery{
+	display: none;
 	position: absolute;
 	top: 62px;
 	height: 229px;
@@ -317,6 +318,9 @@
 		@include rotate(45deg);
 		background: url(../img/bg-win.png);
 		}
+}
+.media-gallery.is-active{
+	display: block;
 }
 .cycle-slideshow{
 	margin: 12px 0 0 -4px;

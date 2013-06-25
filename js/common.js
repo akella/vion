@@ -41,9 +41,14 @@ $(document).ready(function() {
 		else{
 			$(".equalizer__handle").animate({left: "0%",}, 200 );
 		}
-
 	});	
-	
+
+// media-gallery on/off
+
+	$(".controls__playlist").click(function(){
+		$(this).toggleClass('is-active');
+		$(".media-gallery").toggleClass('is-active');
+	});
 
 
 });
