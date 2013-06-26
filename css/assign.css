@@ -493,10 +493,11 @@ p.operator__question {
 
 /* line 341, ../sass/assign.scss */
 .microphone {
+  width: 100%;
   position: relative;
   margin: 5px 10px 0 0;
 }
-/* line 344, ../sass/assign.scss */
+/* line 345, ../sass/assign.scss */
 .microphone .microphone__progress-bar, .microphone .internet__progress-bar {
   position: relative;
   width: 89%;
@@ -513,7 +514,7 @@ p.operator__question {
   -moz-box-shadow: 0 1px 0 #454654, inset 0 0 0 1px rgba(0, 0, 0, 0.35);
   box-shadow: 0 1px 0 #454654, inset 0 0 0 1px rgba(0, 0, 0, 0.35);
 }
-/* line 353, ../sass/assign.scss */
+/* line 354, ../sass/assign.scss */
 .microphone .microphone__progress-bar .microphone__sound-level, .microphone .microphone__progress-bar .internet__download, .microphone .internet__progress-bar .microphone__sound-level, .microphone .internet__progress-bar .internet__download {
   height: 9px;
   -webkit-border-radius: 7px;
@@ -523,7 +524,7 @@ p.operator__question {
   border-radius: 7px;
   background: url(../img/microphone-progress-bar.png) repeat-x;
 }
-/* line 358, ../sass/assign.scss */
+/* line 359, ../sass/assign.scss */
 .microphone .microphone__progress-bar .internet__download, .microphone .internet__progress-bar .internet__download {
   -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.67), 0 0 3px rgba(0, 0, 0, 0.07);
   -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.67), 0 0 3px rgba(0, 0, 0, 0.07);
@@ -534,7 +535,7 @@ p.operator__question {
   background-image: -o-linear-gradient(bottom, #0a5ca1 0%, #4697c3 100%);
   background-image: linear-gradient(bottom, #0a5ca1 0%, #4697c3 100%);
 }
-/* line 362, ../sass/assign.scss */
+/* line 363, ../sass/assign.scss */
 .microphone .microphone__progress-bar .internet__download_violet, .microphone .internet__progress-bar .internet__download_violet {
   background-image: -webkit-gradient(linear, 50% 100%, 50% 0%, color-stop(0%, #470d62), color-stop(0.76%, #470d62), color-stop(100%, #8000cb));
   background-image: -webkit-linear-gradient(bottom, #470d62 0%, #470d62 0.76%, #8000cb 100%);
@@ -542,7 +543,7 @@ p.operator__question {
   background-image: -o-linear-gradient(bottom, #470d62 0%, #470d62 0.76%, #8000cb 100%);
   background-image: linear-gradient(bottom, #470d62 0%, #470d62 0.76%, #8000cb 100%);
 }
-/* line 365, ../sass/assign.scss */
+/* line 366, ../sass/assign.scss */
 .microphone .microphone__progress-bar .microphone__min-level, .microphone .microphone__progress-bar .microphone__max-level, .microphone .internet__progress-bar .microphone__min-level, .microphone .internet__progress-bar .microphone__max-level {
   height: 26px;
   width: 1px;
@@ -556,21 +557,21 @@ p.operator__question {
   background-image: -o-linear-gradient(bottom, #7a0000 0%, #7a0000 0.24%, #f80000 100%);
   background-image: linear-gradient(bottom, #7a0000 0%, #7a0000 0.24%, #f80000 100%);
 }
-/* line 372, ../sass/assign.scss */
+/* line 373, ../sass/assign.scss */
 .microphone .microphone__progress-bar .microphone__min-level, .microphone .internet__progress-bar .microphone__min-level {
   top: -5px;
   left: 53px;
 }
-/* line 376, ../sass/assign.scss */
+/* line 377, ../sass/assign.scss */
 .microphone .microphone__progress-bar .microphone__max-level, .microphone .internet__progress-bar .microphone__max-level {
   top: -5px;
   right: 53px;
 }
-/* line 381, ../sass/assign.scss */
+/* line 382, ../sass/assign.scss */
 .microphone .internet__progress-bar {
   background: #1f1f25 url(../img/progress-bar-bg.png);
 }
-/* line 384, ../sass/assign.scss */
+/* line 385, ../sass/assign.scss */
 .microphone .microphone__done {
   position: absolute;
   top: 0px;

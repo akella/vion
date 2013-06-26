@@ -10,6 +10,7 @@ $(document).ready(function() {
 	});
 
 // video-player 
+
 	$('.video-player').hover(
 		function(){
 			$('.video-player__more').fadeIn();
@@ -18,6 +19,7 @@ $(document).ready(function() {
 			$('.video-player__more').fadeOut();
 			}
 	);
+
 // tabs in chat 
 
 	$(".js-tab-cont").hide();
@@ -43,12 +45,39 @@ $(document).ready(function() {
 		}
 	});	
 
+// controls on/off
+	$(".hover-controls .controls").hide();
+	$('.hover-controls .media').hover(
+		function(){
+			$('.hover-controls .controls').slideDown();
+			},
+		function(){
+			$('.hover-controls .controls').slideUp();
+			}
+	);
+
 // media-gallery on/off
 
-	$(".controls__playlist").click(function(){
+	$(".hover-controls .controls__playlist").click(function(){
 		$(this).toggleClass('is-active');
-		$(".media-gallery").toggleClass('is-active');
+		$(".hover-controls .media-gallery").toggleClass('is-active');
 	});
 
+// cast title and progress on/off
+	
+	$(".hover-window .player__title").hide();
+	$(".hover-window .video-progress").hide();
+	$('.hover-window .media').hover(
+		function(){
+			$('.hover-window .player__title').show();
+			$('.hover-window .video-progress').show();
+			$('.player.hover-window').css('margin-top', '-24px');
+			},
+		function(){
+			$(".hover-window .player__title").hide();
+			$(".hover-window .video-progress").hide();
+			$('.player.hover-window').css('margin-top', '0');
+			}
+	);
 
 });
