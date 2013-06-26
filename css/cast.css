@@ -607,7 +607,7 @@
 }
 
 /* line 413, ../sass/cast.scss */
-#prev, #prev2 {
+#prev, #prev2, #prev3 {
   position: absolute;
   top: 36%;
   left: 0;
@@ -618,7 +618,7 @@
 }
 
 /* line 420, ../sass/cast.scss */
-#next, #next2 {
+#next, #next2, #next3 {
   position: absolute;
   top: 36%;
   right: 0;

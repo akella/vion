@@ -72,12 +72,27 @@ $(document).ready(function() {
 		function(){
 			$('.hover-window .player__title').show();
 			$('.hover-window .video-progress').show();
-			$('.player.hover-window').css('margin', '-24px 0 24px');
+			$('.player.hover-window').css('margin', '-24px 0 0');
 			},
 		function(){
 			$(".hover-window .player__title").hide();
 			$(".hover-window .video-progress").hide();
 			$('.player.hover-window').css('margin', '0');
+			}
+	);
+
+// player in chat window
+	$('.widget .player').css('background', 'transparent');
+	 $('.player.hover-color').hover(
+		function(){
+			$('.hover-color').css('background', '#fff');
+			$('.hover-color .player__title').show();
+			$('.player.hover-color').css('margin', '0 0 -20px');
+			},
+		function(){
+			$('.player.hover-color').css('background', 'transparent');
+			$(".hover-color .player__title").hide();
+			$('.player.hover-color').css('margin', '0');
 			}
 	);
 

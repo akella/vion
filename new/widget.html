@@ -13,6 +13,8 @@
 	<script type="text/javascript" src="../js/jquery.formstyler.min.js"></script>
 	<script type="text/javascript" src="../js/jquery.tinyscrollbar.min.js"></script>
 	<script type="text/javascript" src="../js/common.js"></script>
+	<script type="text/javascript" src="../js/jquery.cycle2.min.js"></script>
+	<script type="text/javascript" src="../js/jquery.cycle2.carusel.js"></script>
 </head>
 <body>
 <!-- ==========================================================	 -->
@@ -232,13 +234,126 @@
 			<div class="chat__tab-items">
 				<!-- BEGIN chat text-tab -->
 					<div class="chat__text-item js-tab-cont js-tab1">
-						<div class="widget__video">
-							<img src="../img/video3.png" alt="">
+					<div class="player player_widget hover-controls">
+	<div class="player__title">
+		<div class="player__close"></div>
+		<div class="player__minimize"></div>
+	</div>
+	<div class="media">
+		<div class="media-gallery">
+			<h2>Playlist: Sunday, March 4th</h2>
+			<div class="cycle-slideshow"
+			data-cycle-fx=carousel
+        	data-cycle-timeout=0
+        	data-cycle-prev="#prev3"
+        	data-cycle-next="#next3"
+        	data-cycle-slides="> div">
+        		<div class="media-gallery__item">
+        			<div class="wrapper-media-gallery__video">
+        				<div class="media-gallery__video">
+        					<span class="video-duration">02:08:30</span>
+        					<span class="video-play"></span>
+        				</div>
+        			</div>
+        			<h3>Limbo: what does it all mean?</h3>
+        			<p>By GamesRadar staff </p>
+        		</div>
+        		<div class="media-gallery__item">
+        			<div class="wrapper-media-gallery__video">
+        				<div class="media-gallery__video">
+        					<span class="video-duration">01:04:30</span>
+        					<span class="video-play"></span>
+        				</div>
+        			</div>
+        			<h3>Limbo: what does it all mean?</h3>
+        			<p>By GamesRadar staff</p>
+        		</div>
+        		<div class="media-gallery__item">
+        			<div class="wrapper-media-gallery__video">
+        				<div class="media-gallery__video">
+        					<span class="video-duration">04:45:21</span>
+        					<i></i>
+        					<span class="video-play"></span>
+        				</div>
+        			</div>
+        			<h3>Limbo: what does it all mean?</h3>
+        			<p>By GamesRadar staff </p>
+        		</div>
+			</div>
+			<div class="media-gallery__navigation">
+				<span id="prev3"></span>
+        		<span id="next3"></span>
+        	</div>
+        	<div class="icon-tabs">
+				<i class="icon-tabs__is-active"></i>
+				<i></i>
+				<i></i>
+			</div>	
+		</div>
+		<div class="controls">
+			<div class="wrapper-controls__video">
+				<div class="controls__item controls__video">
+				</div>
+				<div class="controls__panel" style="display:none;">
+					<span><i></i></span>
+					<ul>
+						<li>HD</li>
+						<li>mid</li>
+						<li>low</li>
+						<li>auto</li>
+					</ul>
+				</div>
+			</div>
+			<div class="wrapper-controls__volume">	
+				<div class="controls__item controls__volume"></div>
+				<div class="controls__panel" style="display:none;">
+					<span>EG</span>
+					<div class="volume-toggle">
+						<div class="volume-toggle__base">
+							<div class="volume-toggle__progress" style="height:35%;"></div>
+						</div>
+					</div>
+				</div>
+			</div>	
+				<div class="controls__separate"></div>
+			<div class="wrapper-controls__playlist">	
+				<div class="controls__item controls__playlist"></div>
+			</div>
+			<div class="wrapper-controls__camera">	
+				<div class="controls__item controls__camera">
+					<i>Add camera</i>
+				</div>
+			</div>	
+				<div class="controls__separate"></div>
+			<div class="wrapper-controls__chat">	
+				<div class="controls__item controls__chat"></div>
+			</div>	
+		</div>
+	</div>
+	<div class="video-progress">
+		<div class="video-progress__play">
+			<i class="video-play-small"></i>
+		</div>
+		<div class="video-progress__line">
+			<div class="video-progress__base">
+				<i class="video-progress__point1"></i>
+				<i class="video-progress__point2"></i>
+				<i class="video-progress__point3"></i>
+				<i class="video-progress__point4"></i>
+				<div class="video-progress__loading" style="width:80%;">
+					<div class="video-progress__progress" style="width:30%;"></div>
+				</div>
+			</div>
+		</div>
+		<div class="video-progress__time">
+			01:30 / 04:23
+		</div>
+	</div>
 						</div>
 						<div class="form-search">
 							<form action="#">
-								<input type="text" class="input-search input-search_widget" id="input-search2">
-								<label for="input-search2" class="icon-search"></label>
+								<input type="text" class="input-search input-search_widget" id="input-search3">
+								<label for="input-search3" class="icon-search"></label>
 								<a class="input-search__cancel" href="#"></a>
 							</form>
 						</div>
@@ -296,26 +411,73 @@
 	<!-- END chat  -->
 <!-- ==========================================================	 -->
 <!-- BEGIN chat-->
-<div class="win widget"  style="position:absolute; top: 64px; left:70%">
+<div class="win widget"  style="position:absolute; top: 64px; left:72%">
 	<div class="win__content win__content_mod win__content_widget">
 		<div class="win__content-wrapper chat">	
 			<div class="chat__tab-items">
 				<!-- BEGIN chat text-tab -->
 					<div class="chat__text-item js-tab-cont js-tab1">
-						<!-- BEGIN cast-->
-<div class="player player_widget">
+					<div class="player player_widget hover-color">
 	<div class="player__title">
 		<div class="player__close"></div>
 		<div class="player__minimize"></div>
 	</div>
 	<div class="media">
-		<img src="../img/video3.png" alt="">
-		<div class="wrapper-controls">
-			<div class="controls">
+		<div class="media-gallery">
+			<h2>Playlist: Sunday, March 4th</h2>
+			<div class="cycle-slideshow"
+			data-cycle-fx=carousel
+        	data-cycle-timeout=0
+        	data-cycle-prev="#prev4"
+        	data-cycle-next="#next4"
+        	data-cycle-slides="> div">
+        		<div class="media-gallery__item">
+        			<div class="wrapper-media-gallery__video">
+        				<div class="media-gallery__video">
+        					<span class="video-duration">02:08:30</span>
+        					<span class="video-play"></span>
+        				</div>
+        			</div>
+        			<h3>Limbo: what does it all mean?</h3>
+        			<p>By GamesRadar staff </p>
+        		</div>
+        		<div class="media-gallery__item">
+        			<div class="wrapper-media-gallery__video">
+        				<div class="media-gallery__video">
+        					<span class="video-duration">01:04:30</span>
+        					<span class="video-play"></span>
+        				</div>
+        			</div>
+        			<h3>Limbo: what does it all mean?</h3>
+        			<p>By GamesRadar staff</p>
+        		</div>
+        		<div class="media-gallery__item">
+        			<div class="wrapper-media-gallery__video">
+        				<div class="media-gallery__video">
+        					<span class="video-duration">04:45:21</span>
+        					<i></i>
+        					<span class="video-play"></span>
+        				</div>
+        			</div>
+        			<h3>Limbo: what does it all mean?</h3>
+        			<p>By GamesRadar staff </p>
+        		</div>
+			</div>
+			<div class="media-gallery__navigation">
+				<span id="prev4"></span>
+        		<span id="next4"></span>
+        	</div>
+        	<div class="icon-tabs">
+				<i class="icon-tabs__is-active"></i>
+				<i></i>
+				<i></i>
+			</div>	
+		</div>
+		<div class="controls">
 			<div class="wrapper-controls__video">
 				<div class="controls__item controls__video">
 				</div>
-				<div class="controls__panel">
+				<div class="controls__panel" style="display:none;">
 					<span><i></i></span>
 					<ul>
 						<li>HD</li>
@@ -327,7 +489,7 @@
 			</div>
 			<div class="wrapper-controls__volume">	
 				<div class="controls__item controls__volume"></div>
-				<div class="controls__panel">
+				<div class="controls__panel" style="display:none;">
 					<span>EG</span>
 					<div class="volume-toggle">
 						<div class="volume-toggle__base">
@@ -349,15 +511,32 @@
 			<div class="wrapper-controls__chat">	
 				<div class="controls__item controls__chat"></div>
 			</div>	
-			</div>
-		</div>	
+		</div>
 	</div>
-</div>
-<!-- END cast-->
+	<div class="video-progress">
+		<div class="video-progress__play">
+			<i class="video-play-small"></i>
+		</div>
+		<div class="video-progress__line">
+			<div class="video-progress__base">
+				<i class="video-progress__point1"></i>
+				<i class="video-progress__point2"></i>
+				<i class="video-progress__point3"></i>
+				<i class="video-progress__point4"></i>
+				<div class="video-progress__loading" style="width:80%;">
+					<div class="video-progress__progress" style="width:30%;"></div>
+				</div>
+			</div>
+		</div>
+		<div class="video-progress__time">
+			01:30 / 04:23
+		</div>
+	</div>
+						</div>
 						<div class="form-search">
 							<form action="#">
-								<input type="text" class="input-search input-search_widget" id="input-search2">
-								<label for="input-search2" class="icon-search"></label>
+								<input type="text" class="input-search input-search_widget" id="input-search3">
+								<label for="input-search3" class="icon-search"></label>
 								<a class="input-search__cancel" href="#"></a>
 							</form>
 						</div>
@@ -389,23 +568,23 @@
 								</li>
 							</ul>
 						</div>
-						<div class="chat__counter">
-							<div class="chat__progress-bar">
-								<div class="chat__counter-progress" style="width: 70%;"></div>
-							</div>
-							<div class="chat__counter-nunber">170</div>
-						</div>
-						<div class="input-message">
-							<div class="input-message__text">
-								<div class="input-message__config">
-									<a href="#"><i class="config-message"></i><i class="arr-15"></i></a>
+							<div class="chat__counter">
+								<div class="chat__progress-bar">
+									<div class="chat__counter-progress" style="width: 70%;"></div>
 								</div>
-								<form>
-									<textarea class="input-message__input"></textarea>
-									</form>
+								<div class="chat__counter-nunber">170</div>
 							</div>
-							<button class="button-round button-round_send-message"><i></i></button>
-						</div>
+							<div class="input-message">
+								<div class="input-message__text">
+									<div class="input-message__config">
+										<a href="#"><i class="config-message"></i><i class="arr-15"></i></a>
+									</div>
+									<form>
+										<textarea class="input-message__input"></textarea>
+									</form>
+								</div>
+								<button class="button-round button-round_send-message"><i></i></button>
+							</div>
 					</div>	
 				<!-- END chat text-tab -->
 			</div>			

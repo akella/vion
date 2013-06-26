@@ -410,14 +410,14 @@
 		cursor: pointer;
 	}
 }
-#prev, #prev2{
+#prev, #prev2, #prev3, #prev4{
 	position: absolute;
 	top: 36%;
 	left: 0;
 	@include sized-sprite($video, video-prev);
 	cursor: pointer;
 }
-#next, #next2{
+#next, #next2, #next3, #next4{
 	position: absolute;
 	top: 36%;
 	right: 0;
