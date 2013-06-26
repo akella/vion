@@ -45,8 +45,11 @@ $(document).ready(function() {
 		}
 	});	
 
+// invisible elements of cast window
+	$(".controls").hide();
+	$(".player__title").hide();
+	$(".video-progress").hide();
 // controls on/off
-	$(".hover-controls .controls").hide();
 	$('.hover-controls .media').hover(
 		function(){
 			$('.hover-controls .controls').slideDown();
@@ -65,18 +68,16 @@ $(document).ready(function() {
 
 // cast title and progress on/off
 	
-	$(".hover-window .player__title").hide();
-	$(".hover-window .video-progress").hide();
 	$('.hover-window .media').hover(
 		function(){
 			$('.hover-window .player__title').show();
 			$('.hover-window .video-progress').show();
-			$('.player.hover-window').css('margin-top', '-24px');
+			$('.player.hover-window').css('margin', '-24px 0 24px');
 			},
 		function(){
 			$(".hover-window .player__title").hide();
 			$(".hover-window .video-progress").hide();
-			$('.player.hover-window').css('margin-top', '0');
+			$('.player.hover-window').css('margin', '0');
 			}
 	);
 
