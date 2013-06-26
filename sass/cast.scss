@@ -570,7 +570,6 @@
 // small-window
 .wrapper-small-window{
 	width: 270px;
-	height: 170px;
 	border: 1px solid #000;
 	@include border-radius(2px);
 	background-color: rgba(27,27,27,.8);
@@ -597,6 +596,18 @@
 	a{
 		color: #73bad8;
 	}
+}
+.small-window__title{
+	position: relative;
+	height: 20px;
+	border: none;
+}
+.small-window__close{
+	position: absolute;
+	top: 3px;
+	left: 4px;
+	cursor: pointer;
+	@include sized-sprite($icons, bullet-red);
 }
 .small-window__connecting{
 	margin-top: 18px;
@@ -638,14 +649,14 @@
 .window{
 	position: relative;
 	overflow: hidden;
-	width: 270px;
-	min-width: 270px;
+	width: 270px!important;
+	min-width: 270px!important;
 	.small-window{
 		margin: auto;
 	}
 }
 .window__content{
-	padding: 6px 6px 0;
+	padding: 6px;
 	background: #1d1d1d;
 }
 .window__controls{

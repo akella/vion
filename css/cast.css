@@ -607,7 +607,7 @@
 }
 
 /* line 413, ../sass/cast.scss */
-#prev, #prev2, #prev3 {
+#prev, #prev2, #prev3, #prev4 {
   position: absolute;
   top: 36%;
   left: 0;
@@ -618,7 +618,7 @@
 }
 
 /* line 420, ../sass/cast.scss */
-#next, #next2, #next3 {
+#next, #next2, #next3, #next4 {
   position: absolute;
   top: 36%;
   right: 0;
@@ -842,7 +842,6 @@
 /* line 571, ../sass/cast.scss */
 .wrapper-small-window {
   width: 270px;
-  height: 170px;
   border: 1px solid #000;
   -webkit-border-radius: 2px;
   -moz-border-radius: 2px;
@@ -860,7 +859,7 @@
   background-image: linear-gradient(bottom, rgba(0, 0, 0, 0.2) 0%, rgba(255, 255, 255, 0.2) 100%);
 }
 
-/* line 580, ../sass/cast.scss */
+/* line 579, ../sass/cast.scss */
 .small-window {
   position: relative;
   width: 256px;
@@ -873,7 +872,7 @@
   box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.15);
   text-align: center;
 }
-/* line 589, ../sass/cast.scss */
+/* line 588, ../sass/cast.scss */
 .small-window p {
   margin: 10px 0 5px;
   color: #969595;
@@ -882,22 +881,40 @@
   font-weight: bold;
   text-shadow: 0 1px 0 rgba(0, 0, 0, 0.75);
 }
-/* line 597, ../sass/cast.scss */
+/* line 596, ../sass/cast.scss */
 .small-window a {
   color: #73bad8;
 }
 
-/* line 601, ../sass/cast.scss */
+/* line 600, ../sass/cast.scss */
+.small-window__title {
+  position: relative;
+  height: 20px;
+  border: none;
+}
+
+/* line 605, ../sass/cast.scss */
+.small-window__close {
+  position: absolute;
+  top: 3px;
+  left: 4px;
+  cursor: pointer;
+  background: url('../img/icons-s2f76f913c3.png') 0 -1540px no-repeat;
+  width: 20px;
+  height: 20px;
+}
+
+/* line 612, ../sass/cast.scss */
 .small-window__connecting {
   margin-top: 18px;
 }
 
-/* line 604, ../sass/cast.scss */
+/* line 615, ../sass/cast.scss */
 .small-window__error {
   margin-top: 70px;
 }
 
-/* line 607, ../sass/cast.scss */
+/* line 618, ../sass/cast.scss */
 .small-window__loading {
   position: absolute;
   top: 0;
@@ -906,7 +923,7 @@
   bottom: 0;
   background: rgba(0, 0, 0, 0.5);
 }
-/* line 614, ../sass/cast.scss */
+/* line 625, ../sass/cast.scss */
 .small-window__loading img {
   position: absolute;
   top: 50%;
@@ -914,7 +931,7 @@
   margin: -28px 0 0 -28px;
 }
 
-/* line 621, ../sass/cast.scss */
+/* line 632, ../sass/cast.scss */
 .small-window__button {
   position: absolute;
   top: 0;
@@ -924,7 +941,7 @@
   background: rgba(0, 0, 0, 0.2);
   cursor: pointer;
 }
-/* line 629, ../sass/cast.scss */
+/* line 640, ../sass/cast.scss */
 .small-window__button img {
   position: absolute;
   top: 50%;
@@ -932,31 +949,31 @@
   margin: -27px 0 0 -27px;
 }
 
-/* line 638, ../sass/cast.scss */
+/* line 649, ../sass/cast.scss */
 .window {
   position: relative;
   overflow: hidden;
-  width: 270px;
-  min-width: 270px;
+  width: 270px !important;
+  min-width: 270px !important;
 }
-/* line 643, ../sass/cast.scss */
+/* line 654, ../sass/cast.scss */
 .window .small-window {
   margin: auto;
 }
 
-/* line 647, ../sass/cast.scss */
+/* line 658, ../sass/cast.scss */
 .window__content {
-  padding: 6px 6px 0;
+  padding: 6px;
   background: #1d1d1d;
 }
 
-/* line 651, ../sass/cast.scss */
+/* line 662, ../sass/cast.scss */
 .window__controls {
   margin: 10px 0 0;
   text-align: center;
 }
 
-/* line 657, ../sass/cast.scss */
+/* line 668, ../sass/cast.scss */
 .equalizer {
   position: relative;
   width: 320px;
@@ -964,7 +981,7 @@
   background: #222428;
   border: 1px solid #000;
 }
-/* line 663, ../sass/cast.scss */
+/* line 674, ../sass/cast.scss */
 .equalizer .win__title {
   border: none;
   background: #222428;
@@ -975,7 +992,7 @@
   background-image: linear-gradient(top, #4f5155, #222428);
 }
 
-/* line 669, ../sass/cast.scss */
+/* line 680, ../sass/cast.scss */
 .equalizer__toggle {
   position: relative;
   width: 34px;
@@ -992,7 +1009,7 @@
   box-shadow: 0 1px 0 rgba(255, 255, 255, 0.35), inset 0 1px 2px rgba(0, 0, 0, 0.5);
   cursor: pointer;
 }
-/* line 678, ../sass/cast.scss */
+/* line 689, ../sass/cast.scss */
 .equalizer__toggle .equalizer__handle {
   position: absolute;
   top: -1px;
@@ -1014,7 +1031,7 @@
   background-image: -o-linear-gradient(bottom, #272727 0%, #272727 1.25%, #393939 100%);
   background-image: linear-gradient(bottom, #272727 0%, #272727 1.25%, #393939 100%);
 }
-/* line 688, ../sass/cast.scss */
+/* line 699, ../sass/cast.scss */
 .equalizer__toggle .equalizer__handle span {
   display: block;
   width: 4px;
@@ -1036,7 +1053,7 @@
   transition-delay: 0.1s;
 }
 
-/* line 701, ../sass/cast.scss */
+/* line 712, ../sass/cast.scss */
 .equalizer__toggle.on span {
   background-color: #7ca129;
   -webkit-transition: background 0.2s ease;
@@ -1049,20 +1066,20 @@
   transition-delay: 0.1s;
 }
 
-/* line 707, ../sass/cast.scss */
+/* line 718, ../sass/cast.scss */
 .equalizer__controls {
   margin: 0 23px 16px;
   overflow: hidden;
 }
 
-/* line 711, ../sass/cast.scss */
+/* line 722, ../sass/cast.scss */
 .equalizer__item {
   float: left;
   width: 17px;
   padding-left: 10px;
   background: url(../img/eq-bg.png) 0 0 no-repeat;
 }
-/* line 716, ../sass/cast.scss */
+/* line 727, ../sass/cast.scss */
 .equalizer__item .equalizer__base {
   position: relative;
   width: 3px;
@@ -1079,7 +1096,7 @@
   box-shadow: 0 0 1px 1px #2f2f2f;
   background: #1e1e1e;
 }
-/* line 726, ../sass/cast.scss */
+/* line 737, ../sass/cast.scss */
 .equalizer__item .equalizer__progress {
   background: url('../img/video-s96d27f6e79.png') 0 -1184px no-repeat;
   width: 15px;
@@ -1088,14 +1105,14 @@
   cursor: pointer;
 }
 
-/* line 732, ../sass/cast.scss */
+/* line 743, ../sass/cast.scss */
 .equalizer__text {
   width: 49px;
   float: left;
   padding-right: 6px;
   text-align: right;
 }
-/* line 737, ../sass/cast.scss */
+/* line 748, ../sass/cast.scss */
 .equalizer__text p {
   margin-top: 45px;
   color: #8b8b91;
@@ -1104,12 +1121,12 @@
   font-weight: bold;
   text-shadow: 0 1px 0 rgba(0, 0, 0, 0.75);
 }
-/* line 744, ../sass/cast.scss */
+/* line 755, ../sass/cast.scss */
 .equalizer__text p:first-child {
   margin-top: 0;
 }
 
-/* line 751, ../sass/cast.scss */
+/* line 762, ../sass/cast.scss */
 .adjustments {
   padding: 21px 15px 9px;
   border-bottom: 1px solid #000;
@@ -1118,18 +1135,18 @@
   box-shadow: 1px 0 1px #434549;
 }
 
-/* line 756, ../sass/cast.scss */
+/* line 767, ../sass/cast.scss */
 .adjustments__item {
   overflow: hidden;
   margin-top: 12px;
   text-align: right;
 }
-/* line 760, ../sass/cast.scss */
+/* line 771, ../sass/cast.scss */
 .adjustments__item:first-child {
   margin-top: 0;
 }
 
-/* line 764, ../sass/cast.scss */
+/* line 775, ../sass/cast.scss */
 .adjustments__name {
   float: left;
   width: 65px;
@@ -1140,20 +1157,20 @@
   text-shadow: 0 1px 0 rgba(0, 0, 0, 0.75);
 }
 
-/* line 773, ../sass/cast.scss */
+/* line 784, ../sass/cast.scss */
 .adjustments__toggle {
   float: left;
   width: 225px;
   height: 20px;
   background: url(../img/eq-bg2.png) 32px 15px no-repeat;
 }
-/* line 778, ../sass/cast.scss */
+/* line 789, ../sass/cast.scss */
 .adjustments__toggle .adjustments__progress {
   position: relative;
   width: 182px;
   margin-left: 18px;
 }
-/* line 782, ../sass/cast.scss */
+/* line 793, ../sass/cast.scss */
 .adjustments__toggle .adjustments__progress .adjustments__base {
   position: relative;
   width: 170px;
@@ -1170,7 +1187,7 @@
   -moz-box-shadow: inset 0 1px 2px black;
   box-shadow: inset 0 1px 2px black;
 }
-/* line 792, ../sass/cast.scss */
+/* line 803, ../sass/cast.scss */
 .adjustments__toggle .adjustments__progress .adjustments__slider {
   position: absolute;
   top: -5px;
@@ -1180,7 +1197,7 @@
   cursor: pointer;
 }
 
-/* line 801, ../sass/cast.scss */
+/* line 812, ../sass/cast.scss */
 .adjustments__brightness:before {
   content: "";
   position: absolute;
@@ -1190,7 +1207,7 @@
   width: 19px;
   height: 13px;
 }
-/* line 808, ../sass/cast.scss */
+/* line 819, ../sass/cast.scss */
 .adjustments__brightness:after {
   content: "";
   position: absolute;
@@ -1201,7 +1218,7 @@
   height: 13px;
 }
 
-/* line 817, ../sass/cast.scss */
+/* line 828, ../sass/cast.scss */
 .adjustments__contrast:before {
   content: "";
   position: absolute;
@@ -1211,7 +1228,7 @@
   width: 16px;
   height: 16px;
 }
-/* line 824, ../sass/cast.scss */
+/* line 835, ../sass/cast.scss */
 .adjustments__contrast:after {
   content: "";
   position: absolute;
@@ -1222,7 +1239,7 @@
   height: 16px;
 }
 
-/* line 833, ../sass/cast.scss */
+/* line 844, ../sass/cast.scss */
 .adjustments__saturation:before {
   content: "";
   position: absolute;
@@ -1232,7 +1249,7 @@
   width: 16px;
   height: 16px;
 }
-/* line 840, ../sass/cast.scss */
+/* line 851, ../sass/cast.scss */
 .adjustments__saturation:after {
   content: "";
   position: absolute;
@@ -1243,7 +1260,7 @@
   height: 16px;
 }
 
-/* line 849, ../sass/cast.scss */
+/* line 860, ../sass/cast.scss */
 .adjustments__smooth:before {
   content: "";
   position: absolute;
@@ -1253,7 +1270,7 @@
   width: 16px;
   height: 16px;
 }
-/* line 856, ../sass/cast.scss */
+/* line 867, ../sass/cast.scss */
 .adjustments__smooth:after {
   content: "";
   position: absolute;
@@ -1264,7 +1281,7 @@
   height: 16px;
 }
 
-/* line 866, ../sass/cast.scss */
+/* line 877, ../sass/cast.scss */
 .chat__audio {
   height: 141px;
   margin-bottom: 17px;
@@ -1273,26 +1290,26 @@
   box-shadow: 2px 0px 8px 3px black;
 }
 
-/* line 871, ../sass/cast.scss */
+/* line 882, ../sass/cast.scss */
 .widget {
   width: 656px;
 }
-/* line 873, ../sass/cast.scss */
+/* line 884, ../sass/cast.scss */
 .widget .input-message__text form {
   width: 497px;
 }
-/* line 876, ../sass/cast.scss */
+/* line 887, ../sass/cast.scss */
 .widget .input-message__text {
   width: 90%;
 }
 
-/* line 880, ../sass/cast.scss */
+/* line 891, ../sass/cast.scss */
 .form-search .input-search_widget {
   width: 572px;
   padding: 3px 27px 3px 24px;
 }
 
-/* line 884, ../sass/cast.scss */
+/* line 895, ../sass/cast.scss */
 .widget__video {
   position: relative;
   left: -7px;
@@ -1304,7 +1321,7 @@
   box-shadow: 0 0 6px 1px black;
 }
 
-/* line 892, ../sass/cast.scss */
+/* line 903, ../sass/cast.scss */
 .player_widget {
   left: -15px;
   top: -20px;
@@ -1316,7 +1333,7 @@
   border: none;
 }
 
-/* line 898, ../sass/cast.scss */
+/* line 909, ../sass/cast.scss */
 .win .win__content_widget {
   -webkit-border-radius: 6px;
   -moz-border-radius: 6px;

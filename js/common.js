@@ -49,6 +49,7 @@ $(document).ready(function() {
 	$(".controls").hide();
 	$(".player__title").hide();
 	$(".video-progress").hide();
+
 // controls on/off
 	$('.hover-controls .media').hover(
 		function(){
@@ -95,5 +96,22 @@ $(document).ready(function() {
 			$('.player.hover-color').css('margin', '0');
 			}
 	);
+
+// small-window hover
+	
+    $(".window .win__title").hide();
+    $(".window .window__controls").hide();
+    $('.window .window__content').hover(
+    	function(){
+    		$(".window .win__title").show();
+    		$(".window .window__controls").show();
+    		$('.window').css('margin', '-32px 0 40px');
+    		},
+    	function(){
+    		$(".window .win__title").hide();
+    		$(".window .window__controls").hide();
+    		$('.window').css('margin', '0');
+    		}
+    );
 
 });
