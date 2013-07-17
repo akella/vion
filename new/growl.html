@@ -7,6 +7,7 @@
 	<link rel="stylesheet" media="screen" href="../css/screen.css" >
 	<link rel="stylesheet" media="screen" href="../css/growls.css" >
 	<link rel="stylesheet" media="screen" href="../css/chat.css" >
+	<link rel="stylesheet" media="screen" href="../css/assign.css" >
 	<script type="text/javascript" src="../js/html5.js"></script>
 	<script type="text/javascript" src="../js/jquery-1.8.3.min.js"></script>
 	<script type="text/javascript" src="../js/jquery.formstyler.min.js"></script>
@@ -16,7 +17,7 @@
 <body>
 <!-- ==========================================================	 -->
 	<!-- BEGIN no-shift-->
-<div class="l-growl"  style="position:absolute; top: 5%; left:45%">
+<div class="l-growl"  style="position:absolute; top: 5%; left:10%">
 	<a href="#" class="close-growl"></a>
 	<div class="growl">
 		<div class="growl__img">
@@ -30,7 +31,7 @@
 	<!-- END no-shift-->
 <!-- ==========================================================	 -->
 	<!-- BEGIN no-mic-->
-<div class="l-growl"  style="position:absolute; top: 22%; left:45%">
+<div class="l-growl"  style="position:absolute; top: 5%; left:40%">
 	<a href="#" class="close-growl"></a>
 	<div class="growl">
 		<div class="growl__img">
@@ -44,7 +45,7 @@
 	<!-- END no-mic-->
 <!-- ==========================================================	 -->
 	<!-- BEGIN old-flash-->
-<div class="l-growl"  style="position:absolute; top: 39%; left:45%">
+<div class="l-growl"  style="position:absolute; top: 5%; left:70%">
 	<a href="#" class="close-growl"></a>
 	<div class="growl">
 		<div class="growl__img">
@@ -58,7 +59,7 @@
 	<!-- END no-flash-->
 <!-- ==========================================================	 -->
 <!-- BEGIN old-flash-->
-<div class="l-growl"  style="position:absolute; top: 56%; left:45%">
+<div class="l-growl"  style="position:absolute; top: 45%; left:10%">
 	<a href="#" class="close-growl"></a>
 	<div class="growl">
 		<div class="growl__img">
@@ -72,25 +73,27 @@
 	<!-- END no-flash-->
 <!-- ==========================================================	 -->
 <!-- BEGIN loading-->
-<div class="l-growl"  style="position:absolute; top: 73%; left:45%">
+<div class="l-growl"  style="position:absolute; top: 45%; left:40%">
 	<a href="#" class="close-growl"></a>
 	<div class="growl">
 		<div class="growl__img">
 			<img src="../img/echo.png" alt="">
 		</div>
-		<div class="growl__text growl__text_loading">
-			<div class="sending-file">
-			<div class="sending-file__info">
-				<p class="sending-file__name">File_name.pdf</p>
-				<div class="microphone">
-					<div class="internet__progress-bar">
-						<div class="internet__download" style="width:60%;"></div>
-					</div>
-					<img class="download__cancel" src="../img/cancel.png" alt="">
-				</div>
-				<p class="sending-file__weight">1.5 of 30 MB - 2 minutes remaining</p>
-			</div>
-		</div>
+		<div class="growl__text">
+			<div class="chat__loading">
+								<div class="sending-file">
+									<div class="sending-file__info">
+										<p class="sending-file__name">File_name.pdf</p>
+										<div class="microphone">
+											<div class="internet__progress-bar">
+												<div class="internet__download internet__download_violet" style="width:40%;"></div>
+											</div>
+											<img class="download__cancel" src="../img/cancel.png" alt="">
+										</div>
+										<p class="sending-file__weight">1.5 of 30 MB - 2 minutes remaining</p>
+									</div>
+								</div>
+							</div>
 		</div>
 	</div>
 </div>

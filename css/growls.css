@@ -9,14 +9,8 @@
   -webkit-box-shadow: 0 0 15px rgba(0, 0, 0, 0.7), inset 0 1px 0 rgba(255, 255, 255, 0.06);
   -moz-box-shadow: 0 0 15px rgba(0, 0, 0, 0.7), inset 0 1px 0 rgba(255, 255, 255, 0.06);
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.7), inset 0 1px 0 rgba(255, 255, 255, 0.06);
-  background: #242a3a;
-  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #414856), color-stop(100%, #262d3d));
-  background-image: -webkit-linear-gradient(top, #414856, #262d3d);
-  background-image: -moz-linear-gradient(top, #414856, #262d3d);
-  background-image: -o-linear-gradient(top, #414856, #262d3d);
-  background-image: linear-gradient(top, #414856, #262d3d);
 }
-/* line 11, ../sass/growls.scss */
+/* line 9, ../sass/growls.scss */
 .l-growl .close-growl {
   display: none;
   position: absolute;
@@ -27,17 +21,17 @@
   width: 24px;
   height: 25px;
 }
-/* line 19, ../sass/growls.scss */
+/* line 17, ../sass/growls.scss */
 .l-growl:hover {
   margin: -2px 0 0 -2px;
   border: 2px solid #bcbcc3;
 }
-/* line 22, ../sass/growls.scss */
+/* line 20, ../sass/growls.scss */
 .l-growl:hover .close-growl {
   display: block;
 }
 
-/* line 27, ../sass/growls.scss */
+/* line 25, ../sass/growls.scss */
 .growl {
   overflow: hidden;
   -webkit-border-radius: 6px;
@@ -46,13 +40,6 @@
   -o-border-radius: 6px;
   border-radius: 6px;
   border: 1px solid rgba(0, 0, 0, 0.9);
-}
-/* line 31, ../sass/growls.scss */
-.growl .growl__img {
-  float: left;
-  width: 86px;
-  height: 99px;
-  border-right: 1px solid #1a2232;
   background: #1e2535;
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #333a4a), color-stop(100%, #1f2738));
   background-image: -webkit-linear-gradient(top, #333a4a, #1f2738);
@@ -60,17 +47,24 @@
   background-image: -o-linear-gradient(top, #333a4a, #1f2738);
   background-image: linear-gradient(top, #333a4a, #1f2738);
 }
-/* line 38, ../sass/growls.scss */
+/* line 31, ../sass/growls.scss */
+.growl .growl__img {
+  float: left;
+  width: 86px;
+  height: 99px;
+  border-right: 1px solid #1a2232;
+}
+/* line 36, ../sass/growls.scss */
 .growl .growl__img img {
   width: 55px;
   height: 57px;
   padding: 20px 15px;
 }
-/* line 44, ../sass/growls.scss */
+/* line 42, ../sass/growls.scss */
 .growl .growl__text {
   float: right;
   width: 180px;
-  height: 49px;
+  min-height: 49px;
   padding: 25px 15px;
   border-left: 1px solid #404959;
   color: #cfcfd6;
@@ -79,8 +73,10 @@
   font-size: 13px;
   font-weight: bold;
   text-shadow: 0 1px 0 rgba(0, 0, 0, 0.75);
-}
-/* line 57, ../sass/growls.scss */
-.growl .growl__text_loading {
-  width: 260px;
+  background: #242a3a;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #414856), color-stop(100%, #262d3d));
+  background-image: -webkit-linear-gradient(top, #414856, #262d3d);
+  background-image: -moz-linear-gradient(top, #414856, #262d3d);
+  background-image: -o-linear-gradient(top, #414856, #262d3d);
+  background-image: linear-gradient(top, #414856, #262d3d);
 }
