@@ -14,7 +14,7 @@
 </head>
 <body>
 <!-- BEGIN .win -->
-<div class="win win_mod"  style="margin-left: 5%; top: 64px; float:left;">
+<div class="win win_mod">
 	<div class="win__title">
 		<h1></h1>
 		<div class="win__close"></div>
@@ -23,19 +23,19 @@
 	<div class="win__content win__content_mod">
 		<div class="win__content-wrapper">
 		<h2>Представтесь пожалуйста</h2>
-		<div>
+
 			<div class="form-row form-row_mod">
 			<div class="input-holder input-holder_ok">
-				<input type="text" class="input input_250" placeholder="Имя, Фамилия">
+				<input type="text" class="input" placeholder="Имя, Фамилия">
 			</div>
 			</div>
-		</div>
+
 		
-		<div class="win__dev win__dev_short"></div>
-		<p>Укажите камеру и микрофон, которыми будете пользоваься во время сеанса</p>
+		<div class="win__dev"></div>
+		<p>Укажите камеру и микрофон, которыми будете пользоваться во время сеанса</p>
 		<div class="select-container">
 			<div class="row">
-				<span class="icon-audio-big icon-audio-big_mod"></span>
+				<span class="icon-audio-big"></span>
 				<div class="sel-holder">
 					<select class="select">
 						<option value="">Built-in microphone</option>
@@ -65,8 +65,9 @@
 </div>
 	<!-- END .win -->
 <!-- ==========================================================	 -->
+<div class="indent"></div>
 	<!-- BEGIN .win -->
-<div class="win win_mod"  style="margin-left: 1%; top: 64px; float:left;">
+<div class="win win_mod">
 	<div class="win__title">
 		<h1></h1>
 		<div class="win__close"></div>
@@ -76,9 +77,11 @@
 		<div class="win__content-wrapper">	
 			<h2>Представтесь пожалуйста</h2>
 			<div class="form-row form-row_mod">
-				<div class="input-holder"><input type="text" class="input input_250" placeholder="Никита Андреевич"></div>
+				<div class="input-holder">
+					<input type="text" class="input" placeholder="Никита Андреевич">
+				</div>
 			</div>
-			<div class="win__dev win__dev_short"></div>
+			<div class="win__dev"></div>
 			<div class="select-container">
 				<div class="row">
 					<span class="icon-audio-big icon-audio-big_mod"></span>
@@ -136,28 +139,15 @@
 </div>
 	<!-- END .win -->
 <!-- ==========================================================	 -->
+<div class="indent"></div>
 	<!-- BEGIN input error -->
-<div class="form-row" style="margin-left: 1%; margin-top: 64px; float:left;">
-	<div class="input-holder input-holder_err"><input type="text" class="input input_full" placeholder="Card number"></div>
+<div class="form-row form-row_mod">
+	<div class="input-holder input-holder_err"><input type="text" class="input" placeholder="Card number"></div>
 </div>	
 	<!-- END input error -->
-<!-- ==========================================================	 -->
-	<!-- BEGIN sel-holder -->
-<div class="select-container" style="position: absolute; top: 132px; left: 38%;">
-	<div class="row">
-		<div class="sel-holder">
-			<select class="select">
-				<option value="">Built-in microphone</option>
-				<option value="">Built-in microphone1</option>
-				<option value="">Built-in microphone2</option>
-			</select>
-		</div>
-	</div>
-</div>
-	<!-- END sel-holder -->
-<!-- ==========================================================	 -->
+<div class="indent"></div>
 	<!-- BEGIN no-operation-->
-<div class="win win_mod"  style="margin-left: 1%; top: 64px; float:left;">
+<div class="win win_mod">
 	<div class="win__title">
 		<h1></h1>
 		<div class="win__close"></div>
@@ -181,8 +171,9 @@
 </div>
 	<!-- END no-operation-->
 <!-- ==========================================================	 -->
+<div class="indent"></div>
 	<!-- BEGIN waiting -->
-<div class="win win_mod"  style="margin-left: 1%; top: 64px; float:left;">
+<div class="win win_mod">
 	<div class="win__title">
 		<h1></h1>
 		<div class="win__close"></div>
@@ -210,8 +201,9 @@
 </div>
 	<!-- END waiting -->
 <!-- ==========================================================	 -->
+<div class="indent"></div>
 	<!-- BEGIN adv-img -->
-<div class="win win_mod"  style="position:absolute; top: 500px; left: 5%;">
+<div class="win win_mod">
 	<div class="win__title">
 		<h1></h1>
 		<div class="win__close"></div>
@@ -246,8 +238,9 @@
 </div>
 	<!-- END adv-img -->
 <!-- ==========================================================	 -->
+<div class="indent"></div>
 	<!-- BEGIN adv-text -->
-<div class="win win_mod"  style="position:absolute; top: 500px; left: 22%;">
+<div class="win win_mod">
 	<div class="win__title">
 		<h1></h1>
 		<div class="win__close"></div>
@@ -282,8 +275,9 @@
 </div>
 	<!-- END adv-text -->
 <!-- ==========================================================	 -->
+<div class="indent"></div>
 	<!-- BEGIN adv-video -->
-<div class="win win_mod"  style="position:absolute; top: 500px; left: 39%;">
+<div class="win win_mod">
 	<div class="win__title">
 		<h1></h1>
 		<div class="win__close"></div>
@@ -300,7 +294,8 @@
 			</div>
 		<div class="win__content-wrapper win__content-wrapper_alert">
 			<div class="video-player">
-				<img src="../img/video-adv.png" alt="">
+				<img src="../img/video-adv.jpg" alt="">
+				<div class="video-player__adv">ADV</div>
 				<div class="video-player__more">
 					<a class="video-player__full-screen" href="#"></a>
 					<a class="video-player__volume" href="#"></a>
@@ -317,8 +312,9 @@
 </div>
 	<!-- END adv-video -->
 <!-- ==========================================================	 -->
+<div class="indent"></div>
 	<!-- BEGIN answer -->
-<div class="win win_mod"  style="position:absolute; top: 500px; left: 56%;">
+<div class="win win_mod">
 	<div class="win__title">
 		<h1></h1>
 		<div class="win__close"></div>
@@ -353,9 +349,10 @@
 	</div>	
 </div>	
 	<!-- END answer -->
+<div class="indent"></div>
 <!-- ==========================================================	 -->
 	<!-- BEGIN card -->
-<div class="win win_mod"  style="position:absolute; top: 500px; left:73%;">
+<div class="win win_mod">
 	<div class="win__title">
 		<h1></h1>
 		<div class="win__close"></div>
@@ -365,10 +362,21 @@
 		<div class="win__content-wrapper">	
 			<h2>Представтесь пожалуйста</h2>
 			<div class="form-row">
-				<div class="input-holder"><span class="icon-audio-big icon-audio-big_name"></span><input type="text" class="input input_icon" placeholder="Никита Андреевич"></div>
+				<div class="input-holder">
+					<span class="icon-audio-big icon-audio-big_name"></span>
+					<div class="wrapper-input">
+						<input type="text" class="input input_icon" placeholder="Никита Андреевич">
+					</div>
+					
+				</div>
 			</div>
 			<div class="form-row">
-				<div class="input-holder"><span class="icon-audio-big icon-audio-big_email"></span><input type="text" class="input input_icon" placeholder="E-mail"></div>
+				<div class="input-holder">
+					<span class="icon-audio-big icon-audio-big_email"></span>
+					<div class="wrapper-input">
+						<input type="text" class="input input_icon" placeholder="E-mail">
+					</div>	
+				</div>
 			</div>
 			<div class="select-container select-container_mod">
 				<div class="row">
@@ -386,7 +394,9 @@
 			<h2>Ваш вопрос</h2>
 			<div class="row">
 				<span class="icon-audio-big icon-audio-big_text"></span>
-				<textarea class="question-input"></textarea>
+				<div class="wrapper-input">
+					<textarea class="question-input"></textarea>
+				</div>	
 				<p>Эта информация может быть использована/
 				передана.. ляля" (ссылка на <a href="#">полиси</a>)</p>
 			</div>
@@ -404,8 +414,9 @@
 </div>
 	<!-- END card -->
 <!-- ==========================================================	 -->
+<div class="indent"></div>
 	<!-- BEGIN adv-text -->
-<div class="win win_mod"  style="position:absolute; top: 925px; left: 5%;">
+<div class="win win_mod">
 	<div class="win__title">
 		<h1></h1>
 		<div class="win__close"></div>
@@ -440,8 +451,9 @@
 </div>
 	<!-- END adv-text -->
 <!-- ==========================================================	 -->
+<div class="indent"></div>
 	<!-- BEGIN testing -->
-<div class="win win_mod"  style="position:absolute; top: 925px; left: 22%;">
+<div class="win win_mod">
 	<div class="win__title">
 		<h1></h1>
 		<div class="win__close"></div>

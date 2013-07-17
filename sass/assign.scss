@@ -1,5 +1,12 @@
 @import "base";
 
+// BEGIN block for visual separation of the elements 
+	
+.indent{
+	height: 50px;
+}
+
+// END block for visual separation of the elements
 ul{
 	list-style-type: none;
 }
@@ -7,7 +14,7 @@ ul{
 	position: relative;
 	left: 0;
 	top: 0;
-	width: 300px;
+	// width: 300px;
 	min-width: 300px;
 	margin-left: 0px;
 	h2{
@@ -30,14 +37,20 @@ ul{
 	.row{
 		position: relative;
 		margin: 7px 0 0;
+		clear: both;
 	}
 	.sel-holder{
-		display: inline-block;
-		padding-left: 5px;
+		position: absolute;
+		left: 42px;
+		right: 3px;
+		top: 0px;
 		.select{
-			width: 233px;
+			width: 100%;
 		}
 	}
+}
+.selectbox{
+	width: 100%;
 }
 .icon-tabs{
 	text-align: center;
@@ -169,12 +182,39 @@ ul{
 	}
 }
 .video-player{
+	overflow: hidden;
 	position: relative;
 	margin: 0px 1px 14px;
-	width: 99%;
+	width: auto;
+	max-height: 500px;
 	border-bottom: 1px solid #42434c;
 	img{
 		width: 100%;
+		height: 100%;
+	}
+	.video-player__adv{
+		position: absolute;
+		top: 10px;
+		right: 17px;
+		height: 18px;
+		line-height: 18px;
+		background-color: rgba(0,0,0,.6);
+		font-size: 12px;
+		color: #fff;
+		&:before{
+			content: "";
+			position: absolute;
+			top: 0px;
+			left: -11px;
+			@include sized-sprite($video, adv-left);
+		}
+		&:after{
+			content: "";
+			position: absolute;
+			top: 0px;
+			right: -9px;
+			@include sized-sprite($video, adv-right);
+		}
 	}
 	.video-player__more{
 		display: none;
@@ -201,14 +241,15 @@ ul{
 	}
 }
 .chat-begin__answer{
-	overflow: hidden;
+	position: relative;
 	margin: 15px 15px 11px;
 }
 .chat-begin__logo{
-	float: left;
+	position: absolute;
 	width: 39px;
 	height: 39px;
 	padding: 4px;
+	margin-right: 33px;
 	border: 1px solid #000;
 	@include border-radius(4px);
 	@include box-shadow(inset 0 -1px 2px rgba(255,255,255,.14));
@@ -220,10 +261,10 @@ ul{
 }
 .chat-begin__message-in{
 	position: relative;
-	float: right;
-	width: 172px;
+	min-height: 32px;
 	padding: 7px 9px;
 	text-align: left;
+	margin-left: 80px;
 	@include border-radius(6px);
 	border: 1px solid #000;
 	@include box-shadow(0 1px 0 #454654, inset 0 0 0 1px rgba(0,0,0,.35));
@@ -304,11 +345,15 @@ p.operator__question{
 	}
 }
 .question-input{
-	width: 237px;
-	max-width: 237px;
-	min-height: 84px;
-	max-height: 168px;
-	margin: 0 0 5px 36px;
+	min-width: 100%;
+	width: 100%;
+	max-width: 100%;
+	min-height: 39px;
+	max-height: 100px;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	margin: 0 0 5px 0px;
+	padding: 5px;
 	border: 1px solid #000;
 	background-color: #1f2026;
 	@include border-radius(3px);
@@ -316,6 +361,9 @@ p.operator__question{
 	@include font-N;
 	font-size: 12px;
 	color: #cecece;
+}
+.wrapper-input{
+	overflow: hidden;
 }
 .win__media-container{
 	margin: 0px 1px 14px;
@@ -339,12 +387,11 @@ p.operator__question{
 	}
 }
 .microphone{
-	width: 100%;
 	position: relative;
 	margin: 5px 10px 0 0;
+	padding-right: 34px;
 	.microphone__progress-bar, .internet__progress-bar{
 		position: relative;
-		width: 89%;
 		height: 9px;
 		padding: 2px;
 		border: 1px solid #000;
@@ -358,9 +405,11 @@ p.operator__question{
 		}
 		.internet__download{
 			@include box-shadow(0 1px 2px rgba(0,0,0,.67), 0 0 3px rgba(0,0,0,.07));
+			background: #4697c3;
 			@include background-image(linear-gradient(bottom, #0a5ca1 0%, #4697c3 100%));
 		}
 		.internet__download_violet{
+			background-color: #8000cb;
 			@include background-image(linear-gradient(bottom, #470d62 0%, #470d62 0.76%, #8000cb 100%));
 		}
 		.microphone__min-level, .microphone__max-level{

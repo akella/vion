@@ -7,6 +7,11 @@ $(document).ready(function() {
 			browseText: 'Обзор...',
 			zIndex: '50'
 		});
+
+		$('.select').styler({
+			zIndex: '50',
+			width: '100%'
+		});
 	});
 
 // video-player 
@@ -69,7 +74,7 @@ $(document).ready(function() {
 
 // cast title and progress on/off
 	
-	$('.hover-window .media').hover(
+	$('.hover-window').hover(
 		function(){
 			$('.hover-window .player__title').show();
 			$('.hover-window .video-progress').show();
@@ -88,7 +93,7 @@ $(document).ready(function() {
 		function(){
 			$('.hover-color').css('background', '#fff');
 			$('.hover-color .player__title').show();
-			$('.player.hover-color').css('margin', '0 0 -20px');
+			$('.player.hover-color').css('margin', '-25px 0 7px');
 			},
 		function(){
 			$('.player.hover-color').css('background', 'transparent');

@@ -205,17 +205,21 @@
 	margin: 0 3px 0 3px;
 }
 .icon-audio-big_name{
-	margin-right: 6px;
+	float: left;
+	margin: 0 11px 0 6px;
 	@include sized-sprite($icons, 'name');
 }
 .icon-audio-big_email{
+	float: left;
+	margin-right: 8px;
 	@include sized-sprite($icons, 'mail');
 }
 .icon-audio-big_language{
 	@include sized-sprite($icons, 'language');
 }
 .icon-audio-big_text{
-	position: absolute;
+	float: left;
+	margin: 0 8px 0px 6px;
 	@include sized-sprite($icons, 'text');
 }
 .icon-eye-big{
