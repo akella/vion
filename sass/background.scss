@@ -1,0 +1,5 @@
+@import "base";
+
+.layout{
+	@include background-image(linear-gradient(top, #123261 0%, #3d5c95 33%, #6671a7 50%, #8668a4 66%, #6c4385 100%));
+}

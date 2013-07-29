@@ -3,7 +3,6 @@
 // player
 .player{
 	position: relative;
-	width: 640px;
 	padding: 7px;
 	border: 1px solid rgba(191,191,191,.9);
 	@include border-radius(6px);
@@ -31,8 +30,10 @@
 	}
 }
 .media{
+	overflow: hidden;
 	position: relative;
-	height: 390px;
+	width: 640px;
+	min-height: 390px;
 	@include background-image(linear-gradient(#263a58, #62636d));
 	h1{
 		padding-left: 13px;
@@ -126,8 +127,39 @@
 }
 .controls__video{
 	@include sized-sprite($video, control-video);
+	i{
+		display: none;
+		position: absolute;
+		top: -30px;
+		left: -28px;
+		width: 90px;
+		height: 18px;
+		line-height: 18px;
+		@include border-radius(10px);
+		background: #000;
+		text-align: center;
+		font-size: 12px;
+		font-weight: bold;
+		font-style: normal;
+		color: #fff;
+		z-index: 11;
+		&:after{
+			content: "";
+			position: absolute;
+			bottom: -4px;
+			left: 50%;
+			width: 8px;
+			height: 8px;
+			margin: -5px 0 0 -5px;
+			@include rotate(45deg);
+			background: #000;
+		}
+	}
 	&:hover{
 		@include sized-sprite($video, control-video-hover);
+		i{
+			display: block;
+		}
 	}
 }
 .controls__panel{
@@ -219,8 +251,39 @@
 }
 .controls__volume{
 	@include sized-sprite($video, control-volume1);
+	i{
+		display: none;
+		position: absolute;
+		top: -30px;
+		left: -28px;
+		width: 90px;
+		height: 18px;
+		line-height: 18px;
+		@include border-radius(10px);
+		background: #000;
+		text-align: center;
+		font-size: 12px;
+		font-weight: bold;
+		font-style: normal;
+		color: #fff;
+		z-index: 11;
+		&:after{
+			content: "";
+			position: absolute;
+			bottom: -4px;
+			left: 50%;
+			width: 8px;
+			height: 8px;
+			margin: -5px 0 0 -5px;
+			@include rotate(45deg);
+			background: #000;
+		}
+	}
 	&:hover{
 		@include sized-sprite($video, control-volume1-hover);
+		i{
+			display: block;
+		}
 	}
 }
 .controls__settings{
@@ -240,8 +303,39 @@
 }
 .controls__playlist{
 	@include sized-sprite($video, control-playlist);
+	i{
+		display: none;
+		position: absolute;
+		top: -30px;
+		left: -28px;
+		width: 90px;
+		height: 18px;
+		line-height: 18px;
+		@include border-radius(10px);
+		background: #000;
+		text-align: center;
+		font-size: 12px;
+		font-weight: bold;
+		font-style: normal;
+		color: #fff;
+		z-index: 11;
+		&:after{
+			content: "";
+			position: absolute;
+			bottom: -4px;
+			left: 50%;
+			width: 8px;
+			height: 8px;
+			margin: -5px 0 0 -5px;
+			@include rotate(45deg);
+			background: #000;
+		}
+	}
 	&:hover{
 		@include sized-sprite($video, control-playlist-hover);
+		i{
+			display: block;
+		}
 	}
 }
 .controls__playlist.is-active{
@@ -286,6 +380,39 @@
 }
 .controls__chat{
 	@include sized-sprite($video, control-chat);
+	i{
+		display: none;
+		position: absolute;
+		top: -30px;
+		left: -28px;
+		width: 90px;
+		height: 18px;
+		line-height: 18px;
+		@include border-radius(10px);
+		background: #000;
+		text-align: center;
+		font-size: 12px;
+		font-weight: bold;
+		font-style: normal;
+		color: #fff;
+		z-index: 11;
+		&:after{
+			content: "";
+			position: absolute;
+			bottom: -4px;
+			left: 50%;
+			width: 8px;
+			height: 8px;
+			margin: -5px 0 0 -5px;
+			@include rotate(45deg);
+			background: #000;
+		}
+	}
+	&:hover{
+		i{
+			display: block;
+		}
+	}
 }
 
 // playlist
@@ -293,9 +420,10 @@
 	display: none;
 	position: absolute;
 	top: 62px;
-	height: 229px;
-	width: 546px;
+	height: 265px;
+	width: 100%;
 	padding: 18px 47px;
+	box-sizing: border-box;
 	@include box-shadow(0 1px 0 rgba(255,255,255,.23), inset 0 0 6px rgba(0,0,0,.4));
 	background: url(../img/bg-win.png);
 	h2{
@@ -325,7 +453,6 @@
 .cycle-slideshow{
 	margin: 12px 0 0 -4px;
 	height: 175px;
-	width: 554px;
 }
 .media-gallery__item{
 	overflow: hidden;
@@ -427,6 +554,8 @@
 
 // video progress-bar
 .video-progress{
+	position: relative;
+	width: 100%;
 	overflow: hidden;
 	height: 21px;
 	margin-bottom: -7px;
@@ -442,11 +571,14 @@
 		}
 	}
 	.video-progress__line{
-		float: left;
+		width: 100%;
+		box-sizing: border-box;
+		padding: 0 81px 0 35px;
 	}
+}
 	.video-progress__base{
 		position: relative;
-		width: 515px;
+		width: 100%;
 		height: 8px;
 		margin-top: 4px;
 		@include border-radius(10px);
@@ -479,6 +611,7 @@
 		}
 		.video-progress__progress{
 			position: absolute;
+			top: 0;
 			height: 8px;
 			min-width: 0%;
 			max-width: 100%;
@@ -495,13 +628,14 @@
 		}
 	}
 	.video-progress__time{
-		float: right;
+		position: absolute;
+		right: 0px;
+		top: 6px;
 		color: #3b3b3b;
         @include font-B;
 		font-size: 10px;
 		font-weight: bold;
 	}
-}
 .cast-announce{
 	text-align: center;
 	background: url(../img/bg-win.png);
@@ -546,12 +680,14 @@
 }
 .media__dev{
 	width: 270px;
+	max-width: 100%;
 	margin: 19px auto;
 	height: 0;
 	border-top: 1px solid #000100;
 	border-bottom: 1px solid rgba(255, 255, 255, 0.13);
 }
 .cast-announce__alert{
+	padding-bottom: 20px;
 	color: #efb51e;
 	@include font-B;
 	font-size: 16px;
@@ -569,7 +705,6 @@
 
 // small-window
 .wrapper-small-window{
-	width: 270px;
 	border: 1px solid #000;
 	@include border-radius(2px);
 	background-color: rgba(27,27,27,.8);
@@ -580,7 +715,7 @@
 	position: relative;
 	width: 256px;
 	height: 156px;
-	margin: 6px auto;
+	margin: 6px;
 	border: 1px solid #000;
 	background: url(../img/bg-win.png);
 	@include box-shadow(inset 0 1px 2px rgba(0,0,0,.15));
@@ -595,6 +730,10 @@
 	}
 	a{
 		color: #73bad8;
+	}
+	.small-window__bg{
+		width: 100%;
+		height: 100%;
 	}
 }
 .small-window__title{
@@ -649,7 +788,6 @@
 .window{
 	position: relative;
 	overflow: hidden;
-	width: 270px!important;
 	min-width: 270px!important;
 	.small-window{
 		margin: auto;
@@ -676,6 +814,9 @@
 		background: #222428;
 		@include background-image(linear-gradient(top, #4f5155, #222428));
 	}
+}
+.equalizer_window{
+	max-width: 320px;
 }
 .equalizer__toggle{
 	position: relative;
@@ -735,7 +876,7 @@
 		background: #1e1e1e; 
 	}
 	.equalizer__progress{
-		@include sized-sprite($video, volume-toggle);
+		@include s($video, volume-toggle); 
 		margin-left: -6px;
 		cursor: pointer;
 	}
@@ -782,17 +923,17 @@
 	@include text-shadow(0 1px 0 rgba(0,0,0,.75));
 }
 .adjustments__toggle{
-	float: left;
-	width: 225px;
+	width: 100%;
 	height: 20px;
+	padding: 0 45px 0 65px;
+	box-sizing: border-box;
 	background: url(../img/eq-bg2.png) 32px 15px no-repeat;
 	.adjustments__progress{
 		position: relative;
-		width: 182px;
+		width: 100%;
 		margin-left: 18px;
 		.adjustments__base{
 			position: relative;
- 			width: 170px;
  			height: 5px;
  			margin: 6px 10px 0;
  			@include border-radius(10px);
@@ -821,7 +962,7 @@
 		position: absolute;
 		top: -3px;
 		right: -26px;
-		@include sized-sprite($video, brightness-up);
+		@include s($video, brightness-up);
 	}
 }
 .adjustments__contrast{
@@ -830,14 +971,14 @@
 		position: absolute;
 		top: -4px;
 		left: -10px;
-		@include sized-sprite($video, contrast-down);
+		@include s($video, contrast-down);
 	}
 	&:after{
 		content: "";
 		position: absolute;
 		top: -4px;
 		right: -21px;
-		@include sized-sprite($video, contrast-up);
+		@include s($video, contrast-up);
 	}
 }
 .adjustments__saturation{
@@ -846,14 +987,14 @@
 		position: absolute;
 		top: -4px;
 		left: -10px;
-		@include sized-sprite($video, saturation-down);
+		@include s($video, saturation-down);
 	}
 	&:after{
 		content: "";
 		position: absolute;
 		top: -4px;
 		right: -21px;
-		@include sized-sprite($video, saturation-up);
+		@include s($video, saturation-up);
 	}
 }
 .adjustments__smooth{
@@ -862,14 +1003,14 @@
 		position: absolute;
 		top: -4px;
 		left: -10px;
-		@include sized-sprite($video, smooth-down);
+		@include s($video, smooth-down);
 	}
 	&:after{
 		content: "";
 		position: absolute;
 		top: -4px;
 		right: -21px;
-		@include sized-sprite($video, smooth-up);
+		@include s($video, smooth-up);
 	}
 }
 
@@ -882,14 +1023,17 @@
 .widget{
 	width: 656px;
 	.input-message__text form{
-		width: 497px;
+		float: none;
+		width: auto;
 	}
 	.input-message__text{
 		width: 90%;
 	}
 }
 .form-search .input-search_widget{
-	width: 572px;
+	width: 100%;
+	height: 28px;
+	box-sizing: border-box;
 	padding: 3px 27px 3px 24px;
 }
 .widget__video{
@@ -901,7 +1045,8 @@
 	@include box-shadow(0 0 6px 1px #000);
 }
 .player_widget{
-	left: -15px;
+	width: 100%;
+	box-sizing: border-box;
 	top: -20px;
 	@include border-radius(6px 6px 0 0);
 	border: none;

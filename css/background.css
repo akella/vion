@@ -1,0 +1,8 @@
+/* line 3, ../sass/background.scss */
+.layout {
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #123261), color-stop(33%, #3d5c95), color-stop(50%, #6671a7), color-stop(66%, #8668a4), color-stop(100%, #6c4385));
+  background-image: -webkit-linear-gradient(top, #123261 0%, #3d5c95 33%, #6671a7 50%, #8668a4 66%, #6c4385 100%);
+  background-image: -moz-linear-gradient(top, #123261 0%, #3d5c95 33%, #6671a7 50%, #8668a4 66%, #6c4385 100%);
+  background-image: -o-linear-gradient(top, #123261 0%, #3d5c95 33%, #6671a7 50%, #8668a4 66%, #6c4385 100%);
+  background-image: linear-gradient(top, #123261 0%, #3d5c95 33%, #6671a7 50%, #8668a4 66%, #6c4385 100%);
+}

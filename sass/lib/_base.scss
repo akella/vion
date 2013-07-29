@@ -77,6 +77,12 @@ $break-large: 1180px;
   width: image-width($path);
   height: image-height($path);
 }
+//shortcut
+@mixin s($map, $sprite){
+  background: sprite($map, $sprite) no-repeat;
+  @include image-size(sprite-file($map, $sprite));
+}
+
 @mixin sized-sprite($map, $sprite){
   background: sprite($map, $sprite) no-repeat;
   @include image-size(sprite-file($map, $sprite));
