@@ -13,6 +13,12 @@
 .win div.chat{
 	position: relative;
 	padding: 0 15px;
+	h3{
+		color: #cdcdcd;
+		font-size: 13px;
+		font-weight: bold;
+		text-shadow: 0 1px 0 rgba(0, 0, 0, 0.75);
+	}
 }
 .chat__icons{
 	position: relative;
@@ -62,7 +68,7 @@
 		}
 	}
 	.chat__files-tab{
-		background: url(../img/files.png) 0 0 no-repeat;
+		background: url(../img/files1.png) 0 0 no-repeat;
 	}
 	.chat__files-tab.is-active{
 		background: url(../img/files-active.png) 0 0 no-repeat;
@@ -83,10 +89,11 @@
 }
 .chat__operator{
 	overflow: hidden;
+	margin-bottom: 17px;
 	h3{
 		float: left;
-		width: 250px;
-		margin-left: 10px;
+		min-height: 45px;
+		margin-left: 68px;
 	}
 }
 .chat__outcoming{
@@ -169,7 +176,7 @@
 	font-weight: bold;
 }
 .sending-file__buttons{
-	float: right;
+	clear: both;
 }
 .btn_chat{
 	width: 84px;
@@ -537,7 +544,7 @@
 	.chat-begin__name{
 		float: left;
 		width: 145px;
-		margin-left: 22px;
+		margin-left: 58px;
 		color: #8b8b92;
 		@include font-B;
 		font-size: 12px;

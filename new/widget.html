@@ -19,7 +19,7 @@
 <body>
 <!-- ==========================================================	 -->
 	<!-- BEGIN chat-->
-<div class="win win_chat"  style="position:absolute; top: 64px; left:10%">
+<div class="win win_chat"  style="position:absolute; top: 64px; left:1%">
 	<div class="win__title">
 		<h1></h1>
 		<div class="win__close"></div>
@@ -81,8 +81,8 @@
 										<p class="sending-file__weight">30 MB</p>
 									</div>
 									<div class="sending-file__buttons">
-										<button class="btn btn_alert_gray btn_chat">Decline</button>
-										<button class="btn btn_alert_green btn_chat">Acept</button>
+										<button class="btn btn_alert_gray toleft">Decline</button>
+										<button class="btn btn_alert_green toright">Acept</button>
 									</div>
 								</div>
 							</div>
@@ -228,7 +228,7 @@
 	<!-- END chat  -->
 <!-- ==========================================================	 -->
 <!-- BEGIN chat-->
-<div class="win widget"  style="position:absolute; top: 64px; left:32%">
+<div class="win widget"  style="position:absolute; top: 64px; left:22%">
 	<div class="win__content win__content_mod win__content_widget">
 		<div class="player player_widget hover-controls">
 	<div class="player__title">
@@ -289,6 +289,7 @@
 		<div class="controls">
 			<div class="wrapper-controls__video">
 				<div class="controls__item controls__video">
+					<i>Video settings</i>
 				</div>
 				<div class="controls__panel" style="display:none;">
 					<span><i></i></span>
@@ -301,7 +302,9 @@
 				</div>
 			</div>
 			<div class="wrapper-controls__volume">	
-				<div class="controls__item controls__volume"></div>
+				<div class="controls__item controls__volume">
+					<i>Volume</i>
+				</div>
 				<div class="controls__panel" style="display:none;">
 					<span>EG</span>
 					<div class="volume-toggle">
@@ -313,7 +316,9 @@
 			</div>	
 				<div class="controls__separate"></div>
 			<div class="wrapper-controls__playlist">	
-				<div class="controls__item controls__playlist"></div>
+				<div class="controls__item controls__playlist">
+					<i>Show list</i>
+				</div>
 			</div>
 			<div class="wrapper-controls__camera">	
 				<div class="controls__item controls__camera">
@@ -322,7 +327,9 @@
 			</div>	
 				<div class="controls__separate"></div>
 			<div class="wrapper-controls__chat">	
-				<div class="controls__item controls__chat"></div>
+				<div class="controls__item controls__chat">
+					<i>Show chat</i>
+				</div>
 			</div>	
 		</div>
 	</div>
@@ -358,6 +365,28 @@
 							</form>
 						</div>
 						<div class="win__dev win__dev_chat"></div>
+						<div class="chat__operator"> 
+							<div class="chat-begin__logo">
+								<img src="../img/avatar.png" alt="">
+								</div>
+							<h3>Добрый день, с вами общается ведущий менеджер по продажам Оксана Федорова</h3>
+						</div>
+						<div class="chat__loading">
+								<h3>Downloading from Oxana Fedorova</h3>
+								<div class="win__dev win__dev_chat"></div>
+								<div class="sending-file">
+									<div class="sending-file__info">
+										<p class="sending-file__name">File_name.pdf</p>
+										<div class="microphone">
+											<div class="internet__progress-bar">
+												<div class="internet__download" style="width:60%;"></div>
+											</div>
+											<img class="download__cancel" src="../img/cancel.png" alt="">
+										</div>
+										<p class="sending-file__weight">1.5 of 30 MB - 2 minutes remaining</p>
+									</div>
+								</div>
+							</div>
 						<div class="chat__outcoming">
 							<ul>
 								<li>
@@ -385,6 +414,20 @@
 								</li>
 							</ul>
 						</div>
+						<div class="chat__sending">
+								<h3>Oxana Fedorova is sending you a file</h3>
+								<div class="win__dev win__dev_chat"></div>
+								<div class="sending-file">
+									<div class="sending-file__info">
+										<p class="sending-file__name">File_name.pdf</p>
+										<p class="sending-file__weight">30 MB</p>
+									</div>
+									<div class="sending-file__buttons">
+										<button class="btn btn_alert_gray toleft">Decline</button>
+										<button class="btn btn_alert_green toright">Acept</button>
+									</div>
+								</div>
+							</div>
 							<div class="chat__counter">
 								<div class="chat__progress-bar">
 									<div class="chat__counter-progress" style="width: 70%;"></div>
@@ -411,7 +454,7 @@
 	<!-- END chat  -->
 <!-- ==========================================================	 -->
 <!-- BEGIN chat-->
-<div class="win widget"  style="position:absolute; top: 64px; left:72%">
+<div class="win widget"  style="position:absolute; top: 64px; left:62%">
 	<div class="win__content win__content_mod win__content_widget">
 		<div class="player player_widget hover-color">
 	<div class="player__title">

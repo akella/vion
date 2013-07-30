@@ -87,6 +87,7 @@
 		margin-left: -22px;
 	}
 }
+
 .wrapper-controls{
 	position: absolute;
 	top: 0;
@@ -1021,13 +1022,15 @@
 	@include box-shadow(2px 0px 8px 3px #000);
 }
 .widget{
-	width: 656px;
 	.input-message__text form{
 		float: none;
 		width: auto;
 	}
 	.input-message__text{
 		width: 90%;
+	}
+	.media{
+		width: auto;
 	}
 }
 .form-search .input-search_widget{
@@ -1045,7 +1048,6 @@
 	@include box-shadow(0 0 6px 1px #000);
 }
 .player_widget{
-	width: 100%;
 	box-sizing: border-box;
 	top: -20px;
 	@include border-radius(6px 6px 0 0);
