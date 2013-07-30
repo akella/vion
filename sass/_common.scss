@@ -107,6 +107,31 @@ body{
 }
 // END global classes for positioning elements in containers
 
+// sensored
+.sensored{
+	position: relative;
+	display: inline-block;
+	width: 75px;
+	height: 20px;
+	vertical-align: middle;
+	@include border-radius(10px);
+	@include background-image(linear-gradient(top, #47484d, #27282d));
+	font: 0/0 a;
+	text-shadow: none;
+	color: transparent;
+	i{
+		position: absolute;
+		top: 10px;
+		left: 10px;
+		text-transform: uppercase;
+		color: #d7d7d6;
+		font-size: 11px;
+		font-style: normal;
+		font-weight: bold;
+		@include font-B;
+	}
+}
+
 .in{
 	width:1280px;
 	margin:0 auto;
