@@ -9,6 +9,12 @@
 	@include box-shadow(0 0 9px rgba(0,0,0,.34));
 	background-color: #fff;
 }
+.hover-window{
+	margin: 0;
+	&:hover{
+		margin: -24px 0 0;
+	}
+}
 .player__title{
 	overflow: hidden;
 	height: 20px;
@@ -790,8 +796,12 @@
 	position: relative;
 	overflow: hidden;
 	min-width: 270px!important;
+	margin: 0;
 	.small-window{
 		margin: auto;
+	}
+	&:hover{
+		margin: -32px 0 40px;
 	}
 }
 .window__content{
@@ -1048,11 +1058,20 @@
 	@include box-shadow(0 0 6px 1px #000);
 }
 .player_widget{
+	background: transparent;
 	box-sizing: border-box;
 	top: -20px;
 	@include border-radius(6px 6px 0 0);
 	border: none;
-}
+	}
+.player.hover-color{
+	margin: 0;
+	background: transparent;
+	&:hover{
+		margin: -25px 0 7px;
+		background: #fff;
+	}
+}	
 .win .win__content_widget{
 	@include border-radius(6px);
 }

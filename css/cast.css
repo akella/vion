@@ -15,27 +15,36 @@
 }
 
 /* line 12, ../sass/cast.scss */
+.hover-window {
+  margin: 0;
+}
+/* line 14, ../sass/cast.scss */
+.hover-window:hover {
+  margin: -24px 0 0;
+}
+
+/* line 18, ../sass/cast.scss */
 .player__title {
   overflow: hidden;
   height: 20px;
   padding-top: 4px;
 }
 
-/* line 17, ../sass/cast.scss */
+/* line 23, ../sass/cast.scss */
 .player__close {
   float: left;
   background: url('../img/video-scfa9fc4ea5.png') 0 -1304px no-repeat;
   width: 12px;
   height: 12px;
 }
-/* line 20, ../sass/cast.scss */
+/* line 26, ../sass/cast.scss */
 .player__close:hover {
   background: url('../img/video-scfa9fc4ea5.png') 0 -1235px no-repeat;
   width: 12px;
   height: 13px;
 }
 
-/* line 24, ../sass/cast.scss */
+/* line 30, ../sass/cast.scss */
 .player__minimize {
   float: left;
   margin-left: 5px;
@@ -43,14 +52,14 @@
   width: 12px;
   height: 13px;
 }
-/* line 28, ../sass/cast.scss */
+/* line 34, ../sass/cast.scss */
 .player__minimize:hover {
   background: url('../img/video-scfa9fc4ea5.png') 0 -1258px no-repeat;
   width: 12px;
   height: 13px;
 }
 
-/* line 32, ../sass/cast.scss */
+/* line 38, ../sass/cast.scss */
 .media {
   overflow: hidden;
   position: relative;
@@ -62,7 +71,7 @@
   background-image: -o-linear-gradient(#263a58, #62636d);
   background-image: linear-gradient(#263a58, #62636d);
 }
-/* line 38, ../sass/cast.scss */
+/* line 44, ../sass/cast.scss */
 .media h1 {
   padding-left: 13px;
   line-height: 44px;
@@ -73,18 +82,18 @@
   text-shadow: 0 1px 0 rgba(0, 0, 0, 0.75);
   color: #ececec;
 }
-/* line 48, ../sass/cast.scss */
+/* line 54, ../sass/cast.scss */
 .media .advertize_media {
   position: relative;
   padding: 13px 74px;
   border-top: 1px solid #515f79;
   background: rgba(0, 0, 0, 0.5) url(../img/adv.png) 10px 10px no-repeat;
 }
-/* line 54, ../sass/cast.scss */
+/* line 60, ../sass/cast.scss */
 .media .advertize_media p {
   width: 100%;
 }
-/* line 57, ../sass/cast.scss */
+/* line 63, ../sass/cast.scss */
 .media .advertize_media .media__advertize-close {
   position: absolute;
   bottom: -12px;
@@ -94,7 +103,7 @@
   width: 24px;
   height: 25px;
 }
-/* line 65, ../sass/cast.scss */
+/* line 71, ../sass/cast.scss */
 .media .cast__full-scr {
   position: absolute;
   top: 50%;
@@ -104,7 +113,7 @@
   background: url(../img/cast-full-scr.png) 0 0;
   z-index: 10;
 }
-/* line 74, ../sass/cast.scss */
+/* line 80, ../sass/cast.scss */
 .media .cast__size {
   position: absolute;
   top: 50%;
@@ -114,7 +123,7 @@
   background: url(../img/cast-size.png) 0 0;
   z-index: 10;
 }
-/* line 83, ../sass/cast.scss */
+/* line 89, ../sass/cast.scss */
 .media .icon-tabs {
   position: absolute;
   bottom: 10px;
@@ -122,7 +131,7 @@
   margin-left: -22px;
 }
 
-/* line 91, ../sass/cast.scss */
+/* line 97, ../sass/cast.scss */
 .wrapper-controls {
   position: absolute;
   top: 0;
@@ -132,7 +141,7 @@
   background: rgba(0, 0, 0, 0.4);
 }
 
-/* line 99, ../sass/cast.scss */
+/* line 105, ../sass/cast.scss */
 .controls {
   position: absolute;
   bottom: 0px;
@@ -158,7 +167,7 @@
   background-image: linear-gradient(bottom, #1f1f22, #2c2d32);
 }
 
-/* line 115, ../sass/cast.scss */
+/* line 121, ../sass/cast.scss */
 .wrapper-controls__video, .wrapper-controls__volume,
 .wrapper-controls__playlist, .wrapper-controls__camera,
 .wrapper-controls__chat, .wrapper-controls__settings {
@@ -168,7 +177,7 @@
   height: 37px;
 }
 
-/* line 121, ../sass/cast.scss */
+/* line 127, ../sass/cast.scss */
 .controls__item {
   position: absolute;
   top: -4px;
@@ -178,13 +187,13 @@
   z-index: 5;
 }
 
-/* line 129, ../sass/cast.scss */
+/* line 135, ../sass/cast.scss */
 .controls__video {
   background: url('../img/video-scfa9fc4ea5.png') 0 -530px no-repeat;
   width: 36px;
   height: 36px;
 }
-/* line 131, ../sass/cast.scss */
+/* line 137, ../sass/cast.scss */
 .controls__video i {
   display: none;
   position: absolute;
@@ -206,7 +215,7 @@
   color: #fff;
   z-index: 11;
 }
-/* line 147, ../sass/cast.scss */
+/* line 153, ../sass/cast.scss */
 .controls__video i:after {
   content: "";
   position: absolute;
@@ -222,18 +231,18 @@
   transform: rotate(45deg);
   background: #000;
 }
-/* line 159, ../sass/cast.scss */
+/* line 165, ../sass/cast.scss */
 .controls__video:hover {
   background: url('../img/video-scfa9fc4ea5.png') 0 -300px no-repeat;
   width: 36px;
   height: 36px;
 }
-/* line 161, ../sass/cast.scss */
+/* line 167, ../sass/cast.scss */
 .controls__video:hover i {
   display: block;
 }
 
-/* line 166, ../sass/cast.scss */
+/* line 172, ../sass/cast.scss */
 .controls__panel {
   position: absolute;
   left: 1px;
@@ -254,7 +263,7 @@
   border-radius: 16px;
   z-index: 4;
 }
-/* line 177, ../sass/cast.scss */
+/* line 183, ../sass/cast.scss */
 .controls__panel span {
   display: block;
   width: 26px;
@@ -282,7 +291,7 @@
   text-shadow: 0 1px 4px rgba(0, 0, 0, 0.6);
   cursor: pointer;
 }
-/* line 193, ../sass/cast.scss */
+/* line 199, ../sass/cast.scss */
 .controls__panel span i {
   display: block;
   margin: 0px auto;
@@ -290,11 +299,11 @@
   width: 18px;
   height: 16px;
 }
-/* line 199, ../sass/cast.scss */
+/* line 205, ../sass/cast.scss */
 .controls__panel ul {
   margin-top: 8px;
 }
-/* line 201, ../sass/cast.scss */
+/* line 207, ../sass/cast.scss */
 .controls__panel ul li {
   height: 25px;
   line-height: 25px;
@@ -309,7 +318,7 @@
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.4);
   cursor: pointer;
 }
-/* line 214, ../sass/cast.scss */
+/* line 220, ../sass/cast.scss */
 .controls__panel ul li:hover {
   border-top: 1px solid #000;
   border-bottom: 1px solid #000;
@@ -321,12 +330,12 @@
   background-image: linear-gradient(#4d9fc9, #085aa0);
 }
 
-/* line 223, ../sass/cast.scss */
+/* line 229, ../sass/cast.scss */
 .volume-toggle {
   margin-top: 8px;
 }
 
-/* line 226, ../sass/cast.scss */
+/* line 232, ../sass/cast.scss */
 .volume-toggle__base {
   position: relative;
   height: 114px;
@@ -344,7 +353,7 @@
   box-shadow: inset 0 1px 2px black, 0 0 1px black;
 }
 
-/* line 236, ../sass/cast.scss */
+/* line 242, ../sass/cast.scss */
 .volume-toggle__progress {
   position: absolute;
   bottom: 0;
@@ -359,7 +368,7 @@
   background-image: linear-gradient(bottom, #406610, #83b30d);
   cursor: pointer;
 }
-/* line 245, ../sass/cast.scss */
+/* line 251, ../sass/cast.scss */
 .volume-toggle__progress:after {
   content: "";
   position: absolute;
@@ -370,13 +379,13 @@
   height: 15px;
 }
 
-/* line 253, ../sass/cast.scss */
+/* line 259, ../sass/cast.scss */
 .controls__volume {
   background: url('../img/video-scfa9fc4ea5.png') 0 -668px no-repeat;
   width: 36px;
   height: 36px;
 }
-/* line 255, ../sass/cast.scss */
+/* line 261, ../sass/cast.scss */
 .controls__volume i {
   display: none;
   position: absolute;
@@ -398,7 +407,7 @@
   color: #fff;
   z-index: 11;
 }
-/* line 271, ../sass/cast.scss */
+/* line 277, ../sass/cast.scss */
 .controls__volume i:after {
   content: "";
   position: absolute;
@@ -414,31 +423,31 @@
   transform: rotate(45deg);
   background: #000;
 }
-/* line 283, ../sass/cast.scss */
+/* line 289, ../sass/cast.scss */
 .controls__volume:hover {
   background: url('../img/video-scfa9fc4ea5.png') 0 -346px no-repeat;
   width: 36px;
   height: 36px;
 }
-/* line 285, ../sass/cast.scss */
+/* line 291, ../sass/cast.scss */
 .controls__volume:hover i {
   display: block;
 }
 
-/* line 290, ../sass/cast.scss */
+/* line 296, ../sass/cast.scss */
 .controls__settings {
   background: url('../img/video-scfa9fc4ea5.png') 0 -484px no-repeat;
   width: 36px;
   height: 36px;
 }
-/* line 292, ../sass/cast.scss */
+/* line 298, ../sass/cast.scss */
 .controls__settings:hover {
   background: url('../img/video-scfa9fc4ea5.png') 0 -254px no-repeat;
   width: 36px;
   height: 36px;
 }
 
-/* line 296, ../sass/cast.scss */
+/* line 302, ../sass/cast.scss */
 .controls__separate {
   display: inline-block;
   width: 1px;
@@ -449,13 +458,13 @@
   background: #343438;
 }
 
-/* line 305, ../sass/cast.scss */
+/* line 311, ../sass/cast.scss */
 .controls__playlist {
   background: url('../img/video-scfa9fc4ea5.png') 0 -576px no-repeat;
   width: 36px;
   height: 36px;
 }
-/* line 307, ../sass/cast.scss */
+/* line 313, ../sass/cast.scss */
 .controls__playlist i {
   display: none;
   position: absolute;
@@ -477,7 +486,7 @@
   color: #fff;
   z-index: 11;
 }
-/* line 323, ../sass/cast.scss */
+/* line 329, ../sass/cast.scss */
 .controls__playlist i:after {
   content: "";
   position: absolute;
@@ -493,41 +502,41 @@
   transform: rotate(45deg);
   background: #000;
 }
-/* line 335, ../sass/cast.scss */
+/* line 341, ../sass/cast.scss */
 .controls__playlist:hover {
   background: url('../img/video-scfa9fc4ea5.png') 0 -438px no-repeat;
   width: 36px;
   height: 36px;
 }
-/* line 337, ../sass/cast.scss */
+/* line 343, ../sass/cast.scss */
 .controls__playlist:hover i {
   display: block;
 }
 
-/* line 342, ../sass/cast.scss */
+/* line 348, ../sass/cast.scss */
 .controls__playlist.is-active {
   background: url('../img/video-scfa9fc4ea5.png') 0 -438px no-repeat;
   width: 36px;
   height: 36px;
 }
 
-/* line 345, ../sass/cast.scss */
+/* line 351, ../sass/cast.scss */
 .controls__camera {
   background: url('../img/video-scfa9fc4ea5.png') 0 -714px no-repeat;
   width: 36px;
   height: 36px;
 }
-/* line 347, ../sass/cast.scss */
+/* line 353, ../sass/cast.scss */
 .controls__camera:hover {
   background: url('../img/video-scfa9fc4ea5.png') 0 -622px no-repeat;
   width: 36px;
   height: 36px;
 }
-/* line 349, ../sass/cast.scss */
+/* line 355, ../sass/cast.scss */
 .controls__camera:hover i {
   display: block;
 }
-/* line 353, ../sass/cast.scss */
+/* line 359, ../sass/cast.scss */
 .controls__camera i {
   display: none;
   position: absolute;
@@ -549,7 +558,7 @@
   color: #fff;
   z-index: 11;
 }
-/* line 369, ../sass/cast.scss */
+/* line 375, ../sass/cast.scss */
 .controls__camera i:after {
   content: "";
   position: absolute;
@@ -566,13 +575,13 @@
   background: #000;
 }
 
-/* line 382, ../sass/cast.scss */
+/* line 388, ../sass/cast.scss */
 .controls__chat {
   background: url('../img/video-scfa9fc4ea5.png') 0 -392px no-repeat;
   width: 36px;
   height: 36px;
 }
-/* line 384, ../sass/cast.scss */
+/* line 390, ../sass/cast.scss */
 .controls__chat i {
   display: none;
   position: absolute;
@@ -594,7 +603,7 @@
   color: #fff;
   z-index: 11;
 }
-/* line 400, ../sass/cast.scss */
+/* line 406, ../sass/cast.scss */
 .controls__chat i:after {
   content: "";
   position: absolute;
@@ -610,12 +619,12 @@
   transform: rotate(45deg);
   background: #000;
 }
-/* line 413, ../sass/cast.scss */
+/* line 419, ../sass/cast.scss */
 .controls__chat:hover i {
   display: block;
 }
 
-/* line 420, ../sass/cast.scss */
+/* line 426, ../sass/cast.scss */
 .media-gallery {
   display: none;
   position: absolute;
@@ -629,7 +638,7 @@
   box-shadow: 0 1px 0 rgba(255, 255, 255, 0.23), inset 0 0 6px rgba(0, 0, 0, 0.4);
   background: url(../img/bg-win.png);
 }
-/* line 430, ../sass/cast.scss */
+/* line 436, ../sass/cast.scss */
 .media-gallery h2 {
   padding-left: 12px;
   color: #cdcdcd;
@@ -637,7 +646,7 @@
   font-size: 16px;
   text-shadow: 0 1px 0 rgba(0, 0, 0, 0.75);
 }
-/* line 437, ../sass/cast.scss */
+/* line 443, ../sass/cast.scss */
 .media-gallery:after {
   content: "";
   position: absolute;
@@ -656,18 +665,18 @@
   background: url(../img/bg-win.png);
 }
 
-/* line 451, ../sass/cast.scss */
+/* line 457, ../sass/cast.scss */
 .media-gallery.is-active {
   display: block;
 }
 
-/* line 454, ../sass/cast.scss */
+/* line 460, ../sass/cast.scss */
 .cycle-slideshow {
   margin: 12px 0 0 -4px;
   height: 175px;
 }
 
-/* line 458, ../sass/cast.scss */
+/* line 464, ../sass/cast.scss */
 .media-gallery__item {
   overflow: hidden;
   width: 172px;
@@ -678,7 +687,7 @@
   -o-user-select: none;
   user-select: none;
 }
-/* line 467, ../sass/cast.scss */
+/* line 473, ../sass/cast.scss */
 .media-gallery__item h3 {
   margin-top: 9px;
   padding: 0 4px;
@@ -688,7 +697,7 @@
   text-shadow: 0 1px 0 rgba(0, 0, 0, 0.75);
   white-space: normal;
 }
-/* line 476, ../sass/cast.scss */
+/* line 482, ../sass/cast.scss */
 .media-gallery__item p {
   margin: 5px 0;
   padding: 0 4px;
@@ -697,16 +706,16 @@
   text-shadow: 0 1px 0 rgba(0, 0, 0, 0.75);
   white-space: normal;
 }
-/* line 485, ../sass/cast.scss */
+/* line 491, ../sass/cast.scss */
 .media-gallery__item:hover .wrapper-media-gallery__video {
   background: #207191 url(../img/input-bg.png);
 }
-/* line 488, ../sass/cast.scss */
+/* line 494, ../sass/cast.scss */
 .media-gallery__item:hover .video-play {
   display: block;
 }
 
-/* line 493, ../sass/cast.scss */
+/* line 499, ../sass/cast.scss */
 .wrapper-media-gallery__video {
   width: 164px;
   height: 104px;
@@ -718,7 +727,7 @@
   border-radius: 4px;
 }
 
-/* line 499, ../sass/cast.scss */
+/* line 505, ../sass/cast.scss */
 .media-gallery__video {
   position: relative;
   width: 160px;
@@ -731,7 +740,7 @@
   -o-border-radius: 2px;
   border-radius: 2px;
 }
-/* line 506, ../sass/cast.scss */
+/* line 512, ../sass/cast.scss */
 .media-gallery__video .video-duration {
   position: absolute;
   bottom: 8px;
@@ -751,7 +760,7 @@
   border-radius: 10px;
   background: #000;
 }
-/* line 521, ../sass/cast.scss */
+/* line 527, ../sass/cast.scss */
 .media-gallery__video i {
   position: absolute;
   bottom: 0px;
@@ -762,7 +771,7 @@
   border-width: 9px;
   border-color: #7aaa0b #272727 #272727 #7aaa0b;
 }
-/* line 531, ../sass/cast.scss */
+/* line 537, ../sass/cast.scss */
 .media-gallery__video .video-play {
   display: none;
   position: absolute;
@@ -775,7 +784,7 @@
   cursor: pointer;
 }
 
-/* line 541, ../sass/cast.scss */
+/* line 547, ../sass/cast.scss */
 #prev, #prev2, #prev3, #prev4 {
   position: absolute;
   top: 36%;
@@ -786,7 +795,7 @@
   cursor: pointer;
 }
 
-/* line 548, ../sass/cast.scss */
+/* line 554, ../sass/cast.scss */
 #next, #next2, #next3, #next4 {
   position: absolute;
   top: 36%;
@@ -797,7 +806,7 @@
   cursor: pointer;
 }
 
-/* line 557, ../sass/cast.scss */
+/* line 563, ../sass/cast.scss */
 .video-progress {
   position: relative;
   width: 100%;
@@ -806,13 +815,13 @@
   margin-bottom: -7px;
   padding-top: 5px;
 }
-/* line 564, ../sass/cast.scss */
+/* line 570, ../sass/cast.scss */
 .video-progress .video-progress__play {
   float: left;
   width: 42px;
   cursor: pointer;
 }
-/* line 568, ../sass/cast.scss */
+/* line 574, ../sass/cast.scss */
 .video-progress .video-progress__play .video-play-small {
   display: block;
   margin: 0 auto;
@@ -820,14 +829,14 @@
   width: 13px;
   height: 15px;
 }
-/* line 574, ../sass/cast.scss */
+/* line 580, ../sass/cast.scss */
 .video-progress .video-progress__line {
   width: 100%;
   box-sizing: border-box;
   padding: 0 81px 0 35px;
 }
 
-/* line 580, ../sass/cast.scss */
+/* line 586, ../sass/cast.scss */
 .video-progress__base {
   position: relative;
   width: 100%;
@@ -843,7 +852,7 @@
   -moz-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.16), inset 0 1px 2px rgba(0, 0, 0, 0.48);
   box-shadow: 0 1px 0 rgba(255, 255, 255, 0.16), inset 0 1px 2px rgba(0, 0, 0, 0.48);
 }
-/* line 588, ../sass/cast.scss */
+/* line 594, ../sass/cast.scss */
 .video-progress__base .video-progress__point1, .video-progress__base .video-progress__point2, .video-progress__base .video-progress__point3, .video-progress__base .video-progress__point4 {
   position: absolute;
   top: 2px;
@@ -857,19 +866,19 @@
   border-radius: 50%;
   background: #323232;
 }
-/* line 597, ../sass/cast.scss */
+/* line 603, ../sass/cast.scss */
 .video-progress__base .video-progress__point2 {
   left: 45%;
 }
-/* line 600, ../sass/cast.scss */
+/* line 606, ../sass/cast.scss */
 .video-progress__base .video-progress__point3 {
   left: 67.5%;
 }
-/* line 603, ../sass/cast.scss */
+/* line 609, ../sass/cast.scss */
 .video-progress__base .video-progress__point4 {
   left: 90%;
 }
-/* line 606, ../sass/cast.scss */
+/* line 612, ../sass/cast.scss */
 .video-progress__base .video-progress__loading {
   height: 8px;
   min-width: 0%;
@@ -885,7 +894,7 @@
   -o-border-radius: 10px;
   border-radius: 10px;
 }
-/* line 613, ../sass/cast.scss */
+/* line 619, ../sass/cast.scss */
 .video-progress__base .video-progress__progress {
   position: absolute;
   top: 0;
@@ -904,7 +913,7 @@
   border-radius: 10px;
   cursor: pointer;
 }
-/* line 622, ../sass/cast.scss */
+/* line 628, ../sass/cast.scss */
 .video-progress__base .video-progress__progress:after {
   content: "";
   position: absolute;
@@ -915,7 +924,7 @@
   height: 17px;
 }
 
-/* line 631, ../sass/cast.scss */
+/* line 637, ../sass/cast.scss */
 .video-progress__time {
   position: absolute;
   right: 0px;
@@ -926,12 +935,12 @@
   font-weight: bold;
 }
 
-/* line 640, ../sass/cast.scss */
+/* line 646, ../sass/cast.scss */
 .cast-announce {
   text-align: center;
   background: url(../img/bg-win.png);
 }
-/* line 643, ../sass/cast.scss */
+/* line 649, ../sass/cast.scss */
 .cast-announce h1 {
   background: transparent;
   color: #cdcdcd;
@@ -940,7 +949,7 @@
   font-weight: bold;
   text-shadow: 0 1px 0 rgba(0, 0, 0, 0.75);
 }
-/* line 651, ../sass/cast.scss */
+/* line 657, ../sass/cast.scss */
 .cast-announce p {
   margin: 0px 0 22px;
   color: #969595;
@@ -949,47 +958,47 @@
   font-weight: bold;
   text-shadow: 0 1px 0 rgba(0, 0, 0, 0.75);
 }
-/* line 659, ../sass/cast.scss */
+/* line 665, ../sass/cast.scss */
 .cast-announce .media-gallery__video {
   margin: 0 auto;
 }
-/* line 661, ../sass/cast.scss */
+/* line 667, ../sass/cast.scss */
 .cast-announce .media-gallery__video .video-play {
   display: block;
 }
 
-/* line 666, ../sass/cast.scss */
+/* line 672, ../sass/cast.scss */
 .cast-announce__img {
   padding: 26px 0 14px;
 }
-/* line 668, ../sass/cast.scss */
+/* line 674, ../sass/cast.scss */
 .cast-announce__img span {
   display: inline-block;
   vertical-align: middle;
 }
 
-/* line 673, ../sass/cast.scss */
+/* line 679, ../sass/cast.scss */
 .cast-announce__logo {
   background: url('../img/video-scfa9fc4ea5.png') 0 0 no-repeat;
   width: 84px;
   height: 85px;
 }
 
-/* line 676, ../sass/cast.scss */
+/* line 682, ../sass/cast.scss */
 .cast-announce__plus {
   background: url('../img/video-scfa9fc4ea5.png') 0 -1326px no-repeat;
   width: 11px;
   height: 12px;
 }
 
-/* line 679, ../sass/cast.scss */
+/* line 685, ../sass/cast.scss */
 .cast-announce__break {
   background: url('../img/video-scfa9fc4ea5.png') 0 -95px no-repeat;
   width: 84px;
   height: 85px;
 }
 
-/* line 682, ../sass/cast.scss */
+/* line 688, ../sass/cast.scss */
 .media__dev {
   width: 270px;
   max-width: 100%;
@@ -999,7 +1008,7 @@
   border-bottom: 1px solid rgba(255, 255, 255, 0.13);
 }
 
-/* line 690, ../sass/cast.scss */
+/* line 696, ../sass/cast.scss */
 .cast-announce__alert {
   padding-bottom: 20px;
   color: #efb51e;
@@ -1009,7 +1018,7 @@
   text-shadow: 0 1px 0 rgba(0, 0, 0, 0.75);
 }
 
-/* line 698, ../sass/cast.scss */
+/* line 704, ../sass/cast.scss */
 .cast-announce__timer {
   line-height: 140px;
   color: #cdcdcd;
@@ -1019,7 +1028,7 @@
   text-shadow: 0 1px 0 rgba(0, 0, 0, 0.75);
 }
 
-/* line 708, ../sass/cast.scss */
+/* line 714, ../sass/cast.scss */
 .wrapper-small-window {
   border: 1px solid #000;
   -webkit-border-radius: 2px;
@@ -1038,7 +1047,7 @@
   background-image: linear-gradient(bottom, rgba(0, 0, 0, 0.2) 0%, rgba(255, 255, 255, 0.2) 100%);
 }
 
-/* line 715, ../sass/cast.scss */
+/* line 721, ../sass/cast.scss */
 .small-window {
   position: relative;
   width: 256px;
@@ -1051,7 +1060,7 @@
   box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.15);
   text-align: center;
 }
-/* line 724, ../sass/cast.scss */
+/* line 730, ../sass/cast.scss */
 .small-window p {
   margin: 10px 0 5px;
   color: #969595;
@@ -1060,24 +1069,24 @@
   font-weight: bold;
   text-shadow: 0 1px 0 rgba(0, 0, 0, 0.75);
 }
-/* line 732, ../sass/cast.scss */
+/* line 738, ../sass/cast.scss */
 .small-window a {
   color: #73bad8;
 }
-/* line 735, ../sass/cast.scss */
+/* line 741, ../sass/cast.scss */
 .small-window .small-window__bg {
   width: 100%;
   height: 100%;
 }
 
-/* line 740, ../sass/cast.scss */
+/* line 746, ../sass/cast.scss */
 .small-window__title {
   position: relative;
   height: 20px;
   border: none;
 }
 
-/* line 745, ../sass/cast.scss */
+/* line 751, ../sass/cast.scss */
 .small-window__close {
   position: absolute;
   top: 3px;
@@ -1088,17 +1097,17 @@
   height: 20px;
 }
 
-/* line 752, ../sass/cast.scss */
+/* line 758, ../sass/cast.scss */
 .small-window__connecting {
   margin-top: 18px;
 }
 
-/* line 755, ../sass/cast.scss */
+/* line 761, ../sass/cast.scss */
 .small-window__error {
   margin-top: 70px;
 }
 
-/* line 758, ../sass/cast.scss */
+/* line 764, ../sass/cast.scss */
 .small-window__loading {
   position: absolute;
   top: 0;
@@ -1107,7 +1116,7 @@
   bottom: 0;
   background: rgba(0, 0, 0, 0.5);
 }
-/* line 765, ../sass/cast.scss */
+/* line 771, ../sass/cast.scss */
 .small-window__loading img {
   position: absolute;
   top: 50%;
@@ -1115,7 +1124,7 @@
   margin: -28px 0 0 -28px;
 }
 
-/* line 772, ../sass/cast.scss */
+/* line 778, ../sass/cast.scss */
 .small-window__button {
   position: absolute;
   top: 0;
@@ -1125,7 +1134,7 @@
   background: rgba(0, 0, 0, 0.2);
   cursor: pointer;
 }
-/* line 780, ../sass/cast.scss */
+/* line 786, ../sass/cast.scss */
 .small-window__button img {
   position: absolute;
   top: 50%;
@@ -1133,30 +1142,35 @@
   margin: -27px 0 0 -27px;
 }
 
-/* line 789, ../sass/cast.scss */
+/* line 795, ../sass/cast.scss */
 .window {
   position: relative;
   overflow: hidden;
   min-width: 270px !important;
+  margin: 0;
 }
-/* line 793, ../sass/cast.scss */
+/* line 800, ../sass/cast.scss */
 .window .small-window {
   margin: auto;
 }
+/* line 803, ../sass/cast.scss */
+.window:hover {
+  margin: -32px 0 40px;
+}
 
-/* line 797, ../sass/cast.scss */
+/* line 807, ../sass/cast.scss */
 .window__content {
   padding: 6px;
   background: #1d1d1d;
 }
 
-/* line 801, ../sass/cast.scss */
+/* line 811, ../sass/cast.scss */
 .window__controls {
   margin: 10px 0 0;
   text-align: center;
 }
 
-/* line 807, ../sass/cast.scss */
+/* line 817, ../sass/cast.scss */
 .equalizer {
   position: relative;
   width: 320px;
@@ -1164,7 +1178,7 @@
   background: #222428;
   border: 1px solid #000;
 }
-/* line 813, ../sass/cast.scss */
+/* line 823, ../sass/cast.scss */
 .equalizer .win__title {
   border: none;
   background: #222428;
@@ -1175,12 +1189,12 @@
   background-image: linear-gradient(top, #4f5155, #222428);
 }
 
-/* line 819, ../sass/cast.scss */
+/* line 829, ../sass/cast.scss */
 .equalizer_window {
   max-width: 320px;
 }
 
-/* line 822, ../sass/cast.scss */
+/* line 832, ../sass/cast.scss */
 .equalizer__toggle {
   position: relative;
   width: 34px;
@@ -1197,7 +1211,7 @@
   box-shadow: 0 1px 0 rgba(255, 255, 255, 0.35), inset 0 1px 2px rgba(0, 0, 0, 0.5);
   cursor: pointer;
 }
-/* line 831, ../sass/cast.scss */
+/* line 841, ../sass/cast.scss */
 .equalizer__toggle .equalizer__handle {
   position: absolute;
   top: -1px;
@@ -1219,7 +1233,7 @@
   background-image: -o-linear-gradient(bottom, #272727 0%, #272727 1.25%, #393939 100%);
   background-image: linear-gradient(bottom, #272727 0%, #272727 1.25%, #393939 100%);
 }
-/* line 841, ../sass/cast.scss */
+/* line 851, ../sass/cast.scss */
 .equalizer__toggle .equalizer__handle span {
   display: block;
   width: 4px;
@@ -1241,7 +1255,7 @@
   transition-delay: 0.1s;
 }
 
-/* line 854, ../sass/cast.scss */
+/* line 864, ../sass/cast.scss */
 .equalizer__toggle.on span {
   background-color: #7ca129;
   -webkit-transition: background 0.2s ease;
@@ -1254,20 +1268,20 @@
   transition-delay: 0.1s;
 }
 
-/* line 860, ../sass/cast.scss */
+/* line 870, ../sass/cast.scss */
 .equalizer__controls {
   margin: 0 23px 16px;
   overflow: hidden;
 }
 
-/* line 864, ../sass/cast.scss */
+/* line 874, ../sass/cast.scss */
 .equalizer__item {
   float: left;
   width: 17px;
   padding-left: 10px;
   background: url(../img/eq-bg.png) 0 0 no-repeat;
 }
-/* line 869, ../sass/cast.scss */
+/* line 879, ../sass/cast.scss */
 .equalizer__item .equalizer__base {
   position: relative;
   width: 3px;
@@ -1284,7 +1298,7 @@
   box-shadow: 0 0 1px 1px #2f2f2f;
   background: #1e1e1e;
 }
-/* line 879, ../sass/cast.scss */
+/* line 889, ../sass/cast.scss */
 .equalizer__item .equalizer__progress {
   background: url('../img/video-scfa9fc4ea5.png') 0 -1184px no-repeat;
   width: 15px;
@@ -1293,14 +1307,14 @@
   cursor: pointer;
 }
 
-/* line 885, ../sass/cast.scss */
+/* line 895, ../sass/cast.scss */
 .equalizer__text {
   width: 49px;
   float: left;
   padding-right: 6px;
   text-align: right;
 }
-/* line 890, ../sass/cast.scss */
+/* line 900, ../sass/cast.scss */
 .equalizer__text p {
   margin-top: 45px;
   color: #8b8b91;
@@ -1309,12 +1323,12 @@
   font-weight: bold;
   text-shadow: 0 1px 0 rgba(0, 0, 0, 0.75);
 }
-/* line 897, ../sass/cast.scss */
+/* line 907, ../sass/cast.scss */
 .equalizer__text p:first-child {
   margin-top: 0;
 }
 
-/* line 904, ../sass/cast.scss */
+/* line 914, ../sass/cast.scss */
 .adjustments {
   padding: 21px 15px 9px;
   border-bottom: 1px solid #000;
@@ -1323,18 +1337,18 @@
   box-shadow: 1px 0 1px #434549;
 }
 
-/* line 909, ../sass/cast.scss */
+/* line 919, ../sass/cast.scss */
 .adjustments__item {
   overflow: hidden;
   margin-top: 12px;
   text-align: right;
 }
-/* line 913, ../sass/cast.scss */
+/* line 923, ../sass/cast.scss */
 .adjustments__item:first-child {
   margin-top: 0;
 }
 
-/* line 917, ../sass/cast.scss */
+/* line 927, ../sass/cast.scss */
 .adjustments__name {
   float: left;
   width: 65px;
@@ -1345,7 +1359,7 @@
   text-shadow: 0 1px 0 rgba(0, 0, 0, 0.75);
 }
 
-/* line 926, ../sass/cast.scss */
+/* line 936, ../sass/cast.scss */
 .adjustments__toggle {
   width: 100%;
   height: 20px;
@@ -1353,13 +1367,13 @@
   box-sizing: border-box;
   background: url(../img/eq-bg2.png) 32px 15px no-repeat;
 }
-/* line 932, ../sass/cast.scss */
+/* line 942, ../sass/cast.scss */
 .adjustments__toggle .adjustments__progress {
   position: relative;
   width: 100%;
   margin-left: 18px;
 }
-/* line 936, ../sass/cast.scss */
+/* line 946, ../sass/cast.scss */
 .adjustments__toggle .adjustments__progress .adjustments__base {
   position: relative;
   height: 5px;
@@ -1375,7 +1389,7 @@
   -moz-box-shadow: inset 0 1px 2px black;
   box-shadow: inset 0 1px 2px black;
 }
-/* line 945, ../sass/cast.scss */
+/* line 955, ../sass/cast.scss */
 .adjustments__toggle .adjustments__progress .adjustments__slider {
   position: absolute;
   top: -5px;
@@ -1385,7 +1399,7 @@
   cursor: pointer;
 }
 
-/* line 954, ../sass/cast.scss */
+/* line 964, ../sass/cast.scss */
 .adjustments__brightness:before {
   content: "";
   position: absolute;
@@ -1395,7 +1409,7 @@
   width: 19px;
   height: 13px;
 }
-/* line 961, ../sass/cast.scss */
+/* line 971, ../sass/cast.scss */
 .adjustments__brightness:after {
   content: "";
   position: absolute;
@@ -1406,7 +1420,7 @@
   height: 13px;
 }
 
-/* line 970, ../sass/cast.scss */
+/* line 980, ../sass/cast.scss */
 .adjustments__contrast:before {
   content: "";
   position: absolute;
@@ -1416,7 +1430,7 @@
   width: 16px;
   height: 16px;
 }
-/* line 977, ../sass/cast.scss */
+/* line 987, ../sass/cast.scss */
 .adjustments__contrast:after {
   content: "";
   position: absolute;
@@ -1427,7 +1441,7 @@
   height: 16px;
 }
 
-/* line 986, ../sass/cast.scss */
+/* line 996, ../sass/cast.scss */
 .adjustments__saturation:before {
   content: "";
   position: absolute;
@@ -1437,7 +1451,7 @@
   width: 16px;
   height: 16px;
 }
-/* line 993, ../sass/cast.scss */
+/* line 1003, ../sass/cast.scss */
 .adjustments__saturation:after {
   content: "";
   position: absolute;
@@ -1448,7 +1462,7 @@
   height: 16px;
 }
 
-/* line 1002, ../sass/cast.scss */
+/* line 1012, ../sass/cast.scss */
 .adjustments__smooth:before {
   content: "";
   position: absolute;
@@ -1458,7 +1472,7 @@
   width: 16px;
   height: 16px;
 }
-/* line 1009, ../sass/cast.scss */
+/* line 1019, ../sass/cast.scss */
 .adjustments__smooth:after {
   content: "";
   position: absolute;
@@ -1469,7 +1483,7 @@
   height: 16px;
 }
 
-/* line 1019, ../sass/cast.scss */
+/* line 1029, ../sass/cast.scss */
 .chat__audio {
   height: 141px;
   margin-bottom: 17px;
@@ -1478,21 +1492,21 @@
   box-shadow: 2px 0px 8px 3px black;
 }
 
-/* line 1025, ../sass/cast.scss */
+/* line 1035, ../sass/cast.scss */
 .widget .input-message__text form {
   float: none;
   width: auto;
 }
-/* line 1029, ../sass/cast.scss */
+/* line 1039, ../sass/cast.scss */
 .widget .input-message__text {
   width: 90%;
 }
-/* line 1032, ../sass/cast.scss */
+/* line 1042, ../sass/cast.scss */
 .widget .media {
   width: auto;
 }
 
-/* line 1036, ../sass/cast.scss */
+/* line 1046, ../sass/cast.scss */
 .form-search .input-search_widget {
   width: 100%;
   height: 28px;
@@ -1500,7 +1514,7 @@
   padding: 3px 27px 3px 24px;
 }
 
-/* line 1042, ../sass/cast.scss */
+/* line 1052, ../sass/cast.scss */
 .widget__video {
   position: relative;
   left: -7px;
@@ -1512,8 +1526,9 @@
   box-shadow: 0 0 6px 1px black;
 }
 
-/* line 1050, ../sass/cast.scss */
+/* line 1060, ../sass/cast.scss */
 .player_widget {
+  background: transparent;
   box-sizing: border-box;
   top: -20px;
   -webkit-border-radius: 6px 6px 0 0;
@@ -1524,7 +1539,18 @@
   border: none;
 }
 
-/* line 1056, ../sass/cast.scss */
+/* line 1067, ../sass/cast.scss */
+.player.hover-color {
+  margin: 0;
+  background: transparent;
+}
+/* line 1070, ../sass/cast.scss */
+.player.hover-color:hover {
+  margin: -25px 0 7px;
+  background: #fff;
+}
+
+/* line 1075, ../sass/cast.scss */
 .win .win__content_widget {
   -webkit-border-radius: 6px;
   -moz-border-radius: 6px;
