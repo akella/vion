@@ -6,6 +6,14 @@
     padding: 6px;
     @include border-radius(50%);
     background: #000;
+    text-decoration: none;
+}
+.wrapper-button.white{
+    background: #fff;
+    .button-hint-right, .button-hint-left{
+        background: #fff;
+        color: #000;
+    }
 }
 // styles for big buttons
 .wrapper-button_big{
@@ -14,6 +22,7 @@
     .button{
         width: 128px;
         height: 128px;
+        line-height: 128px;
         span{
             line-height: 128px;
             font-size: 48px;
@@ -72,6 +81,7 @@
     .button{
         width: 96px;
         height: 96px;
+        line-height: 96px;
         span{
             line-height: 96px;
             font-size: 30px;
@@ -130,6 +140,7 @@
     .button{
         width: 64px;
         height: 64px;
+        line-height: 64px;
         span{
             line-height: 64px;
             font-size: 24px;
@@ -189,6 +200,7 @@
     .button{
         width: 32px;
         height: 32px;
+        line-height: 32px;
         span{
             line-height: 32px;
             font-size: 12px;
@@ -243,13 +255,14 @@
 .button{
 	position: relative;
     display: inline-block;
+    vertical-align: middle;
+    text-align: center;
     @include border-radius(50%);
     @include background-image(linear-gradient(top, #fdc700 0%, #ad5f00 100%));
     z-index: 2;
-    i{
-        display: block;
-        height: 100%;
-        background: url(../img/button-2-biggest.png) 50% 50% no-repeat;
+    img{
+        display: inline-block;
+        vertical-align: middle;
     }
     span{
         display: block;
@@ -267,7 +280,7 @@
     top: 50%;
     left: 50%;
 }
-.button-hint-right {
+.button-hint-right{
 	position: absolute;
     white-space:nowrap;
     margin-left: -1em;
@@ -294,5 +307,41 @@
     color: #fff;
     span{
         display: inline-block;
+    }
+}
+.arr-right_big.white{
+    &:before{
+        content: "";
+        position: absolute;
+        bottom: 10px;
+        left: 4px;
+        @include s($buttons, button-corner-biggest-white);
+    }
+}
+.arr-right_mid.white{
+    &:before{
+        content: "";
+        position: absolute;
+        bottom: 10px;
+        left: 4px;
+        @include s($buttons, button-corner-bigger-white);
+    }
+}
+.arr-right_small.white{
+    &:before{
+        content: "";
+        position: absolute;
+        bottom: 5px;
+        left: 5px;
+        @include s($buttons, button-corner-big-white);
+    }
+}
+.arr-right_smallest.white{
+    &:before{
+        content: "";
+        position: absolute;
+        bottom: 1px;
+        left: 4px;
+        @include s($buttons, button-corner);
     }
 }
