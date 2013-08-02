@@ -7,7 +7,8 @@
     @include border-radius(50%);
     background: #000;
 }
-.wrapper-button_biggest{
+// styles for big buttons
+.wrapper-button_big{
     height: 128px;
     width: 128px;
     .button{
@@ -29,7 +30,7 @@
         left: 75px;
         height: 100px;
         line-height: 100px;
-        @include border-radius(0 40px 40px 0);
+        @include border-radius(0 50px 50px 0);
         font-size: 50px;
         span{
             padding: 0 40px;
@@ -40,7 +41,7 @@
         right: 40px;
         height: 100px;
         line-height: 100px;
-        @include border-radius(40px 0 0 40px);
+        @include border-radius(50px 0 0 50px);
         font-size: 50px;
         span{
             padding: 0 40px;
@@ -53,6 +54,190 @@
     &:hover .button-hint-left {
         opacity: 1;
         right: 108px;
+    }
+}
+.arr-right_big{
+    &:before{
+        content: "";
+        position: absolute;
+        bottom: 10px;
+        left: 4px;
+        @include s($buttons, button-corner-biggest);
+    }
+}
+// styles for big buttons
+.wrapper-button_mid{
+    width: 96px;
+    height: 96px;
+    .button{
+        width: 96px;
+        height: 96px;
+        span{
+            line-height: 96px;
+            font-size: 30px;
+        }
+    }
+    .preloader{
+        width: 80px;
+        height: 80px;
+        margin: -40px 0 0 -40px;
+        background: url(../img/preloader-mid.png) 50% 50% no-repeat;
+    }
+    .button-hint-right{
+        top: 18px;
+        left: 75px;
+        height: 76px;
+        line-height: 76px;
+        @include border-radius(0 38px 38px 0);
+        font-size: 36px;
+        span{
+            padding: 0 35px;
+        }
+    }
+    .button-hint-left{
+        top: 18px;
+        right: 40px;
+        height: 76px;
+        line-height: 76px;
+        @include border-radius(38px 0 0 38px);
+        font-size: 36px;
+        span{
+            padding: 0 35px;
+        }
+    }
+    &:hover .button-hint-right {
+        left: 125px;
+        opacity: 1;
+    }
+    &:hover .button-hint-left {
+        opacity: 1;
+        right: 89px;
+    }
+}
+.arr-right_mid{
+    &:before{
+        content: "";
+        position: absolute;
+        bottom: 10px;
+        left: 4px;
+        @include s($buttons, button-corner-bigger);
+    }
+}
+// styles for small buttons
+.wrapper-button_small{
+    width: 64px;
+    height: 64px;
+    .button{
+        width: 64px;
+        height: 64px;
+        span{
+            line-height: 64px;
+            font-size: 24px;
+        }
+    }
+    .preloader{
+        width: 50px;
+        height: 50px;
+        margin: -25px 0 0 -25px;
+        background: url(../img/preloader-small.png) 50% 50% no-repeat;
+    }
+    .button-hint-right{
+        top: 12px;
+        left: 55px;
+        height: 55px;
+        line-height: 55px;
+        @include border-radius(0 30px 30px 0);
+        font-size: 28px;
+        span{
+            padding: 0 25px;
+        }
+    }
+    .button-hint-left{
+        top: 12px;
+        right: 20px;
+        height: 55px;
+        line-height: 55px;
+        @include border-radius(30px 0 0 30px);
+        font-size: 28px;
+        span{
+            padding: 0 25px;
+        }
+    }
+    &:hover .button-hint-right {
+        left: 90px;
+        opacity: 1;
+    }
+    &:hover .button-hint-left {
+        opacity: 1;
+        right: 60px;
+    }
+}
+.arr-right_small{
+    &:before{
+        content: "";
+        position: absolute;
+        bottom: 5px;
+        left: 5px;
+        @include s($buttons, button-corner-big);
+    }
+}
+// styles for smallest buttons
+.wrapper-button_smallest{
+    width: 32px;
+    height: 32px;
+    padding: 4px;
+    .button{
+        width: 32px;
+        height: 32px;
+        span{
+            line-height: 32px;
+            font-size: 12px;
+        }
+    }
+    .preloader{
+        width: 26px;
+        height: 26px;
+        margin: -13px 0 0 -13px;
+        background: url(../img/preloader-smallest.png) 50% 50% no-repeat;
+    }
+    .button-hint-right{
+        top: 6px;
+        left: 25px;
+        height: 28px;
+        line-height: 28px;
+        @include border-radius(0 30px 30px 0);
+        font-size: 20px;
+        span{
+            padding: 0 25px;
+        }
+    }
+    .button-hint-left{
+        top: 6px;
+        right: 5px;
+        height: 28px;
+        line-height: 28px;
+        @include border-radius(30px 0 0 30px);
+        font-size: 20px;
+        span{
+            padding: 0 25px;
+        }
+    }
+    &:hover .button-hint-right {
+        left: 37px;
+        opacity: 1;
+    }
+    &:hover .button-hint-left {
+        opacity: 1;
+        right: 28px;
+    }
+}
+.arr-right_smallest{
+    &:before{
+        content: "";
+        position: absolute;
+        bottom: 1px;
+        left: 4px;
+        @include s($buttons, button-corner);
     }
 }
 .button{
