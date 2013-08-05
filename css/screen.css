@@ -197,27 +197,27 @@ body {
 
 /* line 93, ../sass/_common.scss */
 .tocenter {
-  margin: 0 auto;
+  margin: 0 auto !important;
 }
 
 /* line 96, ../sass/_common.scss */
 .toright {
-  float: right;
+  float: right !important;
 }
 
 /* line 99, ../sass/_common.scss */
 .toleft {
-  float: left;
+  float: left !important;
 }
 
 /* line 102, ../sass/_common.scss */
 .toheight {
-  height: 100%;
+  height: 100% !important;
 }
 
 /* line 105, ../sass/_common.scss */
 .towidth {
-  width: 100%;
+  width: 100% !important;
 }
 
 /* line 111, ../sass/_common.scss */

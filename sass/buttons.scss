@@ -65,23 +65,17 @@
     }
 }
 .arr-right_big{
-    &:before{
-        content: "";
-        position: absolute;
-        bottom: 10px;
-        left: 4px;
-        @include s($buttons, button-corner-biggest);
-    }
+    position: absolute;
+    bottom: 10px;
+    left: 4px;
+    @include s($buttons, button-corner-biggest);
 }
 .arr-left_big{
-    &:before{
-        content: "";
-        position: absolute;
-        bottom: 10px;
-        right: 4px;
-        @include s($buttons, button-corner-biggest);
-        @include rotate(270deg);
-    }
+    position: absolute;
+    bottom: 10px;
+    right: 4px;
+    @include s($buttons, button-corner-biggest);
+    @include rotate(270deg);
 }
 // styles for big buttons
 .wrapper-button_mid{
@@ -134,23 +128,17 @@
     }
 }
 .arr-right_mid{
-    &:before{
-        content: "";
-        position: absolute;
-        bottom: 10px;
-        left: 4px;
-        @include s($buttons, button-corner-bigger);
-    }
+    position: absolute;
+    bottom: 10px;
+    left: 4px;
+    @include s($buttons, button-corner-bigger);
 }
 .arr-left_mid{
-    &:before{
-        content: "";
-        position: absolute;
-        bottom: 10px;
-        right: 4px;
-        @include s($buttons, button-corner-bigger);
-        @include rotate(270deg);
-    }
+    position: absolute;
+    bottom: 10px;
+    right: 4px;
+    @include s($buttons, button-corner-bigger);
+    @include rotate(270deg);
 }
 // styles for small buttons
 .wrapper-button_small{
@@ -203,23 +191,17 @@
     }
 }
 .arr-right_small{
-    &:before{
-        content: "";
-        position: absolute;
-        bottom: 5px;
-        left: 5px;
-        @include s($buttons, button-corner-big);
-    }
+    position: absolute;
+    bottom: 5px;
+    left: 5px;
+    @include s($buttons, button-corner-big);
 }
 .arr-left_small{
-    &:before{
-        content: "";
-        position: absolute;
-        bottom: 5px;
-        right: 5px;
-        @include s($buttons, button-corner-big);
-        @include rotate(270deg);
-    }
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    @include s($buttons, button-corner-big);
+    @include rotate(270deg);
 }
 // styles for smallest buttons
 .wrapper-button_smallest{
@@ -273,23 +255,17 @@
     }
 }
 .arr-right_smallest{
-    &:before{
-        content: "";
-        position: absolute;
-        bottom: 1px;
-        left: 4px;
-        @include s($buttons, button-corner);
-    }
+    position: absolute;
+    bottom: 1px;
+    left: 4px;
+    @include s($buttons, button-corner);
 }
 .arr-left_smallest{
-    &:before{
-        content: "";
-        position: absolute;
-        bottom: 1px;
-        right: 4px;
-        @include s($buttons, button-corner);
-        @include rotate(270deg);
-    }
+    position: absolute;
+    bottom: 1px;
+    right: 4px;
+    @include s($buttons, button-corner);
+    @include rotate(270deg);
 }
 .button{
 	position: relative;
@@ -348,27 +324,16 @@
         display: inline-block;
     }
 }
-.arr-right_big.white, .arr-left_big.white{
-    &:before{
-        content: "";
-        @include s($buttons, button-corner-biggest-white);
-    }
+.white .arr-right_big, .white .arr-left_big{
+     @include s($buttons, button-corner-biggest-white);
 }
-.arr-right_mid.white, .arr-left_mid.white{
-    &:before{
-        content: "";
-        @include s($buttons, button-corner-bigger-white);
-    }
+.white .arr-right_mid, .white .arr-left_mid{
+    @include s($buttons, button-corner-bigger-white);
+
 }
-.arr-right_small.white, .arr-left_small.white{
-    &:before{
-        content: "";
-        @include s($buttons, button-corner-big-white);
-    }
+.white .arr-right_small, .white .arr-left_small{
+    @include s($buttons, button-corner-big-white);
 }
-.arr-right_smallest.white, .arr-left_smallest.white{
-    &:before{
-        content: "";
-        @include s($buttons, button-corner);
-    }
+.white .arr-right_smallest, .white .arr-left_smallest{
+     @include s($buttons, button-corner);
 }

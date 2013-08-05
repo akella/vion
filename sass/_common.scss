@@ -91,19 +91,19 @@ body{
 // BEGIN global classes for positioning elements in containers
 
 .tocenter{
-	margin: 0 auto;
+	margin: 0 auto!important;
 }
 .toright{
-	float: right;
+	float: right!important;
 }
 .toleft{
-	float: left;
+	float: left!important;
 }
 .toheight{
-	height: 100%;
+	height: 100%!important;
 }
 .towidth{
-	width: 100%;
+	width: 100%!important;
 }
 // END global classes for positioning elements in containers
 
