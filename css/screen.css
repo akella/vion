@@ -1081,9 +1081,10 @@ body {
   left: 50%;
   width: 200px;
   margin-left: -100px;
+  text-align: center;
   z-index: 99;
 }
-/* line 694, ../sass/_common.scss */
+/* line 695, ../sass/_common.scss */
 .help span {
   position: relative;
   display: inline-block;
@@ -1100,7 +1101,7 @@ body {
   font-style: normal;
   color: #fff;
 }
-/* line 705, ../sass/_common.scss */
+/* line 706, ../sass/_common.scss */
 .help span:after {
   content: "";
   position: absolute;
@@ -1117,11 +1118,11 @@ body {
   background: #000;
 }
 
-/* line 718, ../sass/_common.scss */
+/* line 719, ../sass/_common.scss */
 .show-help {
   position: relative;
 }
-/* line 721, ../sass/_common.scss */
+/* line 722, ../sass/_common.scss */
 .show-help:hover .help {
   display: block;
 }

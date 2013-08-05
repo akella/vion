@@ -1,7 +1,6 @@
 @import "base";
 
 .wrapper-button{
-    background: #000;
     display:inline-block;
     padding: 6px;
     @include border-radius(50%);
@@ -325,7 +324,7 @@
     white-space:nowrap;
     margin-left: -1em;
     opacity: 0;
-    z-index: 1;
+    z-index: -1;
     @include transition(600ms ease-in-out);
     background: #000;
     @include font-B;
@@ -339,7 +338,7 @@
     left: auto;
     white-space:nowrap;
     margin-left: -1em;
-    z-index: 1;
+    z-index: -1;
     opacity: 0;
     @include transition(600ms ease-in-out);
     background: #000;
