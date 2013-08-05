@@ -1073,6 +1073,59 @@ body {
   left: -55px;
 }
 
+/* line 686, ../sass/_common.scss */
+.help {
+  display: none;
+  position: absolute;
+  top: -30px;
+  left: 50%;
+  width: 200px;
+  margin-left: -100px;
+  z-index: 99;
+}
+/* line 694, ../sass/_common.scss */
+.help span {
+  position: relative;
+  display: inline-block;
+  padding: 5px 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  border-radius: 10px;
+  background: #000;
+  text-align: center;
+  font-size: 12px;
+  font-weight: bold;
+  font-style: normal;
+  color: #fff;
+}
+/* line 705, ../sass/_common.scss */
+.help span:after {
+  content: "";
+  position: absolute;
+  bottom: -4px;
+  left: 50%;
+  width: 8px;
+  height: 8px;
+  margin: -5px 0 0 -5px;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+  background: #000;
+}
+
+/* line 718, ../sass/_common.scss */
+.show-help {
+  position: relative;
+}
+/* line 721, ../sass/_common.scss */
+.show-help:hover .help {
+  display: block;
+}
+
 /* default layout */
 /* line 4, ../sass/_layouts.scss */
 .l {

@@ -133,35 +133,8 @@
 	z-index: 5;
 }
 .controls__video{
+	position: relative;
 	@include sized-sprite($video, control-video);
-	i{
-		display: none;
-		position: absolute;
-		top: -30px;
-		left: -28px;
-		width: 90px;
-		height: 18px;
-		line-height: 18px;
-		@include border-radius(10px);
-		background: #000;
-		text-align: center;
-		font-size: 12px;
-		font-weight: bold;
-		font-style: normal;
-		color: #fff;
-		z-index: 11;
-		&:after{
-			content: "";
-			position: absolute;
-			bottom: -4px;
-			left: 50%;
-			width: 8px;
-			height: 8px;
-			margin: -5px 0 0 -5px;
-			@include rotate(45deg);
-			background: #000;
-		}
-	}
 	&:hover{
 		@include sized-sprite($video, control-video-hover);
 		i{
@@ -257,35 +230,8 @@
 	}
 }
 .controls__volume{
+	position: relative;
 	@include sized-sprite($video, control-volume1);
-	i{
-		display: none;
-		position: absolute;
-		top: -30px;
-		left: -28px;
-		width: 90px;
-		height: 18px;
-		line-height: 18px;
-		@include border-radius(10px);
-		background: #000;
-		text-align: center;
-		font-size: 12px;
-		font-weight: bold;
-		font-style: normal;
-		color: #fff;
-		z-index: 11;
-		&:after{
-			content: "";
-			position: absolute;
-			bottom: -4px;
-			left: 50%;
-			width: 8px;
-			height: 8px;
-			margin: -5px 0 0 -5px;
-			@include rotate(45deg);
-			background: #000;
-		}
-	}
 	&:hover{
 		@include sized-sprite($video, control-volume1-hover);
 		i{
@@ -294,12 +240,14 @@
 	}
 }
 .controls__settings{
+	position: relative;
 	@include sized-sprite($video, control-settings);
 	&:hover{
 		@include sized-sprite($video, control-settings-hover);
 	}
 }
 .controls__separate{
+	position: relative;
 	display: inline-block;
 	width: 1px;
 	height: 32px;
@@ -309,35 +257,8 @@
 	background: #343438;
 }
 .controls__playlist{
+	position: relative;
 	@include sized-sprite($video, control-playlist);
-	i{
-		display: none;
-		position: absolute;
-		top: -30px;
-		left: -28px;
-		width: 90px;
-		height: 18px;
-		line-height: 18px;
-		@include border-radius(10px);
-		background: #000;
-		text-align: center;
-		font-size: 12px;
-		font-weight: bold;
-		font-style: normal;
-		color: #fff;
-		z-index: 11;
-		&:after{
-			content: "";
-			position: absolute;
-			bottom: -4px;
-			left: 50%;
-			width: 8px;
-			height: 8px;
-			margin: -5px 0 0 -5px;
-			@include rotate(45deg);
-			background: #000;
-		}
-	}
 	&:hover{
 		@include sized-sprite($video, control-playlist-hover);
 		i{
@@ -349,6 +270,7 @@
 	@include sized-sprite($video, control-playlist-hover);
 }
 .controls__camera{
+	position: relative;
 	@include sized-sprite($video, control-camera);
 	&:hover{
 		@include sized-sprite($video, control-camera-hover);
@@ -356,66 +278,12 @@
 			display: block;
 		}
 	}
-	i{
-		display: none;
-		position: absolute;
-		top: -30px;
-		left: -28px;
-		width: 90px;
-		height: 18px;
-		line-height: 18px;
-		@include border-radius(10px);
-		background: #000;
-		text-align: center;
-		font-size: 12px;
-		font-weight: bold;
-		font-style: normal;
-		color: #fff;
-		z-index: 11;
-		&:after{
-			content: "";
-			position: absolute;
-			bottom: -4px;
-			left: 50%;
-			width: 8px;
-			height: 8px;
-			margin: -5px 0 0 -5px;
-			@include rotate(45deg);
-			background: #000;
-		}
-	}
 }
 .controls__chat{
+	position: relative;
 	@include sized-sprite($video, control-chat);
-	i{
-		display: none;
-		position: absolute;
-		top: -30px;
-		left: -28px;
-		width: 90px;
-		height: 18px;
-		line-height: 18px;
-		@include border-radius(10px);
-		background: #000;
-		text-align: center;
-		font-size: 12px;
-		font-weight: bold;
-		font-style: normal;
-		color: #fff;
-		z-index: 11;
-		&:after{
-			content: "";
-			position: absolute;
-			bottom: -4px;
-			left: 50%;
-			width: 8px;
-			height: 8px;
-			margin: -5px 0 0 -5px;
-			@include rotate(45deg);
-			background: #000;
-		}
-	}
 	&:hover{
+		@include sized-sprite($video, control-chat-hover);
 		i{
 			display: block;
 		}
@@ -1032,13 +900,6 @@
 	@include box-shadow(2px 0px 8px 3px #000);
 }
 .widget{
-	.input-message__text form{
-		float: none;
-		width: auto;
-	}
-	.input-message__text{
-		width: 90%;
-	}
 	.media{
 		width: auto;
 	}

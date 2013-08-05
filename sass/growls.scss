@@ -4,6 +4,7 @@
 
 .l-growl{
 	position: relative;
+	width: 300px;
 	@include border-radius(6px);
 	@include box-shadow(0 0 15px rgba(0,0,0,.7), inset 0 1px 0 rgba(255,255,255,.06));
 	.close-growl{
@@ -13,6 +14,7 @@
 		right: -12px;
 		margin: -12px 0 0 -12px;
 		@include sized-sprite($icons, close-growl);
+		z-index: 1;
 	}
 	&:hover{
 		margin: -2px 0 0 -2px;
@@ -23,16 +25,25 @@
 	}
 }
 .growl{
+	position: relative;
 	overflow: hidden;
 	@include border-radius(6px);
 	border: 1px solid rgba(0,0,0,.9);
 	background: #1e2535;
 	@include background-image(linear-gradient(top, #333a4a, #1f2738));
+	.growl__separator{
+		position: absolute;
+		top: 0px;
+		left: 87px;
+		width: 0px;
+		height: 2000em;
+		border-right: 1px solid #404959;
+		border-left: 1px solid #1a2232;
+	}
 	.growl__img{
 		float: left;
 		width: 86px;
 		height: 99px;
-		border-right: 1px solid #1a2232;
 		img{
 			width: 55px;
 			height: 57px;
@@ -40,11 +51,9 @@
 		}
 	}
 	.growl__text{
-		float: right;
-		width: 180px;
 		min-height: 49px;
 		padding: 25px 15px;
-		border-left: 1px solid #404959;
+		margin-left: 89px;
 		color: #cfcfd6;
 		line-height: 1.4;
 		@include font-B;

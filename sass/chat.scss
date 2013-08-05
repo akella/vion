@@ -34,7 +34,12 @@
 		text-align: center;
 		font-size: 11px;
 		color: #8b8c92;
-		background: url(../img/text.png) 0 0 no-repeat;
+		i{
+			position: absolute;
+			top: 0px;
+			left: 0px;
+			@include s($video, control-chat);
+		}
 		.chat__message-ind{
 			position: absolute;
 			top: 0px;
@@ -53,7 +58,12 @@
 		}
 	}
 	.chat__text-tab.is-active {
-		background: url(../img/text-active.png) 0 0 no-repeat;
+		i{
+			position: absolute;
+			top: 0px;
+			left: 0px;
+			@include s($video, control-chat-hover);
+		}
 		&:after{
 			content: "";
 			position: absolute;
@@ -353,7 +363,7 @@
 }
 .input-message__text{
 	overflow: hidden;
-	width: 85%;
+	margin-right: 50px;
 	@include border-radius(5px);
 	background: #eaebf3;
 	.input-message__config{
@@ -379,9 +389,9 @@
 		}
 	}
 	form{
-		float: left;
+		float: none;
 		overflow: hidden;
-		width: 206px;
+		width: auto;
 		padding: 5px 10px 0px 0px;
 		.input-message__input{
 			max-width: 100%;

@@ -1,6 +1,7 @@
 /* line 5, ../sass/growls.scss */
 .l-growl {
   position: relative;
+  width: 300px;
   -webkit-border-radius: 6px;
   -moz-border-radius: 6px;
   -ms-border-radius: 6px;
@@ -10,7 +11,7 @@
   -moz-box-shadow: 0 0 15px rgba(0, 0, 0, 0.7), inset 0 1px 0 rgba(255, 255, 255, 0.06);
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.7), inset 0 1px 0 rgba(255, 255, 255, 0.06);
 }
-/* line 9, ../sass/growls.scss */
+/* line 10, ../sass/growls.scss */
 .l-growl .close-growl {
   display: none;
   position: absolute;
@@ -20,19 +21,21 @@
   background: url('../img/icons-s2f76f913c3.png') 0 -2689px no-repeat;
   width: 24px;
   height: 25px;
+  z-index: 1;
 }
-/* line 17, ../sass/growls.scss */
+/* line 19, ../sass/growls.scss */
 .l-growl:hover {
   margin: -2px 0 0 -2px;
   border: 2px solid #bcbcc3;
 }
-/* line 20, ../sass/growls.scss */
+/* line 22, ../sass/growls.scss */
 .l-growl:hover .close-growl {
   display: block;
 }
 
-/* line 25, ../sass/growls.scss */
+/* line 27, ../sass/growls.scss */
 .growl {
+  position: relative;
   overflow: hidden;
   -webkit-border-radius: 6px;
   -moz-border-radius: 6px;
@@ -47,26 +50,33 @@
   background-image: -o-linear-gradient(top, #333a4a, #1f2738);
   background-image: linear-gradient(top, #333a4a, #1f2738);
 }
-/* line 31, ../sass/growls.scss */
+/* line 34, ../sass/growls.scss */
+.growl .growl__separator {
+  position: absolute;
+  top: 0px;
+  left: 87px;
+  width: 0px;
+  height: 2000em;
+  border-right: 1px solid #404959;
+  border-left: 1px solid #1a2232;
+}
+/* line 43, ../sass/growls.scss */
 .growl .growl__img {
   float: left;
   width: 86px;
   height: 99px;
-  border-right: 1px solid #1a2232;
 }
-/* line 36, ../sass/growls.scss */
+/* line 47, ../sass/growls.scss */
 .growl .growl__img img {
   width: 55px;
   height: 57px;
   padding: 20px 15px;
 }
-/* line 42, ../sass/growls.scss */
+/* line 53, ../sass/growls.scss */
 .growl .growl__text {
-  float: right;
-  width: 180px;
   min-height: 49px;
   padding: 25px 15px;
-  border-left: 1px solid #404959;
+  margin-left: 89px;
   color: #cfcfd6;
   line-height: 1.4;
   font-family: 'HelveticaNeue-B', Helvetica, Arial, sans-serif;

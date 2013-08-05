@@ -683,3 +683,43 @@ body{
 		left:-55px;
 	}
 }
+.help{
+	display: none;
+	position: absolute;
+	top: -30px;
+	left: 50%;
+	width: 200px;
+	margin-left: -100px;
+	z-index: 99;
+	span{
+		position: relative;
+		display: inline-block;
+		padding: 5px 10px;
+		@include border-radius(10px);
+		background: #000;
+		text-align: center;
+		font-size: 12px;
+		font-weight: bold;
+		font-style: normal;
+		color: #fff;
+		&:after{
+			content: "";
+			position: absolute;
+			bottom: -4px;
+			left: 50%;
+			width: 8px;
+			height: 8px;
+			margin: -5px 0 0 -5px;
+			@include rotate(45deg);
+			background: #000;
+		}
+	}
+}
+.show-help{
+	position: relative;
+	&:hover{
+		.help{
+			display: block;
+		}
+	}
+}

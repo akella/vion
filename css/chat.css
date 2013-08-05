@@ -40,9 +40,17 @@
   text-align: center;
   font-size: 11px;
   color: #8b8c92;
-  background: url(../img/text.png) 0 0 no-repeat;
 }
-/* line 38, ../sass/chat.scss */
+/* line 37, ../sass/chat.scss */
+.chat__icons .chat__text-tab i, .chat__icons .chat__files-tab i {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background: url('../img/video-s0572a01a77.png') 0 -436px no-repeat;
+  width: 36px;
+  height: 36px;
+}
+/* line 43, ../sass/chat.scss */
 .chat__icons .chat__text-tab .chat__message-ind, .chat__icons .chat__files-tab .chat__message-ind {
   position: absolute;
   top: 0px;
@@ -69,11 +77,16 @@
   font-size: 10px;
   color: #fff;
 }
-/* line 55, ../sass/chat.scss */
-.chat__icons .chat__text-tab.is-active {
-  background: url(../img/text-active.png) 0 0 no-repeat;
+/* line 61, ../sass/chat.scss */
+.chat__icons .chat__text-tab.is-active i {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background: url('../img/video-s0572a01a77.png') 0 -346px no-repeat;
+  width: 35px;
+  height: 34px;
 }
-/* line 57, ../sass/chat.scss */
+/* line 67, ../sass/chat.scss */
 .chat__icons .chat__text-tab.is-active:after {
   content: "";
   position: absolute;
@@ -90,16 +103,16 @@
   transform: rotate(45deg);
   background: url(../img/bg-win.png);
 }
-/* line 70, ../sass/chat.scss */
+/* line 80, ../sass/chat.scss */
 .chat__icons .chat__files-tab {
   background: url(../img/files1.png) 0 0 no-repeat;
 }
-/* line 73, ../sass/chat.scss */
+/* line 83, ../sass/chat.scss */
 .chat__icons .chat__files-tab.is-active {
   background: url(../img/files-active.png) 0 0 no-repeat;
 }
 
-/* line 77, ../sass/chat.scss */
+/* line 87, ../sass/chat.scss */
 .form-search_chat {
   position: absolute;
   top: 0;
@@ -107,29 +120,29 @@
   width: 182px;
   margin: 1px 0 0;
 }
-/* line 83, ../sass/chat.scss */
+/* line 93, ../sass/chat.scss */
 .form-search_chat .input-search {
   width: 149px;
 }
 
-/* line 87, ../sass/chat.scss */
+/* line 97, ../sass/chat.scss */
 .win .win__dev_chat {
   margin: 14px 0;
 }
 
-/* line 90, ../sass/chat.scss */
+/* line 100, ../sass/chat.scss */
 .chat__operator {
   overflow: hidden;
   margin-bottom: 17px;
 }
-/* line 93, ../sass/chat.scss */
+/* line 103, ../sass/chat.scss */
 .chat__operator h3 {
   float: left;
   min-height: 45px;
   margin-left: 68px;
 }
 
-/* line 99, ../sass/chat.scss */
+/* line 109, ../sass/chat.scss */
 .chat__outcoming {
   position: relative;
   margin: 17px 0;
@@ -144,7 +157,7 @@
   -moz-box-shadow: 0 0 6px rgba(0, 0, 0, 0.75);
   box-shadow: 0 0 6px rgba(0, 0, 0, 0.75);
 }
-/* line 106, ../sass/chat.scss */
+/* line 116, ../sass/chat.scss */
 .chat__outcoming:before {
   content: "";
   position: absolute;
@@ -159,13 +172,13 @@
   -o-transform: rotate(45deg);
   transform: rotate(45deg);
 }
-/* line 116, ../sass/chat.scss */
+/* line 126, ../sass/chat.scss */
 .chat__outcoming li {
   position: relative;
   padding: 12px 0;
   border-top: 1px solid #abbfc9;
 }
-/* line 120, ../sass/chat.scss */
+/* line 130, ../sass/chat.scss */
 .chat__outcoming li .message-time {
   position: absolute;
   top: -6px;
@@ -177,22 +190,22 @@
   font-size: 11px;
   text-shadow: 0 1px 0 rgba(255, 255, 255, 0.65);
 }
-/* line 131, ../sass/chat.scss */
+/* line 141, ../sass/chat.scss */
 .chat__outcoming li:first-child {
   border-top: none;
 }
-/* line 133, ../sass/chat.scss */
+/* line 143, ../sass/chat.scss */
 .chat__outcoming li:first-child .message-time {
   top: 17px;
 }
-/* line 137, ../sass/chat.scss */
+/* line 147, ../sass/chat.scss */
 .chat__outcoming li p {
   font-family: 'HelveticaNeue-B', Helvetica, Arial, sans-serif;
   font-size: 13px;
   color: #456a7a;
 }
 
-/* line 144, ../sass/chat.scss */
+/* line 154, ../sass/chat.scss */
 .user {
   margin-bottom: 12px;
   font-family: 'HelveticaNeue-B', Helvetica, Arial, sans-serif;
@@ -200,7 +213,7 @@
   color: #2b3a41;
   text-shadow: 0 1px 0 rgba(255, 255, 255, 0.65);
 }
-/* line 150, ../sass/chat.scss */
+/* line 160, ../sass/chat.scss */
 .user .operator-config {
   position: relative;
   display: inline-block;
@@ -210,14 +223,14 @@
   height: 12px;
 }
 
-/* line 157, ../sass/chat.scss */
+/* line 167, ../sass/chat.scss */
 .sending-file {
   overflow: hidden;
   padding-left: 36px;
   background: url(../img/sending-file.png) 0% 0% no-repeat;
 }
 
-/* line 162, ../sass/chat.scss */
+/* line 172, ../sass/chat.scss */
 .sending-file__info {
   float: left;
   width: 100%;
@@ -226,31 +239,31 @@
   line-height: 1.5;
 }
 
-/* line 169, ../sass/chat.scss */
+/* line 179, ../sass/chat.scss */
 .sending-file__name {
   color: #3d95cb;
   font-size: 13px;
 }
 
-/* line 173, ../sass/chat.scss */
+/* line 183, ../sass/chat.scss */
 .sending-file__weight {
   color: #8b8b92;
   font-size: 11px;
   font-weight: bold;
 }
 
-/* line 178, ../sass/chat.scss */
+/* line 188, ../sass/chat.scss */
 .sending-file__buttons {
   clear: both;
 }
 
-/* line 181, ../sass/chat.scss */
+/* line 191, ../sass/chat.scss */
 .btn_chat {
   width: 84px;
   margin: 0 0 0 8px;
 }
 
-/* line 185, ../sass/chat.scss */
+/* line 195, ../sass/chat.scss */
 .chat__incoming {
   position: relative;
   margin: 17px 0;
@@ -265,7 +278,7 @@
   -moz-box-shadow: 0 0 6px rgba(0, 0, 0, 0.75);
   box-shadow: 0 0 6px rgba(0, 0, 0, 0.75);
 }
-/* line 192, ../sass/chat.scss */
+/* line 202, ../sass/chat.scss */
 .chat__incoming:after {
   content: "";
   position: absolute;
@@ -280,13 +293,13 @@
   -o-transform: rotate(45deg);
   transform: rotate(45deg);
 }
-/* line 202, ../sass/chat.scss */
+/* line 212, ../sass/chat.scss */
 .chat__incoming li {
   position: relative;
   padding: 12px 0;
   border-top: 1px solid #c9cacf;
 }
-/* line 206, ../sass/chat.scss */
+/* line 216, ../sass/chat.scss */
 .chat__incoming li .message-time {
   position: absolute;
   top: -6px;
@@ -298,40 +311,40 @@
   font-size: 11px;
   text-shadow: 0 1px 0 rgba(255, 255, 255, 0.65);
 }
-/* line 217, ../sass/chat.scss */
+/* line 227, ../sass/chat.scss */
 .chat__incoming li .user {
   color: #000;
 }
-/* line 220, ../sass/chat.scss */
+/* line 230, ../sass/chat.scss */
 .chat__incoming li:first-child {
   border-top: none;
 }
-/* line 222, ../sass/chat.scss */
+/* line 232, ../sass/chat.scss */
 .chat__incoming li:first-child .message-time {
   top: 17px;
 }
-/* line 226, ../sass/chat.scss */
+/* line 236, ../sass/chat.scss */
 .chat__incoming li p {
   font-family: 'HelveticaNeue-B', Helvetica, Arial, sans-serif;
   font-size: 13px;
   color: #456a7a;
 }
 
-/* line 233, ../sass/chat.scss */
+/* line 243, ../sass/chat.scss */
 .chat__incoming_pink {
   background: #f5d3d3;
 }
-/* line 235, ../sass/chat.scss */
+/* line 245, ../sass/chat.scss */
 .chat__incoming_pink:after {
   content: "";
   background: #f5d3d3;
 }
-/* line 240, ../sass/chat.scss */
+/* line 250, ../sass/chat.scss */
 .chat__incoming_pink li .message-time {
   background: #f5d3d3;
 }
 
-/* line 245, ../sass/chat.scss */
+/* line 255, ../sass/chat.scss */
 .chat__censored {
   position: relative;
   margin: 17px 0;
@@ -346,7 +359,7 @@
   -moz-box-shadow: 0 0 6px rgba(0, 0, 0, 0.75);
   box-shadow: 0 0 6px rgba(0, 0, 0, 0.75);
 }
-/* line 252, ../sass/chat.scss */
+/* line 262, ../sass/chat.scss */
 .chat__censored:after {
   content: "";
   position: absolute;
@@ -361,7 +374,7 @@
   -o-transform: rotate(45deg);
   transform: rotate(45deg);
 }
-/* line 262, ../sass/chat.scss */
+/* line 272, ../sass/chat.scss */
 .chat__censored div {
   width: 68px;
   padding: 6px 9px;
@@ -381,16 +394,16 @@
   color: #cdcdcd;
 }
 
-/* line 274, ../sass/chat.scss */
+/* line 284, ../sass/chat.scss */
 .chat__loading .sending-file {
   background: url(../img/downloading-file.png) 0% 0% no-repeat;
 }
-/* line 277, ../sass/chat.scss */
+/* line 287, ../sass/chat.scss */
 .chat__loading .sending-file_upload {
   background: url(../img/uploading-file.png) 0% 0% no-repeat;
 }
 
-/* line 281, ../sass/chat.scss */
+/* line 291, ../sass/chat.scss */
 .download__cancel {
   position: absolute;
   top: 0px;
@@ -398,7 +411,7 @@
   cursor: pointer;
 }
 
-/* line 287, ../sass/chat.scss */
+/* line 297, ../sass/chat.scss */
 .chat__user-status {
   position: relative;
   padding-left: 20px;
@@ -408,7 +421,7 @@
   text-shadow: 0 1px 0 rgba(0, 0, 0, 0.75);
   color: #cdcdcd;
 }
-/* line 295, ../sass/chat.scss */
+/* line 305, ../sass/chat.scss */
 .chat__user-status i {
   position: absolute;
   top: 6px;
@@ -417,12 +430,12 @@
   width: 20px;
   height: 20px;
 }
-/* line 301, ../sass/chat.scss */
+/* line 311, ../sass/chat.scss */
 .chat__user-status span {
   color: #bc262c;
 }
 
-/* line 306, ../sass/chat.scss */
+/* line 316, ../sass/chat.scss */
 .chat__user-status_online i {
   top: 8px;
   left: 0;
@@ -430,12 +443,12 @@
   width: 14px;
   height: 14px;
 }
-/* line 311, ../sass/chat.scss */
+/* line 321, ../sass/chat.scss */
 .chat__user-status_online span {
   color: #83b30d;
 }
 
-/* line 316, ../sass/chat.scss */
+/* line 326, ../sass/chat.scss */
 .chat__user-status_notify i {
   top: 8px;
   left: 0;
@@ -443,17 +456,17 @@
   width: 14px;
   height: 13px;
 }
-/* line 321, ../sass/chat.scss */
+/* line 331, ../sass/chat.scss */
 .chat__user-status_notify span {
   color: #ffc000;
 }
 
-/* line 325, ../sass/chat.scss */
+/* line 335, ../sass/chat.scss */
 .chat__counter {
   overflow: hidden;
 }
 
-/* line 328, ../sass/chat.scss */
+/* line 338, ../sass/chat.scss */
 .chat__progress-bar {
   float: left;
   width: 85%;
@@ -470,13 +483,13 @@
   -moz-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.06), inset 0 1px 0 rgba(0, 0, 0, 0.51);
   box-shadow: 0 1px 0 rgba(255, 255, 255, 0.06), inset 0 1px 0 rgba(0, 0, 0, 0.51);
 }
-/* line 337, ../sass/chat.scss */
+/* line 347, ../sass/chat.scss */
 .chat__progress-bar .chat__counter-progress {
   height: 1px;
   background: #a8c85c;
 }
 
-/* line 342, ../sass/chat.scss */
+/* line 352, ../sass/chat.scss */
 .chat__counter-nunber {
   float: left;
   margin-left: 10px;
@@ -485,17 +498,17 @@
   font-weight: bold;
 }
 
-/* line 349, ../sass/chat.scss */
+/* line 359, ../sass/chat.scss */
 .input-message {
   position: relative;
   overflow: hidden;
   margin: 5px 0;
 }
 
-/* line 354, ../sass/chat.scss */
+/* line 364, ../sass/chat.scss */
 .input-message__text {
   overflow: hidden;
-  width: 85%;
+  margin-right: 50px;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   -ms-border-radius: 5px;
@@ -503,7 +516,7 @@
   border-radius: 5px;
   background: #eaebf3;
 }
-/* line 359, ../sass/chat.scss */
+/* line 369, ../sass/chat.scss */
 .input-message__text .input-message__config {
   float: left;
   width: 37px;
@@ -511,11 +524,11 @@
   margin: 10px 8px;
   border-right: 1px solid #bdbec8;
 }
-/* line 365, ../sass/chat.scss */
+/* line 375, ../sass/chat.scss */
 .input-message__text .input-message__config a {
   position: relative;
 }
-/* line 368, ../sass/chat.scss */
+/* line 378, ../sass/chat.scss */
 .input-message__text .input-message__config .config-message {
   position: absolute;
   top: 3px;
@@ -524,7 +537,7 @@
   width: 15px;
   height: 15px;
 }
-/* line 374, ../sass/chat.scss */
+/* line 384, ../sass/chat.scss */
 .input-message__text .input-message__config .arr-15 {
   position: absolute;
   top: 7px;
@@ -533,14 +546,14 @@
   width: 5px;
   height: 5px;
 }
-/* line 381, ../sass/chat.scss */
+/* line 391, ../sass/chat.scss */
 .input-message__text form {
-  float: left;
+  float: none;
   overflow: hidden;
-  width: 206px;
+  width: auto;
   padding: 5px 10px 0px 0px;
 }
-/* line 386, ../sass/chat.scss */
+/* line 396, ../sass/chat.scss */
 .input-message__text form .input-message__input {
   max-width: 100%;
   width: 100%;
@@ -550,7 +563,7 @@
   background: transparent;
 }
 
-/* line 396, ../sass/chat.scss */
+/* line 406, ../sass/chat.scss */
 .button-round {
   position: relative;
   display: block;
@@ -573,7 +586,7 @@
   border: none;
   cursor: pointer;
 }
-/* line 407, ../sass/chat.scss */
+/* line 417, ../sass/chat.scss */
 .button-round i {
   position: absolute;
   top: 50%;
@@ -583,7 +596,7 @@
   width: 12px;
   height: 13px;
 }
-/* line 414, ../sass/chat.scss */
+/* line 424, ../sass/chat.scss */
 .button-round:hover {
   -webkit-box-shadow: 0 0 3px rgba(0, 0, 0, 0.5), 0 0 5px rgba(0, 0, 0, 0.25), inset 0 20px 18px rgba(255, 255, 255, 0.32);
   -moz-box-shadow: 0 0 3px rgba(0, 0, 0, 0.5), 0 0 5px rgba(0, 0, 0, 0.25), inset 0 20px 18px rgba(255, 255, 255, 0.32);
@@ -595,7 +608,7 @@
   background-image: -o-linear-gradient(bottom, #477b03 0%, #477b03 1%, #87b50d 100%);
   background-image: linear-gradient(bottom, #477b03 0%, #477b03 1%, #87b50d 100%);
 }
-/* line 419, ../sass/chat.scss */
+/* line 429, ../sass/chat.scss */
 .button-round:active {
   background: #649708;
   background-image: -webkit-gradient(linear, 50% 100%, 50% 0%, color-stop(0%, #8bb90d), color-stop(100%, #457b03));
@@ -605,7 +618,7 @@
   background-image: linear-gradient(bottom, #8bb90d 0%, #457b03 100%);
 }
 
-/* line 424, ../sass/chat.scss */
+/* line 434, ../sass/chat.scss */
 .button-round_red {
   background-image: -webkit-gradient(linear, 50% 100%, 50% 0%, color-stop(0%, #8a000f), color-stop(100%, #d4061d));
   background-image: -webkit-linear-gradient(bottom, #8a000f 0%, #d4061d 100%);
@@ -613,7 +626,7 @@
   background-image: -o-linear-gradient(bottom, #8a000f 0%, #d4061d 100%);
   background-image: linear-gradient(bottom, #8a000f 0%, #d4061d 100%);
 }
-/* line 426, ../sass/chat.scss */
+/* line 436, ../sass/chat.scss */
 .button-round_red:hover {
   -webkit-box-shadow: 0 0 3px rgba(0, 0, 0, 0.5), 0 0 5px rgba(0, 0, 0, 0.25), inset 0 7px 18px rgba(255, 255, 255, 0.65);
   -moz-box-shadow: 0 0 3px rgba(0, 0, 0, 0.5), 0 0 5px rgba(0, 0, 0, 0.25), inset 0 7px 18px rgba(255, 255, 255, 0.65);
@@ -624,7 +637,7 @@
   background-image: -o-linear-gradient(bottom, #8b000f 0%, #cd0017 100%);
   background-image: linear-gradient(bottom, #8b000f 0%, #cd0017 100%);
 }
-/* line 430, ../sass/chat.scss */
+/* line 440, ../sass/chat.scss */
 .button-round_red:active {
   -webkit-box-shadow: 0 0 3px rgba(0, 0, 0, 0.5), 0 0 5px rgba(0, 0, 0, 0.25);
   -moz-box-shadow: 0 0 3px rgba(0, 0, 0, 0.5), 0 0 5px rgba(0, 0, 0, 0.25);
@@ -636,14 +649,14 @@
   background-image: linear-gradient(bottom, #d30018 0%, #87000f 100%);
 }
 
-/* line 436, ../sass/chat.scss */
+/* line 446, ../sass/chat.scss */
 .button-round_send-message {
   position: absolute;
   top: 0px;
   right: 0px;
 }
 
-/* line 443, ../sass/chat.scss */
+/* line 453, ../sass/chat.scss */
 .upload-file {
   position: relative;
   overflow: hidden;
@@ -656,13 +669,13 @@
   border-radius: 5px;
   border: 1px dashed #66686e;
 }
-/* line 450, ../sass/chat.scss */
+/* line 460, ../sass/chat.scss */
 .upload-file button {
   position: absolute;
   top: 5px;
   left: 18px;
 }
-/* line 455, ../sass/chat.scss */
+/* line 465, ../sass/chat.scss */
 .upload-file p {
   float: right;
   width: 135px;
@@ -673,15 +686,15 @@
   color: #8b8c92;
 }
 
-/* line 465, ../sass/chat.scss */
+/* line 475, ../sass/chat.scss */
 .files-history {
   margin: 25px 0 0 0;
 }
-/* line 467, ../sass/chat.scss */
+/* line 477, ../sass/chat.scss */
 .files-history ul {
   margin: 12px -15px 0;
 }
-/* line 470, ../sass/chat.scss */
+/* line 480, ../sass/chat.scss */
 .files-history li {
   overflow: hidden;
   padding: 0 15px;
@@ -696,7 +709,7 @@
   text-transform: uppercase;
   color: #8b8c92;
 }
-/* line 481, ../sass/chat.scss */
+/* line 491, ../sass/chat.scss */
 .files-history li:first-child {
   text-transform: none;
   font-size: 11px;
@@ -706,24 +719,24 @@
   background-image: -o-linear-gradient(top, #505050, #212121);
   background-image: linear-gradient(top, #505050, #212121);
 }
-/* line 485, ../sass/chat.scss */
+/* line 495, ../sass/chat.scss */
 .files-history li:first-child .files-history__name {
   cursor: pointer;
   color: #8b8c92;
   margin-left: -15px;
   padding-left: 15px;
 }
-/* line 491, ../sass/chat.scss */
+/* line 501, ../sass/chat.scss */
 .files-history li:first-child .files-history__kind, .files-history li:first-child .files-history__size {
   border-left: 1px solid #292929;
   cursor: pointer;
 }
-/* line 495, ../sass/chat.scss */
+/* line 505, ../sass/chat.scss */
 .files-history li:first-child .files-history__size {
   margin-right: -15px;
   padding-right: 15px;
 }
-/* line 499, ../sass/chat.scss */
+/* line 509, ../sass/chat.scss */
 .files-history li:first-child .is-sorted {
   position: relative;
   background: #545454 url(../img/arr-04.png) 0 0 no-repeat;
@@ -733,7 +746,7 @@
   background-image: -o-linear-gradient(top, #545454, #383838);
   background-image: linear-gradient(top, #545454, #383838);
 }
-/* line 503, ../sass/chat.scss */
+/* line 513, ../sass/chat.scss */
 .files-history li:first-child .is-sorted:after {
   content: "";
   position: absolute;
@@ -743,32 +756,32 @@
   width: 8px;
   height: 6px;
 }
-/* line 512, ../sass/chat.scss */
+/* line 522, ../sass/chat.scss */
 .files-history li .files-history__name {
   float: left;
   width: 168px;
   text-transform: none;
   color: #3e96cc;
 }
-/* line 518, ../sass/chat.scss */
+/* line 528, ../sass/chat.scss */
 .files-history li .files-history__kind, .files-history li .files-history__size {
   float: left;
   width: 74px;
   text-align: center;
 }
 
-/* line 527, ../sass/chat.scss */
+/* line 537, ../sass/chat.scss */
 .chat-settings {
   position: relative;
 }
-/* line 529, ../sass/chat.scss */
+/* line 539, ../sass/chat.scss */
 .chat-settings .chat-settings__close {
   position: absolute;
   top: -12px;
   left: 50%;
   margin-left: -12px;
 }
-/* line 534, ../sass/chat.scss */
+/* line 544, ../sass/chat.scss */
 .chat-settings .chat-settings__close i {
   display: block;
   background: url('../img/icons-s2f76f913c3.png') 0 -2689px no-repeat;
@@ -776,13 +789,13 @@
   height: 25px;
 }
 
-/* line 540, ../sass/chat.scss */
+/* line 550, ../sass/chat.scss */
 .chat-settings__ptofile {
   overflow: hidden;
   padding: 10px 0;
   margin: 0px 13px 0px 22px;
 }
-/* line 544, ../sass/chat.scss */
+/* line 554, ../sass/chat.scss */
 .chat-settings__ptofile .chat-begin__name {
   float: left;
   width: 145px;
@@ -793,7 +806,7 @@
   font-weight: bold;
   text-shadow: 0 1px 0 rgba(0, 0, 0, 0.75);
 }
-/* line 553, ../sass/chat.scss */
+/* line 563, ../sass/chat.scss */
 .chat-settings__ptofile .chat-begin__name h3 {
   padding-bottom: 5px;
   color: #cdcdcd;
@@ -803,7 +816,7 @@
   text-shadow: 0 1px 0 rgba(0, 0, 0, 0.75);
 }
 
-/* line 563, ../sass/chat.scss */
+/* line 573, ../sass/chat.scss */
 .chat-settings__list {
   position: relative;
   color: #cdcdcd;
@@ -812,7 +825,7 @@
   font-weight: bold;
   text-shadow: 0 1px 0 rgba(0, 0, 0, 0.75);
 }
-/* line 570, ../sass/chat.scss */
+/* line 580, ../sass/chat.scss */
 .chat-settings__list li {
   position: relative;
   height: 40px;
@@ -823,13 +836,13 @@
   background: #1c1c1c;
   cursor: pointer;
 }
-/* line 579, ../sass/chat.scss */
+/* line 589, ../sass/chat.scss */
 .chat-settings__list li i {
   display: inline-block;
   vertical-align: middle;
   margin-right: 20px;
 }
-/* line 584, ../sass/chat.scss */
+/* line 594, ../sass/chat.scss */
 .chat-settings__list li:hover {
   border-top: 1px solid #75b5d5;
   background: #3a8cbd;
@@ -839,90 +852,90 @@
   background-image: -o-linear-gradient(top, #4ea0c9, #07599f);
   background-image: linear-gradient(top, #4ea0c9, #07599f);
 }
-/* line 589, ../sass/chat.scss */
+/* line 599, ../sass/chat.scss */
 .chat-settings__list li .chat-settings__langs {
   position: absolute;
   top: 5px;
   left: 70px;
 }
-/* line 593, ../sass/chat.scss */
+/* line 603, ../sass/chat.scss */
 .chat-settings__list li .chat-settings__langs .select {
   width: 250px;
 }
-/* line 598, ../sass/chat.scss */
+/* line 608, ../sass/chat.scss */
 .chat-settings__list .chat-settings__info {
   background: url('../img/icons-s2f76f913c3.png') 0 -4404px no-repeat;
   width: 20px;
   height: 20px;
 }
-/* line 601, ../sass/chat.scss */
+/* line 611, ../sass/chat.scss */
 .chat-settings__list .chat-settings__language {
   background: url('../img/icons-s2f76f913c3.png') 0 -2855px no-repeat;
   width: 20px;
   height: 20px;
 }
-/* line 604, ../sass/chat.scss */
+/* line 614, ../sass/chat.scss */
 .chat-settings__list .chat-settings__ban {
   background: url('../img/icons-s2f76f913c3.png') 0 -3687px no-repeat;
   width: 20px;
   height: 20px;
 }
-/* line 607, ../sass/chat.scss */
+/* line 617, ../sass/chat.scss */
 .chat-settings__list .chat-settings__filter {
   background: url('../img/icons-s2f76f913c3.png') 0 -4344px no-repeat;
   width: 20px;
   height: 20px;
 }
-/* line 610, ../sass/chat.scss */
+/* line 620, ../sass/chat.scss */
 .chat-settings__list .chat-settings__message {
   background: url('../img/icons-s2f76f913c3.png') 0 -4465px no-repeat;
   width: 20px;
   height: 20px;
 }
-/* line 613, ../sass/chat.scss */
+/* line 623, ../sass/chat.scss */
 .chat-settings__list .chat-settings__save {
   background: url('../img/icons-s2f76f913c3.png') 0 -4519px no-repeat;
   width: 20px;
   height: 20px;
 }
-/* line 616, ../sass/chat.scss */
+/* line 626, ../sass/chat.scss */
 .chat-settings__list .chat-settings__print {
   background: url('../img/icons-s2f76f913c3.png') 0 -4312px no-repeat;
   width: 20px;
   height: 22px;
 }
-/* line 619, ../sass/chat.scss */
+/* line 629, ../sass/chat.scss */
 .chat-settings__list .chat-settings__delete {
   background: url('../img/icons-s2f76f913c3.png') 0 -4374px no-repeat;
   width: 20px;
   height: 20px;
 }
-/* line 622, ../sass/chat.scss */
+/* line 632, ../sass/chat.scss */
 .chat-settings__list .chat-settings__lib {
   background: url('../img/icons-s2f76f913c3.png') 0 -4434px no-repeat;
   width: 20px;
   height: 21px;
 }
 
-/* line 626, ../sass/chat.scss */
+/* line 636, ../sass/chat.scss */
 .btn_small {
   height: 25px;
   line-height: 25px;
 }
 
-/* line 632, ../sass/chat.scss */
+/* line 642, ../sass/chat.scss */
 .q-lib {
   position: relative;
   height: 50px;
   padding: 0 10px;
 }
-/* line 636, ../sass/chat.scss */
+/* line 646, ../sass/chat.scss */
 .q-lib .input-search {
   width: 275px;
   padding: 3px 27px 3px 24px;
 }
 
-/* line 642, ../sass/chat.scss */
+/* line 652, ../sass/chat.scss */
 .q-lib-results li {
   height: 40px;
   line-height: 40px;
@@ -930,7 +943,7 @@
   border-bottom: 1px solid #0a0a0a;
   background: #1c1c1c;
 }
-/* line 648, ../sass/chat.scss */
+/* line 658, ../sass/chat.scss */
 .q-lib-results li a {
   display: block;
   height: 100%;
@@ -941,7 +954,7 @@
   font-size: 13px;
   font-weight: bold;
 }
-/* line 657, ../sass/chat.scss */
+/* line 667, ../sass/chat.scss */
 .q-lib-results li a:hover {
   border-top: 1px solid #75b5d5;
   background: #3a8cbd;
@@ -952,7 +965,7 @@
   background-image: linear-gradient(top, #4ea0c9, #07599f);
 }
 
-/* line 665, ../sass/chat.scss */
+/* line 675, ../sass/chat.scss */
 .input-search__cancel {
   position: absolute;
   top: 6px;
@@ -962,7 +975,7 @@
   height: 16px;
 }
 
-/* line 671, ../sass/chat.scss */
+/* line 681, ../sass/chat.scss */
 .win_rate {
   overflow: hidden;
   width: 350px;
@@ -974,29 +987,29 @@
   border-radius: 6px;
 }
 
-/* line 677, ../sass/chat.scss */
+/* line 687, ../sass/chat.scss */
 .quality-selection {
   overflow: hidden;
   margin: 36px 0 33px;
 }
-/* line 680, ../sass/chat.scss */
+/* line 690, ../sass/chat.scss */
 .quality-selection .quality-selection__item {
   display: inline-block;
   width: 16px;
   margin: 0 5px;
 }
-/* line 685, ../sass/chat.scss */
+/* line 695, ../sass/chat.scss */
 .quality-selection label {
   position: relative;
   display: block;
   width: 16px;
   height: 17px;
 }
-/* line 690, ../sass/chat.scss */
+/* line 700, ../sass/chat.scss */
 .quality-selection label input {
   opacity: 0;
 }
-/* line 693, ../sass/chat.scss */
+/* line 703, ../sass/chat.scss */
 .quality-selection label input + span {
   position: absolute;
   top: 0;
@@ -1006,12 +1019,12 @@
   background: url(../img/input.png) no-repeat;
   cursor: pointer;
 }
-/* line 702, ../sass/chat.scss */
+/* line 712, ../sass/chat.scss */
 .quality-selection label input:checked + span {
   background: url(../img/input-checked.png) no-repeat;
 }
 
-/* line 707, ../sass/chat.scss */
+/* line 717, ../sass/chat.scss */
 .multi-filter {
   overflow: hidden;
   height: 26px;
@@ -1029,7 +1042,7 @@
   text-shadow: 0 1px 0 rgba(0, 0, 0, 0.75);
 }
 
-/* line 719, ../sass/chat.scss */
+/* line 729, ../sass/chat.scss */
 .multi-filter__name {
   position: relative;
   float: left;
@@ -1039,7 +1052,7 @@
   border-right: 1px solid #2b2b2b;
   cursor: pointer;
 }
-/* line 727, ../sass/chat.scss */
+/* line 737, ../sass/chat.scss */
 .multi-filter__name:after {
   content: "";
   position: absolute;
@@ -1049,7 +1062,7 @@
   width: 8px;
   height: 6px;
 }
-/* line 734, ../sass/chat.scss */
+/* line 744, ../sass/chat.scss */
 .multi-filter__name:hover {
   background: #545454;
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #545454), color-stop(100%, #383838));
@@ -1059,7 +1072,7 @@
   background-image: linear-gradient(top, #545454, #383838);
 }
 
-/* line 739, ../sass/chat.scss */
+/* line 749, ../sass/chat.scss */
 .multi-filter__select {
   float: left;
   text-align: center;
@@ -1067,7 +1080,7 @@
   line-height: 23px;
   padding: 0 12px;
 }
-/* line 745, ../sass/chat.scss */
+/* line 755, ../sass/chat.scss */
 .multi-filter__select span {
   display: inline-block;
   width: 106px;
@@ -1081,7 +1094,7 @@
   border-radius: 9px;
   cursor: pointer;
 }
-/* line 754, ../sass/chat.scss */
+/* line 764, ../sass/chat.scss */
 .multi-filter__select span.is-active {
   color: #3e96cc;
   background-color: rgba(0, 0, 0, 0.35);
@@ -1090,7 +1103,7 @@
   box-shadow: 0 1px 0 rgba(255, 255, 255, 0.35), inset 0 1px 2px rgba(0, 0, 0, 0.5);
 }
 
-/* line 760, ../sass/chat.scss */
+/* line 770, ../sass/chat.scss */
 .users-to-upload {
   overflow: hidden;
   background: #1c1c1c;
@@ -1100,7 +1113,7 @@
   font-weight: bold;
   text-shadow: 0 1px 0 rgba(0, 0, 0, 0.75);
 }
-/* line 768, ../sass/chat.scss */
+/* line 778, ../sass/chat.scss */
 .users-to-upload li {
   height: 41px;
   line-height: 41px;
@@ -1108,17 +1121,17 @@
   border-top: 1px solid #2f2f2f;
   border-bottom: 1px solid #0a0a0a;
 }
-/* line 775, ../sass/chat.scss */
+/* line 785, ../sass/chat.scss */
 .users-to-upload label {
   position: relative;
   display: block;
   cursor: pointer;
 }
-/* line 779, ../sass/chat.scss */
+/* line 789, ../sass/chat.scss */
 .users-to-upload label input {
   opacity: 0;
 }
-/* line 782, ../sass/chat.scss */
+/* line 792, ../sass/chat.scss */
 .users-to-upload label input + span {
   position: absolute;
   top: 50%;
@@ -1128,28 +1141,28 @@
   margin-top: -8px;
   background: url(../img/checkbox.png) no-repeat;
 }
-/* line 791, ../sass/chat.scss */
+/* line 801, ../sass/chat.scss */
 .users-to-upload label input:checked + span {
   background: url(../img/checkbox-active.png) no-repeat;
 }
 
-/* line 797, ../sass/chat.scss */
+/* line 807, ../sass/chat.scss */
 .users-to-upload_mod li {
   height: 60px;
   line-height: 60px;
   overflow: hidden;
   clear: both;
 }
-/* line 802, ../sass/chat.scss */
+/* line 812, ../sass/chat.scss */
 .users-to-upload_mod li .chat-begin__logo {
   margin: 8px 0px 8px 20px;
 }
 
-/* line 807, ../sass/chat.scss */
+/* line 817, ../sass/chat.scss */
 .chat-begin__buttons_right {
   padding: 0;
 }
-/* line 809, ../sass/chat.scss */
+/* line 819, ../sass/chat.scss */
 .chat-begin__buttons_right button.btn {
   float: right;
   margin-left: 15px;
