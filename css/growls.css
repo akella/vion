@@ -10,8 +10,9 @@
   -webkit-box-shadow: 0 0 15px rgba(0, 0, 0, 0.7), inset 0 1px 0 rgba(255, 255, 255, 0.06);
   -moz-box-shadow: 0 0 15px rgba(0, 0, 0, 0.7), inset 0 1px 0 rgba(255, 255, 255, 0.06);
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.7), inset 0 1px 0 rgba(255, 255, 255, 0.06);
+  z-index: 999;
 }
-/* line 10, ../sass/growls.scss */
+/* line 11, ../sass/growls.scss */
 .l-growl .close-growl {
   display: none;
   position: absolute;
@@ -23,17 +24,17 @@
   height: 25px;
   z-index: 1;
 }
-/* line 19, ../sass/growls.scss */
+/* line 20, ../sass/growls.scss */
 .l-growl:hover {
   margin: -2px 0 0 -2px;
   border: 2px solid #bcbcc3;
 }
-/* line 22, ../sass/growls.scss */
+/* line 23, ../sass/growls.scss */
 .l-growl:hover .close-growl {
   display: block;
 }
 
-/* line 27, ../sass/growls.scss */
+/* line 28, ../sass/growls.scss */
 .growl {
   position: relative;
   overflow: hidden;
@@ -50,7 +51,7 @@
   background-image: -o-linear-gradient(top, #333a4a, #1f2738);
   background-image: linear-gradient(top, #333a4a, #1f2738);
 }
-/* line 34, ../sass/growls.scss */
+/* line 35, ../sass/growls.scss */
 .growl .growl__separator {
   position: absolute;
   top: 0px;
@@ -60,19 +61,19 @@
   border-right: 1px solid #404959;
   border-left: 1px solid #1a2232;
 }
-/* line 43, ../sass/growls.scss */
+/* line 44, ../sass/growls.scss */
 .growl .growl__img {
   float: left;
   width: 86px;
   height: 99px;
 }
-/* line 47, ../sass/growls.scss */
+/* line 48, ../sass/growls.scss */
 .growl .growl__img img {
   width: 55px;
   height: 57px;
   padding: 20px 15px;
 }
-/* line 53, ../sass/growls.scss */
+/* line 54, ../sass/growls.scss */
 .growl .growl__text {
   min-height: 49px;
   padding: 25px 15px;

@@ -2,6 +2,7 @@
 
 // ===================  chat  =========================
 .win_chat{
+	min-width: 350px;
 	width: 350px;
 	h3{
 		color: #cdcdcd;
@@ -170,8 +171,6 @@
 	background: url(../img/sending-file.png) 0% 0% no-repeat;
 }
 .sending-file__info{
-	float: left;
-	width: 100%;
 	@include text-shadow(0 1px 0 rgba(0,0,0,.75));
 	@include font-N;
 	line-height: 1.5;
@@ -186,7 +185,13 @@
 	font-weight: normal;
 }
 .sending-file__buttons{
+	float: left;
+	overflow: hidden;
+	margin: -17px 0;
 	clear: both;
+	button{
+		margin-left: 10px;
+	}
 }
 .btn_chat{
 	width: 84px;
