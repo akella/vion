@@ -688,7 +688,7 @@
 	position: relative;
 	width: 320px;
 	min-width: 320px;
-	min-height: 235px;
+	min-height: 230px;
 	background: #222428;
 	border: 1px solid #000;
 	.win__title{
@@ -696,9 +696,6 @@
 		background: #222428;
 		@include background-image(linear-gradient(top, #4f5155, #222428));
 	}
-}
-.equalizer_window{
-	// max-width: 320px;
 }
 .equalizer__toggle{
 	position: relative;
@@ -842,18 +839,23 @@
 }
 
 // adjustments
+.equalizer_adjustment{
+	min-height: 245px;
+	height: 245px;
+}
 .adjustments{
-	padding: 21px 15px 9px;
+	position: absolute;
+	top: 40px;
+	bottom: 55px;
+	left: 15px;
+	right: 15px;
 	border-bottom: 1px solid #000;
-	@include box-shadow(1px 0 1px #434549);
+	@include box-shadow(0px 1px 0px #434549);
 }
 .adjustments__item{
 	overflow: hidden;
-	margin-top: 12px;
+	height: 25%;
 	text-align: right;
-	&:first-child{
-		margin-top: 0;
-	}
 }
 .adjustments__name{
 	float: left;
@@ -865,31 +867,50 @@
 	@include text-shadow(0 1px 0 rgba(0,0,0,.75));
 }
 .adjustments__toggle{
-	width: 100%;
+	position: relative;
 	height: 20px;
-	padding: 0 45px 0 70px;
+	margin: 0 26px 0 70px;
 	box-sizing: border-box;
-	background: url(../img/eq-bg2.png) 32px 15px no-repeat;
-	.adjustments__progress{
-		position: relative;
-		width: 100%;
-		margin-left: 18px;
-		.adjustments__base{
-			position: relative;
- 			height: 5px;
- 			margin: 6px 10px 0;
- 			@include border-radius(10px);
- 			border: 1px solid #2f2f2f;
-			background: #1e1e1e;	
-			@include box-shadow(inset 0 1px 2px #000);	
- 		}
- 		.adjustments__slider{
- 			position: absolute;
- 			top: -5px;
- 			@include sized-sprite($video, volume-toggle);
- 			cursor: pointer;
- 		}
+	.adjustments__point1, .adjustments__point2, .adjustments__point3, .adjustments__point4, .adjustments__point5{
+		position: absolute;
+		bottom: 0;
+		left: 29px;
+		height: 6px;
+		width: 1px;
+		background: #181a1d;
+		@include box-shadow(1px 0 0 #2c2f33);
 	}
+	.adjustments__point2{
+		left: 36%;
+	}
+	.adjustments__point3{
+		left: 57%;
+	}
+	.adjustments__point4{
+		left: 78%;
+	}
+	.adjustments__point5{
+		left: 100%;
+	}
+}
+.adjustments__progress{
+	position: relative;
+	margin-left: 18px;
+	.adjustments__base{
+		position: relative;
+ 		height: 5px;
+ 		margin: 6px 0px 0 10px;
+ 		@include border-radius(10px);
+ 		border: 1px solid #2f2f2f;
+		background: #1e1e1e;	
+		@include box-shadow(inset 0 1px 2px #000);	
+ 	}
+ 	.adjustments__slider{
+ 		position: absolute;
+ 		top: -5px;
+ 		@include sized-sprite($video, volume-toggle);
+ 		cursor: pointer;
+ 	}
 }
 .adjustments__brightness{
 	&:before{
@@ -954,6 +975,13 @@
 		right: -21px;
 		@include s($video, smooth-up);
 	}
+}
+.chat-begin__buttons_adjustments{
+	position: absolute;
+	bottom: -8px;
+	left: 15px;
+	right: 15px;
+	padding: 0!important;
 }
 
 // widget
