@@ -3,6 +3,8 @@
 // player
 .player{
 	position: relative;
+	width: 640px;
+	min-height: 390px;
 	padding: 7px;
 	border: 1px solid rgba(191,191,191,.9);
 	@include border-radius(6px);
@@ -39,7 +41,6 @@
 .media{
 	overflow: hidden;
 	position: relative;
-	width: 640px;
 	min-height: 390px;
 	@include background-image(linear-gradient(#263a58, #62636d));
 	h1{
@@ -922,6 +923,7 @@
 	@include box-shadow(0 0 6px 1px #000);
 }
 .player_widget{
+	width: auto;
 	background: transparent;
 	box-sizing: border-box;
 	top: -20px;
@@ -938,4 +940,20 @@
 }	
 .win .win__content_widget{
 	@include border-radius(6px);
+}
+
+// scroll
+.player .scroll{
+	.viewport{
+		height: 390px;
+	}
+	.scrollbar{
+		height: 382px;
+	}
+	.media{
+		height: 600px;
+	}
+	.overview{
+		padding-bottom: 0;
+	}
 }

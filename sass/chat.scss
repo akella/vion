@@ -175,6 +175,9 @@
 	@include font-N;
 	line-height: 1.5;
 }
+.sending-file__info_float{
+	float: left;
+}
 .sending-file__name{
 	color: #3d95cb;
 	font-size: 13px;
@@ -188,7 +191,6 @@
 	float: left;
 	overflow: hidden;
 	margin: -17px 0;
-	clear: both;
 	button{
 		margin-left: 10px;
 	}
@@ -339,6 +341,7 @@
 }
 .chat__counter{
 	overflow: hidden;
+	margin-top: 17px;
 }
 .chat__progress-bar{
 	float: left;
