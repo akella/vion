@@ -688,6 +688,7 @@
 	position: relative;
 	width: 320px;
 	min-width: 320px;
+	min-height: 235px;
 	background: #222428;
 	border: 1px solid #000;
 	.win__title{
@@ -738,19 +739,25 @@
 	}
 }
 .equalizer__controls{
-	margin: 0 23px 16px;
+	position: absolute;
+	left: 23px;
+	right: 23px;
+	top: 69px;
+	bottom: 15px;
 	overflow: hidden;
 }
 .equalizer__item{
+	position: relative;
 	float: left;
 	width: 10%;
 	padding-left: 1%;
-	background: url(../img/eq-bg.png) 0 0 no-repeat;
+	height: 100%;
+	// background: url(../img/eq-bg.png) 0 0 no-repeat;
 	box-sizing: border-box;
+	// background-size: 20% 100%;
 	.equalizer__base{
-		position: relative;
 		width: 3px;
-		height: 112px;
+		height: 98%;
 		margin: 0 auto;
 		border: 1px solid #161616;
 		@include border-radius(10px);
@@ -762,23 +769,75 @@
 		margin-left: -6px;
 		cursor: pointer;
 	}
+	.equalizer__point1, .equalizer__point2, .equalizer__point3, .equalizer__point4, .equalizer__point6, .equalizer__point7, .equalizer__point8, .equalizer__point9{
+		position: absolute;
+		top: 0%;
+		width: 20%;
+		height: 1px;
+		background: #181a1d;
+		@include box-shadow(0px 1px 0px #2c2e33);
+	}
+	.equalizer__point2{
+		top: 12.5%;
+	}
+	.equalizer__point3{
+		top: 25%;
+	}
+	.equalizer__point4{
+		top: 37.5%;
+	}
+	.equalizer__point5{
+		position: absolute;
+		top: 50%;
+		width: 20%;
+		height: 1px;
+		background: #7b7c7f;
+	}
+	.equalizer__point6{
+		top: 62.5%;
+	}
+	.equalizer__point7{
+		top: 75%;
+	}
+	.equalizer__point8{
+		top: 87.5%;
+	}
+	.equalizer__point9{
+		top: 98%;
+	}
 }
 .equalizer__text{
+	position: relative;
+	height: 100%;
 	width: 18%;
 	float: left;
 	padding-right: 1%;
 	box-sizing: border-box;
 	text-align: right;
 	p{
-		margin-top: 45px;
 		color: #8b8b91;
 		@include font-B;
 		font-size: 9px;
 		font-weight: bold;
 		@include text-shadow(0 1px 0 rgba(0,0,0,.75));
-		&:first-child{
-			margin-top: 0;
-		}
+	}
+	.equalizer__top-mark{
+		position: absolute;
+		top: 1px;
+		left: 50%;
+		margin-left: -17px;
+	}
+	.equalizer__mid-mark{
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		margin: -5px 0 0 -10px;
+	}
+	.equalizer__bot-mark{
+		position: absolute;
+		bottom: 0;
+		left: 50%;
+		margin-left: -15px;
 	}
 }
 
