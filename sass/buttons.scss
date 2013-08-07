@@ -14,6 +14,7 @@
         color: #000;
     }
 }
+
 // styles for big buttons
 .wrapper-button_big{
     height: 128px;
@@ -273,6 +274,7 @@
     vertical-align: middle;
     text-align: center;
     @include border-radius(50%);
+    background: #d28e00;
     @include background-image(linear-gradient(top, #fdc700 0%, #ad5f00 100%));
     z-index: 2;
     img{
@@ -294,6 +296,7 @@
     position: absolute;
     top: 50%;
     left: 50%;
+    @include animation(round 2s linear infinite);
 }
 .button-hint-right{
 	position: absolute;

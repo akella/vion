@@ -26,6 +26,14 @@ h1,h2,h3,h4,h5,h6,a,span,a:focus {
 		background-position:0 0;
 	}
 }
+@include keyframes(round) {
+	0% {
+		@include transform(rotate(0deg));
+	}
+	100%{
+		@include transform(rotate(360deg));
+	}
+}
 *{
 	-webkit-user-select: none;
 	-moz-user-select: none;
