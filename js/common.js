@@ -111,4 +111,27 @@ $(document).ready(function() {
     		}
     );
 
+// buttons loading animation initializing
+
+	$(".wrapper-button").click(function(){
+
+		$(this).find(".preloader").addClass('is-loading');
+
+	});
+
+// buttons on the edge of the screen
+
+	$(".wrapper-right").click(function(){
+
+		$(this).addClass('is-active');
+
+	});
+
+	$(".wrapper-left").click(function(){
+
+		$(this).addClass('is-active');
+
+	});
+
 });
+
