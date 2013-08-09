@@ -635,24 +635,43 @@
 /* line 437, ../sass/buttons.scss */
 .wrapper-button_big.wrapper-right .button-hint-right {
   opacity: 1;
-  left: 160px;
-  -webkit-border-radius: 0;
-  -moz-border-radius: 0;
-  -ms-border-radius: 0;
-  -o-border-radius: 0;
-  border-radius: 0;
+  left: 50px !important;
+  -webkit-border-radius: 70px 0 0 70px;
+  -moz-border-radius: 70px 0 0 70px;
+  -ms-border-radius: 70px 0 0 70px;
+  -o-border-radius: 70px 0 0 70px;
+  border-radius: 70px 0 0 70px;
 }
 /* line 442, ../sass/buttons.scss */
 .wrapper-button_big.wrapper-right .button-hint-right_h {
-  padding-left: 40px;
+  padding-right: 150px;
+  color: transparent;
+}
+/* line 447, ../sass/buttons.scss */
+.wrapper-button_big.wrapper-right:hover .button-hint-right_h {
+  padding-left: 0;
 }
 
-/* line 446, ../sass/buttons.scss */
-.wrapper-button_big.wrapper-right.is-active {
-  right: 245px;
+/* line 453, ../sass/buttons.scss */
+.wrapper-button_big.wrapper-right.is-active .button-hint-right {
+  left: -245px !important;
+  color: #fff;
+}
+/* line 456, ../sass/buttons.scss */
+.wrapper-button_big.wrapper-right.is-active .button-hint-right:hover {
+  color: #ffc600;
 }
 
-/* line 449, ../sass/buttons.scss */
+/* line 462, ../sass/buttons.scss */
+.wrapper-button_big.wrapper-right.white.is-active .button-hint-right {
+  color: #000;
+}
+/* line 464, ../sass/buttons.scss */
+.wrapper-button_big.wrapper-right.white.is-active .button-hint-right:hover {
+  color: #ffc600;
+}
+
+/* line 469, ../sass/buttons.scss */
 .wrapper-button_mid.wrapper-right {
   position: fixed;
   right: 15px;
@@ -662,23 +681,46 @@
   -o-transition: 600ms ease-in-out;
   transition: 600ms ease-in-out;
 }
-/* line 454, ../sass/buttons.scss */
+/* line 474, ../sass/buttons.scss */
 .wrapper-button_mid.wrapper-right .button-hint-right {
   opacity: 1;
-  left: 125px;
-  -webkit-border-radius: 0;
-  -moz-border-radius: 0;
-  -ms-border-radius: 0;
-  -o-border-radius: 0;
-  border-radius: 0;
+  left: 36px !important;
+  -webkit-border-radius: 55px 0 0 55px;
+  -moz-border-radius: 55px 0 0 55px;
+  -ms-border-radius: 55px 0 0 55px;
+  -o-border-radius: 55px 0 0 55px;
+  border-radius: 55px 0 0 55px;
+}
+/* line 479, ../sass/buttons.scss */
+.wrapper-button_mid.wrapper-right .button-hint-right_h {
+  padding-right: 100px;
+  color: transparent;
+}
+/* line 484, ../sass/buttons.scss */
+.wrapper-button_mid.wrapper-right:hover .button-hint-right_h {
+  padding-left: 0;
 }
 
-/* line 460, ../sass/buttons.scss */
-.wrapper-button_mid.wrapper-right.is-active {
-  right: 185px;
+/* line 490, ../sass/buttons.scss */
+.wrapper-button_mid.wrapper-right.is-active .button-hint-right {
+  left: -174px !important;
+  color: #fff;
+}
+/* line 493, ../sass/buttons.scss */
+.wrapper-button_mid.wrapper-right.is-active .button-hint-right:hover {
+  color: #ffc600;
 }
 
-/* line 463, ../sass/buttons.scss */
+/* line 499, ../sass/buttons.scss */
+.wrapper-button_mid.wrapper-right.white.is-active .button-hint-right {
+  color: #000;
+}
+/* line 501, ../sass/buttons.scss */
+.wrapper-button_mid.wrapper-right.white.is-active .button-hint-right:hover {
+  color: #ffc600;
+}
+
+/* line 506, ../sass/buttons.scss */
 .wrapper-button_small.wrapper-right {
   position: fixed;
   right: 5px;
@@ -688,23 +730,46 @@
   -o-transition: 600ms ease-in-out;
   transition: 600ms ease-in-out;
 }
-/* line 468, ../sass/buttons.scss */
+/* line 511, ../sass/buttons.scss */
 .wrapper-button_small.wrapper-right .button-hint-right {
   opacity: 1;
-  left: 90px;
-  -webkit-border-radius: 0;
-  -moz-border-radius: 0;
-  -ms-border-radius: 0;
-  -o-border-radius: 0;
-  border-radius: 0;
+  left: 29px !important;
+  -webkit-border-radius: 40px 0 0 40px;
+  -moz-border-radius: 40px 0 0 40px;
+  -ms-border-radius: 40px 0 0 40px;
+  -o-border-radius: 40px 0 0 40px;
+  border-radius: 40px 0 0 40px;
+}
+/* line 516, ../sass/buttons.scss */
+.wrapper-button_small.wrapper-right .button-hint-right_h {
+  padding-right: 100px;
+  color: transparent;
+}
+/* line 521, ../sass/buttons.scss */
+.wrapper-button_small.wrapper-right:hover .button-hint-right_h {
+  padding-left: 0;
 }
 
-/* line 474, ../sass/buttons.scss */
-.wrapper-button_small.wrapper-right.is-active {
-  right: 143px;
+/* line 527, ../sass/buttons.scss */
+.wrapper-button_small.wrapper-right.is-active .button-hint-right {
+  left: -132px !important;
+  color: #fff;
+}
+/* line 530, ../sass/buttons.scss */
+.wrapper-button_small.wrapper-right.is-active .button-hint-right:hover {
+  color: #ffc600;
 }
 
-/* line 477, ../sass/buttons.scss */
+/* line 536, ../sass/buttons.scss */
+.wrapper-button_small.wrapper-right.white.is-active .button-hint-right {
+  color: #000;
+}
+/* line 538, ../sass/buttons.scss */
+.wrapper-button_small.wrapper-right.white.is-active .button-hint-right:hover {
+  color: #ffc600;
+}
+
+/* line 543, ../sass/buttons.scss */
 .wrapper-button_smallest.wrapper-right {
   position: fixed;
   right: 2px;
@@ -714,23 +779,46 @@
   -o-transition: 600ms ease-in-out;
   transition: 600ms ease-in-out;
 }
-/* line 482, ../sass/buttons.scss */
+/* line 548, ../sass/buttons.scss */
 .wrapper-button_smallest.wrapper-right .button-hint-right {
   opacity: 1;
-  left: 37px;
-  -webkit-border-radius: 0;
-  -moz-border-radius: 0;
-  -ms-border-radius: 0;
-  -o-border-radius: 0;
-  border-radius: 0;
+  left: 21px !important;
+  -webkit-border-radius: 25px 0 0 25px;
+  -moz-border-radius: 25px 0 0 25px;
+  -ms-border-radius: 25px 0 0 25px;
+  -o-border-radius: 25px 0 0 25px;
+  border-radius: 25px 0 0 25px;
+}
+/* line 553, ../sass/buttons.scss */
+.wrapper-button_smallest.wrapper-right .button-hint-right_h {
+  padding-right: 50px;
+  color: transparent;
+}
+/* line 558, ../sass/buttons.scss */
+.wrapper-button_smallest.wrapper-right:hover .button-hint-right_h {
+  padding-left: 0;
 }
 
-/* line 488, ../sass/buttons.scss */
-.wrapper-button_smallest.wrapper-right.is-active {
-  right: 100px;
+/* line 564, ../sass/buttons.scss */
+.wrapper-button_smallest.wrapper-right.is-active .button-hint-right {
+  left: -105px !important;
+  color: #fff;
+}
+/* line 567, ../sass/buttons.scss */
+.wrapper-button_smallest.wrapper-right.is-active .button-hint-right:hover {
+  color: #ffc600;
 }
 
-/* line 491, ../sass/buttons.scss */
+/* line 573, ../sass/buttons.scss */
+.wrapper-button_smallest.wrapper-right.white.is-active .button-hint-right {
+  color: #000;
+}
+/* line 575, ../sass/buttons.scss */
+.wrapper-button_smallest.wrapper-right.white.is-active .button-hint-right:hover {
+  color: #ffc600;
+}
+
+/* line 580, ../sass/buttons.scss */
 .wrapper-button_big.wrapper-left {
   position: fixed;
   left: 10px;
@@ -740,27 +828,47 @@
   -o-transition: 600ms ease-in-out;
   transition: 600ms ease-in-out;
 }
-/* line 496, ../sass/buttons.scss */
+/* line 585, ../sass/buttons.scss */
 .wrapper-button_big.wrapper-left .button-hint-left {
   opacity: 1;
   right: 108px;
-  -webkit-border-radius: 0;
-  -moz-border-radius: 0;
-  -ms-border-radius: 0;
-  -o-border-radius: 0;
-  border-radius: 0;
+  -webkit-border-radius: 0 70px 70px 0;
+  -moz-border-radius: 0 70px 70px 0;
+  -ms-border-radius: 0 70px 70px 0;
+  -o-border-radius: 0 70px 70px 0;
+  border-radius: 0 70px 70px 0;
 }
-/* line 501, ../sass/buttons.scss */
+/* line 590, ../sass/buttons.scss */
 .wrapper-button_big.wrapper-left .button-hint-left_h {
-  padding-right: 40px;
+  right: 0px !important;
+  color: transparent;
+}
+/* line 595, ../sass/buttons.scss */
+.wrapper-button_big.wrapper-left:hover .button-hint-left_h {
+  padding-right: 0;
 }
 
-/* line 505, ../sass/buttons.scss */
-.wrapper-button_big.wrapper-left.is-active {
-  left: 245px;
+/* line 601, ../sass/buttons.scss */
+.wrapper-button_big.wrapper-left.is-active .button-hint-left {
+  right: -285px !important;
+  padding-left: 140px;
+  color: #fff;
+}
+/* line 605, ../sass/buttons.scss */
+.wrapper-button_big.wrapper-left.is-active .button-hint-left:hover {
+  color: #ffc600;
 }
 
-/* line 508, ../sass/buttons.scss */
+/* line 611, ../sass/buttons.scss */
+.wrapper-button_big.wrapper-left.white.is-active .button-hint-left {
+  color: #000;
+}
+/* line 613, ../sass/buttons.scss */
+.wrapper-button_big.wrapper-left.white.is-active .button-hint-left:hover {
+  color: #ffc600;
+}
+
+/* line 618, ../sass/buttons.scss */
 .wrapper-button_mid.wrapper-left {
   position: fixed;
   left: 15px;
@@ -770,23 +878,47 @@
   -o-transition: 600ms ease-in-out;
   transition: 600ms ease-in-out;
 }
-/* line 513, ../sass/buttons.scss */
+/* line 623, ../sass/buttons.scss */
 .wrapper-button_mid.wrapper-left .button-hint-left {
   opacity: 1;
   right: 89px;
-  -webkit-border-radius: 0;
-  -moz-border-radius: 0;
-  -ms-border-radius: 0;
-  -o-border-radius: 0;
-  border-radius: 0;
+  -webkit-border-radius: 0 55px 55px 0;
+  -moz-border-radius: 0 55px 55px 0;
+  -ms-border-radius: 0 55px 55px 0;
+  -o-border-radius: 0 55px 55px 0;
+  border-radius: 0 55px 55px 0;
+}
+/* line 628, ../sass/buttons.scss */
+.wrapper-button_mid.wrapper-left .button-hint-left_h {
+  right: 0px !important;
+  color: transparent;
+}
+/* line 633, ../sass/buttons.scss */
+.wrapper-button_mid.wrapper-left:hover .button-hint-left_h {
+  padding-right: 0;
 }
 
-/* line 519, ../sass/buttons.scss */
-.wrapper-button_mid.wrapper-left.is-active {
-  left: 185px;
+/* line 639, ../sass/buttons.scss */
+.wrapper-button_mid.wrapper-left.is-active .button-hint-left {
+  right: -200px !important;
+  padding-left: 120px;
+  color: #fff;
+}
+/* line 643, ../sass/buttons.scss */
+.wrapper-button_mid.wrapper-left.is-active .button-hint-left:hover {
+  color: #ffc600;
 }
 
-/* line 522, ../sass/buttons.scss */
+/* line 649, ../sass/buttons.scss */
+.wrapper-button_mid.wrapper-left.white.is-active .button-hint-left {
+  color: #000;
+}
+/* line 651, ../sass/buttons.scss */
+.wrapper-button_mid.wrapper-left.white.is-active .button-hint-left:hover {
+  color: #ffc600;
+}
+
+/* line 656, ../sass/buttons.scss */
 .wrapper-button_small.wrapper-left {
   position: fixed;
   left: 5px;
@@ -796,23 +928,47 @@
   -o-transition: 600ms ease-in-out;
   transition: 600ms ease-in-out;
 }
-/* line 527, ../sass/buttons.scss */
+/* line 661, ../sass/buttons.scss */
 .wrapper-button_small.wrapper-left .button-hint-left {
   opacity: 1;
   right: 60px;
-  -webkit-border-radius: 0;
-  -moz-border-radius: 0;
-  -ms-border-radius: 0;
-  -o-border-radius: 0;
-  border-radius: 0;
+  -webkit-border-radius: 0 40px 40px 0;
+  -moz-border-radius: 0 40px 40px 0;
+  -ms-border-radius: 0 40px 40px 0;
+  -o-border-radius: 0 40px 40px 0;
+  border-radius: 0 40px 40px 0;
+}
+/* line 666, ../sass/buttons.scss */
+.wrapper-button_small.wrapper-left .button-hint-left_h {
+  right: 0px !important;
+  color: transparent;
+}
+/* line 671, ../sass/buttons.scss */
+.wrapper-button_small.wrapper-left:hover .button-hint-left_h {
+  padding-right: 0;
 }
 
-/* line 533, ../sass/buttons.scss */
-.wrapper-button_small.wrapper-left.is-active {
-  left: 142px;
+/* line 677, ../sass/buttons.scss */
+.wrapper-button_small.wrapper-left.is-active .button-hint-left {
+  right: -162px !important;
+  padding-left: 120px;
+  color: #fff;
+}
+/* line 681, ../sass/buttons.scss */
+.wrapper-button_small.wrapper-left.is-active .button-hint-left:hover {
+  color: #ffc600;
 }
 
-/* line 536, ../sass/buttons.scss */
+/* line 687, ../sass/buttons.scss */
+.wrapper-button_small.wrapper-left.what.is-active .button-hint-left {
+  color: #000;
+}
+/* line 689, ../sass/buttons.scss */
+.wrapper-button_small.wrapper-left.what.is-active .button-hint-left:hover {
+  color: #ffc600;
+}
+
+/* line 694, ../sass/buttons.scss */
 .wrapper-button_smallest.wrapper-left {
   position: fixed;
   left: 10px;
@@ -822,18 +978,33 @@
   -o-transition: 600ms ease-in-out;
   transition: 600ms ease-in-out;
 }
-/* line 541, ../sass/buttons.scss */
+/* line 699, ../sass/buttons.scss */
 .wrapper-button_smallest.wrapper-left .button-hint-left {
   opacity: 1;
   right: 28px;
-  -webkit-border-radius: 0;
-  -moz-border-radius: 0;
-  -ms-border-radius: 0;
-  -o-border-radius: 0;
-  border-radius: 0;
+  -webkit-border-radius: 0 25px 25px 0;
+  -moz-border-radius: 0 25px 25px 0;
+  -ms-border-radius: 0 25px 25px 0;
+  -o-border-radius: 0 25px 25px 0;
+  border-radius: 0 25px 25px 0;
+}
+/* line 704, ../sass/buttons.scss */
+.wrapper-button_smallest.wrapper-left .button-hint-left_h {
+  right: 0px !important;
+  color: transparent;
+}
+/* line 709, ../sass/buttons.scss */
+.wrapper-button_smallest.wrapper-left:hover .button-hint-left_h {
+  padding-right: 0;
 }
 
-/* line 547, ../sass/buttons.scss */
-.wrapper-button_smallest.wrapper-left.is-active {
-  left: 110px;
+/* line 715, ../sass/buttons.scss */
+.wrapper-button_smallest.wrapper-left.is-active .button-hint-left {
+  right: -122px !important;
+  padding-left: 120px;
+  color: #fff;
+}
+/* line 719, ../sass/buttons.scss */
+.wrapper-button_smallest.wrapper-left.is-active .button-hint-left:hover {
+  color: #ffc600;
 }

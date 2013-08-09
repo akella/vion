@@ -427,7 +427,7 @@
      @include s($buttons, button-corner);
 }
 
-// buttons on the edge of the screen
+// buttons on the edge of the screen ================================================
 
 .wrapper-button_big.wrapper-right{
     position: fixed;
@@ -436,15 +436,35 @@
     @include transition(600ms ease-in-out);
     .button-hint-right{
         opacity: 1;
-        left: 160px;
-        @include border-radius(0);
+        left: 50px!important;
+        @include border-radius(70px 0 0 70px);
     }
     .button-hint-right_h{
-        padding-left: 40px;
+        padding-right: 150px;
+        color: transparent;
+    }
+    &:hover{
+        .button-hint-right_h{
+            padding-left: 0;
+        }
     }
 }
 .wrapper-button_big.wrapper-right.is-active{
-    right: 245px;
+    .button-hint-right{
+        left: -245px!important;
+        color: #fff;
+        &:hover{
+            color: #ffc600;
+        }
+    }
+}
+.wrapper-button_big.wrapper-right.white.is-active{
+    .button-hint-right{
+        color: #000;
+        &:hover{
+            color: #ffc600;
+        }
+    }
 }
 .wrapper-button_mid.wrapper-right{
     position: fixed;
@@ -453,12 +473,35 @@
     @include transition(600ms ease-in-out);
     .button-hint-right{
         opacity: 1;
-        left: 125px;
-        @include border-radius(0);
+        left: 36px!important;
+        @include border-radius(55px 0 0 55px);
+    }
+    .button-hint-right_h{
+        padding-right: 100px;
+        color: transparent;
+    }
+    &:hover{
+        .button-hint-right_h{
+            padding-left: 0;
+        }
     }
 }
 .wrapper-button_mid.wrapper-right.is-active{
-    right: 185px;
+    .button-hint-right{
+        left: -174px!important;
+        color: #fff;
+        &:hover{
+            color: #ffc600;
+        }
+    }
+}
+.wrapper-button_mid.wrapper-right.white.is-active{
+    .button-hint-right{
+        color: #000;
+        &:hover{
+            color: #ffc600;
+        }
+    }
 }
 .wrapper-button_small.wrapper-right{
     position: fixed;
@@ -467,12 +510,35 @@
     @include transition(600ms ease-in-out);
     .button-hint-right{
         opacity: 1;
-        left: 90px;
-        @include border-radius(0);
+        left: 29px!important;
+        @include border-radius(40px 0 0 40px);
+    }
+    .button-hint-right_h{
+        padding-right: 100px;
+        color: transparent;
+    }
+    &:hover{
+        .button-hint-right_h{
+            padding-left: 0;
+        }
     }
 }
 .wrapper-button_small.wrapper-right.is-active{
-    right: 143px;
+    .button-hint-right{
+        left: -132px!important;
+        color: #fff;
+        &:hover{
+            color: #ffc600;
+        }
+    }
+}
+.wrapper-button_small.wrapper-right.white.is-active{
+    .button-hint-right{
+        color: #000;
+        &:hover{
+            color: #ffc600;
+        }
+    }
 }
 .wrapper-button_smallest.wrapper-right{
     position: fixed;
@@ -481,12 +547,35 @@
     @include transition(600ms ease-in-out);
     .button-hint-right{
         opacity: 1;
-        left: 37px;
-        @include border-radius(0);
+        left: 21px!important;
+        @include border-radius(25px 0 0 25px);
+    }
+    .button-hint-right_h{
+        padding-right: 50px;
+        color: transparent;
+    }
+    &:hover{
+        .button-hint-right_h{
+            padding-left: 0;
+        }
     }
 }
 .wrapper-button_smallest.wrapper-right.is-active{
-    right: 100px;
+    .button-hint-right{
+        left: -105px!important;
+        color: #fff;
+        &:hover{
+            color: #ffc600;
+        }
+    }
+}
+.wrapper-button_smallest.wrapper-right.white.is-active{
+    .button-hint-right{
+        color: #000;
+        &:hover{
+            color: #ffc600;
+        }
+    }
 }
 .wrapper-button_big.wrapper-left{
     position: fixed;
@@ -496,14 +585,35 @@
     .button-hint-left{
         opacity: 1;
         right: 108px;
-        @include border-radius(0);
+        @include border-radius(0 70px 70px 0);
     }
     .button-hint-left_h{
-        padding-right: 40px;
+        right: 0px!important;
+        color: transparent;
+    }
+    &:hover{
+        .button-hint-left_h{
+            padding-right: 0;
+        }
     }
 }
 .wrapper-button_big.wrapper-left.is-active{
-    left: 245px;
+    .button-hint-left{
+        right: -285px!important;
+        padding-left: 140px;
+        color: #fff;
+        &:hover{
+            color: #ffc600;
+        }
+    }
+}
+.wrapper-button_big.wrapper-left.white.is-active{
+    .button-hint-left{
+        color: #000;
+        &:hover{
+            color: #ffc600;
+        }
+    }
 }
 .wrapper-button_mid.wrapper-left{
     position: fixed;
@@ -513,11 +623,35 @@
     .button-hint-left{
         opacity: 1;
         right: 89px;
-        @include border-radius(0);
+        @include border-radius(0 55px 55px 0);
+    }
+    .button-hint-left_h{
+        right: 0px!important;
+        color: transparent;
+    }
+    &:hover{
+        .button-hint-left_h{
+            padding-right: 0;
+        }
     }
 }
 .wrapper-button_mid.wrapper-left.is-active{
-    left: 185px;
+    .button-hint-left{
+        right: -200px!important;
+        padding-left: 120px;
+        color: #fff;
+        &:hover{
+            color: #ffc600;
+        }
+    }
+}
+.wrapper-button_mid.wrapper-left.white.is-active{
+    .button-hint-left{
+        color: #000;
+        &:hover{
+            color: #ffc600;
+        }
+    }
 }
 .wrapper-button_small.wrapper-left{
     position: fixed;
@@ -527,11 +661,35 @@
     .button-hint-left{
         opacity: 1;
         right: 60px;
-        @include border-radius(0);
+        @include border-radius(0 40px 40px 0);
+    }
+    .button-hint-left_h{
+        right: 0px!important;
+        color: transparent;
+    }
+    &:hover{
+        .button-hint-left_h{
+            padding-right: 0;
+        }
     }
 }
 .wrapper-button_small.wrapper-left.is-active{
-    left: 142px;
+    .button-hint-left{
+        right: -162px!important;
+        padding-left: 120px;
+        color: #fff;
+        &:hover{
+            color: #ffc600;
+        }
+    }
+}
+.wrapper-button_small.wrapper-left.what.is-active{
+    .button-hint-left{
+        color: #000;
+        &:hover{
+            color: #ffc600;
+        }
+    }
 }
 .wrapper-button_smallest.wrapper-left{
     position: fixed;
@@ -541,9 +699,25 @@
     .button-hint-left{
         opacity: 1;
         right: 28px;
-        @include border-radius(0);
+        @include border-radius(0 25px 25px 0);
+    }
+    .button-hint-left_h{
+        right: 0px!important;
+        color: transparent;
+    }
+    &:hover{
+        .button-hint-left_h{
+            padding-right: 0;
+        }
     }
 }
 .wrapper-button_smallest.wrapper-left.is-active{
-    left: 110px;
+    .button-hint-left{
+        right: -122px!important;
+        padding-left: 120px;
+        color: #fff;
+        &:hover{
+            color: #ffc600;
+        }
+    }
 }
