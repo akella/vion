@@ -49,6 +49,12 @@
             padding: 0 40px;
         }
     }
+    .button-hint-right_h{
+        top: 0;
+        left: 122px!important;
+        height: 140px;
+        line-height: 140px;
+    }
     .button-hint-left{
         top: 20px;
         right: 40px;
@@ -60,13 +66,25 @@
             padding: 0 40px;
         }
     }
+    .button-hint-left_h{
+        top: 0;
+        right: 67px!important;
+        height: 140px;
+        line-height: 140px;
+    }
     &:hover .button-hint-right {
         left: 160px;
         opacity: 1;
     }
+    &:hover .button-hint-right_h {
+        padding-left: 40px;
+    }
     &:hover .button-hint-left {
         opacity: 1;
         right: 108px;
+    }
+    &:hover .button-hint-left_h {
+        padding-right: 40px;
     }
 }
 .arr-right_big{
@@ -112,6 +130,12 @@
             padding: 0 35px;
         }
     }
+    .button-hint-right_h{
+        top: 0;
+        left: 89px!important;
+        height: 108px;
+        line-height: 108px;
+    }
     .button-hint-left{
         top: 18px;
         right: 40px;
@@ -123,13 +147,25 @@
             padding: 0 35px;
         }
     }
+    .button-hint-left_h{
+        top: 0;
+        right: 55px!important;
+        height: 108px;
+        line-height: 108px;
+    }
     &:hover .button-hint-right {
         left: 125px;
         opacity: 1;
     }
+    &:hover .button-hint-right_h {
+        padding-left: 35px;
+    }
     &:hover .button-hint-left {
         opacity: 1;
         right: 89px;
+    }
+    &:hover .button-hint-left_h {
+        padding-right: 35px;
     }
 }
 .arr-right_mid{
@@ -175,6 +211,12 @@
             padding: 0 25px;
         }
     }
+    .button-hint-right_h{
+        top: 0;
+        left: 60px!important;
+        height: 76px;
+        line-height: 76px;
+    }
     .button-hint-left{
         top: 12px;
         right: 20px;
@@ -186,13 +228,25 @@
             padding: 0 25px;
         }
     }
+    .button-hint-left_h{
+        top: 0;
+        right: 35px!important;
+        height: 76px;
+        line-height: 76px;
+    }
     &:hover .button-hint-right {
         left: 90px;
         opacity: 1;
     }
+    &:hover .button-hint-right_h {
+        padding-left: 30px;
+    }
     &:hover .button-hint-left {
         opacity: 1;
         right: 60px;
+    }
+    &:hover .button-hint-left_h {
+        padding-right: 30px;
     }
 }
 .arr-right_small{
@@ -217,6 +271,7 @@
         width: 32px;
         height: 32px;
         line-height: 32px;
+        @include box-shadow(0 0 0 4px #000);
         span{
             line-height: 32px;
             font-size: 12px;
@@ -239,6 +294,12 @@
             padding: 0 25px;
         }
     }
+    .button-hint-right_h{
+        top: 0;
+        left: 37px!important;
+        height: 40px;
+        line-height: 40px;
+    }
     .button-hint-left{
         top: 6px;
         right: 5px;
@@ -250,13 +311,25 @@
             padding: 0 25px;
         }
     }
+    .button-hint-left_h{
+        top: 0;
+        right: 16px!important;
+        height: 40px;
+        line-height: 40px;
+    }
     &:hover .button-hint-right {
         left: 37px;
         opacity: 1;
     }
+    &:hover .button-hint-right_h {
+        padding-left: 8px;
+    }
     &:hover .button-hint-left {
         opacity: 1;
         right: 28px;
+    }
+    &:hover .button-hint-left_h {
+        padding-right: 8px;
     }
 }
 .arr-right_smallest{
@@ -366,6 +439,9 @@
         left: 160px;
         @include border-radius(0);
     }
+    .button-hint-right_h{
+        padding-left: 40px;
+    }
 }
 .wrapper-button_big.wrapper-right.is-active{
     right: 245px;
@@ -421,6 +497,9 @@
         opacity: 1;
         right: 108px;
         @include border-radius(0);
+    }
+    .button-hint-left_h{
+        padding-right: 40px;
     }
 }
 .wrapper-button_big.wrapper-left.is-active{
